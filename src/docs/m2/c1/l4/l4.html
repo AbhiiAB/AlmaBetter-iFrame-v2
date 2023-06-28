@@ -1,0 +1,411 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Advanced Coding &amp; Analysis</title><link rel="stylesheet" href="../../../../../styles.css"></head><body><article id="037ffd13-a4c2-4e1f-b6bf-9f63a0fab37a" class="page sans"><header><h1 class="page-title"><strong>Advanced Coding &amp; Analysis</strong></h1><p class="page-description"></p></header><div class="page-body"><ul id="0f42a115-4783-42d3-9209-51b80295bb12" class="toggle"><li><details close=""><summary><strong>Session Flow (5 minutes read)</strong></summary><ul id="64079aed-4627-4fde-9bfb-2e0f781ebcf6" class="bulleted-list"><li style="list-style-type:disc"><strong>Learning Objective (5 minutes read)</strong><ul id="d756e0d6-991d-4ca2-ad9f-6a06fd5cfbfb" class="bulleted-list"><li style="list-style-type:circle">Introduction</li></ul><ul id="6d31c32a-0efd-4402-97cf-abf144c6226f" class="bulleted-list"><li style="list-style-type:circle">Theme</li></ul><ul id="1fa8f157-a46a-4876-a278-5953fcda4d96" class="bulleted-list"><li style="list-style-type:circle">Primary Goals</li></ul></li></ul><ul id="3745e59d-5787-4fd7-9695-0a745142f67d" class="bulleted-list"><li style="list-style-type:disc"><strong>Advanced Pattern Matching Coding &amp; Analysis (120 minutes read)</strong><ul id="ae77fee2-c2f8-4369-8b4c-8ddfdccb01ca" class="bulleted-list"><li style="list-style-type:circle">Find the maximum element in an array (10 minutes read)</li></ul><ul id="3e671b81-cd9f-4bd9-b1a0-d91902806c90" class="bulleted-list"><li style="list-style-type:circle">Reverse an array in place (10 minutes read)</li></ul><ul id="3a452779-d799-41a7-83f1-d24aa392ce29" class="bulleted-list"><li style="list-style-type:circle">Find the second smallest element in an array (10 minutes read)</li></ul><ul id="afd0d877-f0bc-4ba3-9d2d-a6f230c98f19" class="bulleted-list"><li style="list-style-type:circle">Merge two sorted arrays into a single sorted array (10 minutes read)</li></ul><ul id="0f447338-7917-4c2a-abc1-90c2d64332fe" class="bulleted-list"><li style="list-style-type:circle">Find the longest substring without repeating characters (10 minutes read)</li></ul><ul id="b78ad155-9f7c-49c3-a9ce-a49fb63176ad" class="bulleted-list"><li style="list-style-type:circle">Find the first non-repeating character in it (10 minutes read)</li></ul><ul id="5c282bf3-9bc4-44b5-a06b-dbc341b7af94" class="bulleted-list"><li style="list-style-type:circle">Find the length of the longest palindromic substring (10 minutes read)</li></ul><ul id="b742bd6e-d635-4f92-9b69-dfad40059e03" class="bulleted-list"><li style="list-style-type:circle">Determine if 2nd string is an anagram of 1st string (10 minutes read)</li></ul><ul id="145b99fb-4b6e-4c18-815a-0d384ab7bc7a" class="bulleted-list"><li style="list-style-type:circle">Check if a String Matches a Pattern (10 minutes read)</li></ul><ul id="c3b8922b-d20b-4ff2-9c44-486db7c10427" class="bulleted-list"><li style="list-style-type:circle">Implement a function to find all occurrences of the pattern in the text (10 minutes read)</li></ul><ul id="5ab00b72-1e6e-4e0e-99f3-394d8ca32853" class="bulleted-list"><li style="list-style-type:circle">Count the number of occurrences of the pattern in the text (10 minutes read)</li></ul><ul id="cf61a79e-32f0-4b35-9b36-705a6da8301c" class="bulleted-list"><li style="list-style-type:circle">Replace all occurrences of the pattern in the text with a given replacement string (10 minutes read)</li></ul><p id="80e0c956-8004-4082-9e5f-d621ae23694c" class="">
+</p></li></ul></details></li></ul><p id="a49fdd11-0463-493c-8ff2-37122d19ed84" class="">
+</p><h1 id="4636c04e-8975-48d7-924a-68ad6b70d6f7" class=""><mark class="highlight-brown">Learning Objective</mark></h1><h2 id="ab26297f-b42e-49b5-81c7-c8bc3424d2ca" class=""><mark class="highlight-red"><strong>Introduction</strong></mark></h2><p id="6ead19e3-26ed-4f21-a9ed-2398baba593c" class="">Time and Space Complexity Analysis of codes is like a puzzle game for algorithms. By understanding time and space complexity analysis, we can create faster and more efficient algorithms, saving precious time and resources.</p><p id="2b0e2e73-c497-4deb-9119-7bfc3cfc4450" class=""><strong>Duration</strong>: 2 hours </p><p id="6f940d81-a391-4154-9c1e-ee3282c29372" class=""><strong>Focus</strong>: Traditional and Optimized Solutions along with the Time and Space complexity for the given code</p><p id="8a15e015-7b71-4c97-bddc-23a16d8def97" class=""><strong>Prerequisites</strong>: JavaScript with Basic DSA</p><h2 id="3f477136-61cb-45e9-9451-382a260f8f93" class=""><mark class="highlight-red">Theme </mark></h2><p id="9c44c3a7-6534-4a97-bd44-bc455877a724" class="">In the realm of software development, finding efficient solutions is crucial for addressing real-world problems effectively. Traditional solutions refer to initial implementations that may work correctly but may not be optimal in terms of time and space efficiency. On the other hand, optimized solutions are refined versions that have undergone improvements to enhance performance and resource utilization. These optimizations often involve algorithmic techniques, data structure choices, or code refinements. By optimizing the code, the time and space complexity can be reduced, resulting in faster execution and better memory management. These optimizations are particularly valuable in real-world scenarios where large-scale data processing, system performance, and user experience are paramount considerations.</p><h2 id="4027a0fc-fb09-4acc-a24a-fc6e2808cada" class="block-color-default"><mark class="highlight-red">Primary Goals</mark> </h2><ul id="a74e4052-7f5a-4f24-9427-951da554eaa0" class="bulleted-list"><li style="list-style-type:disc">Understand the basics of time and space complexity analysis and how it applies to pattern algorithms.</li></ul><ul id="523dfa02-f5df-4173-991d-68d5a77c73b8" class="bulleted-list"><li style="list-style-type:disc">Learn how to analyze the time and space complexity.</li></ul><ul id="46622b4a-0ae0-4e5b-9f75-bf44fbb19c33" class="bulleted-list"><li style="list-style-type:disc">Understand how the choice of algorithm and data structure can impact the performance of a program.</li></ul><p id="4f959e45-e7b7-477d-b769-14f22328fcba" class="">
+</p><h1 id="9d7dd025-6453-4011-a5cc-0be4c1e27e6d" class=""><mark class="highlight-brown"><strong>Advanced Coding &amp; Analysis</strong></mark></h1><p id="6f32d857-ffc4-43de-8f06-ea24a9131d3b" class="">The optimized solution typically reduces unnecessary operations, resulting in improved time and space efficiency. By understanding the optimized approach, you can develop more efficient algorithms and solutions for pattern matching tasks, leading to faster execution and better resource utilization.</p><p id="02ce2c7e-9e25-445c-95ea-d5d54508682a" class="">Analyzing and comprehending optimized solutions helps improve your problem-solving skills. You gain insights into algorithmic optimizations, such as loop optimizations, early termination, or skipping unnecessary comparisons.</p><p id="a7f4dca1-62ec-4a49-8c3d-76f41663743a" class="">
+</p><ol type="1" id="30b0da58-a9d5-4047-8355-2e9f79eed7f4" class="numbered-list" start="1"><li><strong>Find the maximum element in an array.</strong><ul id="29e30f38-619c-4ad8-9bda-6eee2eca377e" class="toggle"><li><details close=""><summary><strong>Traditional Solution</strong></summary><p id="c744176d-c114-4e71-b700-f2fff63ac0d2" class="">Time Complexity: O(n)</p><p id="ba5dafd6-4815-45a5-b7f3-37efdf1ed6f9" class="">Space Complexity: O(1)</p><pre id="a4b36b48-cdb7-43fd-a731-5e221d3e0fec" class="code"><code>// Traditional Solution
+function findMaxElement(arr) {
+  let max = arr[0];
+  for (let i = 1; i &lt; arr.length; i++) {
+    if (arr[i] &gt; max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+
+console.log(findMaxElement([3, 6, 8, 4, 5]));</code></pre></details></li></ul><ul id="beecf68e-02b3-463f-9532-ee6c48780c34" class="toggle"><li><details close=""><summary><strong>Optimized Solution</strong></summary><p id="12cf5fa0-aaa1-4af6-9b6e-831b1d36f6fd" class="">Time Complexity: O(n)</p><p id="18a2c315-ae10-4682-a9ff-5c73c9545a1e" class="">Space Complexity: O(1)</p><p id="bb857a06-d7fc-4d59-8a83-09e4dc89d59c" class="">In the optimized solution, an additional check is added at the beginning to handle the case of an empty array. If the array is empty, it returns “Empty Array” (or you can handle it according to your specific requirements).</p><p id="76d6e475-4d21-4994-bc80-c8947cb49a30" class="">This optimization ensures that the function handles the edge case of an empty array gracefully, preventing any unintended behavior or errors.</p><pre id="0291e0d8-9bec-4b15-b178-0296673bd7dd" class="code"><code>function findMaxElement(arr) {
+  if (arr.length === 0) {
+    return &quot;Empty Array&quot;;
+  }
+  let max = arr[0];
+  for (let i = 1; i &lt; arr.length; i++) {
+    if (arr[i] &gt; max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+
+console.log(findMaxElement([3, 6, 8, 4, 5]));</code></pre></details></li></ul><p id="27330ed6-1ef4-4000-baaa-40a588532fce" class="">
+</p></li></ol><ol type="1" id="daa77ef8-3c5a-4930-98f2-9687564f436b" class="numbered-list" start="2"><li><strong>Reverse an array in-place.</strong><ul id="802dd12a-15e6-47c0-b4f1-9ca0331af150" class="toggle"><li><details close=""><summary><strong>Traditional Solution</strong></summary><p id="de91c450-116f-4fa5-ae5d-bbf3f73407dd" class="">Time Complexity: O(n)</p><p id="8205ba8b-286c-4019-9715-9e5ee3198518" class="">Space Complexity: O(1)</p><pre id="73a0b3ca-232c-4440-8e39-83fbff961ee1" class="code"><code>function reverseArray(arr) {
+  let start = 0;
+  let end = arr.length - 1;
+  while (start &lt; end) {
+    const temp = arr[start];
+    arr[start] = arr[end];
+    arr[end] = temp;
+    start++;
+    end--;
+  }
+  return arr;
+}
+
+console.log(reverseArray([3, 6, 8, 4, 9, 5]));</code></pre></details></li></ul><ul id="fcf1caa2-ce5f-44ef-95e7-3b7ddd513f15" class="toggle"><li><details close=""><summary><strong>Optimized Solution</strong></summary><p id="cab5f586-07d1-4e79-8f4e-1c4e3e9abbdb" class="">Time Complexity: O(n)</p><p id="2697adca-647d-4653-b029-789472c23e88" class="">Space Complexity: O(1)</p><p id="f5e80ac7-be4c-4c47-9323-c246b9c5233d" class="">In the optimized solution, instead of using a temporary variable to swap elements, the code takes advantage of the destructuring assignment syntax in JavaScript. By swapping elements directly using destructuring assignment, the code becomes more concise and easier to read.</p><p id="8d2cb79d-1aca-46ef-8de5-9c02e6a967c4" class="">This optimization does not affect the time or space complexity of the algorithm, but it improves the efficiency by reducing the number of lines of code and eliminating the need for a temporary variable.</p><pre id="0f185516-cf50-46ad-a0a5-43c2fdcab5f3" class="code"><code>function reverseArray(arr) {
+  let start = 0;
+  let end = arr.length - 1;
+  while (start &lt; end) {
+    [arr[start], arr[end]] = [arr[end], arr[start]]; // Swap elements using destructuring assignment
+    start++;
+    end--;
+  }
+  return arr;
+}
+
+console.log(reverseArray([3, 6, 8, 4, 9, 5]));</code></pre></details></li></ul><p id="c73e284d-9b16-472e-be87-8cc06021a13e" class="">
+</p></li></ol><ol type="1" id="402f049b-34f3-4bd4-9d92-280e2990a5ab" class="numbered-list" start="3"><li><strong>Find the second smallest element in an array</strong><ul id="12701f96-7d8c-4d5f-867c-d2cac64ccd34" class="toggle"><li><details close=""><summary><strong>Traditional Solution</strong></summary><p id="6489f7d2-90e5-46c3-b2f7-06b49c98a987" class="">Time Complexity: O(n log n)</p><p id="ec3bcacb-1df9-43f4-b4f7-7c00e189bb2d" class="">Space Complexity: O(n)</p><pre id="a22cb3e6-42cd-4af7-874c-50e66ada37b5" class="code"><code>function findSecondSmallest(arr) {
+  const sortedArr = arr.sort((a, b) =&gt; a - b); // Sort the array in ascending order
+  const uniqueArr = [...new Set(sortedArr)]; // Remove duplicates by creating a new array
+  if (uniqueArr.length &lt; 2) {
+    return undefined; // Handle the case when there are less than two unique elements in the array
+  }
+  return uniqueArr[1]; // Return the second element in the sorted, unique array
+}
+
+console.log(findSecondSmallest([3, 6, 8, 4, 9, 5]));</code></pre></details></li></ul><ul id="72992910-0a3f-47ec-ab13-8bcd0e1f532c" class="toggle"><li><details close=""><summary><strong>Optimized Solution</strong></summary><p id="5a1d61fe-7983-4ff2-9a8a-bd1e9c374577" class="">Time Complexity: O(n)</p><p id="589cd248-409b-406f-b230-e509eafb4432" class="">Space Complexity: O(1)</p><p id="71b3c077-ccfb-439e-9923-3b480592c9b7" class="">The optimized solution is more concise and easier to understand. It directly iterates over the array, keeping track of the smallest and second smallest elements in a straightforward manner.</p><pre id="bbf2fc32-a4cd-4283-bf0c-c2fbd41e052f" class="code"><code>function findSecondSmallest(arr) {
+  let smallest = Infinity;
+  let secondSmallest = Infinity;
+
+  for (let i = 0; i &lt; arr.length; i++) {
+    if (arr[i] &lt; smallest) {
+      secondSmallest = smallest;
+      smallest = arr[i];
+    } else if (arr[i] &lt; secondSmallest &amp;&amp; arr[i] !== smallest) {
+      secondSmallest = arr[i];
+    }
+  }
+
+  if (secondSmallest === Infinity) {
+    return undefined; // Handle the case when there is no second smallest element
+  }
+
+  return secondSmallest;
+}
+
+console.log(findSecondSmallest([3, 6, 8, 4, 9, 5]));</code></pre></details></li></ul><p id="b28071c6-b701-4a78-91e9-17d7099e94d0" class="">
+</p></li></ol><ol type="1" id="5773d905-a838-4cc4-b4c7-be18881ffbd7" class="numbered-list" start="4"><li><strong>Merge two sorted arrays into a single sorted array</strong><ul id="4c5ec46f-b722-47d3-872b-f8045017a102" class="toggle"><li><details close=""><summary><strong>Traditional Solution</strong></summary><p id="49626782-eb57-4865-ad05-b2c7147813a8" class="">Time Complexity: O(n * m)</p><p id="27351e1f-5a1a-4d2b-ae97-0bfc31b92445" class="">Space Complexity: O(k)</p><pre id="0770c1e0-772a-4748-89cb-9de231467e58" class="code"><code>function findIntersection(arr1, arr2) {
+  const intersection = [];
+  for (let i = 0; i &lt; arr1.length; i++) {
+    for (let j = 0; j &lt; arr2.length; j++) {
+      if (arr1[i] === arr2[j] &amp;&amp; !intersection.includes(arr1[i])) {
+        intersection.push(arr1[i]);
+      }
+    }
+  }
+  return intersection;
+}
+
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [4, 5, 6, 7, 8];
+console.log(findIntersection(arr1, arr2));</code></pre></details></li></ul><ul id="889608ef-fc70-4d51-8510-c5d063ae4c13" class="toggle"><li><details close=""><summary><strong>Optimized Solution</strong></summary><p id="b0e46e4a-dcbf-4414-ba21-a6288be38ce1" class="">Time Complexity: O(n + m)</p><p id="b119f9e4-7fcb-4328-b195-499baac078fa" class="">Space Complexity: O(min(n, m))</p><p id="4096f84d-dac2-4b8c-a09d-f32fe7fdb8e6" class="">The optimized solution using a hash set provides a more efficient approach to finding the intersection of two arrays. It reduces the time complexity to O(n + m) and the space complexity to O(min(n, m)), resulting in improved performance compared to the unoptimized solution.</p><pre id="c9b2ed27-d378-4002-9a54-cbee08c873a6" class="code"><code>function findIntersection(arr1, arr2) {
+  const set1 = new Set(arr1); // Create a set from arr1
+
+  const intersection = [];
+
+  for (let i = 0; i &lt; arr2.length; i++) {
+    if (set1.has(arr2[i])) {
+      intersection.push(arr2[i]);
+      set1.delete(arr2[i]); // Remove the element from set1 to handle duplicates
+    }
+  }
+
+  return intersection;
+}
+
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [4, 5, 6, 7, 8];
+console.log(findIntersection(arr1, arr2));</code></pre></details></li></ul><p id="33055a5f-26fa-488b-a335-202da38ffd16" class="">
+</p></li></ol><ol type="1" id="73fc29ac-44da-4f74-b3c4-32a568df586e" class="numbered-list" start="5"><li><strong>Find the longest substring without repeating characters.</strong><ul id="4fcb97e5-60ee-44c7-a068-9905d27b348b" class="toggle"><li><details close=""><summary><strong>Traditional Solution</strong></summary><p id="3537bc72-ab49-4a9f-9a8e-199fe75c74da" class="">Time Complexity: O(n^2)</p><p id="43ce5a68-1f9d-4bb7-b5b3-3e4f18980591" class="">Space Complexity: O(n)</p><pre id="8261a5bd-9802-4c45-800f-66956a7e2feb" class="code"><code>function longestSubstringWithoutRepeatingChars(str) {
+  let longest = &#x27;&#x27;;
+  for (let i = 0; i &lt; str.length; i++) {
+    let substring = &#x27;&#x27;;
+    for (let j = i; j &lt; str.length; j++) {
+      if (substring.includes(str[j])) {
+        break;
+      }
+      substring += str[j];
+    }
+    if (substring.length &gt; longest.length) {
+      longest = substring;
+    }
+  }
+  return longest;
+}
+
+console.log(longestSubstringWithoutRepeatingChars(&quot;abcdbcbb&quot;));</code></pre></details></li></ul><ul id="107b7777-3633-49db-a3a8-dd8a1024d40a" class="toggle"><li><details close=""><summary><strong>Optimized Solution</strong></summary><p id="b0e74351-415a-463a-9e54-f198b73bbda9" class="">Time Complexity: O(n)</p><p id="5985bf83-de4c-45cf-be14-fd7096a9f429" class="">Space Complexity: O(min(n, m)) - where n is the length of the string and m is the number of unique characters in the string.</p><p id="5a9bcdb8-0fb5-47ec-833b-6baf80deccda" class="">The optimized solution uses a sliding window approach and a character map to efficiently find the longest substring without repeating characters. It keeps track of the starting index of the substring and uses the character map to check if a character has been encountered before. By updating the start index when a repeat is found, it avoids unnecessary iterations and achieves a linear time complexity.</p><pre id="2bac217a-3d5b-4389-a633-0da4ea5b2b09" class="code"><code>function longestSubstringWithoutRepeatingChars(str) {
+  let longest = &#x27;&#x27;;
+  let start = 0;
+  let charMap = new Map();
+  for (let end = 0; end &lt; str.length; end++) {
+    if (charMap.has(str[end])) {
+      start = Math.max(start, charMap.get(str[end]) + 1);
+    }
+    charMap.set(str[end], end);
+    let substring = str.slice(start, end + 1);
+    if (substring.length &gt; longest.length) {
+      longest = substring;
+    }
+  }
+  return longest;
+}
+
+console.log(longestSubstringWithoutRepeatingChars(&quot;abcdbcbb&quot;));</code></pre></details></li></ul><p id="1e8825cd-9f49-4cb6-b17f-de3ec1be97e2" class="">
+</p></li></ol><ol type="1" id="35e64349-2b75-41df-b706-89860f73b774" class="numbered-list" start="6"><li><strong>Find the first non-repeating character in it.</strong><ul id="49bb2fde-7c36-4c94-8e9f-2a3e60895dbb" class="toggle"><li><details close=""><summary><strong>Traditional Solution</strong></summary><p id="b746ac6b-d2b4-4eef-a2a5-b0a129514c75" class="">Time Complexity: O(n^2)</p><p id="9dcaa7fe-0e80-49ee-851f-b5888f07996c" class="">Space Complexity: O(1)</p><pre id="9cbe931d-4421-44c0-8a07-93e7b1836099" class="code"><code>function firstNonRepeatingChar(str) {
+  for (let i = 0; i &lt; str.length; i++) {
+    let isRepeated = false;
+    for (let j = 0; j &lt; str.length; j++) {
+      if (i !== j &amp;&amp; str[i] === str[j]) {
+        isRepeated = true;
+        break;
+      }
+    }
+    if (!isRepeated) {
+      return str[i];
+    }
+  }
+  return null;
+}
+
+console.log(firstNonRepeatingChar(&quot;lovealmario&quot;));</code></pre></details></li></ul><ul id="41765335-fca8-4b12-b40d-180bd84022b0" class="toggle"><li><details close=""><summary><strong>Optimized Solution</strong></summary><p id="652e17e2-80e1-4a59-92a0-c03716686209" class="">Time Complexity: O(n)</p><p id="a72efce9-0f27-4c77-a675-9bb2ecbe50f2" class="">Space Complexity: O(n)</p><p id="bd5f6bdf-714b-4918-b75c-48231aba6249" class="">The optimized solution uses a character count map to efficiently track the count of each character in the string. It iterates through the string once to build the character count map, and then iterates again to find the first non-repeating character. By using a map, it avoids the need for nested loops and achieves a linear time complexity.</p><pre id="1d2c7b8e-bbc2-4807-8cb9-dd049031d218" class="code"><code>function firstNonRepeatingChar(str) {
+  const charCount = new Map();
+  for (let char of str) {
+    charCount.set(char, (charCount.get(char) || 0) + 1);
+  }
+  for (let char of str) {
+    if (charCount.get(char) === 1) {
+      return char;
+    }
+  }
+  return null;
+}
+
+console.log(firstNonRepeatingChar(&quot;lovealmario&quot;));</code></pre></details></li></ul></li></ol><p id="0cf6d5fd-6e16-44b0-aec9-5ddee4266c99" class="">
+</p><ol type="1" id="fe3c8be1-fc79-4a0d-99b4-9d46f60f3327" class="numbered-list" start="7"><li><strong>Find the length of the longest palindromic substring.</strong><ul id="2e9e2ed7-6f58-41d2-b3d4-b8204070c828" class="toggle"><li><details close=""><summary><strong>Traditional Solution</strong></summary><p id="2d31fabe-1197-4397-a5e5-4df3fe57ffbe" class="">Time Complexity: O(n^3)</p><p id="c4aef1c8-51a1-4a3c-b701-51f37e854c8d" class="">Space Complexity: O(n)</p><pre id="4ffb56c8-a420-4530-85b0-2ed050bf1069" class="code"><code>function longestPalindromicSubstring(str) {
+  let longest = &#x27;&#x27;;
+  for (let i = 0; i &lt; str.length; i++) {
+    for (let j = i; j &lt; str.length; j++) {
+      let substring = str.substring(i, j + 1);
+      if (isPalindrome(substring) &amp;&amp; substring.length &gt; longest.length) {
+        longest = substring;
+      }
+    }
+  }
+  return longest;
+}
+
+function isPalindrome(str) {
+  return str === str.split(&#x27;&#x27;).reverse().join(&#x27;&#x27;);
+}
+
+
+console.log(longestPalindromicSubstring(&quot;babad&quot;));</code></pre></details></li></ul><ul id="a022cb56-7d49-4c73-9f27-a24f479f9f49" class="toggle"><li><details close=""><summary><strong>Optimized Solution</strong></summary><p id="79682f5b-94fd-4c24-84d6-c5483978a529" class="">Time Complexity: O(n^2)</p><p id="35dbea32-186f-4f93-a735-c8d845765adc" class="">Space Complexity: O(1)</p><p id="fe937c8e-44a0-4dad-b884-93f8e85c9507" class="">The optimized solution uses the concept of expanding around a center to find palindromic substrings. It iterates over each character in the string and expands around it, considering both odd and even-length palindromes. By avoiding unnecessary string operations and using a constant amount of space, it achieves a quadratic time complexity.</p><pre id="082b8ad8-d7b2-4641-9aa9-5319c4118ef3" class="code"><code>function longestPalindromicSubstring(str) {
+  let longest = &#x27;&#x27;;
+  for (let i = 0; i &lt; str.length; i++) {
+    let oddPalindrome = expandAroundCenter(str, i, i);
+    let evenPalindrome = expandAroundCenter(str, i, i + 1);
+    let currLongest = oddPalindrome.length &gt; evenPalindrome.length ? oddPalindrome : evenPalindrome;
+    if (currLongest.length &gt; longest.length) {
+      longest = currLongest;
+    }
+  }
+  return longest;
+}
+
+function expandAroundCenter(str, left, right) {
+  while (left &gt;= 0 &amp;&amp; right &lt; str.length &amp;&amp; str[left] === str[right]) {
+    left--;
+    right++;
+  }
+  return str.substring(left + 1, right);
+}
+
+console.log(longestPalindromicSubstring(&quot;babad&quot;));</code></pre><p id="733a0e31-1f33-4bc4-a1a9-9790a8062d23" class="">
+</p></details></li></ul><p id="bf13ff90-6020-4c93-8510-6ffc55a267fb" class="">
+</p></li></ol><ol type="1" id="92126286-4327-4dda-88a5-a294b206b84a" class="numbered-list" start="8"><li><strong>Determine if 2nd string is an anagram of 1st string.</strong><ul id="fd9908d1-04eb-456a-b23d-df85778f0e65" class="toggle"><li><details close=""><summary><strong>Traditional Solution</strong></summary><p id="4323360d-7082-4d2d-9b10-9c5aed88ddd1" class="">Time Complexity: O(n log n)</p><p id="f56bb980-e691-478f-a7fd-841a70e0169b" class="">Space Complexity: O(n)</p><pre id="e5596ccc-8585-4f69-9b23-e34a6d399902" class="code"><code>function isAnagram(s, t) {
+  if (s.length !== t.length) {
+    return false;
+  }
+  const sortedS = s.split(&quot;&quot;).sort().join(&quot;&quot;);
+  const sortedT = t.split(&quot;&quot;).sort().join(&quot;&quot;);
+  return sortedS === sortedT;
+}
+
+console.log(isAnagram(&quot;triangle&quot;, &quot;integral&quot;));</code></pre></details></li></ul><ul id="0d8d3089-04ba-4b8c-ad63-61ee5624f019" class="toggle"><li><details close=""><summary><strong>Optimized Solution</strong></summary><p id="a95435c1-83ce-4571-92df-39fb709cdc68" class="">Time Complexity: O(n)</p><p id="90c3acec-c7dc-458f-b5b1-3528c4dfb698" class="">Space Complexity: O(n)</p><p id="514bea23-a484-4873-be46-5d9e907d3ad8" class="">In the optimized solution, we use a character count object to store the count of each character in string <code><strong>s</strong></code>. We iterate over <code><strong>s</strong></code> and increment the count for each character. Then, we iterate over <code><strong>t</strong></code> and check if each character exists in the character count object. If a character is missing or its count becomes zero, we return <code><strong>false</strong></code>. If we successfully iterate through all characters in <code><strong>t</strong></code>, we return <code><strong>true</strong></code>. This solution improves time complexity by avoiding sorting and has linear space complexity.</p><pre id="a19f7a48-8626-4fa2-a9b6-99ed8b55b68c" class="code"><code>function isAnagram(s, t) {
+  if (s.length !== t.length) {
+    return false;
+  }
+  const charCount = {};
+  for (let char of s) {
+    charCount[char] = charCount[char] ? charCount[char] + 1 : 1;
+  }
+  for (let char of t) {
+    if (!charCount[char]) {
+      return false;
+    }
+    charCount[char]--;
+  }
+  return true;
+}
+
+console.log(isAnagram(&quot;triangle&quot;, &quot;integral&quot;));</code></pre></details></li></ul><p id="9a5e9673-7274-4f41-9bab-5c286ebc5489" class="">
+</p></li></ol><ol type="1" id="d805bae3-3ea1-4677-a727-6108adbb9720" class="numbered-list" start="9"><li><strong>Check if a String Matches a Pattern</strong><ul id="838f4a31-00bd-4d34-8f4d-d2133f5754a8" class="toggle"><li><details close=""><summary><strong>Traditional Solution</strong></summary><p id="1b4d8a83-1f45-44b5-a200-fcbff888579e" class="">Time Complexity: O(n^2)</p><p id="7a7c7331-c453-4069-8cf5-678ca9352e04" class="">Space Complexity: O(n)</p><pre id="aa438397-f8b0-40d0-bf53-8c61f6f7b97e" class="code"><code>function patternMatching(pattern, str) {
+  const patternLength = pattern.length;
+  const strLength = str.length;
+  if (patternLength === 0 &amp;&amp; strLength === 0) {
+    return true;
+  }
+  if (patternLength === 0 || strLength === 0) {
+    return false;
+  }
+  const patternArr = pattern.split(&quot;&quot;);
+  const strArr = str.split(&quot; &quot;);
+  if (patternArr.length !== strArr.length) {
+    return false;
+  }
+  const patternMap = new Map();
+  const strSet = new Set();
+  for (let i = 0; i &lt; patternLength; i++) {
+    const char = patternArr[i];
+    const word = strArr[i];
+    if (!patternMap.has(char) &amp;&amp; !strSet.has(word)) {
+      patternMap.set(char, word);
+      strSet.add(word);
+    } else {
+      if (patternMap.get(char) !== word) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+console.log(patternMatching(&quot;abba&quot;, &quot;dog cat cat dog&quot;));</code></pre></details></li></ul><ul id="09715d2d-ec13-4da0-b29b-f467f1a11826" class="toggle"><li><details close=""><summary><strong>Optimized Solution</strong></summary><p id="06544d02-f283-4332-af2b-406cbca67cc7" class="">Time Complexity: O(n)</p><p id="cd52b015-d465-4cee-a977-8b8af2bc07b5" class="">Space Complexity: O(n)</p><p id="4bfe024e-e03d-4e83-b08b-3efff0bd105b" class="">In the optimized solution, we eliminate the step of splitting the pattern string into an array by directly accessing characters using indexing. We also remove the unnecessary length checks for pattern and string. This reduces the time complexity from O(n^2) to O(n) as we only iterate through the pattern and string once.</p><pre id="15fec624-22a4-4731-8f80-a84309a15877" class="code"><code>function patternMatching(pattern, str) {
+  const patternLength = pattern.length;
+  const strArr = str.split(&quot; &quot;);
+  if (patternLength !== strArr.length) {
+    return false;
+  }
+  const patternMap = new Map();
+  const strSet = new Set();
+  for (let i = 0; i &lt; patternLength; i++) {
+    const char = pattern[i];
+    const word = strArr[i];
+    if (!patternMap.has(char) &amp;&amp; !strSet.has(word)) {
+      patternMap.set(char, word);
+      strSet.add(word);
+    } else {
+      if (patternMap.get(char) !== word) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+console.log(patternMatching(&quot;abba&quot;, &quot;dog cat cat dog&quot;));</code></pre></details></li></ul><p id="e8743da7-3f86-4f81-b015-a7723ee16de5" class="">
+</p></li></ol><ol type="1" id="7c26b715-da69-4c81-af64-d58f57ccc6d6" class="numbered-list" start="10"><li><strong>Implement a function to find all occurrences of the pattern in the text.</strong><ul id="6d64232a-d1bb-4ab5-b67a-84f59b18974b" class="toggle"><li><details close=""><summary><strong>Traditional Solution</strong></summary><p id="ccdecb44-9143-46a7-98f7-40c147a76c45" class="">Time Complexity: O((n - m + 1) * m)</p><p id="99bde448-1e64-4ea7-8d70-e75c33540bdd" class="">Space Complexity: O(k), where k is the number of occurrences</p><pre id="c7590146-e7ff-4c29-8cde-731a7ecac016" class="code"><code>function patternMatching(text, pattern) {
+  const n = text.length;
+  const m = pattern.length;
+  const occurrences = [];
+  for (let i = 0; i &lt;= n - m; i++) {
+    let j = 0;
+    while (j &lt; m) {
+      if (text[i + j] !== pattern[j]) {
+        break;
+      }
+      j++;
+    }
+    if (j === m) {
+      occurrences.push(i);
+    }
+  }
+  return occurrences;
+}
+
+console.log(patternMatching(&quot;abababab&quot;, &quot;aba&quot;));</code></pre></details></li></ul><ul id="79eb28f4-a41d-485c-a592-89672d13b0fd" class="toggle"><li><details close=""><summary><strong>Optimized Solution</strong></summary><p id="4ad8d380-7bf3-494e-aedf-898f4d06a6ed" class="">Time Complexity: O(n + m)</p><p id="33f7b4c0-1f72-4048-96a9-d43ed85e27fe" class="">Space Complexity: O(k), where k is the number of occurrences</p><p id="db1de98d-0d8f-486d-8f80-a8b6d89f0454" class="">The optimized solution reduces the number of iterations by skipping ahead when a match is found. After finding a complete match, the outer loop increments <code>i</code> by <code>m - 1</code> to jump to the next potential occurrence. This eliminates unnecessary comparisons and improves the overall efficiency of the algorithm.</p><pre id="0088c31e-c3ec-47cc-b679-e2285f19b49a" class="code"><code>function patternMatching(text, pattern) {
+  const n = text.length;
+  const m = pattern.length;
+  const occurrences = [];
+  let i = 0;
+  while (i &lt;= n - m) {
+    let j = 0;
+    while (j &lt; m &amp;&amp; text[i + j] === pattern[j]) {
+      j++;
+    }
+    if (j === m) {
+      occurrences.push(i);
+      i += m - 1;
+    } else {
+      i++;
+    }
+  }
+  return occurrences;
+}
+
+console.log(patternMatching(&quot;abababab&quot;, &quot;aba&quot;));</code></pre></details></li></ul><p id="dc664a80-7959-464a-ac69-cb2804a3fc93" class="">
+</p></li></ol><ol type="1" id="31d1a940-3c00-4519-b9e0-a01eb9e1ea89" class="numbered-list" start="11"><li><strong>Count the number of occurrences of the pattern in the text.</strong><ul id="e9b73dfa-f69c-4e14-ae23-3f872b6abd65" class="toggle"><li><details close=""><summary><strong>Traditional Solution</strong></summary><p id="34d6ee39-816f-4a60-b01e-ca036cd1d239" class="">Time Complexity: O((n - m + 1) * m)</p><p id="4b789e95-ecb5-4f61-8d2d-4f08d3138a3a" class="">Space Complexity: O(1)</p><pre id="2fd269ad-16c4-44f6-bb7e-5e93c9ad3095" class="code"><code>function countOccurrences(text, pattern) {
+  const n = text.length;
+  const m = pattern.length;
+  let count = 0;
+  for (let i = 0; i &lt;= n - m; i++) {
+    let j = 0;
+    while (j &lt; m) {
+      if (text[i + j] !== pattern[j]) {
+        break;
+      }
+      j++;
+    }
+    if (j === m) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(countOccurrences(&quot;Hello, Hello, world!&quot;, &quot;Hello&quot;));</code></pre></details></li></ul><ul id="417ce90b-e002-447e-85e8-7af96e3a0e06" class="toggle"><li><details close=""><summary><strong>Optimized Solution</strong></summary><p id="b657178d-a08c-4210-a494-3c62153f8883" class="">Time Complexity: O(n + m)</p><p id="1eb4cd5a-591b-449c-bd84-9b446dd39267" class="">Space Complexity: O(1)</p><p id="56766766-fee8-43f9-90e8-2e18134743e0" class="">The optimized solution follows a similar approach as in the previous optimized solutions. It counts the occurrences by incrementing the <code>count</code> variable whenever a complete match is found. It also skips ahead by incrementing <code>i</code> by <code>m - 1</code> after each match to avoid unnecessary comparisons.</p><pre id="3fc30db7-297c-4e0d-94f6-0c139d3caa91" class="code"><code>function countOccurrences(text, pattern) {
+  const n = text.length;
+  const m = pattern.length;
+  let count = 0;
+  let i = 0;
+  while (i &lt;= n - m) {
+    let j = 0;
+    while (j &lt; m &amp;&amp; text[i + j] === pattern[j]) {
+      j++;
+    }
+    if (j === m) {
+      count++;
+      i += m - 1;
+    } else {
+      i++;
+    }
+  }
+  return count;
+}
+
+console.log(countOccurrences(&quot;Hello, Hello, world!&quot;, &quot;Hello&quot;));</code></pre></details></li></ul><p id="89bfa2d9-01f8-4ef2-ab9d-3cef0a1f17a6" class="">
+</p></li></ol><ol type="1" id="4549e7aa-d4a6-4e30-b343-bdbd6d237b95" class="numbered-list" start="12"><li><strong>Replace all occurrences of the pattern in the text with a given replacement string.</strong><ul id="e8aa1ce1-4b7d-4ad5-86be-b957af2bb648" class="toggle"><li><details close=""><summary><strong>Traditional Solution</strong></summary><p id="b79883da-06df-4992-9be3-a0c83103665b" class="">Time Complexity: O(n + m)</p><p id="3f925c86-81b6-489e-a939-89a549107c2b" class="">Space Complexity: O(n + k * r), where n is the length of the text, k is the number of occurrences, and r is the length of the replacement string</p><pre id="0cc5274f-93ac-4f76-abf3-5da7bfb56084" class="code"><code>function patternReplace(text, pattern, replacement) {
+  let result = &#x27;&#x27;;
+  const n = text.length;
+  const m = pattern.length;
+  let i = 0;
+  while (i &lt;= n - m) {
+    let j = 0;
+    while (j &lt; m &amp;&amp; text[i + j] === pattern[j]) {
+      j++;
+    }
+    if (j === m) {
+      result += replacement;
+      i += m;
+    } else {
+      result += text[i];
+      i++;
+    }
+  }
+  return result + text.slice(i);
+}
+
+console.log(patternReplace(&quot;abababab&quot;, &quot;aba&quot;, &quot;xyz&quot;));</code></pre></details></li></ul><ul id="dbe77542-afc7-43b7-a869-f3d26f7fb928" class="toggle"><li><details close=""><summary><strong>Optimized Solution</strong></summary><p id="916a2f54-2467-459f-a537-74ae0d5ff5d2" class="">Time Complexity: O(n)</p><p id="684f113f-8236-42ff-b867-9346da2b9c68" class="">Space Complexity: O(n)</p><p id="6413392d-cb5a-474b-9b3d-53e0926253c3" class="">The optimized solution performs the pattern replacement by using regular expression.</p><pre id="610aee65-479d-4142-84a3-9adb4d021962" class="code"><code>function patternReplace(text, pattern, replacement) {
+  return text.replace(new RegExp(pattern, &#x27;g&#x27;), replacement);
+}
+
+console.log(patternReplace(&quot;abababab&quot;, &quot;aba&quot;, &quot;xyz&quot;));</code></pre></details></li></ul></li></ol><p id="dfa2125d-6b7d-4eb3-b556-c8d0ed4910c6" class="">
+</p></div></article></body></html>
