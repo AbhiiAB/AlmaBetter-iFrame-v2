@@ -1,0 +1,228 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>JavaScript Decision Statements</title><link rel="stylesheet" href="../../../../../styles.css"></head><body><article id="5613cd41-1dd4-4d84-b82b-171f205e1dee" class="page sans"><header><h1 class="page-title">JavaScript Decision Statements</h1><p class="page-description"></p></header><div class="page-body"><ul id="df7beba3-312a-4345-be7a-319ee18af0dd" class="toggle"><li><details close=""><summary><strong>Session Flow (5 minutes read)</strong></summary><ul id="86a1dfe6-a28e-404a-ada5-4badcacf100b" class="bulleted-list"><li style="list-style-type:disc"><strong>Learning Objective (5 minutes read)</strong><ul id="fb335f0e-428b-4529-8031-edbbe30a297d" class="bulleted-list"><li style="list-style-type:circle">Introduction</li></ul><ul id="48b0d479-5b74-4e5c-8bfa-1c402a2b8188" class="bulleted-list"><li style="list-style-type:circle">Theme</li></ul><ul id="22bf59e0-85ab-4a1a-ba5d-242b98a99986" class="bulleted-list"><li style="list-style-type:circle">Primary Goals</li></ul></li></ul><ul id="bdfd9d67-4ca1-4750-871f-f1fad6df7b35" class="bulleted-list"><li style="list-style-type:disc"><strong>JavaScript Decision Statements (120 minutes read)</strong><ul id="f0f034d5-bd59-45b8-af0c-f5f31f2519e3" class="bulleted-list"><li style="list-style-type:circle">If statement</li></ul><ul id="6863da96-28c0-413b-887d-0cb021bf8166" class="bulleted-list"><li style="list-style-type:circle">If…else statement</li></ul><ul id="356c9968-1f50-4946-8b56-2918cc745caf" class="bulleted-list"><li style="list-style-type:circle"><strong>Do it Yourself</strong></li></ul><ul id="14539308-a511-4fcb-b7c1-7c9b3ecfefac" class="bulleted-list"><li style="list-style-type:circle">Nested if…else statement<ul id="79f63a06-5d5a-41c0-9e95-c2232bfbccee" class="bulleted-list"><li style="list-style-type:square">Body of if...else With Only One Statement</li></ul></li></ul><ul id="3d5fc721-0274-4872-8086-3314d9b081c0" class="bulleted-list"><li style="list-style-type:circle"><strong>Activity 1</strong></li></ul><ul id="30bb4f76-d7db-4c36-8c38-70230d2afbc7" class="bulleted-list"><li style="list-style-type:circle">Switch statement<ul id="d7a453db-83e3-492f-8114-cd6b93a9936f" class="bulleted-list"><li style="list-style-type:square">Example Use cases of Switch Statement</li></ul></li></ul><ul id="8fcf185e-4565-4408-9457-319f72540f89" class="bulleted-list"><li style="list-style-type:circle">Switch with Multiple Case</li></ul><ul id="7f878320-3049-4c73-8494-b12e8b584747" class="bulleted-list"><li style="list-style-type:circle"><strong>Explore Further</strong></li></ul></li></ul><ul id="65f39a24-3dc6-41d0-b655-fb47fbdc93ba" class="bulleted-list"><li style="list-style-type:disc"><strong>Summary (10 minutes read)</strong><ul id="efabc15f-6e11-45e8-9278-4c66a80b43f8" class="bulleted-list"><li style="list-style-type:circle">What did we learn?</li></ul><ul id="d618b459-f009-4c22-9788-941c1a155f63" class="bulleted-list"><li style="list-style-type:circle">Shortcomings &amp; Challenges</li></ul><ul id="db785257-c29e-4e1d-bdd7-f07401207824" class="bulleted-list"><li style="list-style-type:circle">Best Practices</li></ul><ul id="34cf96a7-6b04-42c0-886e-bf4084dcc7a7" class="bulleted-list"><li style="list-style-type:circle">Enhance Your Knowledge</li></ul></li></ul></details></li></ul><h1 id="abfc0db7-44ca-42ef-9aaa-00af17752822" class="block-color-brown"><mark class="highlight-brown">Learning Objective</mark></h1><h2 id="63ccff16-cb8c-4c96-b1d3-cdd94afc9b52" class=""><mark class="highlight-red">Introduction</mark></h2><p id="4c37bbf0-82da-4bef-9402-c47c5c03c2b4" class="">JavaScript decision statements are code constructs that allow us to decide based on conditions. JavaScript&#x27;s most commonly used decision statements are if...else and switch.</p><p id="4b3ad3f4-ff6a-4a63-80cb-9fada85687ce" class=""><strong>Duration: </strong>2 Hours</p><p id="44c0eace-d537-43e8-b877-2f9a31e7d36e" class=""><strong>Focus:</strong> If statements, if…else statements, and Switch statements.</p><p id="cecb6c7e-b71f-435e-85cd-586fe8807e25" class=""><strong>Prerequisites</strong>: IDE with Node.js installed, JavaScript Basics</p><h2 id="99e282f3-aa08-4a28-8a3d-0a518386b7f7" class=""><mark class="highlight-red">Theme</mark></h2><p id="f572d466-a154-455e-a4fe-c2ea9b586c46" class=""><strong>Etsy </strong>is an online marketplace that focuses on handmade or vintage items and craft supplies. Etsy utilizes JavaScript <strong>Decision Statements</strong> to provide a personalized shopping experience for its users. For example, when a user searches for a specific product on Etsy&#x27;s website, JavaScript displays the most relevant products at the top of the search results page. This helps users quickly find what they&#x27;re looking for and can increase sales for Etsy sellers.</p><p id="e0a57eb2-02f9-497c-a53c-5e2952850040" class="">In addition, Etsy uses JavaScript to validate user inputs during the checkout process. This includes checking for empty required fields, verifying the user&#x27;s shipping address, and validating payment information. By doing so, Etsy can provide its customers with a secure and seamless checkout process.</p><h2 id="53991fe7-eb02-4fca-adc6-922a440c5e70" class=""><mark class="highlight-red">Primary Goals</mark></h2><ol type="1" id="8ec65eed-891a-4953-82a1-847dfc465e1d" class="numbered-list" start="1"><li>Gain a clear understanding of the concept of decision statements in programming.</li></ol><ol type="1" id="acf804e5-d578-4b12-9b1f-35e23fe410aa" class="numbered-list" start="2"><li>Learn how to use these statements to control the flow of execution based on specific conditions or criteria.</li></ol><ol type="1" id="beaead5b-a003-44dd-9277-dc6c0d2b429d" class="numbered-list" start="3"><li>Develop an understanding of how control flows within conditional statements.</li></ol><p id="ed94b5b4-0f1c-42d0-8e0c-38a5dda39966" class="">
+</p><h1 id="25ef2ee0-d4bd-42d7-b455-0583245f211f" class="block-color-brown"><mark class="highlight-brown">JavaScript Decision Statements</mark></h1><p id="aa5e5e59-1b74-4d48-a0e8-59b327aae268" class="">Emma was a junior software developer tasked with building a new web application allowing users to search for products and make purchases. One of the application&#x27;s requirements was to display different prices for different users based on their membership status.</p><p id="534dea36-b96c-449b-a5b8-5846d03cabb9" class="">Emma knew she needed to use <strong>JavaScript decision statements</strong> to achieve this functionality. She spent several hours reading articles and experimenting with different code snippets until she finally had a working solution.</p><p id="16e22922-c1dc-4e2d-b9bd-b26fe18bc4e1" class="">Emma could use if-else statements to check whether the user was a member and display the appropriate price.</p><h2 id="8de3ca1a-4384-4426-ab6d-e37f7b310037" class="block-color-default"><mark class="highlight-red">If Statement</mark></h2><p id="8fbadcee-2f03-4cda-96e7-64710ae11902" class="">In JavaScript, an <code>if</code> statement is used to execute a code block based on a Boolean expression conditionally. An <code>if</code> statement follows the syntax as shown below:</p><pre id="304c4aa5-faf0-41f6-a238-1339b06840ea" class="code code-wrap"><code>if (expression) {
+  // code to execute if expression is true 
+}</code></pre><p id="12853645-e1e1-4705-b782-157359453a5f" class="">Here, <strong>expression </strong>is a Boolean expression evaluated as either true or false. The code block within the curly braces is executed if the expression is true. If the expression is false, the code block is skipped over, and the program moves over to the next statement after the <strong>if </strong>block.</p><p id="29a8f68d-974a-45a6-aa76-e6d2f5a44188" class=""><strong>Here&#x27;s an example:</strong></p><pre id="7856812b-6209-44f2-9445-7f12f9fba4fa" class="code code-wrap"><code>const num = 10;
+if (num &gt; 0) {
+  console.log(&quot;The number is positive&quot;);
+}</code></pre><p id="c09ed0f9-10c7-4a9e-996e-2c0249603b46" class="">In this example, the <code>if</code> statement evaluates the expression <code>num &gt; 0</code>. Since <code>num</code> is indeed greater than 0, the code block within the curly braces is executed, and the message &quot;The number is positive&quot; is printed to the console.</p><h2 id="e583a3b3-26a8-4e5a-b279-d25534844169" class="block-color-red"><mark class="highlight-red">If...else Statement</mark></h2><p id="57567955-c18d-462d-b3f5-8086312c2524" class="">In JavaScript, there are two forms of the <code>if...else</code> statement:</p><ol type="1" id="6a4a98c3-b597-4b7c-a2be-c523e788286f" class="numbered-list" start="1"><li><strong><code>if-else</code></strong><strong> statement:</strong> This statement executes a block of code if the <code>if</code> condition is true and another block of code if the condition is false. <p id="71f9613b-3f90-4947-adef-209754f163db" class="">The <code>if-else</code> statement has the following syntax:</p><pre id="a6154c81-fffe-49c3-a8c5-e85a0dff4531" class="code code-wrap"><code>if (condition) {
+  // this code will execute if condition is true 
+} else {
+  // code to execute if condition is false 
+}</code></pre><p id="b8ae5e47-12a4-4697-a3a6-5d5fc1b14006" class=""><strong>Here&#x27;s an example:</strong></p><pre id="90389649-8ff4-4d07-a802-6fa93d8ef536" class="code code-wrap"><code>const num = 10;
+if (num &gt; 0) {
+  console.log(&quot;The number is positive&quot;);
+} else {
+  console.log(&quot;The number is not positive&quot;);
+}</code></pre><p id="17db3145-fee9-434a-92a6-c514ec5d2be6" class="">In this example, if the <code><strong>num</strong></code> variable exceeds 0, the first code block is executed, and the message &quot;The number is positive&quot; is printed to the console. Otherwise, the second code block is executed, and the message &quot;The number is not positive&quot; is printed to the console.</p><p id="95ee2381-dbc1-447c-aece-c8ac138eba53" class="">
+</p></li></ol><ol type="1" id="f6baba0a-5f14-4a4e-b538-53897d6c51cd" class="numbered-list" start="3"><li><strong><code>if-else if</code></strong><strong> statement:</strong> This statement executes different blocks of code based on multiple conditions. <p id="10a20e62-efe0-4137-ac87-2c73257354f7" class="">The syntax of the <code>if-else if</code> statement is as follows:</p><pre id="3959652c-791a-4c90-9aee-b69c01dba2d3" class="code code-wrap"><code>if (condition1) {
+  // code to execute if condition1 is true
+} else if (condition2) {
+  // code to execute if condition2 is true
+} else {
+  // code to execute if both condition1 and condition2 are false
+}</code></pre><p id="6e31197e-e97f-4f62-bbce-b4bfb37ecfb9" class=""><strong>Here&#x27;s an example:</strong></p><pre id="192bd809-a8f9-45f9-aaec-d8ba3fc56cb3" class="code code-wrap"><code>const num = 10;
+if (num &gt; 0) {
+  console.log(&quot;The number is positive&quot;);
+} else if (num &lt; 0) {
+  console.log(&quot;The number is negative&quot;);
+} else {
+  console.log(&quot;The number is zero&quot;);
+}</code></pre><p id="ed92e7d0-93ae-4f75-b6d8-b6db57de1721" class="">In this example, if the <code>num</code> variable is greater than 0, the first block of code is executed and the message &quot;The number is positive&quot; is printed to the console. If <code>num</code> is less than 0, the second block of code is executed and the message &quot;The number is negative&quot; is printed to the console. If neither condition is true, the third block of code is executed and the message &quot;The number is zero&quot; is printed to the console.</p></li></ol><p id="dda41f1c-13d7-491e-b99b-fa3c40eadd40" class="">
+</p><h2 id="505330bc-33f3-42b7-b78e-f10d75811bfe" class=""><mark class="highlight-blue">Do it Yourself</mark></h2><p id="b7e6d05b-6a4e-4fde-9a1d-5c2a589a9e23" class=""><strong>Write a JavaScript program that takes a temperature as input and outputs a message about the weather.</strong></p><ol type="1" id="ff82c1ba-3b36-48dc-a19e-49a5c7825f06" class="numbered-list" start="1"><li>Declare a variable <code>temperature</code> and assign any value to it. This will represent the current temperature.</li></ol><ol type="1" id="e42f801c-a0a4-4991-b8c8-43a481427211" class="numbered-list" start="2"><li>Write an <code>if</code> statement that checks if the temperature is below 0. If it is, log a message to the console saying &quot;It&#x27;s freezing outside.&quot;</li></ol><ol type="1" id="67a6b4b1-f4ed-455d-b20b-d121aac6eca7" class="numbered-list" start="3"><li>Write an <code>else if</code> statement that checks if the temperature is between 0 and 20. If it is, log a message to the console saying &quot;The weather is cool.&quot;</li></ol><ol type="1" id="a09e70df-7e51-4e3e-8184-4f92fe84f8ad" class="numbered-list" start="4"><li>Write another <code>else if</code> statement that checks if the temperature is between 21 and 30. If it is, log a message to the console saying &quot;The weather is warm.&quot;</li></ol><ol type="1" id="64625261-01ce-47e6-9bca-cce4d07c0fb9" class="numbered-list" start="5"><li>Write an <code>else</code> statement that logs a message to the console saying &quot;It&#x27;s hot outside.&quot;</li></ol><ul id="70593360-cc7c-4889-99b4-1c25dd18023d" class="toggle"><li><details close=""><summary><strong>Solution</strong></summary><pre id="c047826a-2fed-4795-be03-4696002887cc" class="code"><code>let temperature = 25; // You can change this value to test different conditions
+
+if (temperature &lt; 0) {
+    console.log(&quot;It&#x27;s freezing outside.&quot;);
+} else if (temperature &gt;= 0 &amp;&amp; temperature &lt;= 20) {
+    console.log(&quot;The weather is cool.&quot;);
+} else if (temperature &gt;= 21 &amp;&amp; temperature &lt;= 30) {
+    console.log(&quot;The weather is warm.&quot;);
+} else {
+    console.log(&quot;It&#x27;s hot outside.&quot;);
+}</code></pre></details></li></ul><p id="0723c77e-723b-4e28-9aa6-21acf5272160" class="">
+</p><h2 id="14b0b5fc-5ee3-43cc-a30a-ee09d38c934c" class="block-color-red"><mark class="highlight-red">Nested if...else Statement</mark></h2><p id="34142c54-f3c4-4f98-b743-c90be3d877f8" class="">In JavaScript, a nested <code>if-else</code> statement is used to test for multiple conditions and execute different blocks of code based on those conditions. The basic structure of a nested <code>if-else</code> statement is as follows:</p><pre id="80eba955-db12-48f9-9ecf-36502cba4b4c" class="code code-wrap"><code>if (condition1) {
+  // code to execute if condition1 is true 
+
+  if (condition2) {
+    // code to execute if both condition1 and condition2 are true 
+  } else {
+    // code to execute if condition1 is true but condition2 is false 
+  }
+
+} else {
+  // code to execute if condition1 is false 
+}</code></pre><p id="48f17189-08f5-453a-ad56-4556ead2998c" class=""><strong>Let&#x27;s take a look at an example:</strong></p><pre id="354b5228-c0d3-46aa-a5bb-84c752763b80" class="code code-wrap"><code>// Checks if Number is Positive or not. Also checks it the number is even or odd.
+const num = 10;
+if (num &gt; 0) {
+  console.log(&quot;The number is positive&quot;);
+  if (num % 2 === 0) {
+    console.log(&quot;The number is even&quot;);
+  } else {
+    console.log(&quot;The number is odd&quot;);
+  }
+} else {
+  console.log(&quot;The number is not positive&quot;);
+}</code></pre><p id="72110363-ec0f-4e2e-bf24-8b063d21f062" class="">In this example, the outer <code>if</code> statement tests whether <code>num</code> is greater than 0. If it is, the program moves into the first block of code and prints the message &quot;The number is positive&quot; to the console. </p><ul id="b355e7e7-d087-4d5a-8d42-efafd4bdc802" class="bulleted-list"><li style="list-style-type:disc">Then, there&#x27;s an inner <code>if</code> statement that tests whether <code>num</code> is even or odd using the modulo operator (%). </li></ul><ul id="8d67bc70-3b6f-48cf-8643-d63bc4da7885" class="bulleted-list"><li style="list-style-type:disc">If <code>num</code> is even, the program moves into the first block of code within the inner <code>if</code> statement and prints the message &quot;The number is even&quot; to the console. </li></ul><ul id="26bf6185-a12b-4014-ba0f-329240642706" class="bulleted-list"><li style="list-style-type:disc">If <code>num</code> is odd, the program moves into the <code>else</code> block within the inner <code>if</code> statement and prints the message &quot;The number is odd&quot; to the console.</li></ul><ul id="fd763e23-683b-4edd-9ad2-3b95ae958167" class="bulleted-list"><li style="list-style-type:disc">If <code>num</code> is not greater than 0, the program moves into the <code>else</code> block within the outer <code>if</code> statement and prints the message &quot;The number is not positive&quot; to the console.</li></ul><blockquote id="ca9728a5-51a6-46d9-90b2-8221a6e09ce2" class="">Nested <code>if-else</code> statements can be nested even further to create more complex conditions. However, it&#x27;s essential to remember that excessive nesting can probably make your code hard to read and maintain.</blockquote><h3 id="541a9fb4-1d8f-4a2e-93fc-a51efd7e8599" class="">Body of if...else With Only One Statement</h3><p id="3e68de1a-4992-4f4c-bee2-4a4b6c4ae8ab" class="">In JavaScript, you can use a single statement as the body of an <code>if-else</code> statement without using curly braces <code>{}</code>. This can be useful for writing shorter and more concise code.</p><p id="1c6746b2-a282-422f-9a5f-6edbeb7b8f49" class=""><strong>Here&#x27;s an example:</strong></p><pre id="88baa64d-99e4-4bcd-bc21-6f1e3aab1269" class="code"><code>const num = 10;
+
+if (num &gt; 0)
+  console.log(&quot;The number is positive&quot;);
+else
+  console.log(&quot;The number is not positive&quot;);</code></pre><p id="314d0efb-6699-4a15-947b-b290149f657e" class="">In this example, we&#x27;re using a single <code>console.log</code> statement as the body of each branch of the <code>if-else</code> statement. Since there&#x27;s only one statement in each branch, we don&#x27;t need to use curly braces. The <code>if</code> statement tests whether <code>num</code> is greater than 0, and if it is, it executes the first <code>console.log</code> statement. If <code>num</code> is not greater than 0, it executes the second <code>console.log</code> statement.</p><p id="d4efc236-c378-4b60-bbae-b34817f4ed45" class="">
+</p><blockquote id="d5e33906-1033-4e48-abbc-30b11fd80629" class="">It&#x27;s important to note that while using a single statement without curly braces can make your code shorter and more concise, it can also make it harder to read and maintain. If your <code>if-else</code> statement requires more than one statement in each branch, it&#x27;s generally recommended to use curly braces to improve readability and avoid errors.</blockquote><p id="8d8f9883-1645-401c-b9dd-0843c73b021b" class="">
+</p><h2 id="14c07a96-1b19-4696-8a40-275ce15f3c1e" class="block-color-blue"><mark class="highlight-blue">Activity 1</mark></h2><p id="c628ce94-5b0e-49ea-9965-1e60dc01645d" class=""><strong>True or False:</strong></p><ol type="1" id="486a5219-db83-4236-9c97-55fbf7da0d2a" class="numbered-list" start="1"><li>JavaScript has an if-else statement that can execute a block of code if the if condition is true and another block of code if the condition is false. </li></ol><ol type="1" id="97c315a2-5db9-499e-9f4a-a5a550373f06" class="numbered-list" start="2"><li>Nested if-else statements can be used to test multiple conditions and execute different blocks of code based on those conditions. </li></ol><ol type="1" id="5cd41baf-5c89-4bef-b74d-5fc6ab5d261b" class="numbered-list" start="3"><li>The if-else statement cannot have more than two branches. </li></ol><ol type="1" id="638fc931-e376-4221-8e50-b444045a1c98" class="numbered-list" start="4"><li>In JavaScript, you can use a single statement as the body of an if-else statement without using curly braces.</li></ol><ol type="1" id="2db908a0-21c4-4d01-985f-04f719d70a66" class="numbered-list" start="5"><li>Using curly braces for single-statement if-else blocks is always mandatory. </li></ol><ul id="68cc5b19-1068-4a9b-b6c8-fcd2d277b4e4" class="toggle"><li><details close=""><summary><strong>Answers</strong></summary><ol type="1" id="4fe3170e-8023-4887-9edf-bfe25d2fc274" class="numbered-list" start="1"><li>True</li></ol><ol type="1" id="892b8993-91e1-4b88-b50b-8fded7921710" class="numbered-list" start="2"><li>True</li></ol><ol type="1" id="8c677ee7-22d9-466d-b2e9-95fd536c0eb5" class="numbered-list" start="3"><li>False</li></ol><ol type="1" id="1fb14f12-92f5-4103-aaa5-6c8deb5e47b5" class="numbered-list" start="4"><li>True</li></ol><ol type="1" id="9269a34d-b303-46f4-be83-69bd603da179" class="numbered-list" start="5"><li>False</li></ol></details></li></ul><p id="ab5a1f7f-d680-4e05-aba1-36aae3470fae" class="">
+</p><h2 id="9fe78dc7-c8f5-46ad-a293-66b2b05d8106" class="block-color-red"><mark class="highlight-red">Switch Statement</mark></h2><p id="868cf35f-ac92-4220-bdec-7919e9de3f47" class="">In JavaScript, the <code>switch</code> statement is a type of control structure that allows you to execute different code blocks based on different conditions. It is a convenient alternative to using multiple <code>if-else</code> statements when you need to check the value of a single variable or expression against multiple possible values.</p><p id="7f7cc20b-4946-4f2f-8765-203212025f8b" class="">The basic syntax of a <code>switch</code> statement is as follows:</p><pre id="d286a535-4cda-4551-aaa6-135c863a72e6" class="code code-wrap"><code>switch(expression) {
+  case value1:
+	    // Executes this code block if the expression matches value1
+    break;
+  case value2:
+	    // Executes this code block if the expression matches value1
+    break;
+  case value3:
+	    // Executes this code block if the expression matches value1
+    break;
+  default:
+	    // Executes this code block if none of the previous cases match
+}</code></pre><p id="ae39c3e2-9075-438b-8b6e-04de131d7111" class="">Here, the <code>expression</code> is evaluated and its value is compared to each of the <code>value</code> cases. If a match is found, the corresponding code block is executed until a <code>break</code> statement is encountered, which exits the <code>switch</code> statement. If none of the cases match, the code block associated with the <code>default</code> case is executed.</p><p id="a3b3803b-cb39-459b-a31e-a5d81172acc7" class=""><strong>Let&#x27;s look at an example to better understand how the </strong><strong><code>switch</code></strong><strong> statement works:</strong></p><pre id="938fdd90-06ad-416f-847c-e0f4e822ee9a" class="code code-wrap"><code>let dayOfWeek = 5;
+let dayName;
+
+switch (dayOfWeek) {
+  case 1:
+    dayName = &#x27;Monday&#x27;;
+    break;
+  case 2:
+    dayName = &#x27;Tuesday&#x27;;
+    break;
+  case 3:
+    dayName = &#x27;Wednesday&#x27;;
+    break;
+  case 4:
+    dayName = &#x27;Thursday&#x27;;
+    break;
+  case 5:
+    dayName = &#x27;Friday&#x27;;
+    break;
+  case 6:
+    dayName = &#x27;Saturday&#x27;;
+    break;
+  case 7:
+    dayName = &#x27;Sunday&#x27;;
+    break;
+  default:
+    dayName = &#x27;Invalid day&#x27;;
+    break;
+}
+
+console.log(dayName); // Output: &quot;Friday&quot;</code></pre><p id="30fbb9fe-d081-4aa4-9413-008e482b8eb0" class="">In this example, we have a variable <code>dayOfWeek</code> that stores the value <code>5</code>, representing Friday. We use a switch statement to evaluate <code>dayOfWeek</code> against different <code>case</code> values. When the value of <code>dayOfWeek</code> matches the <code>case</code> value of <code>5</code>, the code block following that <code>case</code> is executed, which sets the value of <code>dayName</code> to <code>&#x27;Friday&#x27;</code>. Finally, we log the value of <code>dayName</code> to the console.</p><p id="da4913ca-06e9-4975-b438-b12be1a78aac" class="">
+</p><p id="904e859c-419d-44da-91c4-b8dd17ef0a6f" class="">You can have multiple <code>case</code> statements that share the same code block by omitting the <code>break</code> statement after each <code>case</code> statement. This can be useful when executing the same code for multiple cases. </p><p id="34b9dd55-a334-48bb-9d34-8cbbd0897645" class=""><strong>Here&#x27;s an example:</strong></p><pre id="7d2dea84-324e-4536-a162-79db153fa733" class="code"><code>let fruit = &#x27;orange&#x27;;
+let color;
+
+switch (fruit) {
+  case &#x27;banana&#x27;:
+  case &#x27;lemon&#x27;:
+    color = &#x27;yellow&#x27;;
+    break;
+  case &#x27;apple&#x27;:
+  case &#x27;cherry&#x27;:
+  case &#x27;strawberry&#x27;:
+    color = &#x27;red&#x27;;
+    break;
+  case &#x27;grape&#x27;:
+  case &#x27;blueberry&#x27;:
+    color = &#x27;purple&#x27;;
+    break;
+  default:
+    color = &#x27;unknown&#x27;;
+    break;
+}
+
+console.log(color); // Output: &quot;unknown&quot;</code></pre><p id="7898d711-04c1-4e4f-8a16-eb3e415906cc" class="">In this example, we have a variable <code>fruit</code> that stores the value <code>&#x27;orange&#x27;</code>. We use a switch statement to evaluate <code>fruit</code> against different <code>case</code> values. In this case, there are no matching cases, so the <code>default</code> block is executed, which sets the value of <code>color</code> to <code>&#x27;unknown&#x27;</code>. Finally, we log the value of <code>color</code> to the console.</p><p id="8ec6334a-5443-4def-9660-79452cf5e579" class="">
+</p><h3 id="bc305967-8b9b-4ffd-a25e-baca79d26114" class="">Example Use cases of Switch Statement</h3><ol type="1" id="be8a3319-734e-46d9-b1ac-59102f64b819" class="numbered-list" start="1"><li><strong>Type Checking in Switch Statement</strong><pre id="a1302868-94a4-4c70-b8e2-22e5a223d67d" class="code code-wrap"><code>// program using switch statement
+let value = &#x27;123&#x27;;
+
+switch (typeof value) {
+  case &#x27;string&#x27;:
+    console.log(&#x27;The value is a string&#x27;);
+    break;
+  case &#x27;number&#x27;:
+    console.log(&#x27;The value is a number&#x27;);
+    break;
+  case &#x27;boolean&#x27;:
+    console.log(&#x27;The value is a boolean&#x27;);
+    break;
+  default:
+    console.log(&#x27;The value is not a string, number, or boolean&#x27;);
+    break;
+}
+
+// Output
+&quot;The value is a string&quot;</code></pre><ul id="da0f12ea-5996-4b04-826e-ea6f1dbf4aa6" class="bulleted-list"><li style="list-style-type:disc">In this example, we have a variable <code>value</code> that stores the value <code>&#x27;123&#x27;</code>. </li></ul><ul id="ea452aef-59cf-47dc-b6fc-ad198676ae3a" class="bulleted-list"><li style="list-style-type:disc">We use the <code>typeof</code> operator to determine the type of <code>value</code> and then use a switch statement to evaluate the type against different <code>case</code> values. </li></ul><ul id="3c9b8d61-8526-43fc-a4b2-2172fea291fa" class="bulleted-list"><li style="list-style-type:disc">In this case, the <code>typeof</code> operator returns <code>&#x27;string&#x27;</code>, so the first case block is executed, which logs the message <code>&#x27;The value is a string&#x27;</code> to the console.</li></ul><ul id="f8a500bf-9b7f-4d21-beaf-9c39a6986a1c" class="bulleted-list"><li style="list-style-type:disc">If <code>value</code> had been a different type, the appropriate case block would be executed. For example, if <code>value</code> had been <code>true</code>, the third case block would be executed, logging the message <code>&#x27;The value is a boolean&#x27;</code> to the console.</li></ul><p id="dd734ee2-4722-413b-a866-d02bf32da06f" class="">
+</p></li></ol><ol type="1" id="1cad237f-50ef-47dc-901b-cc7f66da692b" class="numbered-list" start="2"><li><strong>Simple Calculator</strong><p id="d0015a6a-3470-42f1-aa68-24aa6587b4fa" class="">Write a program to make a simple calculator with the <code>switch</code> statement.</p><p id="2ad990c9-1fef-4c87-8161-5018d69f3109" class="">Use the <code>parseFloat()</code> function to convert the user input from a string to a number. This is important to ensure that the calculations are performed correctly.</p><pre id="af68c8f8-32dc-43bb-bae8-89bb7a162d3e" class="code code-wrap"><code>// program for a simple calculator
+let num1 = parseFloat(prompt(&#x27;Enter the first number:&#x27;));
+let num2 = parseFloat(prompt(&#x27;Enter the second number:&#x27;));
+let operator = prompt(&#x27;Enter the operator (+, -, *, /):&#x27;);
+let result;
+
+switch (operator) {
+  case &#x27;+&#x27;:
+    result = num1 + num2;
+    break;
+  case &#x27;-&#x27;:
+    result = num1 - num2;
+    break;
+  case &#x27;*&#x27;:
+    result = num1 * num2;
+    break;
+  case &#x27;/&#x27;:
+    result = num1 / num2;
+    break;
+  default:
+    console.log(&#x27;Invalid operator&#x27;);
+}
+
+console.log(`The result of ${num1} ${operator} ${num2} is ${result}`);
+
+// Output
+Enter the first number: 4
+Enter the second number: 5
+Enter operator: +
+The result of 4 + 5 is 9</code></pre></li></ol><ul id="0058fb06-a7c0-42f3-a04e-e632ce26f2a3" class="bulleted-list"><li style="list-style-type:disc">In this program, we prompt the user to enter two numbers and an operator (+, -, *, or /). </li></ul><ul id="02b52d60-0dba-441e-9075-f0d07755b020" class="bulleted-list"><li style="list-style-type:disc">We then use a switch statement to evaluate the operator and perform the appropriate calculation. </li></ul><ul id="a551ae97-09eb-4b7c-a81d-1897e4f7cd4b" class="bulleted-list"><li style="list-style-type:disc">If an invalid operator is entered, the default block is executed, and an error message is logged to the console.</li></ul><ul id="9d406796-b7b8-40c9-9075-aff414269d7e" class="bulleted-list"><li style="list-style-type:disc">Finally, we log the calculation result to the console using a template literal.</li></ul><h2 id="e10fab15-5489-4726-95de-b45417544500" class=""><mark class="highlight-red">Switch with Multiple Case</mark></h2><pre id="ec177b05-cd88-41b8-8a7c-8df319faa8e8" class="code"><code>let dayOfWeek = &#x27;Tuesday&#x27;;
+
+switch (dayOfWeek) {
+  case &#x27;Monday&#x27;:
+  case &#x27;Tuesday&#x27;:
+  case &#x27;Wednesday&#x27;:
+  case &#x27;Thursday&#x27;:
+  case &#x27;Friday&#x27;:
+    console.log(&#x27;It is a weekday&#x27;);
+    break;
+  case &#x27;Saturday&#x27;:
+  case &#x27;Sunday&#x27;:
+    console.log(&#x27;It is a weekend&#x27;);
+    break;
+  default:
+    console.log(&#x27;Invalid day of the week&#x27;);
+}</code></pre><ul id="86378319-6576-4b46-b1e5-89f76210c699" class="bulleted-list"><li style="list-style-type:disc">In this example, we have a variable <code>dayOfWeek</code> that stores the value <code>&#x27;Tuesday&#x27;</code>. </li></ul><ul id="dd5f3c71-ceff-4b57-936d-ff8fe80847ea" class="bulleted-list"><li style="list-style-type:disc">We use a switch statement to evaluate <code>dayOfWeek</code> against multiple case values for each day of the week. </li></ul><ul id="ba9dbea0-bf7a-4312-a4ea-b7477fb74e81" class="bulleted-list"><li style="list-style-type:disc">If <code>dayOfWeek</code> matches any of the weekday case values, the first case block is executed, which logs the message <code>&#x27;It is a weekday&#x27;</code> to the console. </li></ul><ul id="e8c5d22e-9058-40e9-bd45-a79874b1e005" class="bulleted-list"><li style="list-style-type:disc">If <code>dayOfWeek</code> matches either of the weekend case values, the second case block is executed, logging the message <code>&#x27;It is a weekend&#x27;</code> to the console.</li></ul><blockquote id="29cc0bdb-21ff-48ce-bc27-2315923da353" class="">In JavaScript, if the <code>break</code> statement is not added in a switch statement case, the program will continue executing the code for all the subsequent cases until it reaches a <code>break</code> statement or the end of the switch statement. This is known as &quot;<strong>falling through</strong>&quot; the cases.</blockquote><p id="9eab6753-b2ec-45a1-98ab-b210bfa6c9d3" class="">
+</p><h2 id="780c603e-52ad-46c4-94ea-65a23868af4d" class=""><mark class="highlight-blue">Explore Further</mark></h2><p id="dab4b186-5138-4f7e-bdb4-5afbe0fd96d5" class=""><mark class="highlight-orange"><strong>Uncover and unlock new insights as you dive into the captivating content found in the provided link.</strong></mark></p><p id="2cf82817-fa97-4ecd-87eb-54315ab35b0e" class=""><strong><strong>Ternary operator in JavaScript: </strong></strong><a href="https://www.freecodecamp.org/news/the-ternary-operator-in-javascript/">https://www.freecodecamp.org/news/the-ternary-operator-in-javascript/</a></p><p id="451ec7b8-3014-4426-ac1c-3e80fecb714a" class="">
+</p><p id="6a641666-02fc-4672-ac21-151c4c648c35" class=""><mark class="highlight-orange"><strong>Tackle these questions head-on!</strong></mark></p><p id="24176da8-47ce-471b-91da-97d04fcf6a34" class="">Convert the following code from if-else statement to Ternary operator.</p><pre id="ba6b8d06-8c2a-4055-bed7-3e1b6755b123" class="code"><code>let score = 85;
+
+if (score &gt;= 90) {
+  result = &quot;You got an A.&quot;;
+} else if (score &gt;= 80) {
+  result = &quot;You got a B.&quot;;
+} else if (score &gt;= 70) {
+  result = &quot;You got a C.&quot;;
+} else if (score &gt;= 60) {
+  result = &quot;You got a D.&quot;;
+} else {
+  result = &quot;You got an E.&quot;;
+}
+
+console.log(result)</code></pre><ul id="b741f98a-086c-41b8-942d-537236a1e818" class="toggle"><li><details close=""><summary><strong>Solution</strong></summary><pre id="50d9e804-ca5a-4290-845d-22faa4719850" class="code"><code>let score = 85;
+
+let result = (score &gt;= 90) ? &quot;You got an A.&quot; :
+  (score &gt;= 80) ? &quot;You got a B.&quot; :
+  (score &gt;= 70) ? &quot;You got a C.&quot; :
+  (score &gt;= 60) ? &quot;You got a D.&quot; :
+  &quot;You got an E.&quot;;
+
+console.log(result);</code></pre><h3 id="916cb8ac-2f62-48cb-938a-5326aa746990" class=""><a href="https://onecompiler.com/javascript/3z9m37q42">Try and test your code here.</a></h3></details></li></ul><p id="cc0d1dc9-0a40-445d-93c7-f839f66e0455" class="">
+</p><h1 id="79912da4-67b9-499e-bc23-852853209be0" class="block-color-brown"><mark class="highlight-brown">Summary</mark></h1><h2 id="7df69672-6076-4ee0-9f48-7028dbe7c051" class="block-color-red"><mark class="highlight-red">What did we learn?</mark></h2><ol type="1" id="435e1526-8885-4fd3-aeb9-3ceeb9fd1be9" class="numbered-list" start="1"><li>JavaScript provides conditional statements to perform different actions based on different conditions. These include <code>if</code>, <code>if...else</code>, <code>if...else if...else</code>, and <code>switch</code> statements.</li></ol><ol type="1" id="b40accdf-15e0-4538-95f7-3625bfa7b804" class="numbered-list" start="2"><li>The <code>if</code> statement is used to execute a block of code only if a specified condition is true.</li></ol><ol type="1" id="aafc51e4-390f-4fa7-93f7-d0c6e4c8b41f" class="numbered-list" start="3"><li>The <code>if...else</code> statement is used to execute one block of code if a specified condition is true, and another block of code if the condition is false.</li></ol><ol type="1" id="578cdc45-4c51-4943-a40b-0fcc82fc5759" class="numbered-list" start="4"><li>The <code>if...else if...else</code> statement is used to execute one of many blocks of code, based on multiple conditions.</li></ol><ol type="1" id="85c2fdb0-98b7-4e6b-80b0-efbf27a2bf5b" class="numbered-list" start="5"><li>The <code>switch</code> statement is used to perform different actions based on different conditions. It&#x27;s often used when you have many conditions to check.</li></ol><ol type="1" id="656a1b10-255c-49e4-b727-0abba6f8de7a" class="numbered-list" start="6"><li>The ternary operator is a shorthand way of writing an <code>if...else</code> statement. It&#x27;s written as <code>condition ? exprIfTrue : exprIfFalse</code>.</li></ol><ol type="1" id="a2b49093-ef8a-4011-907e-0be1d3ef12b9" class="numbered-list" start="7"><li>In JavaScript, all values have an inherent Boolean value, generally known as either truthy or falsy. Most values are truthy unless they are defined as falsy. Falsy values in JavaScript are <code>false</code>, <code>0</code>, <code>&#x27;&#x27;</code> (empty string), <code>null</code>, <code>undefined</code>, and <code>NaN</code>.</li></ol><ol type="1" id="de553280-978f-4358-987e-59503b0ba2ef" class="numbered-list" start="8"><li>JavaScript has both strict comparison (<code>===</code>, <code>!==</code>) and type-converting comparison (<code>==</code>, <code>!=</code>). It&#x27;s generally recommended to use strict comparison to avoid unexpected type coercion.</li></ol><ol type="1" id="cb03a7d0-d6ae-4490-9085-0570fdcf1aa2" class="numbered-list" start="9"><li>JavaScript includes logical operators (<code>&amp;&amp;</code>, <code>||</code>, <code>!</code>) that can be used to combine or invert conditions.</li></ol><ol type="1" id="df8a04d5-9fe3-4e1f-8694-9ddadf754f1f" class="numbered-list" start="10"><li>Logical operators (<code>&amp;&amp;</code> and <code>||</code>) use short-circuit evaluation, meaning they only evaluate what is necessary and then stop. This can be used to your advantage in your code.</li></ol><h2 id="86cdc6e2-1ee0-430f-a29e-b2ba4258f4cf" class="block-color-red"><mark class="highlight-red">Shortcomings &amp; Challenges</mark></h2><ul id="7d350d50-f0b6-4bb3-9d01-fe35b97c5fe8" class="bulleted-list"><li style="list-style-type:disc">The logical and comparison operators perform type coercion on the operands, which can lead to unexpected results if the operands are not of the expected type.</li></ul><ul id="6107eec1-8363-420e-95de-091e1406a802" class="bulleted-list"><li style="list-style-type:disc">The comparison operators consider <code>null</code> and <code>undefined</code> to be equal, which can lead to unexpected results when working with these values.</li></ul><ul id="41f1d090-1265-4d36-bf99-c89e97f559e9" class="bulleted-list"><li style="list-style-type:disc">If there is no default case, and none of the cases match the value, the &quot;switch&quot; statement will not perform any action.</li></ul><h2 id="1d626b95-4a6c-49ba-9830-f532df078b13" class="block-color-red"><mark class="highlight-red">Best Practices</mark></h2><ul id="d6acf48e-f0ec-49d3-b75e-61a784ad4191" class="bulleted-list"><li style="list-style-type:disc">Use parentheses to define the order of operations and improve code readability clearly.</li></ul><ul id="f4eda095-84b6-4ee0-ac66-5c3296dc98cb" class="bulleted-list"><li style="list-style-type:disc">The strict equality and inequality operators are safer to use than the loose equality (<code>==</code>) and inequality (<code>!=</code>) operators.</li></ul><ul id="0111ae03-c24c-42b9-b47e-7ad1c4c61870" class="bulleted-list"><li style="list-style-type:disc">Use the <code>isNaN()</code>function to test for NaN values, as the equality operator (<code>==</code>) will not accurately compare NaN values.</li></ul><ul id="b7d7022a-ec96-4469-87d8-15aed1c4d0c9" class="bulleted-list"><li style="list-style-type:disc">When making comparisons, it&#x27;s important to use meaningful variable and function names so that the intent of the comparison is clear.</li></ul><ul id="c048f8b6-37ec-4e48-8e88-35a6c25cc656" class="bulleted-list"><li style="list-style-type:disc">Consider using a <code>switch</code> statement instead of multiple <code>if-else</code> statements for better readability and maintainability when handling many conditions.</li></ul><ul id="294810cc-cb31-4d65-b205-cf71995f1061" class="bulleted-list"><li style="list-style-type:disc">Avoid using the <code>goto</code> statement as it can lead to poorly structured and difficult-to-maintain code.</li></ul><ul id="0b879756-83cf-4055-961b-92306e81faa7" class="bulleted-list"><li style="list-style-type:disc">Consider using descriptive error messages in <code>if-else</code> or <code>switch</code> statements to provide meaningful feedback to the user in case of error.</li></ul><h2 id="7adda9dc-7134-4e3f-b35f-fa3c3cab828c" class="block-color-red"><mark class="highlight-red">Enhance Your Knowledge</mark></h2><ul id="e2b7b2a0-a32c-4285-be09-44f083e8355b" class="bulleted-list"><li style="list-style-type:disc"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals</a></li></ul><ul id="173b6f8c-8805-4cdc-8d6f-d419ff04f3dc" class="bulleted-list"><li style="list-style-type:disc"><a href="https://studyopedia.com/javascript/decision-making-statements/">https://studyopedia.com/javascript/decision-making-statements/</a></li></ul></div></article></body></html>
