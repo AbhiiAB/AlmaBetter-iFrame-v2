@@ -15,7 +15,7 @@ body {
 }
 @media only screen {
 	body {
-		margin: 1em 5em 3em;
+		margin: 1rem 5rem 3rem;
 		color: rgb(55, 53, 47);
 	}
 }
