@@ -1,0 +1,955 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>CSS Fundamentals</title><link rel="stylesheet" href="../../../../../styles.css"></head><body><article id="4be21778-8c31-4942-bd11-4d2e4d5959e7" class="page sans"><header><h1 class="page-title">CSS Fundamentals</h1><p class="page-description"></p></header><div class="page-body"><ul id="57388f1e-d52d-4f25-9084-e9d86af3df0b" class="toggle"><li><details close=""><summary><strong>Session Flow (5 minutes read)</strong></summary><ul id="eee2678d-104c-4bb0-b950-da2e6489c868" class="bulleted-list"><li style="list-style-type:disc"><strong>Learning Objective (5 minutes read)</strong><ul id="d5c3c409-e9a7-4346-b98e-89d4d1d31f89" class="bulleted-list"><li style="list-style-type:circle">Introduction</li></ul><ul id="2ad9cdea-6065-467b-a8c6-ee943e7be50e" class="bulleted-list"><li style="list-style-type:circle">Theme</li></ul><ul id="75d0952b-f808-4ee1-ba2a-95e2b942df2a" class="bulleted-list"><li style="list-style-type:circle">Primary Goals</li></ul></li></ul><ul id="d99ea837-6366-48d7-904d-df5e5d9fdef6" class="bulleted-list"><li style="list-style-type:disc"><strong>CSS Fundamentals (120 minutes read)</strong><ul id="ede68878-ca94-4adb-9951-3ca85893a465" class="bulleted-list"><li style="list-style-type:circle">Intro to CSS</li></ul><ul id="88441a5d-71f3-4b53-ad0d-076c249aeb22" class="bulleted-list"><li style="list-style-type:circle">CSS Implementation Approaches</li></ul><ul id="01edd16b-e07e-4c68-9015-ae3481479619" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 1</strong></li></ul><ul id="9c2db1e6-03a3-4096-9b7e-2c0d6696c6ea" class="bulleted-list"><li style="list-style-type:circle">CSS Syntax and Structure</li></ul><ul id="2cfae7b4-15e3-4320-95b7-94d0de12a61e" class="bulleted-list"><li style="list-style-type:circle">CSS Units</li></ul><ul id="7f17fdd4-0a15-4266-a970-c45bd1ea79f6" class="bulleted-list"><li style="list-style-type:circle">CSS Box Model</li></ul><ul id="6ccc2d91-252d-4dbb-93f8-f1ea06c7aa0a" class="bulleted-list"><li style="list-style-type:circle">Width and Height</li></ul><ul id="592a5cfe-3185-426a-b638-5b6ca84382d1" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 2</strong></li></ul><ul id="e6dfd1ac-2bd0-4571-8c11-5a5a5254a53c" class="bulleted-list"><li style="list-style-type:circle">Padding</li></ul><ul id="50676edd-5d7d-494b-a921-a7826e3676f4" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 3</strong></li></ul><ul id="a490e36d-3c7a-42d4-8d2f-8e0dac7248c4" class="bulleted-list"><li style="list-style-type:circle">Margin</li></ul><ul id="e3b6e9cf-41ca-4f6a-961c-3f52990215d0" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 4</strong></li></ul><ul id="ab64a95c-0dc6-42c0-847d-d5d479da4c19" class="bulleted-list"><li style="list-style-type:circle">Color</li></ul><ul id="a49fa7c0-f923-4410-bf32-dc024721e664" class="bulleted-list"><li style="list-style-type:circle">Border</li></ul><ul id="5ef058c1-6de1-4350-b40f-f9f59dda12b4" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 5</strong></li></ul><ul id="dbec6570-a0c0-40f0-b742-0400396cf668" class="bulleted-list"><li style="list-style-type:circle">Text Property</li></ul><ul id="2056a7c2-8302-4adb-97c8-f83bcba600ae" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 6</strong></li></ul><ul id="61ac60d8-93e7-46d9-a4e7-b30f230c0b4e" class="bulleted-list"><li style="list-style-type:circle">Background Property</li></ul><ul id="b43c56b8-09e9-4d38-8701-1868b3784a2f" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 7</strong></li></ul></li></ul><ul id="db17868d-703a-4004-9786-4fb5b165c491" class="bulleted-list"><li style="list-style-type:disc"><strong>Summary (10 minutes read)</strong><ul id="e4f50b44-f1d4-4df0-805d-19ec1dda268d" class="bulleted-list"><li style="list-style-type:circle">What did we learn?</li></ul><ul id="46f6b8c9-6517-4150-b055-2d3a43447086" class="bulleted-list"><li style="list-style-type:circle">Shortcomings &amp; Challenges</li></ul><ul id="fd00f94d-1682-438f-8c66-fb7d1932ebbe" class="bulleted-list"><li style="list-style-type:circle">Best Practices</li></ul><ul id="3ecfe489-2f7e-489b-b8f4-52c6183e5c0b" class="bulleted-list"><li style="list-style-type:circle">Enhance Your Knowledge</li></ul></li></ul></details></li></ul><h1 id="09e2a6cb-0123-47b7-b68e-8e876518cdde" class=""><mark class="highlight-brown">Learning Objective</mark></h1><h2 id="7ded84c9-c141-4c1a-96b0-dbf603252bab" class=""><mark class="highlight-red">Introduction</mark></h2><p id="a4b85577-da3a-439a-b575-b64b7b6a3f1f" class="">CSS is used to describe the visual appearance and formatting of a document written in HTML, enabling web designers to create stylish and visually appealing websites.</p><p id="5d0f4cfc-ba31-49ed-ba14-4c51ec88b4f1" class=""><strong>Duration:</strong> 2 hours</p><p id="aa61b80d-80ee-4003-bb4a-daf5cba712e9" class=""><strong>Focus:</strong> Basics of CSS, It’s Selectors, and properties</p><p id="46fb65ca-f2e3-4804-a869-52c39543580c" class=""><strong>Pre-requisite:</strong> HTML</p><h2 id="0eeff79d-8534-4b36-87f3-15b279a240fd" class=""><mark class="highlight-red">Theme</mark></h2><p id="4ef8a87c-744d-4f87-9bff-422521bb6db7" class=""><strong>Amazon</strong> is one of the world&#x27;s largest e-commerce websites, and the design and layout of the site play a crucial role in the customer&#x27;s experience. With the help of <strong>CSS</strong>, Amazon is able to create <strong>visually appealing</strong> and <strong>user-friendly</strong> web pages, making it easy for customers to find and purchase products. The use of CSS also allows Amazon to create a <strong>consistent look</strong> and feel across the site, which helps establish <strong>trust and credibility</strong> with customers. As a result, Amazon&#x27;s use of CSS contributes to its <strong>success</strong> as a leading e-commerce company.</p><h2 id="a5532fd1-ea0f-4fac-b644-268385dd37bd" class=""><mark class="highlight-red">Primary Goals</mark></h2><ul id="3cfe9aab-6f6f-4a5a-af4f-e4194d52b666" class="bulleted-list"><li style="list-style-type:disc">Gain a solid understanding of CSS, its purpose, and how it is used to style web pages.</li></ul><ul id="4685136d-a30e-4aac-b2f3-f54ab89e6cc0" class="bulleted-list"><li style="list-style-type:disc">Become familiar with fundamental CSS Properties like color, width, font-family, background, etc.</li></ul><ul id="d1b20626-6e5b-4b45-b5bb-0cf01d14ddcb" class="bulleted-list"><li style="list-style-type:disc">Apply the concepts learned in each step to implement a project, gradually style a webpage based on the provided project implementation steps.</li></ul><ul id="d64cf555-d938-4044-b944-524a3da0b78f" class="bulleted-list"><li style="list-style-type:disc">Learn how to use appropriate CSS Properties to style different parts of a webpage</li></ul><ul id="d1b80a54-ce93-481e-a69b-950ae0a89d5b" class="bulleted-list"><li style="list-style-type:disc">Explore additional CSS properties to enhance the user experience and styling of the webpage.</li></ul><p id="e9a2920f-3676-448a-a22f-cc7e706f2921" class="">
+</p><h1 id="d28675b1-33f9-4249-a6f3-800df985a0c2" class=""><mark class="highlight-brown">CSS Fundamentals</mark></h1><h2 id="1d18c509-03b9-4699-a49e-217ce8c36b95" class=""><mark class="highlight-red">Intro to CSS</mark></h2><p id="59102de7-bc5c-4fb0-8279-978652d7215c" class=""><strong>CSS (Cascading Style Sheets)</strong> is a style sheet language used to describe the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p><p id="2de5156d-c0e6-4c7f-8d4b-92fdaa334fb7" class="">It is designed to separate presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting, and reduce complexity and repetition in the structural content.</p><p id="999a7bd6-76e3-458f-95ee-ed4af5bba2e3" class="">Here is a simple example of CSS applied to a simple HTML structure:</p><pre id="c97db7d2-49f4-4b5c-9896-037b670ff0b2" class="code"><code>&lt;h1&gt;Welcome to AlmaBetter Website&lt;/h1&gt;
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre><p id="f36e0883-aaa5-4c57-9d65-72efa1ac7f3a" class="">In the HTML code, we have a <code>&lt;h1&gt;</code> heading element and a <code>&lt;p&gt;</code> paragraph element.</p><pre id="b7162a8b-23e5-40ef-831c-79cade57e28d" class="code"><code>h1 {
+  color: red;
+  font-size: 24px;
+}
+
+p {
+  color: green;
+}</code></pre><figure id="4b8e9384-d767-4030-b12e-fbf285358864" class="image" style="text-align:left"><img style="width:720px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/CSS_Image.png"/></a></figure><p id="9ee8d539-0de4-42d0-a7ab-706222ea758a" class="">In the above CSS code:</p><ul id="fc817c04-a558-48b4-8c43-37bb8da1ff6e" class="bulleted-list"><li style="list-style-type:disc">The selector <code>h1</code> selects the <code>&lt;h1&gt;</code> heading element.</li></ul><ul id="3ba70aa8-2e41-445c-b6e1-3e10b9d399bd" class="bulleted-list"><li style="list-style-type:disc">The properties <code>color</code> and <code>font-size</code> are applied to the <code>h1</code> selector.<ul id="bd7a43c5-b282-4dee-a43e-1bb07197208d" class="bulleted-list"><li style="list-style-type:circle">The <code>color</code> property sets the text color of the <code>&lt;h1&gt;</code> heading to red.</li></ul><ul id="3ad8dac2-f9c3-4081-b575-22130adb6731" class="bulleted-list"><li style="list-style-type:circle">The <code>font-size</code> property sets the font size of the <code>&lt;h1&gt;</code> heading to 24 pixels.</li></ul></li></ul><ul id="f0d3cc82-6a39-472f-b97d-85c245ac6423" class="bulleted-list"><li style="list-style-type:disc">The selector <code>p</code> selects the <code>&lt;p&gt;</code> paragraph element.</li></ul><ul id="0359ff1c-ca49-43a9-89ec-36021ce76df8" class="bulleted-list"><li style="list-style-type:disc">The <code>color</code> property is applied to the <code>p</code> selector, setting the text color of the paragraph to green.</li></ul><p id="2dbc1ac9-2013-45a9-b775-470488d4fc7e" class="">
+</p><p id="7a9e6ac0-b3d1-44b4-a1df-bd78f960ecc3" class="">By adding CSS to HTML, you can enhance the visual appearance and styling of your web pages. CSS (Cascading Style Sheets) allows you to control the layout, colors, fonts, and other design elements of your HTML content, making it more engaging and visually appealing to users. </p><p id="d3951239-0bfe-4ccb-998c-c62738804484" class="">With CSS, you can apply styles to specific HTML elements or create custom stylesheets that can be reused across multiple pages, promoting consistency and ease of maintenance. By leveraging the power of CSS, you can create dynamic, responsive, and professional-looking websites that leave a lasting impression on your audience.</p><h2 id="a90bec26-c08c-463b-9990-81a9512a4e19" class=""><mark class="highlight-red">CSS Implementation Approaches</mark></h2><p id="3e6ca0d3-1e3c-44a8-bc9e-5ab105e2d040" class="">CSS can be used in a variety of ways, depending on your needs and preferences. Some of the most common approaches include using external or internal style sheets, inline styles, responsive design, and a pre-processor like Sass or Less.</p><h3 id="329cc8ff-3dd1-456e-8a68-4e4a9f4c94d8" class="">Inline Approach</h3><p id="2e6ae2c1-e753-4e33-a887-bb160208f9af" class="">Inline CSS is a style sheet language used for styling individual HTML elements. It consists of style attributes that are added directly to the HTML elements. This approach allows you to apply a specific set of styles to a single element rather than having to apply a style to an entire document or an entire page.</p><p id="14a45d41-5543-4ed1-9c9d-17fca1b2b11d" class="">For example,</p><pre id="63c39348-baea-409e-8ff0-a2487357163c" class="code"><code>&lt;h1 style=&quot;color:pink;&quot;&gt;A Pink Heading&lt;/h1&gt;
+
+&lt;p style=&quot;color:green;&quot;&gt;A green paragraph.&lt;/p&gt;</code></pre><p id="8eac77b4-1950-40b3-a66b-a2fb97fde341" class=""><strong>Output:</strong></p><figure id="7d23ee7e-9115-4b91-8b62-36d5d6d2bbaf" class="image" style="text-align:left"><img style="width:336px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled.png"/></a></figure><h3 id="fec5e30c-11ac-4cfc-9b70-98f3c9be2a19" class="">Embedded Approach</h3><p id="a1a61f57-e61c-4bf1-851a-c94d70077406" class="">The embedded approach to using CSS involves styling a web page by adding the CSS code directly within the HTML. This approach is beneficial to developers who are working on small projects that require minimal styling since it is easier to keep track of the code and the changes made. </p><p id="fc040126-ded5-4c35-8039-2be226d1b88d" class="">For example,</p><pre id="193590ad-8584-4cca-bcc1-a2d59fc3ec70" class="code"><code>&lt;style&gt;
+        h2 {
+            font-size: 1.5rem;
+            color: #2f8d46;
+            text-align: center;
+        }
+        p {
+            font-variant: italic;
+        }
+ &lt;/style&gt;</code></pre><p id="64b09c27-0c60-4755-849e-d0ff3e059469" class="">Output:</p><figure id="ea26ab6c-eaa4-4205-a0fd-460006a2320c" class="image" style="text-align:left"><img style="width:576px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Embedded.png"/></a></figure><h3 id="3ae951b8-cfe0-4336-9086-fb3740c23f32" class="">External Approach</h3><p id="d9944e2f-31c6-4332-b39e-47480db869d8" class="">The external approach to using CSS is when an external stylesheet is used for styling HTML documents. This approach to using CSS is generally preferred for larger projects or websites, as it allows for easier maintainability and organization of the code. </p><p id="096f2ea6-658c-452d-8258-c3e0b83279f7" class="">All of the CSS code can be stored in a single file and then linked to the HTML documents, which eliminates the need for copying and pasting code into multiple files. By using an external stylesheet, the code is also easier to debug, as all the code is in one place instead of scattered across multiple documents. </p><p id="01b76d01-942b-4860-b596-5fb89572855e" class="">For example,</p><pre id="b34eb399-aea6-45f0-a1ee-a75b99eb4715" class="code"><code>&lt;head&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;stylesheet.css&quot;&gt;
+&lt;/head&gt;</code></pre><ul id="26934eb9-50fe-406b-b7ab-2caa0a6c4b2e" class="toggle"><li><details close=""><summary><strong>Project Implementation Step 1: </strong></summary><p id="5049ca85-b0e2-4dfa-8ced-0fe0b1ff071f" class="">The first step is to add the external CSS file in our project by using <code>link</code> tag and add the stylesheet <code>style.css</code> in our web page.</p><pre id="23eb67e0-4bf0-47f3-bdd2-d9e5e3ad3a1b" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Reserve&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;div id=&quot;head-title&quot;&gt;
+            &lt;img src=&quot;./assets/bus.png&quot; alt=&quot;bus&quot; id=&quot;logo&quot; /&gt;
+            &lt;div id=&quot;title-name&quot;&gt;RESERVE&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;nav&gt;
+            &lt;div&gt;
+                &lt;a href=&quot;&quot; target=&quot;_blank&quot; class=&quot;nav-elements&quot;&gt;Tickets&lt;/a&gt;
+                &lt;a href=&quot;&quot; target=&quot;_blank&quot; class=&quot;nav-elements&quot;&gt;Contact Us&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;nav-end&quot;&gt;
+                &lt;a href=&quot;&quot; id=&quot;login&quot;&gt;Login&lt;/a&gt;
+                &lt;a href=&quot;&quot; class=&quot;nav-elements&quot;&gt;Register&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;section id=&quot;main-content&quot;&gt;
+            &lt;div id=&quot;location&quot;&gt;
+                &lt;div id=&quot;location-select&quot;&gt;
+                    &lt;p&gt;From:&lt;/p&gt;
+                    &lt;select name=&quot;Depart&quot; id=&quot;depart&quot;&gt;
+                        &lt;option value=&quot;Delhi&quot;&gt;Delhi&lt;/option&gt;
+                        &lt;option value=&quot;Mumbai&quot;&gt;Mumbai&lt;/option&gt;
+                        &lt;option value=&quot;Bengaluru&quot;&gt;Bengaluru&lt;/option&gt;
+                        &lt;option value=&quot;Chennai&quot;&gt;Chennai&lt;/option&gt;
+                    &lt;/select&gt;
+
+                &lt;/div&gt;
+                &lt;div id=&quot;location-select&quot;&gt;
+                    &lt;p&gt;To:&lt;/p&gt;
+                    &lt;select name=&quot;arrive&quot; id=&quot;arrive&quot;&gt;
+                        &lt;option value=&quot;Delhi&quot;&gt;Delhi&lt;/option&gt;
+                        &lt;option value=&quot;Mumbai&quot;&gt;Mumbai&lt;/option&gt;
+                        &lt;option value=&quot;Bengaluru&quot;&gt;Bengaluru&lt;/option&gt;
+                        &lt;option value=&quot;Chennai&quot;&gt;Chennai&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;button type=&quot;button&quot; id=&quot;s-button&quot;&gt;Search&lt;/button&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;h1 class=&quot;tag-line&quot;&gt;Travel with world&#x27;s largest bus services&lt;/h1&gt;
+            &lt;div class=&quot;card-collection&quot;&gt;
+                &lt;div class=&quot;i-card&quot;&gt;
+                    &lt;img src=&quot;./assets/bus-vector.png&quot; alt=&quot;Bus&quot; class=&quot;i-image&quot; width=&quot;256px&quot; /&gt;
+                    &lt;h3 class=&quot;i-count&quot;&gt;2000+&lt;/h3&gt;
+                    &lt;p class=&quot;i-count&quot;&gt;Bus Collection&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;i-card&quot;&gt;
+                    &lt;img src=&quot;./assets/family.png&quot; alt=&quot;Family&quot; class=&quot;i-image&quot; width=&quot;256px&quot; /&gt;
+                    &lt;h3 class=&quot;i-count&quot;&gt;2 Million+&lt;/h3&gt;
+                    &lt;p class=&quot;i-count&quot;&gt;Happy customers globally&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;i-card&quot;&gt;
+                    &lt;img src=&quot;./assets/ticket.png&quot; alt=&quot;Ticket&quot; class=&quot;i-image&quot; width=&quot;256px&quot; /&gt;
+                    &lt;h3 class=&quot;i-count&quot;&gt;5000+&lt;/h3&gt;
+                    &lt;p class=&quot;i-count&quot;&gt;Tickets book everyday&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/section&gt;
+        &lt;section id=&quot;testimonials&quot;&gt;
+            &lt;div class=&quot;t-card&quot;&gt;
+                &lt;div&gt;
+                    &lt;h3&gt;Vatsal Agarwal&lt;/h3&gt;
+                    &lt;h4&gt;Customer since 2020&lt;/h4&gt;
+                &lt;/div&gt;
+                &lt;p id=&quot;rating&quot;&gt;4.9 &amp;#9734;&lt;/p&gt;
+                &lt;p&gt;Amazing travel experience with reserve. Excellent staff&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;t-card&quot;&gt;
+                &lt;div&gt;
+                    &lt;h3&gt;Rohan Sharma&lt;/h3&gt;
+                    &lt;h4&gt;Customer since 2022&lt;/h4&gt;
+                &lt;/div&gt;
+                &lt;p id=&quot;rating&quot;&gt;4.3 &amp;#9734;&lt;/p&gt;
+                &lt;p&gt;Amazing service. Always a best time with reserve.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;t-card&quot;&gt;
+                &lt;div&gt;
+                    &lt;h3&gt;Virat Kohli&lt;/h3&gt;
+                    &lt;h4&gt;Customer since 2019&lt;/h4&gt;
+                &lt;/div&gt;
+                &lt;p id=&quot;rating&quot;&gt;4.5 &amp;#9734;&lt;/p&gt;
+                &lt;p&gt;Bus was clean and the journey was smooth. Reached on time.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2023 AlmaBetter. All rights reserved&lt;/p&gt;
+        &lt;div class=&quot;social-media&quot;&gt;
+            &lt;a href=&quot;https://www.facebook.com&quot;&gt;&lt;img src=&quot;./assets/facebook.png&quot; alt=&quot;Facebook&quot; class=&quot;social-icon&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;https://www.twitter.com&quot;&gt;&lt;img src=&quot;./assets/twitter.png&quot; alt=&quot;Twitter&quot; class=&quot;social-icon&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;https://www.instagram.com&quot;&gt;&lt;img src=&quot;./assets/instagram.png&quot; alt=&quot;Instagram&quot;
+                    class=&quot;social-icon&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p id="48a0b6b5-86b6-4f4c-8f93-20b29ffb54df" class="">
+</p></details></li></ul><h2 id="632703c1-3d74-45a6-8ec9-709a010d5eee" class=""><mark class="highlight-red">CSS Syntax and Structure</mark></h2><p id="2fe21a52-82b0-4a80-8111-8fc2b940af8a" class=""><strong>CSS Syntax has four main parts:</strong></p><ul id="b653fe4c-6a30-4508-b396-196dc3c5a6e2" class="bulleted-list"><li style="list-style-type:disc"><strong>Selectors:</strong> These are the HTML elements that are going to be styled. They are identified using the element name, class name, or ID name.</li></ul><ul id="5c91713a-5e8d-4c62-b151-07429cc4c48c" class="bulleted-list"><li style="list-style-type:disc"><strong>Declaration: </strong>The declaration is what tells the browser how to render the element on the page. Multiple declarations can be applied to a single element, and are separated by a semicolon.</li></ul><ul id="59ffe50f-ae77-4e9b-9c4b-b97fc2e12a90" class="bulleted-list"><li style="list-style-type:disc"><strong>Properties: </strong>These are the styling attributes that are going to be applied to the HTML elements. Examples of properties include color, font size, width, height, and margin.</li></ul><ul id="85dd3595-c414-4592-a50e-110cb905d65b" class="bulleted-list"><li style="list-style-type:disc"><strong>Values:</strong> These are the values that are assigned to the styling properties. Examples of values include red, 12px, 100%, and 10px.</li></ul><figure id="f0c3cc6e-c047-4c64-b8c3-2345db603e0a" class="image"><img style="width:576px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%201.png"/></a></figure><h3 id="375bc1c4-c105-4758-a00b-9729fe015a71" class="">CSS Selectors</h3><p id="81d222c3-1b7b-4498-9e6b-4e9319e0ec90" class="">CSS selectors are the primary means of targeting elements on a webpage. Selectors allow developers to target specific HTML elements and apply styles to them. Selectors are written using a combination of tag names, class names, IDs, and attributes.</p><p id="e6b3f5be-477b-4224-a526-8713246d55d0" class="">Selectors can be combined to create more complex selectors. These selectors can be used to target more specific elements. For example, the selector “div.container p” will target all &lt;p&gt; tags that are children of elements with the class “container”.</p><p id="5ae9e96a-0c24-42f7-9329-3e697bd873ca" class="">There are multiple types of CSS selectors, which will be explained in detail below:</p><ul id="81e0701a-cce8-41fa-aef8-81c1666ddbf6" class="bulleted-list"><li style="list-style-type:disc"><strong>Type selector:</strong></li></ul><p id="3d8500c3-295c-4965-86c3-cf833493a0f3" class="">The most basic selector is the type selector, which is used to select elements based on their type or tag name. For example, a type selector can be used to select all &lt;h1&gt; elements on a page and apply a certain font size and color to them.</p><pre id="30cdc141-cd8e-4fb4-a89e-e3e507235907" class="code"><code>&lt;!-- HTML File --&gt;
+
+&lt;a&gt;Home&lt;/a&gt;</code></pre><pre id="1e222354-5140-4741-a9d7-e3eeeb1e0a21" class="code"><code>&lt;!-- CSS File --&gt;
+
+a {
+  color: red;
+}</code></pre><p id="0398cdde-882e-485c-8cca-da2a590d21be" class="">Here, all &lt;a&gt; elements will display in the color red.</p><ul id="d7284c83-ba12-44fe-8e8e-07995f9e7df1" class="bulleted-list"><li style="list-style-type:disc"><strong>Universal selector:</strong></li></ul><p id="bd695314-953c-4d34-9295-170cc5efbd7c" class="">Universal CSS selectors are a type of selector that is used to target all elements on a web page. This means that they are used to select all HTML elements, regardless of type or class. Universal selectors are denoted by an asterisk (*) and can be used to apply styles to all elements on a page in one declaration.</p><p id="7ab04168-c056-4bbd-af33-c94659353190" class="">Universal selectors are useful when you want to set a style for all elements on a page. For example, you can use a universal selector to set a font size for all elements or a background color for all elements. This can be helpful when you are creating a consistent design across all elements on your page.</p><p id="72c16b87-bd3d-4bb0-bb79-abae0cf4704d" class="">For example,</p><pre id="ad13026c-b376-4ae6-8f3f-6b1fab3765f9" class="code"><code>* {
+  color: pink;
+}</code></pre><p id="bd86b9c2-7c8d-4a37-9761-d0b09def7add" class="">Using this piece of code helps turn all elements pink.</p><ul id="67df3101-4439-45be-affa-22b5eef64fff" class="bulleted-list"><li style="list-style-type:disc"><strong>Descendant selector:</strong></li></ul><p id="b21767ac-3e05-45c0-9597-339163522ba6" class="">Descendant CSS selectors are used to target elements that are descendants of other elements. A descendant is an element that is a child, grandchild, great-grandchild, and so on, of another element. Descendant selectors target elements based on their relationship to other elements in the HTML document.</p><p id="752a01df-b581-4d8e-af47-39beb5b965a2" class="">Descendant selectors are made up of two or more selectors separated by a space. The first selector is the ancestor element, and the second selector is the descendant element. For example, a selector such as &quot;div p&quot; would target all &lt;p&gt; elements that are descendants of a &lt;div&gt; element.</p><p id="b98899dd-b23b-4ea5-9fce-0d16158ab381" class="">For example,</p><pre id="b6b3b23b-e626-4490-816f-3e65034eab4f" class="code"><code>&lt;div&gt; 
+&lt;p&gt;Honesty is the best Policy!&lt;/p&gt; 
+&lt;/div&gt;</code></pre><pre id="9b571fe1-380e-48b9-a370-79dc95e86a86" class="code"><code>div p {
+  background-color: green;
+}</code></pre><ul id="3b174578-05d5-48b1-896c-b019a0674c17" class="bulleted-list"><li style="list-style-type:disc"><strong>Class selector:</strong></li></ul><p id="357de821-2a23-47b6-ac1d-64ed402935e7" class="">Class CSS selectors allow developers to specify which HTML elements should be styled a certain way. With class selectors, developers are able to create a class for a particular element and define the specific styles for that class. </p><p id="1c3e586e-934e-4fa9-8791-43dcd6b73c0f" class="">For example, if you wanted to target a particular &lt;div&gt; element on your page, you would create a class for it and then use the class selector to define the styles for that class. This allows developers to create more specific styling than if they were to use an element selector, which would style all elements of the same type. </p><p id="5afaf2f8-5258-4cf4-a9a4-6afffdd75906" class="">Additionally, with class selectors, developers can reuse the same class across multiple elements, allowing them to easily create consistent styling throughout their website. </p><p id="118841ca-7c54-4a5a-bffd-b83da0588e9d" class="">For example,</p><pre id="a7bc2b5f-d49f-4511-b411-7fa3e3d0c142" class="code"><code>&lt;div class=&quot;content&quot;&gt; Honesty is the best Policy! &lt;/div&gt;</code></pre><pre id="fc22cd81-3ed0-43dd-a1bb-5cbb1b3e63e0" class="code"><code>.content {
+  background-color: pink;
+}</code></pre><p id="2dc76975-2b13-41a7-82c7-dba465d52f03" class="">Here, all the elements with the class name “content” will be displayed with a pink background color.</p><ul id="899698f1-4230-45c7-99bb-79577715cadb" class="bulleted-list"><li style="list-style-type:disc"><strong>Id selector:</strong></li></ul><p id="801f208a-6413-4919-86dc-76acf7ae092b" class="">CSS ID selectors are used to identify an element on a webpage based on its ID attribute. An ID attribute is a unique identifier applied to a single element on a web page, and can be used to select, style, and manipulate that element. </p><p id="91e90b72-e77e-4ada-8ac8-77f425d76bab" class="">To use an ID selector, the element must have an ID attribute. This is done by adding the attribute “id” to the element tag and giving it a unique value.</p><p id="a2643cf8-caf5-42c6-88ae-d20e3e1ddc7c" class="">For example,</p><pre id="4015d886-c9a9-4d85-adf7-e6e61f274d61" class="code"><code>&lt;div id=&quot;content1&quot;&gt; Honesty is the best Policy! &lt;/div&gt;</code></pre><pre id="ad92f519-c101-474f-9079-58575f91aa42" class="code"><code>#content1 {
+  text-align: center;
+  color: green;
+}</code></pre><p id="2752a0ec-a0df-403c-86b9-d86aee02ec63" class="">Here, using the code above will help change the properties of the elements with the id name “content1”.</p><ul id="2d060b0a-d1ba-492b-af1c-c575f69830ca" class="bulleted-list"><li style="list-style-type:disc"><strong>Child selector:</strong></li></ul><p id="0d69c500-7b78-44ab-8e03-8e49c2cc2d8c" class="">Child CSS selectors are a way to target elements that are nested inside another element. This allows you to apply styles only to the element that is a child of the specified selector.</p><ul id="96aba775-414d-4ee4-9c0f-ab555856ceb9" class="bulleted-list"><li style="list-style-type:disc"><strong>&gt; Immediate Child Selector</strong>: An example of a child CSS selector is the &gt; symbol. This symbol is used to target the immediate child of a selector. For example, if you wanted to style the &lt;p&gt; elements inside a &lt;div&gt; element, you could use the following selector: div &gt; p.</li></ul><pre id="20674090-fd9a-4cf4-9bda-4f22fc1ae31d" class="code"><code>div &gt; h1 {
+  background-color: green;
+}</code></pre><p id="fbc3104e-8de1-4bb2-8134-4f427f5d66bd" class="">Using the above code snippet helps select all &lt;h1&gt; elements that are children of a &lt;div&gt; element.</p><ul id="6673e234-647a-4bdf-88a5-1ebded2a03a6" class="bulleted-list"><li style="list-style-type:disc"><strong>+ Immediate Sibling Selector</strong>: Another child CSS selector is the + symbol. This symbol targets only the immediate next sibling of the specified selector. It can be used to style the next element that comes directly after the specified selector.</li></ul><pre id="47638906-605f-41dc-88ed-ffb01a859ffa" class="code"><code>div + h1 {
+  background-color: green;
+}</code></pre><p id="fb937820-401f-4f4c-bdd8-1ccd46c933cf" class="">Doing this helps in selecting the first &lt;h1&gt; element that is placed immediately after &lt;div&gt; elements.</p><ul id="7f74bf01-189f-48ce-a717-cfd87a8333a3" class="bulleted-list"><li style="list-style-type:disc"><strong>~ Sibling Selector</strong>: A general sibling CSS selector is another child selector used to select elements that are siblings of a specified element. It matches the element that is the next sibling of the specified element and shares the same parent. General sibling selectors are written using the tilde character (~).</li></ul><pre id="a80234f8-1212-4c4e-928e-29f43b40566b" class="code"><code>div ~ h1 {
+  background-color: green;
+}</code></pre><p id="bc2987c8-b2e0-4689-b663-a721e528ca9e" class="">This selects all &lt;h1&gt; elements that are next siblings of &lt;div&gt; elements.</p><ul id="3d08fa37-bda1-43c7-9842-8836d7b3d91c" class="bulleted-list"><li style="list-style-type:disc"><strong>Attribute selector:</strong></li></ul><p id="3f22da3a-7d76-43eb-88b1-19e3c9dc911f" class="">Attribute CSS Selectors are used to select elements based on their attributes and attribute values. This type of selector allows you to target elements based on the presence or value of a given attribute. </p><p id="40724381-3253-45d2-9703-6da429320ece" class="">For example,</p><pre id="f64abdca-96ea-4610-bd96-8e08770fdec7" class="code"><code>a[atr] {
+  background-color: green;
+}</code></pre><p id="10daf7db-60f8-4b9c-adf5-9b2a9d1f222d" class="">This example selects all &lt;a&gt; elements with a “atr” attribute.</p><ul id="64f6073f-9b58-4eb4-880a-554cb70d0996" class="bulleted-list"><li style="list-style-type:disc"><strong>Grouping selector:</strong></li></ul><p id="5078d221-00e5-42c7-a0c6-68595c1294e5" class="">Grouping CSS selectors allows you to apply the same style to multiple elements at once. This is particularly useful when you have several elements that share similar styling. Instead of repeating the styling for each element individually, you can group the selectors together and apply the styling to all of them at once. </p><p id="c6b89b7b-bc5e-44d6-be70-91a3d82807ea" class="">For example,</p><pre id="7644cb40-4fc7-4f86-a32d-c49dcb6c03f1" class="code"><code>p, h1 {
+  background-color: green;
+}</code></pre><p id="eb9860ba-c8dc-4846-b8cc-574a89c13b1a" class="">Here, both &lt;p&gt; and &lt;h1&gt; are displayed with the background color green.</p><h3 id="dd7a08bc-fdbf-4893-8f78-1d7cffb79379" class="block-color-default"><strong>Overriding CSS rules:</strong></h3><p id="e4662afa-1392-41b9-b372-77c8caef7e1e" class="">CSS Overriding rules refer to the rules that determine how the cascade of styles is applied to a web page. The “cascade” is the order in which style declarations are applied to the page. </p><p id="96aa2e1c-fac4-47b8-b857-1dde27e99ac4" class="">The overriding rule states that if two declarations conflict, the latter one will override the earlier one. This rule is important in ensuring that the latest styles are applied to a page and that the page displays correctly.</p><p id="5870b325-fe52-4651-8e58-ab86857614a5" class="">The overriding rule of CSS can be further broken down into two parts:</p><ul id="3aa8a750-b6c0-4e79-8bec-62943ec0336d" class="bulleted-list"><li style="list-style-type:disc"><strong>Specificity:</strong> This refers to how specific a selector is. The more specific a selector is, the more likely it is to override other declarations. For example, if two declarations are made, one for the body and one for a particular &lt;div&gt; element, the latter has a higher specificity and will override the former.</li></ul><ul id="20062ce2-a536-4c63-9b33-9de406984a1e" class="bulleted-list"><li style="list-style-type:disc"><strong>Order</strong>: This refers to the order in which the styles are declared. If two declarations conflict, the one that is declared last will override the one that is declared first. This is critical when writing CSS, as you want to ensure that the order of your declarations is such that the styles you want to be applied are applied last.</li></ul><p id="030228a5-c220-41e7-88a0-1279a49c8422" class="">Overall, the overriding rule of CSS is an important part of ensuring that the latest styles are applied to a page and that it displays correctly. By understanding and adhering to this rule, you can ensure that your web pages look as intended.</p><h3 id="04ee911d-2a7a-4e15-9832-adc75b216e15" class="block-color-default"><strong>Comments in CSS:</strong></h3><p id="1159d1e4-502a-43d6-95e1-de5b1b9f4cf5" class="">CSS comments allow developers to add notes about their style sheets for other developers or themselves. They are also used to &quot;turn off&quot; certain elements of the code. Comments are written with a forward slash and an asterisk, then the comment, another asterisk, and a forward slash. For example:</p><pre id="7fb0eddd-a138-4b70-868d-a9cbc68cfde9" class="code"><code>/* This comment will be ignored by the browser */</code></pre><p id="8c77bdd4-b3f4-41a4-a401-659110d25807" class="">CSS comments are useful for debugging and troubleshooting the code, as well as for providing reminders and explanations to other developers. They are also used to change the appearance of certain elements or sections of the code without having to make any permanent changes.</p><p id="b343d4ac-0e10-4fb9-97a1-c0ed3dfd8af5" class="">In addition, they can be used to help document the code and keep it organized. This can help developers keep track of their code and make it easier to modify and understand in the future.</p><h2 id="1151a1fd-1b97-48bf-b621-dbd863ef1edf" class="block-color-default"><mark class="highlight-red">CSS Units</mark></h2><p id="94ab20f2-434e-44c2-8aad-c7e70687fe88" class="">CSS is a styling language that is used to control the look and presentation of a web page. The most common CSS units are:</p><ul id="3ca321b8-3315-4c3b-b2a9-2e4b9487cbac" class="bulleted-list"><li style="list-style-type:disc"><strong>Pixels (px)</strong>: Pixels are the most common unit used in CSS. They are used to define the size of elements on a page. Pixels are absolute units, meaning that they are an exact measurement and cannot be changed.</li></ul><ul id="238bc33f-05f6-4e9a-8a0b-95d6e098a537" class="bulleted-list"><li style="list-style-type:disc"><strong>Ems (em)</strong>: Ems are relative units, meaning that they scale according to the font size of the element. 1 em is equal to the current font size, so if the font size is 16px, then 1em is equal to 16px.</li></ul><ul id="d502e12b-2a6d-4495-acd1-5f6e0ee73348" class="bulleted-list"><li style="list-style-type:disc"><strong>Percentages (%)</strong>: Percentages are also relative units, but they are based on the size of the parent element. For example, if the parent element is 400px wide, then 50% would be equal to 200px.</li></ul><ul id="d49ebabd-10ce-4cd4-a56c-d40f9b5addf6" class="bulleted-list"><li style="list-style-type:disc"><strong>Points (pt)</strong>: Points are absolute units, used mainly in print media. 1pt is equal to 1/72 of an inch.</li></ul><ul id="59a79078-a526-4500-8525-b7d790ac5d23" class="bulleted-list"><li style="list-style-type:disc"><strong>Rems (rem)</strong>: Rems are relative units, based on the root font size of the document. The root font size is usually 16px, so 1rem would be equal to 16px.</li></ul><ul id="8eabc7e8-5844-4a8b-b2df-b6e7371bd5f1" class="bulleted-list"><li style="list-style-type:disc"><strong>Viewport-percentage lengths (vw, vh)</strong>: Viewport-percentage lengths are relative units that are based on the size of the browser window. 1vw is equal to 1% of the width of the browser window, and 1vh is equal to 1% of the height of the browser window.</li></ul><ul id="47501ef2-f74e-4f09-9c45-182e1d3332e3" class="bulleted-list"><li style="list-style-type:disc"><strong>Viewport-units (vmin, vmax)</strong>: Viewport-units are relative units that are based on the size of the browser window. 1vmin is equal to the smaller of 1vw or 1vh, and 1vmax is equal to the larger of 1vw or 1vh.</li></ul><h2 id="5f463c39-b5ed-41ab-9ea8-3be8bb2e6581" class=""><mark class="highlight-red">CSS Box Model</mark></h2><p id="f984a5ed-23e4-4135-84a4-07ff41199590" class="">The CSS Box Model is a fundamental concept describing the rectangular boxes generated for HTML elements. It is the cornerstone of web page layout and determines the size, position, and behavior of all the elements on the page. The box model consists of four properties: content, padding, border, and margin.</p><figure id="5e64ea4f-a55f-415f-a45c-7dba8f48612a" class="image"><img style="width:480px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%202.png"/></a></figure><h3 id="9e7bf85e-a18a-4e42-b879-abf209644383" class=""><strong>Why is the box model important in CSS?</strong></h3><p id="341782fa-2b38-4e31-8bba-323751da3e88" class="">The box model is an important concept in CSS because it is the foundation of how we define the size and appearance of elements on a web page. The box model defines the elements of a web page as a &quot;box,&quot; with each element occupying a rectangular space. This box is made up of four distinct parts: content, padding, border, and margin.</p><p id="ff1de5f2-7d45-4579-b8fe-2ace5eb0c1d8" class="">A box&#x27;s content is the element&#x27;s main part, such as text, images, etc. The padding is the space between the content and the element&#x27;s border. The border is a visible line around the element, and the margin is the space between the element and any other elements or the edges of the page.</p><h3 id="a6323b24-4c7c-4874-9bda-c088ada1ec9b" class=""><strong>Properties of the box model in CSS:</strong></h3><p id="6fa2ffd8-aa6e-4a35-b380-affec9ac831d" class="">The CSS box model is essential for understanding how web pages are laid out. It is important to understand the properties of the box model to create effective and attractive web page designs.</p><ul id="91419e8d-ae33-4991-9640-45b081b26437" class="bulleted-list"><li style="list-style-type:disc"><strong>Content area:</strong></li></ul><p id="c058889c-e4ff-47f5-ad49-1403654df84e" class="">The content area of the Box Model is the area that contains the actual content of the page. This can include text, images, videos, and other elements. The content area is the page&#x27;s core and is usually the largest part of the Box Model.</p><ul id="8a45eaa0-bccc-47f1-b004-669a75e9d866" class="bulleted-list"><li style="list-style-type:disc"><strong>Padding area:</strong></li></ul><p id="3e2d20d3-2ced-4c31-8164-1c89d36bda94" class="">The padding area of the box model is the space between the content and the border of an element. It separates the content from the border, creating a visual buffer and giving the element a more aesthetically pleasing appearance. Padding can be applied to all four sides of an element or any combination of the four.</p><ul id="138bd889-0ad1-4e1c-b16e-92862143a683" class="bulleted-list"><li style="list-style-type:disc"><strong>Border area:</strong></li></ul><p id="dd5d809a-da80-44b9-be7b-24bf9cfc5cef" class="">The Border Area of the Box Model in CSS is a part of the Box Model, a fundamental concept in CSS. It defines the rectangular area around an element and includes four properties: margin, border, padding, and content. The Border Area of the Box Model defines the width and color of the element&#x27;s outer boundary.</p><ul id="e19e9b52-f8e9-4f66-8860-e33a7448f5f4" class="bulleted-list"><li style="list-style-type:disc"><strong>Margin area:</strong></li></ul><p id="4881e48f-8b5c-4907-b478-e9f79f96ad2c" class="">The margin area of the CSS box model is the space outside the border and between the margin and the other surrounding elements. The margin will push other elements away from it and is affected by the width and height of the element and the padding and border sizes.</p><h2 id="3738a033-b634-414a-88ea-488135a59f1a" class=""><mark class="highlight-red">Width &amp; Height</mark></h2><h3 id="29c93d05-5563-4460-9a20-24f3d6e2334f" class="">Width</h3><p id="75edb927-b80b-49f6-8775-40bf952e96c8" class="">CSS width is a property that allows the user to specify the horizontal dimension of an element. It determines how wide an element should be displayed on a web page. </p><p id="2bd677e8-b741-4330-a2d4-0dcc83b44d6f" class="">The width property can be applied to various types of elements, such as block-level elements (e.g., &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;) and inline elements (e.g., &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;).</p><p id="b5a9daab-b5ec-47e8-bee7-af5d16d6e481" class="">For example,</p><pre id="7d3e5296-102b-4957-9d8e-b91efd1a4895" class="code"><code>div {
+width:200px;
+}</code></pre><figure id="1c86e937-2e81-481e-9e03-b95ddbe9e4c1" class="image" style="text-align:left"><img style="width:960px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Width_Property.png"/></a></figure><p id="f1497982-6c8d-4788-8294-761faff36ea4" class="">In this example, the <code>div</code> element will have a fixed width of <code>200px</code>. It will occupy a specific width on the page.</p><ul id="1fe93282-ca6b-429d-a462-6399f8248c1c" class="bulleted-list"><li style="list-style-type:disc">auto Width: Setting <code>width</code> to <code>auto</code> allows the element to automatically adjust its width based on its content or the width of its parent container. If the element is a block-level element, it will take up the full available width of its parent container by default. If it is an inline element, it will adjust its width to fit its content. <pre id="b33983c0-6a12-4f3e-9800-15cb6518fc4c" class="code"><code>	div {
+  width:auto;
+}</code></pre></li></ul><ul id="fce487f5-9fd3-488a-9115-65ceb230c70f" class="bulleted-list"><li style="list-style-type:disc"><strong>Maximum and Minimum Width: </strong>The <code>max-width</code> property allows you to set a maximum width limit for an element, ensuring it does not exceed that value even if the content or parent container allows for a wider width. <p id="6519a675-08da-45ed-8c03-b21b886dd7df" class="">Conversely, the <code>min-width</code> property sets a minimum width limit, ensuring that the element always occupies at least that width. </p><pre id="c593a033-02db-44ff-82e3-6f33c5cd7d28" class="code"><code>div {
+  max-width: 500px;
+  min-width: 200px;
+}</code></pre></li></ul><h3 id="6315631d-c6f3-4268-9062-873f45a2d163" class="">Height</h3><p id="eedf128e-e0c3-4f7e-8e6b-5267f46fb789" class="">CSS <code>height</code> is a property that allows you to specify the vertical dimension of an element. It determines how tall an element should be displayed on a web page. </p><p id="244739f1-51ca-4855-ab77-b88bbd479836" class="">The <code>height</code> property can be applied to various types of elements, such as block-level elements (e.g., <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>) and inline elements (e.g., <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>).</p><p id="291228de-2415-488f-83b0-5847a96dd237" class="">For example,</p><figure id="ccd39436-6645-465a-8d22-747112cf904f" class="image" style="text-align:left"><img style="width:912px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Height_Property.png"/></a></figure><p id="96b0e130-0772-41b3-8b80-bd5aeb1cc12b" class="">In this example, the <code>div</code> element will have a fixed width of <code>200px</code>. It will occupy a specific width on the page.</p><ul id="e3ed5bad-8e69-48f6-9cd6-937e776fb57a" class="bulleted-list"><li style="list-style-type:disc"><strong>auto Height: </strong>Setting height to auto allows the element to automatically adjust its height based on its content or the height of its parent container. <p id="7e474f31-179e-41a8-b8d3-5024230c2e15" class="">If the element is a block-level element, it will adjust its height to fit its content vertically. If it is an inline element, it will take up the height determined by the line height of the text within it.</p><pre id="9197f657-d0d6-4548-98ac-ab7a622b9963" class="code"><code>div {
+  height:auto;
+}</code></pre></li></ul><ul id="2b50d4cb-5aaa-45b9-aac9-4da9756061b9" class="bulleted-list"><li style="list-style-type:disc"><strong>Maximum and Minimum Height: </strong>The max-height property allows you to set a maximum height limit for an element, ensuring it does not exceed that value even if the content or parent container allows for a greater height. <p id="7b92f413-626a-4f15-8496-4379fe7f67cf" class="">On the other hand, the min-height property sets a minimum height limit, ensuring that the element always occupies at least that height.</p><pre id="74d6acab-348e-444a-ba97-d4a61da2cca3" class="code"><code>div {
+  max-height: 500px;
+  min-height: 200px;
+}</code></pre></li></ul><p id="9ba14c43-2331-4043-9810-2ba01d7a972c" class="">The height and width properties may have the following values as well:</p><ol type="1" id="06222676-0e4f-485a-b6fd-6ef358bae278" class="numbered-list" start="1"><li><strong>%:</strong> The percentage value allows you to define the height or width of an element relative to the size of its containing block. For example, <code>width: 50%;</code> will set the width of an element to be 50% of the width of its parent container. This is particularly useful for creating responsive layouts that adapt to different screen sizes.</li></ol><ol type="1" id="f3e3f73f-ad23-4c5a-a3c9-91115718a1d5" class="numbered-list" start="2"><li>initial: The <code>initial</code> value resets the height or width property to its default value. It ensures that the element is rendered with the default dimensions defined by the browser&#x27;s CSS stylesheet. This can be useful if you want to override any previously applied height or width styles.</li></ol><ol type="1" id="c2d147db-5172-40bf-a5f2-978a6a743cd4" class="numbered-list" start="3"><li>inherit: The <code>inherit</code> value allows the height or width of an element to inherit the value from its parent element. This means that the element will have the same height or width as its parent element if it has explicitly set dimensions. It is useful when you want to maintain consistency in the size of child elements.</li></ol><ul id="9ea015f4-b118-4118-900c-6f9ad97ff629" class="toggle"><li><details close=""><summary><strong>Project Implementation Step 2: </strong></summary><p id="8b9b4a7a-160b-4e99-b8e5-226807314faf" class="">In this step, we will add the Height and Width to various HTML Elements of our project. Some of the elements we will target using the tag name, Some of the elements we will target using the class names, and others with the ID specifier.</p><p id="b58fb08c-7c8d-40f6-bfc9-3dd3b7345340" class="">This will be our first changes to style.css
+</p><pre id="88f089a6-c6d3-4461-ac3c-e7863610b72e" class="code"><code>header {
+  height: 50px;
+  /* Height of the Header Section */
+}
+
+main {
+  min-height: 100vh;
+  /* Minimum Height of the main Content Section so that Footer will be after that particular minimum height */
+}
+
+#main-content {
+  min-height: 40vh;
+  /* Setting Minimum Height of the main Content */
+}
+#logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  /* Website Logo Image Width */
+}
+
+#location-select {
+  width: 20rem;
+  /* User Select Option Width */
+}
+#s-button {
+  width: fit-content;
+  /* Setting Button Width to fit content */
+}
+
+.i-card {
+  width: 200px;
+  /* Setting Information Card width */
+}
+.i-image {
+  width: 120px;
+  height: 120px;
+  /* Image in information card width and height */
+}
+.t-card {
+  width: 300px;
+  /* testimonials Card Width */
+}
+
+#rating {
+  width: 35px;
+  /* testimonials Card, User Rating Element Width */
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  /* Social Icon Width and Height */
+}
+</code></pre><p id="7af45f62-17f4-40eb-ae7d-b5a2b4c15cdf" class=""><strong>Output:</strong></p><figure id="2fec2cd2-2f61-4324-9088-c2360d22b316" class="image"><img style="width:672px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%203.png"/></a></figure></details></li></ul><h2 id="71f02d0a-22ad-4940-9b48-c30ce3112a96" class=""><mark class="highlight-red">Padding</mark></h2><p id="cbda0fb3-8660-4324-9414-39e71520d3a4" class="">Padding in CSS is the space between an element and its border. It creates space between the elements on a page without using margins or borders. Padding can be applied to any element, including the body, tables, and images.</p><p id="e8b25a04-bcda-4208-b329-b0a12f59e6f7" class="">Padding can be applied in either pixels, ems, or percentages. Padding applied in pixels will create an exact size for the padding, padding applied in ems will create a relative size based on the element’s font size; and padding applied in percentages will create a relative size for the padding based on the element’s width.</p><p id="7fa6f10a-9aba-4243-8598-e7586473a973" class="">Padding for all sides can be specified using the following properties:</p><ul id="ee250158-83c4-4e0a-bab8-89702f15b10a" class="bulleted-list"><li style="list-style-type:disc"><code>padding-top</code></li></ul><p id="01c8d532-ea47-4bdc-84fc-c71465d539f5" class="">Top-padding in CSS is a property used to add padding to the top of an element. Top-padding can be set using the property &quot;padding-top&quot;. This property accepts values in pixels, ems, percentages, and more. When using pixels, it is important to remember that the value should be relative to the size of the element.</p><p id="cbbdeeec-fb9e-46c7-9641-27e0bd4064b3" class="">For example,</p><pre id="640fd0ee-4950-4c83-b9e9-c22d4c42f911" class="code"><code>div{ 
+  padding-top: 50px;
+}</code></pre><p id="8e3c2db4-3375-4b93-82b9-1f9516b9ce55" class="">Output:</p><figure id="78f65bbd-1608-4cb4-abf5-d20c1591dd64" class="image"><img style="width:931px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%204.png"/></a></figure><ul id="c54303ad-7083-41a6-8a18-3214bbdef3e1" class="bulleted-list"><li style="list-style-type:disc"><code>padding-right</code></li></ul><p id="a285a4b4-0e13-4314-90fe-3e9cdde2570e" class="">Right-padding in CSS is the process of adding space to the right hand side of an element. This is done to create a visual separation between the element and any other elements in the same container. </p><p id="08f75d13-1608-4468-9ed8-a78586ae7401" class="">For Example:</p><pre id="d69d61c6-8d20-44c0-9dc1-f21053dd33b4" class="code code-wrap"><code>div {
+  padding-right: 30px;
+}</code></pre><p id="42229a4e-f2ea-4dd5-b19e-347c385d66f7" class="">Output:</p><figure id="2212dea9-95c9-450d-a5ed-35d3ca67a5e7" class="image"><img style="width:932px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%205.png"/></a></figure><ul id="4ffea922-d441-4dfb-8e67-e1be4d98c153" class="bulleted-list"><li style="list-style-type:disc"><code>padding-bottom</code></li></ul><p id="9927f33a-9ecb-413a-8c53-bdccb6f40027" class="">Bottom padding in CSS is a way of adding space or padding between the bottom of an element and any other elements or objects that may follow it. r.The padding-bottom property is used to set the amount of space or padding to be applied to the bottom of an element.</p><pre id="83ee8a44-8041-4da3-97c2-e29965b96d87" class="code code-wrap"><code>div {
+  padding-bottom: 40px;
+}</code></pre><p id="7ccd70fa-502f-4dad-8f4a-e10379105fae" class="">Output:</p><figure id="09644967-b4f3-4ba5-bb28-07f8ad47e9ba" class="image"><img style="width:934px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%206.png"/></a></figure><ul id="2b237549-c52a-4a13-99a1-25a1fdfdeeef" class="bulleted-list"><li style="list-style-type:disc"><code>padding-left</code></li></ul><p id="9cb84ae0-63a1-49f4-8a84-6465302ef4b8" class="">Left padding in CSS is the process of adding space to the left hand side of an element. This is done to create a visual separation between the element and any other elements in the same container. </p><p id="dedbcad7-c6ff-43ff-9dc5-bc040f2edc50" class="">For example,</p><pre id="7b2a806d-68a3-4b8d-8a9d-19bd499d52a2" class="code code-wrap"><code>div {
+  padding-left: 70px;
+}</code></pre><p id="c636abb7-cddf-43bd-ba6e-537c8702d8e4" class="">Output:</p><figure id="1457a236-f8b9-41ed-8098-32344fa2ad74" class="image"><img style="width:932px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%207.png"/></a></figure><h3 id="f1aac3cf-ac54-4a44-a898-1bc3db3072d9" class="">Padding Shorthand</h3><p id="8efd083d-710e-4ddd-8a42-4bf858921236" class="">The padding property is a shorthand property for the above four individual padding properties. The padding shorthand property can be used to set the padding for all sides simultaneously, or it can be used to set different padding values for each side individually. </p><p id="1c78dd24-2633-4de9-9130-5716245beaca" class="">The syntax for the padding shorthand property is as follows:</p><pre id="12cbef7a-88b6-4c80-92e9-6768b5aa6d9b" class="code"><code>padding: top right bottom left;</code></pre><ul id="129f05ed-aa02-49d4-aa26-78b355577fc3" class="bulleted-list"><li style="list-style-type:disc"><strong>top</strong>: Specifies the padding value for the top side of the element.</li></ul><ul id="88cacf3e-188e-4036-a01b-4a5d76429e59" class="bulleted-list"><li style="list-style-type:disc"><strong>right</strong>: Specifies the padding value for the right side of the element.</li></ul><ul id="94bda425-5d45-4a49-b283-cd4c733e3062" class="bulleted-list"><li style="list-style-type:disc"><strong>bottom</strong>: Specifies the padding value for the bottom side of the element.</li></ul><ul id="69ef852a-65f5-4796-97db-be1e6d5b7948" class="bulleted-list"><li style="list-style-type:disc"><strong>left</strong>: Specifies the padding value for the left side of the element.</li></ul><p id="c305ce3c-b7bf-4031-a194-7941c1de0c8e" class="">
+</p><p id="132b3a20-ab59-4ea6-8e52-d02d8a64b5a0" class="">You can provide one, two, three, or four values to the <code>padding</code> property, depending on your requirements:</p><ul id="a7226293-0185-478c-8ad9-99260a40d074" class="bulleted-list"><li style="list-style-type:disc">If only one value is provided, it will be used for all sides of the element.</li></ul><ul id="b0d244f6-ff35-485a-98e5-30f0671a8f65" class="bulleted-list"><li style="list-style-type:disc">If two values are provided, the first value will be used for the top and bottom, and the second value will be used for the right and left.</li></ul><ul id="939f1edc-cc07-454b-be56-d2be02877f34" class="bulleted-list"><li style="list-style-type:disc">If three values are provided, the first value will be used for the top, the second value for the right and left, and the third value for the bottom.</li></ul><ul id="7a1f805b-4e28-4824-b30f-ab4955582116" class="bulleted-list"><li style="list-style-type:disc">If four values are provided, they will be applied to the top, right, bottom, and left sides, respectively, in clockwise order.</li></ul><p id="eaeee3fb-fb16-42e4-90a4-cf66f33fd259" class="">For Example</p><pre id="39886f6c-6036-4267-ae50-bc8e5895ebd4" class="code"><code>h1
+{
+padding: 30px 60px;
+}</code></pre><figure id="f7914cdb-8e10-4cc6-a316-356d1a023035" class="image" style="text-align:left"><img style="width:1104px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Padding.png"/></a></figure><ul id="f0f9d225-b793-4a57-807f-72919fdcb035" class="toggle"><li><details close=""><summary><strong>Project Implementation Step 3: </strong></summary><p id="28048a1c-40f6-4cdb-8d5d-738f955cbe35" class="">In this step, we will add padding to all the Elements of our project. The Output of one of the elements is shown in the image. 
+</p><pre id="67b99d7b-9352-461c-9b11-7da3cf1263c2" class="code"><code>* {
+  padding: 0;
+/*Removing Default Padding*/
+}
+
+header {
+  height: 50px;
+}
+
+#logo {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#login {
+  padding: 5px 30px;
+  /* Padding in Login Button */
+}
+
+#nav {
+  padding-left: 20px;
+  /* Padding in Nav Bar */
+}
+
+main {
+  min-height: 100vh;
+}
+
+#main-content {
+  min-height: 40vh;
+}
+
+#location-select {
+  width: 20rem;
+  padding: 5px;
+  /* User Select Option Padding */
+}
+#s-button {
+  width: fit-content;
+  padding: 8px 30px;
+  /* Search Button Padding */
+}
+
+.i-card {
+  width: 200px;
+  padding: 10px;
+  /* Information Card Padding */
+}
+.i-image {
+  width: 120px;
+  height: 120px;
+}
+
+#testimonials {
+  padding: 20px;
+  /* Internal Padding of Testimanials container */
+}
+
+.t-card {
+  width: 300px;
+  padding: 20px;
+  /* testimonials Card Padding */
+}
+
+#rating {
+  width: 35px;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+}</code></pre><p id="54f59bc1-57d2-4de5-b98c-9e32ab12fe7c" class=""><strong>Output: </strong></p><p id="c0794b25-c106-4f7d-96ab-1e1bee2bad36" class="">Padding in Search Button</p><figure id="ca142d4b-e9fd-40b3-bbff-9999d66a1b68" class="image"><img style="width:624px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%208.png"/></a></figure></details></li></ul><h2 id="bda57d13-4e24-4c20-b44a-6c5c768bae02" class=""><mark class="highlight-red">Margin</mark></h2><p id="c26c5c37-116b-4cf5-825f-c5eec5a3a2a3" class="">Margin in CSS is the amount of space that exists between the element and other elements on the page. It is the outermost space surrounding an element. It is used to separate elements from each other. This can be used to create the spacing between elements on the page and give them more breathing room.</p><p id="3e72e315-7b86-4486-828d-0aef81ab7562" class="">There are five different properties for margin in CSS: </p><ul id="379f1f94-7542-46b9-a3f0-7a07311cd0a7" class="bulleted-list"><li style="list-style-type:disc"><strong>Margin-top:</strong></li></ul><p id="5a946177-00ab-46e0-a41a-db5f598b9bb5" class="">Margin-top is a CSS property used to define the space between an element and the elements that are positioned above it. I. It can be used to create space between two elements, to create a border, or to separate elements from the top of the page.</p><p id="daa175b6-e530-42e7-97bf-fee8287ac4fb" class="">For example,</p><pre id="19d8ecc0-ed67-4b75-8160-967f66175d35" class="code"><code>div {
+  margin-top: 50px;
+}</code></pre><p id="44185c89-cfb0-4e95-b20d-ffa94d01964a" class="">Output:</p><figure id="461cc2c4-70bc-4946-8742-c56156e9f9c2" class="image"><img style="width:929px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%209.png"/></a></figure><ul id="e2f9d036-6e78-439b-aac5-fb1f3363ebbf" class="bulleted-list"><li style="list-style-type:disc"><strong>Margin-right:</strong><p id="d3b1a054-9536-4945-bf4a-af26de354f13" class="">In CSS, the right margin property is used to set the width of the right margin of an element. The right margin of an element is the space between the right edge of the element and the right edge of its containing block. By default, the right margin of an element is set to 0.</p></li></ul><pre id="03c81bd9-9d00-482d-bbfa-627d8c8930a6" class="code"><code>div {
+  margin-right: 250px;
+}</code></pre><p id="ae1b641a-3924-465e-a799-460638a15b83" class="">Output:</p><figure id="9af2568d-8e14-4048-9f40-e5a77d1cceb9" class="image"><img style="width:933px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2010.png"/></a></figure><ul id="6b556a0d-4352-4b8f-a532-6f291d2a8e86" class="bulleted-list"><li style="list-style-type:disc"><strong>Margin-bottom:</strong></li></ul><p id="dd8f3d9f-af27-474d-a37c-af76d339c1cd" class="">CSS bottom margin property allows you to set the bottom margin of an element. It is used to add an empty space between the bottom edge of an element and the elements that follow it. </p><pre id="6f1f74e7-16d7-4ecb-aa46-a214afa36374" class="code"><code>div {
+  margin-bottom: 300px;
+}</code></pre><p id="92958f51-de51-495c-9961-cc7921b5bcf7" class="">Output:</p><figure id="351abf8d-16d3-470c-81b2-9f37daf923a4" class="image"><img style="width:931px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2011.png"/></a></figure><ul id="432e9f09-4b9e-4c15-9295-d357c3a65009" class="bulleted-list"><li style="list-style-type:disc"><strong>Margin-left:</strong></li></ul><p id="d0664863-60bc-47ef-9c14-5a02e2c2b488" class="">CSS left margin is a property used to create space between an element and the elements to its left. This can be used to create uniformity between elements or to create a clear distinction between elements.</p><pre id="c0df862f-9080-46bd-ab9a-aa622e186654" class="code"><code>div {
+  margin-left: 100px;  
+}</code></pre><p id="6d8d8ddf-2271-4f01-bcff-3f9c567f6ef0" class="">Output:</p><figure id="b09ce75f-fdfa-475f-9cf5-74b2f9e61c9d" class="image" style="text-align:left"><img style="width:672px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2012.png"/></a></figure><h3 id="574fe8bd-4e2d-4414-8369-66642c1656e7" class="">Margin Shorthand</h3><p id="f6585b84-b345-4dda-b9b4-f29619e8d31d" class="">The <strong><code>margin</code></strong> property is a shorthand property for the above four individual padding properties. The margin shorthand property in CSS allows you to specify the margins for all four sides of an element using a single property. </p><p id="d4b5b7a7-428b-46fe-9e38-63696e68a678" class="">Margins are used to create space around elements, separating them from other elements on the page.</p><p id="a0f2c36f-aad9-4d60-9b3b-419c0e92b667" class="">The syntax for the margin shorthand property is as follows:</p><pre id="d89a7917-8f77-40e8-b710-60e9b6fc80a0" class="code code-wrap"><code>margin: top right bottom left;</code></pre><p id="cd3bcbad-a8fd-4401-a1e4-3940c9e0a891" class="">Here&#x27;s a breakdown of each component:</p><ul id="ae6e3f0d-6b5b-4e31-b9c7-ecb5bb4d2233" class="bulleted-list"><li style="list-style-type:disc"><strong>top</strong>: Specifies the margin value for the top side of the element.</li></ul><ul id="de05b895-6e96-4d0b-9960-d94f3c903342" class="bulleted-list"><li style="list-style-type:disc"><strong>right</strong>: Specifies the margin value for the right side of the element.</li></ul><ul id="456ec9cc-c324-48de-9b77-5d6ac6ee7249" class="bulleted-list"><li style="list-style-type:disc"><strong>bottom</strong>: Specifies the margin value for the bottom side of the element.</li></ul><ul id="f67bd64e-860f-46c6-b716-42b255a4c72f" class="bulleted-list"><li style="list-style-type:disc"><strong>left</strong>: Specifies the margin value for the left side of the element.</li></ul><p id="b9cb2bd2-da44-43be-9a4d-c6286876c3dc" class="">
+</p><p id="e653c8f5-f1c0-4842-a51a-5d68da55449e" class="">You can provide one, two, three, or four values to the <code><strong>margin</strong></code> property, depending on your requirements:</p><ul id="61b365df-fa0d-440e-ba2c-a9b725fb6de6" class="bulleted-list"><li style="list-style-type:disc">If only one value is provided, it will be used for all sides of the element.</li></ul><ul id="84cf17ed-7274-42c8-b7ed-9fc4c31881de" class="bulleted-list"><li style="list-style-type:disc">If two values are provided, the first value will be used for the top and bottom, and the second value will be used for the right and left.</li></ul><ul id="338187a6-6a18-4c26-8a34-771c00295de3" class="bulleted-list"><li style="list-style-type:disc">If three values are provided, the first value will be used for the top, the second value for the right and left, and the third value for the bottom.</li></ul><ul id="5a16ea48-b0f0-4cbe-8372-6fc4bc8863b2" class="bulleted-list"><li style="list-style-type:disc">If four values are provided, they will be applied to the top, right, bottom, and left sides respectively, in clockwise order.</li></ul><p id="8d71edc0-aa4b-4933-91f6-df5915d9be0b" class="">
+</p><p id="ceed5365-e870-4921-a133-4ae72690a8b0" class="">For Example,</p><pre id="4960c9ee-2e69-43f9-84fe-03a3ccf76cd5" class="code"><code>h1{
+margin:50px;
+}</code></pre><figure id="75875ba6-2988-4b2d-8dc3-922947f16310" class="image"><img style="width:1854px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Margin_Shorthand.png"/></a></figure><ul id="f7711dc2-5db3-4609-b00e-e0f45ad5eb38" class="toggle"><li><details close=""><summary><strong>Project Implementation Step 4: </strong></summary><p id="9b7eb9e5-92cc-4f7b-a1a2-39c812143d30" class="">In this step, we will add the margin to all the Elements of our project. The Output of one of the elements is shown in the image. 
+</p><pre id="b7e27dcd-c092-4466-bec5-623c5150ba9c" class="code"><code>* {
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  /* Removing Default Margin of Body */
+}
+
+header {
+  height: 50px;
+}
+
+#head-title {
+  margin-left: 100px;
+  /* Left Margin on Website Title */
+}
+
+#logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 2px;
+  /* Image and Text Spacing using margin */
+}
+
+#login {
+  padding: 5px 30px;
+}
+
+nav {
+  padding-left: 20px;
+}
+
+#nav-end {
+  margin-right: 30px;
+  /* Right Margin of Nav Bar */
+}
+
+.nav-elements {
+  margin: 2px 30px;
+  /* Internal Nav Elements Margin */
+}
+
+main {
+  min-height: 100vh;
+}
+
+#main-content {
+  min-height: 40vh;
+}
+
+#location-select {
+  width: 20rem;
+  padding: 5px;
+  margin: 5px;
+  /* User Select Margin*/
+}
+
+#location-select p {
+  margin: 0.5rem 4px 1rem;
+  /* Paragraph in Location Select Margin */
+}
+
+#depart,
+#arrive {
+  margin: 1rem, 0;
+}
+#s-button {
+  width: fit-content;
+  padding: 8px 30px;
+  margin: 20px 0px;
+  /* Search Button Margin */
+}
+
+.i-card {
+  width: 200px;
+  padding: 10px;
+  margin: 5px 10px;
+  /* Information Card Margin */
+}
+.i-image {
+  width: 120px;
+  height: 120px;
+}
+
+.i-count {
+  margin: 0;
+  /* Removing default margin from information card */
+}
+
+#testimonials {
+  margin-top: 10vh;
+  /*Top Margin of Testimanials container */
+}
+
+.t-card {
+  width: 300px;
+  padding: 20px;
+  margin: 5px;
+  /* testimonials Card Margin */
+}
+
+.t-card h3,
+.t-card p,
+.t-card h4 {
+  margin: 3px;
+}
+
+#rating {
+  width: 35px;
+  margin-top: 5px;
+  /* testimonials Card, User Rating Element Top Margin */
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 30px;
+  /* Social Icon Seperation From Each other Margin */
+}
+</code></pre><p id="3f44c06c-c986-4840-acca-7bce3357bc3f" class=""><strong>Output: </strong>Social Icons Seperation</p><figure id="8d49fc4e-f672-4aee-b78e-36fe3d162374" class="image"><img style="width:471px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2013.png"/></a></figure></details></li></ul><h2 id="bde7a6cc-e2e9-4640-ab0d-5b55beee1d1e" class=""><mark class="highlight-red">Color</mark></h2><p id="ef1b4e2c-77a5-4329-85cd-f5afd594c826" class="">In CSS, colors are typically specified using either a standard color name, a hexadecimal value, an RGB (Red, Green, Blue) value, or an HSL (Hue, Saturation, Lightness) value. </p><p id="bade3854-72bc-4e3c-a5b2-91b940ca6b0e" class="">Standard color names are literal names for colors, such as “<strong><mark class="highlight-teal">green</mark></strong><strong>”, “</strong><strong><mark class="highlight-blue">blue</mark></strong><strong>”, or “black</strong>”. These are typically used for basic color choices and are easy to remember. </p><p id="5f1c2825-6589-4e12-babc-8d1ef4a92a8a" class="">CSS colors are defined using a variety of formats. The most common formats are Hexadecimal Notation, RGB, RGBA, and HSL (Hue, Saturation, Lightness). </p><h3 id="b96f52be-019d-48b3-8374-f818c6ad3377" class="">Hexadecimal Format</h3><p id="7f9856ff-517f-42b9-9ecf-8085da650ce1" class="">The hex format of colors in CSS is a six-digit code that defines the combination of red, green, and blue (RGB) values that create a specific color. This code is written as a hash symbol (#) followed by three pairs of two-digit hexadecimal numbers. </p><p id="6828004b-5aa2-4d4e-9036-0ae56d243aa0" class="">Each pair of numbers represents one of the three RGB components and determines the intensity of that component in the resulting color. </p><p id="74f20b6d-e208-432f-a76d-ff5095a9b114" class="">For example, the hex code #FF0000 represents the color red, as it is composed of a full intensity of red (FF) and no green or blue (00). Hex codes are a popular way of representing colors in web design, as they allow easy access to a wide range of colors without needing to set individual RGB values.</p><pre id="cef7e19e-6096-4596-ae42-ce57197aef70" class="code"><code>div{
+color:#ff0000;
+}</code></pre><figure id="68136cf3-31d3-4e8c-9ce2-e0f2c9ae7856" class="image"><img style="width:830px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/HEX.png"/></a></figure><h3 id="eb31a4bb-8805-4d3d-9b2c-a7afcfaf3b79" class="">RGBA Format</h3><p id="6b2a6b5f-ed36-48d2-bd0c-78144bd0175a" class="">The RGBA format of colors in CSS is a way to define colors using the red, green, and blue values with an additional alpha value. The alpha value represents the opacity of the color, where an alpha value of 1 is fully opaque and an alpha value of 0 is fully transparent. This format is an extension of the RGB color format and allows for more flexibility when creating color variations and effects.</p><p id="867e1521-1616-4cb9-add0-5b7c087c4fe0" class="">The short form of RGBA is RGB without alpha value. RGBA colors can be defined in CSS using the rgba() function, which takes four parameters: the red, green, and blue values, as well as the alpha value. </p><p id="5219851d-066a-4bd0-a746-c1a57d4e030e" class="">For example</p><pre id="413cb958-ee47-459c-9909-95fa1619999c" class="code"><code>div{
+color:rgba(0,255,0,1);
+}</code></pre><figure id="d9559c93-01d9-4ab8-bc0c-4bb3f4eb8abf" class="image" style="text-align:left"><img style="width:672px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/RGB.png"/></a></figure><h3 id="74b4d17a-032a-41f5-9691-2d3b1099d539" class="">HSLA Format</h3><p id="19c4363d-07a1-44f9-821a-5b05e188db59" class="">HSLA stands for Hue, Saturation, Lightness, Alpha, and is a color format used in CSS to describe a color in an image. The hue of the color is represented by a degree between 0 and 360, where 0 is red, 120 is green, and 240 is blue. </p><p id="1d792bca-30ca-45ee-a600-caec7790d716" class="">The saturation is a percentage between 0% and 100%, and is a measure of how intense the color is. The lightness is also a percentage between 0% and 100%, and is a measure of how bright the color is. Finally, the alpha is a decimal number between 0 and 1, and is a measure of the opacity of the color.</p><p id="e2800e33-ac02-4967-b7c2-ea09ca69c5f5" class="">For Example:</p><pre id="87857542-8105-4f86-81f5-6f5aa707a8a2" class="code"><code>div {
+color: hsla(240, 50%, 50%, 1);
+}</code></pre><p id="2fa32f93-c2b4-4c0b-a7bf-8f23d14ec174" class="">Output:</p><figure id="7e857f52-472f-40e4-9f9f-747e4a33e2df" class="image" style="text-align:left"><img style="width:960px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/HSL.png"/></a></figure><h2 id="6204ef43-7a6a-42d6-80b2-399969843a9f" class=""><mark class="highlight-red">Border</mark></h2><p id="452616ba-f89c-4176-b80c-5005d94e987f" class="">CSS borders allow developers to create visible lines around HTML elements. These lines can be customized to create a wide range of effects. Using borders, developers can define the size, color, style, and thickness of the lines used to separate elements.</p><p id="423dbdf6-713d-4d02-885c-8fcc4204b7d0" class="">Border styles include solid, dotted, dashed, double, groove, ridge, inset, outset, none, and hidden. These styles can be combined with color, width, and radius to create a variety of creative effects.</p><ul id="504667af-55a9-45e4-9c88-cf67a4be9821" class="bulleted-list"><li style="list-style-type:disc">The <code>border-width</code> property defines the width of the border. It can be defined in pixels, ems, or percentages.</li></ul><ul id="3cd4a08c-ef36-4a83-859c-15b3902a131b" class="bulleted-list"><li style="list-style-type:disc">The <code>border-color</code> property defines the color of the border. The color can be defined using a named color, a hexadecimal color value, or an RGB color value.</li></ul><ul id="da0caec8-b3eb-46b6-a77c-ab77b586e0fb" class="bulleted-list"><li style="list-style-type:disc">The <code>border-radius</code> property defines the roundness of the corners of the border. The radius can be defined in pixels, ems, or percentages.</li></ul><ul id="25920f01-3e9d-41c0-afeb-b6832dabd197" class="bulleted-list"><li style="list-style-type:disc">The <code>border-style</code> property defines the style of the border. The available styles are solid, dotted, dashed, double, groove, ridge, inset, outset, none, and hidden.</li></ul><p id="1f3534e0-8988-4355-af69-3ff631bdf7db" class="">
+</p><p id="ac3c1f78-6a1d-4a03-b086-52ec698afeee" class=""><strong>CSS Border width:</strong></p><p id="dde9601d-3167-4da3-9f16-9b9d6553fe81" class="">Border width in CSS defines the width of an HTML element&#x27;s border. The width can be defined in either pixels or percentages. The default width of a border is usually &quot;medium&quot;, which is usually 2 pixels.</p><pre id="61d54bd1-a44c-4e76-99c0-5bdb32744d36" class="code"><code>h1.text {
+  border-style: solid;
+  border-width: 5px;
+}</code></pre><p id="ad3793ac-1eaf-4796-bcb4-8ad1ccfb06f9" class="">Output:</p><figure id="b88dd03d-253d-41e8-8684-84f9ce05d586" class="image"><img style="width:908px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2014.png"/></a></figure><p id="362d904e-edaf-4b99-ad70-fa27a73c9c92" class="">
+</p><p id="092fab53-4cdb-4495-8392-048c504fa1bb" class=""><strong>CSS Border color:</strong></p><pre id="d8f5e822-6bd5-4757-ba97-ced064d420c9" class="code"><code>h1.text {
+  border-style: solid;
+  border-width: 5px;
+  border-color: aqua;
+}</code></pre><p id="8b6d6d2d-c0ea-446d-97bd-a8f6f8bec127" class="">Output:</p><figure id="e2bd1b84-6b65-4b1a-a11e-5c95ca28202f" class="image"><img style="width:908px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2015.png"/></a></figure><p id="d33f4666-9151-4b5c-81f9-878c718a7a5b" class="">
+</p><p id="becdc6e9-831d-4439-b5db-a10b98446833" class=""><strong>CSS Border radius:</strong></p><pre id="8c5fc563-8dc6-4031-a716-8c48d2f86d58" class="code"><code>h1.text {
+  border-style: solid;
+  border-width: 5px;
+  border-color: aqua;
+  border-radius: 10px;
+}</code></pre><p id="45b79c36-b400-4454-97e1-d793929404a5" class="">Output:</p><figure id="d098f052-e5a7-4a25-a4b2-ab02cd9180a7" class="image"><img style="width:908px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2016.png"/></a></figure><p id="a2735fc7-39e8-4ee5-8b07-5a472172b63f" class="">
+</p><h3 id="d4a9725f-4c43-4c7d-a69c-15fb4a7579f3" class=""><strong>CSS Border style:</strong></h3><p id="c44e448a-9d1e-499a-9117-b31d6efca5c1" class="">CSS border styles allow you to define the style, width, and color of an element&#x27;s border. By default, the style of an element&#x27;s border is &quot;none&quot; and the width is &quot;medium&quot;. CSS border styles include solid, dashed, dotted, double, groove, ridge, inset, outset, and hidden.</p><ul id="7a9a0002-6620-4cc9-9789-347800962962" class="bulleted-list"><li style="list-style-type:disc"><code>solid</code>: The solid border style is the most basic of the border styles. It creates a single, solid line around the element.</li></ul><ul id="9e3c76d7-c403-4bbf-8998-eb4ecc1a6f55" class="bulleted-list"><li style="list-style-type:disc"><code>dotted</code>: The dotted border style creates a series of small circles or dots that form a line around the element.</li></ul><ul id="e5cdcf2f-aed9-4d3c-b735-455bc5b91e2c" class="bulleted-list"><li style="list-style-type:disc"><code>dashed</code>: The dashed border style creates a line of short, straight lines around the element.</li></ul><ul id="57eb0666-c57e-4879-99b1-d729eb8aac84" class="bulleted-list"><li style="list-style-type:disc"><code>double</code>: The double border style creates two parallel lines around the element.</li></ul><ul id="09afc922-a765-4cf1-bbcc-ede3ae413431" class="bulleted-list"><li style="list-style-type:disc"><code>groove</code>: The groove style creates a sunken or recessed line, while the ridge style creates a raised or embossed line.</li></ul><ul id="cadc93d1-b6c8-4f3a-b6a9-5c4de167c06c" class="bulleted-list"><li style="list-style-type:disc"><code>inset</code>: The inset style creates a border that appears to be cut into the element.</li></ul><ul id="047ebde6-737c-4341-8826-74e390ac8c3e" class="bulleted-list"><li style="list-style-type:disc"><code>outset</code>: The outset style creates a border that appears to be pushed out from the element.</li></ul><ul id="c6266e93-b7bb-486a-9ae0-ba0cb8458adc" class="bulleted-list"><li style="list-style-type:disc"><code>none</code>: The none border style provides no visible border around the element.</li></ul><p id="6b84224a-6d3c-4c09-884a-dfa506769993" class="">For example,</p><pre id="d9ecef29-7963-4285-a8e6-fb94ff135a44" class="code"><code>h1.text {
+  border-style: solid;
+  border-width: 5px;
+  border-color: aqua;
+  border-radius: 10px;
+  border-style: dashed;
+}</code></pre><p id="0ffb2c6b-757b-4be1-9fa9-ccdff13d27d9" class="">Output:</p><figure id="b5558434-d6ba-4eb8-a480-d1f079b173b8" class="image" style="text-align:left"><img style="width:960px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2017.png"/></a></figure><p id="5d89fe72-af9b-4e32-bf4f-d4d1f5b5328e" class="">
+</p><p id="75b309f0-3c82-4094-9823-537b14489789" class=""><code>Border:0</code>:</p><p id="22b77bed-9aef-4f03-a2d1-9a297977ac3b" class="">Border:0 in CSS is a shorthand property used to set the width of all four borders of an element to 0. This property can be used to remove the border of an element that has been set using the border-width property. </p><p id="df108bfe-1366-4133-abb7-a8cb45fc5704" class="">For example,</p><pre id="3c57774a-d361-4010-9f98-f4d7514ebaed" class="code"><code>div {
+  border:0;
+}</code></pre><p id="d3fcd4dd-ea5a-4e51-8579-3b6484fa0332" class="">Output:</p><figure id="e33d6fd6-5588-4ac4-bb1c-f34d4dd99bc0" class="image"><img style="width:929px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2018.png"/></a></figure><h3 id="60d12b13-2e42-446b-a5bd-938c8ede64f9" class=""><strong>Border Shorthand</strong></h3><p id="be287ccc-6f6f-4c4b-902f-b08d9d43f6dc" class="">The border shorthand property in CSS allows you to set all border properties for all four sides of an element using a single property.</p><ul id="12955f62-59c2-4867-8437-2ff5026e3953" class="bulleted-list"><li style="list-style-type:disc"><code>border-width</code></li></ul><ul id="c2e8c796-f68f-4850-8bce-fc600036c48e" class="bulleted-list"><li style="list-style-type:disc"><code>border-style</code> <strong>(required)</strong></li></ul><ul id="b1da6a77-3e31-4928-bcb9-fe53361a8fef" class="bulleted-list"><li style="list-style-type:disc"><code>border-color</code></li></ul><p id="580c7e04-38be-42a9-b4d4-cf08bf0bc394" class="">The syntax for the border shorthand property is as follows:</p><pre id="7728787c-af36-46cc-98f2-2ae445a138c4" class="code code-wrap"><code>border: border-width border-style border-color;</code></pre><p id="6ef7a1ae-3f63-4032-b2ec-5b28cadbf93f" class="">For Example:</p><pre id="40cf5ee7-a393-4fca-88d8-686e4ae4b248" class="code"><code>div{
+border:4px solid green
+}</code></pre><figure id="3a476dee-ad10-4322-ba43-8f082cdc72e7" class="image"><img style="width:1187px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Border_Short_hand.png"/></a></figure><ul id="ff0c9ca5-1b56-45de-8546-08c599b210e2" class="toggle"><li><details close=""><summary><strong>Project Implementation Step 5</strong></summary><pre id="45420f10-e79c-4475-983f-8712918df6a5" class="code"><code>* {
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 50px;
+  border-bottom: 3px solid rgba(201, 195, 195, 0.778);
+  /* Bottom Border to Nav Bar */
+}
+
+#head-title {
+  margin-left: 100px;
+}
+
+#logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 2px;
+}
+
+#login {
+  padding: 5px 30px;
+  border-radius: 5px;
+  /* Making Login Button Border Rounded */
+}
+
+nav {
+  padding-left: 20px;
+}
+
+#nav-end {
+  margin-right: 30px;
+}
+
+.nav-elements {
+  margin: 2px 30px;
+}
+
+main {
+  min-height: 100vh;
+}
+
+#main-content {
+  min-height: 40vh;
+}
+
+#location-select {
+  width: 20rem;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  /* Making Div Border Rounded */
+}
+
+#location-select p {
+  margin: 0.5rem 4px 1rem;
+}
+
+#depart,
+#arrive {
+  margin: 1rem, 0;
+  border: none;
+  /* removing select default border */
+}
+#s-button {
+  width: fit-content;
+  padding: 8px 30px;
+  margin: 20px 0px;
+  border-radius: none;
+  border-radius: 5px;
+  /* Making Select Button Border Rounded  and removing default border*/
+}
+
+.i-card {
+  width: 200px;
+  padding: 10px;
+  margin: 5px 10px;
+}
+.i-image {
+  width: 120px;
+  height: 120px;
+}
+
+.i-count {
+  margin: 0;
+}
+
+#testimonials {
+  margin-top: 10vh;
+}
+
+.t-card {
+  width: 300px;
+  padding: 20px;
+  margin: 5px;
+}
+
+#rating {
+  width: 35px;
+  margin-top: 5px;
+  border-radius: 4px;
+  /* testimonials Card, User Rating Element border radius*/
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 30px;
+}</code></pre><p id="bfc28e38-456c-464b-b47f-59a75488f2eb" class="">Output: Adding Border to Buttons and Removing Default Borders</p><figure id="77cb799d-6d8c-4cfe-b11a-0cb0cbf433ac" class="image"><img style="width:720px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2019.png"/></a></figure></details></li></ul><h2 id="c90506a9-89a5-40da-8510-9f2375a330f3" class=""><mark class="highlight-red">Text Properties</mark></h2><p id="19076628-3ac4-4510-a925-e812618a1ae0" class="">CSS text properties are used to control the appearance and styling of text within HTML elements.Some of these properties to modify text include:</p><ul id="e5f5496d-e153-4ff6-8724-99e070566556" class="bulleted-list"><li style="list-style-type:disc"><code>color</code><p id="5a47d894-5025-4bcd-85d8-5c7e5b3c247c" class="">The <code>color</code> property sets the color of the text within an HTML element. It accepts various color formats, like named colors, hexadecimal, RGB, or HSL values.</p><p id="68d345ee-4c97-4daf-a6b3-28022b7157e6" class="">For Example,</p><pre id="d24d0837-f717-43f0-9630-aedaebbf9979" class="code"><code>div{
+color:#ff0000;
+}</code></pre><p id="eb847fb2-7469-4ac6-9e5c-5748204cb9ea" class="">Output:</p><figure id="893ea5a8-bd5b-4860-bcbc-815748d38704" class="image"><img style="width:1152px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/HEX.png"/></a></figure></li></ul><ul id="216f4877-0f00-42e1-82bd-27c4a4b34785" class="bulleted-list"><li style="list-style-type:disc"><code>font-size</code><p id="e4aec327-42fe-4e60-9092-0565a58ae47b" class="">The CSS font-size property is used to change the size of a font. It is used to specify the size of the font. The font-size can be set to a specific length, percentage, or by using one of the absolute-size or relative-size keywords.</p><ol type="1" id="0b483fe2-d32d-4a7d-80ca-fe1cf4a35f7b" class="numbered-list" start="1"><li><strong>Absolute size</strong>: These keywords are absolute size measurements, such as xx-small, x-small, small, medium, large, x-large, and xx-large. These sizes are fixed and are not affected by the user’s font-size preferences.</li></ol><ol type="1" id="42269c1e-f06f-46e5-884d-7de366c8e558" class="numbered-list" start="2"><li><strong>Relative-size: These</strong> keywords are relative size measurements, such as larger, smaller, and inherit. These sizes are relative to the size of the parent element and are affected by the user’s font-size preferences.</li></ol><p id="06649b4e-6da0-414a-8e23-394805efa978" class="">For example,</p><pre id="152a635a-c2ea-426c-937c-3ff8b304c2b2" class="code"><code>h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}</code></pre><p id="707d1849-ec0a-4a8b-be65-993f2f7c13b4" class="">Output:</p><figure id="d78e0697-51ac-41cd-9e11-8c78c6f76a5a" class="image"><img style="width:816px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2020.png"/></a></figure></li></ul><ul id="9a4533d4-34b8-4219-9eb5-646708b86a72" class="bulleted-list"><li style="list-style-type:disc"><code>font-weight</code><p id="9ebdb6eb-d68c-4b4d-997e-8bf19071a984" class="">CSS font-weight is a property used to assign a numerical value to a font&#x27;s weight or boldness. This property allows web developers to create text that is bolder than the normal text. Font-weight can be used to emphasize elements on a web page or to add a unique style to a particular text.</p><p id="503db1fe-5b44-413e-b12a-b655954a902f" class="">While the font-weight property is typically used to increase the boldness of a font, it can also be used to reduce the boldness of a font. While a font-weight of 400 is usually used as the normal font weight, a font-weight of 100 can be used to create light text.</p><p id="f32b3cf7-50c9-42b6-8c9f-2805619a299b" class="">For example,</p><pre id="d1d130f0-25f3-4b27-ada9-6af5d91c29cf" class="code"><code>h1 {
+  font-weight: bold;
+}</code></pre><p id="28781f35-6a5c-4df5-9fbd-bb646271ebe3" class="">Output:</p><figure id="f012aede-46b7-4de9-b838-2b5077c54fae" class="image"><img style="width:912px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2021.png"/></a></figure></li></ul><ul id="c8107abf-e360-4094-93f2-88f33e2a4c82" class="bulleted-list"><li style="list-style-type:disc"><code>font-style</code><p id="f69e8e2e-bae3-434f-8501-5cd5d384facd" class="">CSS font-style is used to specify the font style of text. It can be used to set a font to be italic, oblique, or normal. Font-style is most commonly used to set italic text, which is often used for emphasis or for when a particular style is necessary.</p><p id="8afa9af0-91de-4f78-a038-060c7e82576c" class="">Italic text is created using the font-style property and the value ‘italic’. Oblique text is created using the font-style property and the value ‘oblique’. Normal text is the default font-style and does not require a value.</p><p id="026a3431-e1c9-4fab-8b62-70c7bad0a580" class="">For example,</p><pre id="d6cabcb8-ecf5-4391-9205-fc7a167c6ff9" class="code"><code>h1 {
+  font-style: italic;
+}</code></pre><p id="1bf9072c-d899-4700-95f9-c1e606f9b7f4" class="">Output:</p><figure id="297d276f-27e8-4942-a1db-f8cc50a51d73" class="image"><img style="width:912px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2022.png"/></a></figure></li></ul><ul id="0c010304-e85a-4102-b75b-4c015b150432" class="bulleted-list"><li style="list-style-type:disc"><code>font-family</code><p id="c63b174b-d92b-4b17-8d7c-037328e8ac7c" class="">Font-family is a CSS (Cascading Style Sheets) property that allows you to specify the typeface or font of text in a web page. It is used to define a prioritized list of font families or font names that should be applied to an element. </p><p id="b75989de-5894-42a4-82ef-5c8df363fbff" class="">The browser will attempt to render the text using the first available font in the list. If the first font is not available on the user&#x27;s system, it will move to the next font in the list, and so on, until a suitable font is found or a default font is used.</p><p id="c2f20325-f737-4686-ac71-f2b1903fc117" class="">Example:</p><pre id="13dd99e5-6290-48ce-9116-064e12e2234b" class="code"><code>p{
+font-family: Arial, Helvetica, sans-serif;
+}</code></pre><p id="0aecbab0-92af-4a98-af87-954dd324e0f3" class="">Output:</p><figure id="2658dd92-aea0-4083-b6a1-43d754db1abc" class="image"><img style="width:1152px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Arial.png"/></a></figure></li></ul><ul id="b01d3cb9-1bd4-4dee-a670-62ea9f78b386" class="bulleted-list"><li style="list-style-type:disc"><code>text-align</code><p id="589f783d-812b-481f-83ba-cfda58f83792" class="">Text alignment in CSS is used to determine the horizontal or vertical alignment of text within a block element</p><p id="a1b0e1fb-472d-47a8-90a8-b790ae29a853" class="">The syntax for the text-align property is simple. It can be used on any block-level element, such as a paragraph or a heading. To align the text, simply set the text-align property to one of the following values:</p><ul id="0a83df2b-dd35-488f-b2a1-8d06b2db751a" class="bulleted-list"><li style="list-style-type:circle">left: aligns the text to the left margin</li></ul><ul id="3151fbee-7102-48d1-9f2c-a2c2bfa9a4c9" class="bulleted-list"><li style="list-style-type:circle">right: aligns the text to the right margin</li></ul><ul id="4470a1ab-df82-42a5-81de-ffc47de0a189" class="bulleted-list"><li style="list-style-type:circle">center: centers the text in the element</li></ul><ul id="141dbebb-8d3f-4fb4-b6ae-d7528d3d0070" class="bulleted-list"><li style="list-style-type:circle">justify: spaces out the words so that the text is aligned flush with both the left and right margins</li></ul><p id="c01e5106-4d5c-4586-8353-e081b02e74fd" class="">In addition to these values, you can also set the text-align property to inherit. This will cause the element to inherit the text alignment settings of its parent element.</p><p id="c79decc6-bd62-41c5-bed8-8166368c121f" class="">Example:</p><pre id="6c2c3f54-86e7-4705-9403-aedcbaa307a9" class="code"><code>h2{
+text-align:center
+}</code></pre><p id="d92b836f-22ac-4499-8c67-3667e1f02cdb" class="">Output:</p><figure id="a21b1c9b-7693-4adc-aad1-fd488869bda0" class="image"><img style="width:1056px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2023.png"/></a></figure></li></ul><ul id="91d4dc7f-6254-472f-9167-4c6d69e93a72" class="bulleted-list"><li style="list-style-type:disc"><code>text-decoration</code><p id="9d692c7a-93a7-4974-9714-c21e2cff6440" class="">The <code>text-decoration</code> property adds decorative styling to the text, like underline, overline,blink, shadow, italic, or line-through. Each of these decorations has different effects and can be used to draw attention to certain elements on a page. </p><p id="c4de2c8e-c7cd-43b1-aa58-28b8172918c9" class="">Example:</p><pre id="b2cedf66-c2ff-4e69-a40d-f15a1aed90fc" class="code"><code>h1 {
+  text-decoration: overline;
+}
+h2 {
+  text-decoration: line-through;
+}
+h3 {
+  text-decoration: underline;
+}
+h4 {
+  text-decoration: underline overline;
+}</code></pre><figure id="b138e553-27ad-496d-974d-8b4fa76f2d52" class="image"><img style="width:624px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2024.png"/></a></figure></li></ul><ul id="ed8c6ab3-7dc8-461c-af10-5ddb56f304f9" class="bulleted-list"><li style="list-style-type:disc"><code>text-transform</code><p id="32f44477-3354-4ff5-82b8-a86787b6f070" class="">The <code>text-transform</code> property controls the capitalization of the text. The text-transform property include values such as <code>uppercase</code>, <code>lowercase</code>, and <code>capitalize</code>.</p><p id="16b4e115-4a9e-451f-8215-072256ed64cb" class="">Example:</p><pre id="8a8e5017-f78c-4b2d-87ee-a7eb52b93c4b" class="code"><code>div.upper {
+  text-transform: uppercase;
+}
+
+div.lower {
+  text-transform: lowercase;
+}
+
+div.caps {
+  text-transform: capitalize;
+}</code></pre><figure id="2dbe493a-85c9-4629-8689-55fa217c4da7" class="image"><img style="width:816px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2025.png"/></a></figure></li></ul><ul id="b8550502-e323-4cef-b6b1-51cb6ec05665" class="bulleted-list"><li style="list-style-type:disc"><code>text-decoration</code><p id="d963f0ef-12a3-4d18-bc46-94525aa14b2b" class="">Using the CSS text-direction property, developers can set the text direction of their web pages to either left-to-right (LTR) or right-to-left (RTL). This property can be applied to both the entire webpage, and individual elements such as paragraphs, headings, and lists.</p><p id="1d03b743-3754-4687-9a45-1bdb4c79d0da" class="">For example,</p><pre id="29d8baab-a4f4-4f05-8d6d-964102232c3e" class="code"><code>p.textd {
+  direction: rtl;
+}</code></pre><p id="fa6cc2c2-e170-47a8-a6f4-75e6ab7f2206" class="">Output:</p><figure id="fefb207a-c048-476d-a951-9f7aec8655a5" class="image"><img style="width:930px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2026.png"/></a></figure></li></ul><ul id="1bab390d-a498-4ac4-bb48-8d31a5a75060" class="bulleted-list"><li style="list-style-type:disc"><code>line-height</code><p id="c120cb60-6611-49fb-be19-bd2bfe5de51c" class="">The <code>line-height</code> property sets the height of each line of text. It can be specified as a number or unitless value. </p><p id="08a431a1-5365-458b-ba4a-1a543eb0e0cb" class="">Example:</p><pre id="5ef609f8-b27f-4718-81fe-9ed6bf0cbfce" class="code"><code>div{
+line-height:50px
+}</code></pre><p id="4528366a-042f-4dc3-9b5f-bce2a6a86c48" class="">Output</p><figure id="e88d53de-2603-4052-a10c-cd663640b204" class="image"><img style="width:707px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/line-height.png"/></a></figure></li></ul><ul id="7400b925-ec37-4160-9de5-551114dd264e" class="bulleted-list"><li style="list-style-type:disc"><code>letter-spacing</code><p id="0460630d-1b10-4f4f-ad34-0e8344dfe6ab" class="">Letter spacing, or tracking, is a CSS property used to adjust the amount of space between characters in a text element. This property can be used to create a more visually appealing look, making text easier to read or add emphasis to certain words or phrases.</p><pre id="96147df2-886f-4ad7-94de-fae68a2dcf3a" class="code"><code>h1 {
+  letter-spacing: 8px;
+}</code></pre><p id="98787ccb-c1f9-461d-b725-6af60e8b9c5d" class="">Output:</p><figure id="1e7d85b2-d022-4ce7-bfb1-33ee94fab6a9" class="image"><img style="width:720px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2027.png"/></a></figure></li></ul><ul id="25915f10-7c19-4bab-b88d-e43ce8312cf3" class="toggle"><li><details close=""><summary><strong>Project Implementation Step 6</strong></summary><p id="ce532901-c049-49b7-bdb9-5b489b416f31" class="">In this step we have applied various text properties to change our text styles</p><pre id="0376730f-30f7-47cc-9f9e-0073f8643cad" class="code"><code>* {
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, &quot;Times New Roman&quot;, serif;
+  /* Changin font family of whole page */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  /* making every link black and removing default underline from links */
+}
+
+header {
+  height: 50px;
+  border-bottom: 3px solid rgba(201, 195, 195, 0.778);
+  /* Bottom Border to Nav Bar */
+}
+
+#head-title {
+  margin-left: 100px;
+}
+
+#title-name {
+  color: rgb(245, 119, 47);
+  font-size: large;
+  font-weight: bold;
+  /* Changing Logo Text Color, Boldness and text-size */
+}
+
+#logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 2px;
+}
+
+#login {
+  color: white;
+  padding: 5px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  /* Changing Text Color to White, Making Text Bold*/
+}
+
+nav {
+  padding-left: 20px;
+}
+
+#nav-end {
+  margin-right: 30px;
+}
+
+.nav-elements {
+  margin: 2px 30px;
+  font-weight: bold;
+  /* Making Nav Elements Bold */
+}
+
+main {
+  min-height: 100vh;
+}
+
+#main-content {
+  min-height: 40vh;
+}
+
+#location-select {
+  width: 20rem;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  /* Making Div Border Rounded */
+}
+
+#location-select p {
+  font-size: medium;
+  font-weight: bold;
+  margin: 0.5rem 4px 1rem;
+  /* Changin Font Size and Weight of P inside Location Selection Div */
+}
+
+#depart,
+#arrive {
+  margin: 1rem, 0;
+  border: none;
+  font-size: medium;
+  /* Changing Input Font Size to Medium */
+}
+
+.tag-line {
+  text-align: center;
+  /* ALign text to Center */
+}
+
+#s-button {
+  width: fit-content;
+  padding: 8px 30px;
+  margin: 20px 0px;
+  border-radius: none;
+  border-radius: 5px;
+  color: white;
+  /* Changing Search Button Color to White, Making it bold and font-size to large*/
+}
+
+.i-card {
+  width: 200px;
+  padding: 10px;
+  margin: 5px 10px;
+}
+.i-image {
+  width: 120px;
+  height: 120px;
+}
+
+.i-count {
+  margin: 0;
+}
+
+#testimonials {
+  margin-top: 10vh;
+}
+
+.t-card {
+  width: 300px;
+  padding: 20px;
+  margin: 5px;
+  color: white;
+  /* Changing Testimonials Background Color to White*/
+}
+
+#rating {
+  width: 35px;
+  margin-top: 5px;
+  border-radius: 4px;
+  color: white;
+  font-size: small;
+	text-align: center;
+  /* Changing rating card text to small,color to white and aligning it to center*/
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 30px;
+}</code></pre><p id="aa1cea14-b5a5-49ee-bba6-3639b70eacbf" class="">Output:</p><figure id="cd924ed8-84b6-483c-bcb1-cbb73c58aafa" class="image"><img style="width:1817px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2028.png"/></a></figure></details></li></ul><h2 id="65d6fc76-b39c-4c8d-9abc-9e324d473a4e" class=""><mark class="highlight-red">Background</mark></h2><p id="2d3608cd-3b66-43a2-9575-5ae1febf996d" class="">The CSS background properties are used to add background effects to different HTML elements.</p><p id="8e343fcc-c884-4967-826f-94ae162ae397" class="">There are various different properties to set the background, some of which include:</p><ul id="4345e270-1c37-4507-b242-26d6bb5f3a58" class="bulleted-list"><li style="list-style-type:disc"><code>background-color</code></li></ul><ul id="c4a0c03a-7649-4758-b23d-5f6f59f45ae8" class="bulleted-list"><li style="list-style-type:disc"><code>background-image</code></li></ul><ul id="aa4ece7f-ab04-43f9-9234-5bcfe8f8cbb2" class="bulleted-list"><li style="list-style-type:disc"><code>background-repeat</code></li></ul><ul id="56e45120-cbba-4d51-ad0b-810c875c1cbf" class="bulleted-list"><li style="list-style-type:disc"><code>background-attachment</code></li></ul><ul id="b83c951e-a50d-4fcb-84ed-2b2d0af988ca" class="bulleted-list"><li style="list-style-type:disc"><code>background-position</code></li></ul><ul id="1030a047-f4b4-467d-a5ef-fcb80fe925d9" class="bulleted-list"><li style="list-style-type:disc"><code>background</code></li></ul><p id="75f40d3a-fdc2-4064-9576-323d34a3ff6e" class="">We will go through each of them one by one,</p><h3 id="efbcc0ba-ed63-4853-afc4-5d9aa1e031ee" class=""><strong>background-color</strong></h3><p id="8157d9e6-8cff-4336-afa5-e92e8c6252d4" class="">The CSS background-color property is used to define the background color of an element. This property can be applied to any HTML element, and affects the background color of the entire element, including any padding and border that may be set.</p><p id="42bfd18a-ed86-4561-a4e5-e3524014bacd" class="">When applying a background color, it is important to remember that it will be visible behind any content or other elements within the element.</p><p id="f4bd912d-0259-4319-8755-7b0272a02462" class="">For Example:</p><pre id="d629e3d5-5c4c-4f10-9b7e-ca3ae39608ad" class="code"><code>body {
+  background-color: pink;
+}</code></pre><p id="425607ec-3821-4c6c-b21d-8da49782daf6" class="">Output:</p><figure id="9a06a2c1-b4d6-4c84-a433-9d0cdc30066e" class="image" style="text-align:left"><img style="width:672px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2029.png"/></a></figure><p id="9d8a9ac0-9351-4b80-98a5-0abd065729c2" class="">
+</p><h3 id="d57e89ef-84c5-48c5-8bd4-f6a9bb815e00" class=""><strong>background-image</strong></h3><p id="25b32878-5163-4253-8f03-edccc020fcd0" class="">The CSS background-image property allows you to set an image as the background of an element. The background-image property is used in combination with other properties, such as background-repeat, background-position, and background-size, to create a complete background for an element.</p><pre id="3ded32bc-2967-437d-9e84-492fbebddfa1" class="code"><code>body {
+  background-image: url(&quot;image.png&quot;);
+}</code></pre><p id="9984a625-3efb-41b0-9d6d-eacd81cbd7cc" class="">Output:</p><figure id="a231a08f-cecc-4892-b275-aa168eecd363" class="image" style="text-align:left"><img style="width:672px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2030.png"/></a></figure><p id="27f34230-4bc9-41d5-8942-53750f90dd19" class="">
+</p><h3 id="6aa63105-6202-47cb-864e-1131e37599f6" class="">background-repeat</h3><p id="4bf85947-f12a-44a9-8d53-6e68bb596468" class="">CSS background-repeat property is used to specify how a background image should be repeated, or tiled, within an element. It is used to control how a background image is displayed in an element and can be used to create patterns or textures. </p><p id="5cdfce42-441c-4b35-b7b9-918022524901" class="">The background-repeat property can be used with any of the background properties such as background-image, background-position and background-attachment.</p><p id="b818ac33-8f85-47be-b7ae-bf9961326bac" class="">The possible values for the background-repeat property are:</p><ul id="d64931db-45e6-4b42-9523-b2e633c2b3b2" class="bulleted-list"><li style="list-style-type:disc"><code>repeat</code>: The background image will be repeated both horizontally and vertically.</li></ul><ul id="369445b2-7a10-418a-9027-500af949d01e" class="bulleted-list"><li style="list-style-type:disc"><code>repeat-x</code>: The background image will be repeated only horizontally.</li></ul><ul id="a4b110c0-99ad-46b1-8a5f-88a0932ae14b" class="bulleted-list"><li style="list-style-type:disc"><code>repeat-y</code>: The background image will be repeated only vertically.</li></ul><ul id="7babede3-7d6d-4f5c-a0f7-203ddb4ce861" class="bulleted-list"><li style="list-style-type:disc"><code>no-repeat</code>: The background image will not be repeated.</li></ul><p id="9bf2e5e0-4f43-4e74-9ee8-9807e6591cf7" class="">For example,</p><pre id="2e19a541-83d1-4467-95a2-26aa8ac3af03" class="code"><code>div {
+  background-image: url(&quot;paper.gif&quot;);
+  background-repeat: repeat-x;
+}</code></pre><p id="3f3e7f7b-6ad3-4c72-9c17-7a1c049e5d21" class=""><strong>Output:</strong></p><figure id="2c99cdf3-276d-458a-bfe2-c750f73d706f" class="image" style="text-align:left"><img style="width:672px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2031.png"/></a></figure><h3 id="2ba507e1-08a4-4a0f-a0a9-6006b7bf23be" class="">background-attachment</h3><p id="02f6a212-a421-48f0-bc58-418d035bf332" class="">CSS background-attachment property is used to specify whether a background image scrolls with the content or remains fixed/stationary. It is used to create a parallax effect when the user scrolls the page.</p><p id="a33b2b5a-ec5e-4cfa-9d1d-69ded076598c" class="">The background-attachment property accepts four values: scroll, fixed, local, and inherit.</p><ul id="4ea11aee-7339-497e-bd79-273c6a9d8a9d" class="bulleted-list"><li style="list-style-type:disc"><code>scroll</code>: The scroll value is the default value and it causes the background image to scroll when the content is scrolled.</li></ul><ul id="c28a1cb9-3d9f-452c-b8c0-c8a5b4fcb4ca" class="bulleted-list"><li style="list-style-type:disc"><code>fixed</code>: The fixed value causes the image to remain in a fixed position, relative to the viewport. This can create a parallax effect when the user scrolls the page.</li></ul><ul id="6fd5632f-0a60-4e36-9cd5-cc4070c6212c" class="bulleted-list"><li style="list-style-type:disc"><code>local</code>: The local value is similar to the scroll value, but it causes the background image to move with the content within the element itself.</li></ul><ul id="2fce05ae-5337-4ed2-afed-6eab2f12e520" class="bulleted-list"><li style="list-style-type:disc"><code>inherit</code>: The inherit value allows the element to inherit the background-attachment value from its parent element.</li></ul><p id="232cfa34-b496-464a-8b88-34ce2f013be5" class="">For example,</p><pre id="7bb3faad-b216-4b34-8db3-ad9a523ebdef" class="code"><code>div  {
+  background-image: url(&quot;tree_owl.gif&quot;);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}</code></pre><p id="b248c541-26dc-4d5b-8936-e66607c65a5b" class=""><strong>Output:</strong></p><figure id="a9661961-75c6-4f5e-bdf2-107bd7261822" class="image" style="text-align:left"><img style="width:672px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2032.png"/></a></figure><p id="487e3f80-4318-4fc5-a671-a8577b16c0a4" class="">
+</p><h3 id="5af8c6b9-47e6-4a95-b724-9b1ba3e1d230" class=""><strong>background-position</strong></h3><p id="fd8e61e7-9143-4efa-8b07-1aa3d7ada0bb" class="">CSS background-position is used to control the position of a background image. It allows you to specify the exact coordinates of where the image should be placed in the background of an element. It can be specified either as a keyword or as a length or percentage value.</p><p id="324e1db1-8600-4338-8ee0-3592df63a125" class="">When using keywords, the values left, right, top, bottom, and center can be used to position the background image. The default value is the center. For example, if you set the value of background-position to the top left, the image will be placed in the top left corner of the element.</p><p id="6f1484a4-4e6f-4bd1-ab25-b66ed9a07b45" class=""><strong>For example,</strong></p><pre id="b521d647-eed3-4343-83ef-a92d82632e6f" class="code"><code>div { 
+  background-image: url(&#x27;image.png&#x27;);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}</code></pre><p id="4b4af57b-d8f7-4883-9af2-a78c41e35d3f" class=""><strong>Output:</strong></p><figure id="4324a13f-9fdd-4550-a881-0e39602f2b33" class="image" style="text-align:left"><img style="width:672px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Untitled%2033.png"/></a></figure><h3 id="9a75e646-7a29-4cb0-be85-978eebd9e7be" class="">Background (Shorthand)</h3><p id="57f47233-4886-454e-a80f-38712f791d64" class=""><code>background</code> is a property that allows you to define the background of an element, such as a <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, or any other HTML element. </p><p id="01129b6e-8c92-4a0b-96a2-5f1c1a34c677" class="">The <code>background</code> property provides shorthand syntax to set various background-related properties, including background color, image, position, repeat, and more.</p><p id="6761811c-77f4-45cb-94e2-785e0e8452b2" class="">The syntax for the <code>background</code> property is as follows:</p><pre id="3109983c-7319-4343-8f7b-a45d19a06f68" class="code code-wrap"><code>
+background: background-color background-image background-repeat background-position background-size
+</code></pre><ul id="461885af-3db7-4d35-9272-9e8d32e81562" class="bulleted-list"><li style="list-style-type:disc">background-color: Specifies the background color of the element. It can be set using color names (e.g., <code>red</code>, <code>blue</code>), HEX values (<code>#RRGGBB</code>), or RGB values (<code>rgb(255, 0, 0)</code>).</li></ul><ul id="b8ea1871-6be2-4b8e-847b-ae6efa840010" class="bulleted-list"><li style="list-style-type:disc">background-image: Specifies the background image to be used. It can be set using the URL of an image file, such as <code>url(&#x27;image.jpg&#x27;)</code>.</li></ul><ul id="1db2c333-6b0d-437b-b236-d46b5f1242fc" class="bulleted-list"><li style="list-style-type:disc">background-repeat: Specifies how the background image should be repeated if it is smaller than the element&#x27;s dimensions. It can have values like <code>repeat</code> (default), <code>no-repeat</code>, <code>repeat-x</code>, or <code>repeat-y</code>.</li></ul><ul id="fd2fc77e-54c9-4d9b-9daf-e7fc2aee415c" class="bulleted-list"><li style="list-style-type:disc">background-position: Specifies the starting position of the background image. It can be set using keywords such as <code>left</code>, <code>center</code>, <code>right</code>, <code>top</code>, <code>bottom</code>, or using pixel or percentage values.</li></ul><ul id="1d1f77ae-36eb-4268-9388-c3b50e2896ec" class="bulleted-list"><li style="list-style-type:disc">background-size: Specifies the size of the background image. It can be set using values like <code>auto</code> (default), <code>cover</code>, <code>contain</code>, or specific length values (<code>200px</code>, <code>50%</code>, etc.).</li></ul><p id="f742fd9c-1354-4fd4-ab7c-02232cc87822" class="">
+</p><ul id="389eeb3f-e9e8-441b-99f0-0fc7b48bb00b" class="toggle"><li><details close=""><summary><strong>Project Implementation Step 7</strong></summary><p id="404f036b-f794-4643-944d-f2279c24948e" class="">In this step, we have added background images and background colors to various elements.</p><pre id="2593d3df-c353-4603-a2b9-afb6dc3c4015" class="code"><code>* {
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, &quot;Times New Roman&quot;, serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  height: 50px;
+  border-bottom: 3px solid rgba(201, 195, 195, 0.778);
+ }
+
+#head-title {
+  margin-left: 100px;
+}
+
+#title-name {
+  color: rgb(245, 119, 47);
+  font-size: large;
+  font-weight: bold;
+}
+
+#logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 2px;
+}
+
+#login {
+  background-color: rgb(245, 119, 47);
+  color: white;
+  padding: 5px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  /* Adding Background Color to login Button*/
+}
+
+nav {
+  padding-left: 20px;
+}
+
+#nav-end {
+  margin-right: 30px;
+}
+
+.nav-elements {
+  margin: 2px 30px;
+  font-weight: bold;
+}
+
+main {
+  min-height: 100vh;
+}
+
+#main-content {
+  min-height: 40vh;
+  background-image: url(&quot;./assets/travel.jpg&quot;);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* Adding Background Image to main content */
+}
+
+#location-select {
+  background-color: white;
+  width: 20rem;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  /*Select Option Background Color to White*/
+}
+
+#location-select p {
+  font-size: medium;
+  font-weight: bold;
+  margin: 0.5rem 4px 1rem;
+}
+
+#depart,
+#arrive {
+  margin: 1rem, 0;
+  border: none;
+  font-size: medium;
+}
+
+.tag-line {
+  text-align: center;
+}
+
+#s-button {
+  width: fit-content;
+  padding: 8px 30px;
+  margin: 20px 0px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(245, 119, 47);
+  /* Changing Search Button Background Color*/
+}
+
+.i-card {
+  width: 200px;
+  padding: 10px;
+  margin: 5px 10px;
+}
+.i-image {
+  width: 120px;
+  height: 120px;
+}
+
+.i-count {
+  margin: 0;
+}
+
+#testimonials {
+  margin-top: 10vh;
+  padding: 20px;
+  background-color: rgb(246, 245, 245);
+	/*Changing Testimonials Background Color*/
+}
+
+.t-card {
+  width: 300px;
+  padding: 20px;
+  margin: 5px;
+  background-color: white;
+  /* Changing Testimonials Background Color to White*/
+}
+
+#rating {
+  width: 35px;
+  margin-top: 5px;
+  border-radius: 4px;
+  color: white;
+  font-size: small;
+  text-align: center;
+  background-color: rgb(5, 141, 5);
+  /* Changing rating card background color to green*/
+}
+
+footer {
+  background-color: rgba(233, 225, 225, 0.997);
+  /* Changing footer background color */
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 30px;
+}</code></pre><p id="07b351c3-705d-4299-a22a-9cf54dc4fec9" class=""><strong>Output:</strong></p><figure id="13279bfb-3bdd-4ed9-9492-8bcf6e2bb74b" class="image"><img style="width:1008px" src="CSS%20Fundamentals%204be217788c314942bd114d2e4d5959e7/Full_Page_Look.jpeg"/></a></figure></details></li></ul><p id="a37432fd-c809-4e6c-a5d3-08ff2ad67a87" class="">
+</p><p id="d96f17a5-371b-4fa1-8f22-cb9637d79a39" class="">In this session, we have styled our page with various colors and text properties In the next session, we will align them perfectly using the display property to complete the styling of the web page.</p><h1 id="3a6e02b7-b198-4a35-9ef5-0c1639cbf04a" class=""><mark class="highlight-brown">Summary</mark></h1><h2 id="1d9dc12c-a5d5-421e-8277-236798820dd0" class=""><mark class="highlight-red">What did we learn?</mark></h2><ul id="943b445c-e83e-4a44-8f59-d75e65802d09" class="bulleted-list"><li style="list-style-type:disc">CSS can be used inline, embedded within HTML, or externally linked as a separate stylesheet. The external approach is typically preferred for it’s benefits on larger projects.</li></ul><ul id="bc2524cc-5f22-4c90-999b-0f7c53036cea" class="bulleted-list"><li style="list-style-type:disc">CSS syntax has four main parts: selectors, declarations, properties, and values. Selectors are used to target HTML elements, declarations define how the elements should be styled, properties are styling attributes, and values are assigned to the properties.</li></ul><ul id="772b0111-889a-4366-b864-05b822e2d69f" class="bulleted-list"><li style="list-style-type:disc">CSS units include pixels (px), ems (em), percentages (%), points (pt), rems (rem), viewport percentage lengths (vw, vh), and viewport units (vmin, vmax).</li></ul><ul id="c75a7482-af45-4f37-abc4-f087dec0f5e6" class="bulleted-list"><li style="list-style-type:disc">The box model in CSS defines the size and appearance of elements on a web page by dividing them into content, padding, border, and margin, allowing precise control over layout and spacing.</li></ul><ul id="c4e8f798-61cd-48ad-926f-03346ad72926" class="bulleted-list"><li style="list-style-type:disc">CSS width and height properties define the horizontal and vertical dimensions of elements on a web page, allowing fixed or flexible sizing based on content.</li></ul><ul id="f2f48e6f-ad4c-4579-ab10-688e091fd2a5" class="bulleted-list"><li style="list-style-type:disc">Padding in CSS creates space between an element and its border, and it can be applied in pixels, ems, or percentages. It includes properties like padding-top, padding-right, padding-bottom, and padding-left, which allow setting padding for specific sides of an element.</li></ul><ul id="3f67cb8f-8be0-4af5-b629-c8a24c842e58" class="bulleted-list"><li style="list-style-type:disc">Margin in CSS is the space between an element and other elements on the page, allowing for separation and spacing. It includes properties like margin-top, margin-right, margin-bottom, and margin-left, which define the margin for specific sides of an element.</li></ul><ul id="7ad07f38-ae65-4a90-9e19-b93cb9990dda" class="bulleted-list"><li style="list-style-type:disc">Colors in CSS can be specified using standard color names, hexadecimal values, RGB values, or HSL values, providing flexibility and options for defining colors in web design.</li></ul><ul id="007eeceb-c446-45aa-8366-fb4af52eb25b" class="bulleted-list"><li style="list-style-type:disc">CSS borders allow developers to create visible lines around HTML elements with customizable properties such as width, color, style, and radius.</li></ul><ul id="52a3df3d-44d3-42af-bebb-22c9dfec26b9" class="bulleted-list"><li style="list-style-type:disc">Background properties in CSS, such as background-color, background-image, background-repeat, background-attachment, background-position, and background, are used to add background effects to HTML elements.</li></ul><h2 id="7953b6b9-09ac-4121-8fc6-fbde2311127c" class=""><mark class="highlight-red">Shortcomings and Challenges</mark></h2><ul id="8211f011-cd89-41f9-9890-637ba3662bbc" class="bulleted-list"><li style="list-style-type:disc">The CSS box model can sometimes lead to unexpected layout issues, especially when dealing with margins, padding, and borders. </li></ul><ul id="e7966763-e478-4833-b377-55c93748b9fc" class="bulleted-list"><li style="list-style-type:disc">Applying multiple CSS properties, such as background color, border, and box dimensions, to numerous elements on a page can have a performance impact, especially on slower devices or when dealing with complex layouts.</li></ul><ul id="b480cefd-54da-40b9-8d33-35097a66875f" class="bulleted-list"><li style="list-style-type:disc">Calculating the final dimensions of an element, taking padding and margin into account, can be challenging, especially when nested elements or different box-sizing values are involved.</li></ul><ul id="c14ed8c2-1668-45f4-9516-3f69bf2ace69" class="bulleted-list"><li style="list-style-type:disc">Using large background images can have a significant performance impact, especially on devices with slower internet connections or limited processing power.</li></ul><h2 id="4a340259-b619-4b21-998b-ecca4c8cf1c6" class=""><mark class="highlight-red">Best Practices</mark></h2><ul id="c5e53ba4-3750-4b8b-8a3a-6924b300d0e8" class="bulleted-list"><li style="list-style-type:disc">Break your CSS code into modular components, or modules, each responsible for styling a specific part of your website or application. This helps improve code organization, reusability, and maintainability.</li></ul><ul id="134502bb-1494-4438-92fb-fcc7b9ec1c8b" class="bulleted-list"><li style="list-style-type:disc">Regularly review and optimize your CSS code to eliminate redundant or unused rules. Removing unnecessary box model, width, height, background color, or border properties can help reduce file size and improve rendering performance.</li></ul><ul id="37bf8304-193d-4e2e-a034-04b16d0df364" class="bulleted-list"><li style="list-style-type:disc">When using background images, optimize them for web delivery by compressing and resizing them appropriately. This helps improve page load times and overall performance.</li></ul><ul id="1b4d6ab7-6381-4049-af32-bdd5879866f8" class="bulleted-list"><li style="list-style-type:disc">Inline styles can make your code harder to maintain and override. It&#x27;s best to separate your CSS into external stylesheets or use internal stylesheets within the <code>&lt;head&gt;</code> section of your HTML document.</li></ul><h2 id="93118e7a-d79a-4f1a-bcf2-2217f362d13a" class=""><mark class="highlight-red">Enhance your knowledge</mark></h2><ul id="c8bafc41-295a-4400-9f61-6a7a4a47864c" class="bulleted-list"><li style="list-style-type:disc"><a href="https://levelup.gitconnected.com/fundamental-css-for-beginners-f44e8b9a5da5">https://levelup.gitconnected.com/fundamental-css-for-beginners-f44e8b9a5da5</a></li></ul><ul id="add52c45-030f-4281-98e2-97345aaa5f9e" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.htmlgoodies.com/css/css-border-padding-margin/">https://www.htmlgoodies.com/css/css-border-padding-margin/</a></li></ul><p id="c6fdbd3a-1bcc-4073-9ec8-ab5d476dadca" class="">
+</p></div></article></body></html>
