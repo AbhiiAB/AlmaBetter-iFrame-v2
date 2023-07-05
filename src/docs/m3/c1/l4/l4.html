@@ -1,0 +1,1038 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Advanced CSS Techniques</title><link rel="stylesheet" href="../../../../../styles.css"></head><body><article id="e3c9a67a-e499-4d84-9c38-a659f905ada0" class="page sans"><header><h1 class="page-title">Advanced CSS Techniques</h1><p class="page-description"></p></header><div class="page-body"><ul id="bb6f0cef-0cf9-44ac-ac23-8cc24b2a1db9" class="toggle"><li><details close=""><summary><strong>Session flow (5 minutes read)</strong></summary><ul id="298c118b-361f-4ec4-9d1e-0376b78093c8" class="bulleted-list"><li style="list-style-type:disc"><strong>Learning Objective (5 minutes read)</strong><ul id="acb84857-ce54-4ca1-88ac-0e403cc57f32" class="bulleted-list"><li style="list-style-type:circle">Introduction</li></ul><ul id="1e8e0dbb-24b7-4add-b259-9cdd8351cc43" class="bulleted-list"><li style="list-style-type:circle">Theme</li></ul><ul id="c1442637-4952-4477-8706-e144b41afdbc" class="bulleted-list"><li style="list-style-type:circle">Primary Goals</li></ul></li></ul><ul id="7d4a81a3-a0dd-45b6-b83b-60ca7ce911e2" class="bulleted-list"><li style="list-style-type:disc"><strong>Advanced CSS Techniques</strong> <strong>(120 minutes read)</strong><ul id="feb63231-3237-442b-bbcb-1f36ffcba9f0" class="bulleted-list"><li style="list-style-type:circle">Display</li></ul><ul id="a8d5fa10-5db3-4fa4-a2ed-713aae52c3f6" class="bulleted-list"><li style="list-style-type:circle">Flexbox</li></ul><ul id="a5f161bc-65a0-410c-8460-004088c03053" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 1</strong></li></ul><ul id="0f9b54d3-f6b5-4685-b365-a407eb6d5c2c" class="bulleted-list"><li style="list-style-type:circle">Position</li></ul><ul id="a1b125ba-cc23-4748-8a69-45daf6ede809" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 2</strong></li></ul><ul id="4ca5a187-e4b6-4f83-90f1-684bc0a96a4a" class="bulleted-list"><li style="list-style-type:circle">Responsive Web Design</li></ul><ul id="087f6688-2572-4eb3-9c85-246cf89af1e2" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 3</strong></li></ul><ul id="62237676-dae4-447c-93c1-2113021314fe" class="bulleted-list"><li style="list-style-type:circle">Transition and Transform</li></ul><ul id="d307ceb6-dac9-4a6e-bb46-59aefcd5b139" class="bulleted-list"><li style="list-style-type:circle">Animation</li></ul><ul id="3a8cda4d-991d-4e5c-a8d4-799f60a43927" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 4</strong></li></ul><ul id="5589e79d-cf81-4525-9d3b-0e5204c713d3" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 5</strong></li></ul><ul id="7524b730-bc89-4a4c-a290-34a3eafb1718" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 6</strong></li></ul></li></ul><ul id="8e44ec32-7a41-49b9-9907-ee7838fc706b" class="bulleted-list"><li style="list-style-type:disc"><strong>Summary (10 minutes read)</strong><ul id="6986f3e6-fd59-4e69-ad3a-f9e576d61948" class="bulleted-list"><li style="list-style-type:circle">What did we learn?</li></ul><ul id="e56e4be8-fb9e-466c-a299-9e4e2272cea8" class="bulleted-list"><li style="list-style-type:circle">Shortcomings &amp; Challenges</li></ul><ul id="9ab223d8-349d-4e24-8402-1cdbd8192815" class="bulleted-list"><li style="list-style-type:circle">Best Practices</li></ul><ul id="cdf95e89-4596-4e14-a0ba-d80169c8d8a9" class="bulleted-list"><li style="list-style-type:circle">Enhance Your Knowledge</li></ul></li></ul></details></li></ul><h1 id="606bec58-7f8d-4348-b9c8-9df1d1ecac8e" class=""><mark class="highlight-brown">Learning Objectives</mark></h1><h2 id="c16a05bf-090e-4c84-9264-147e3acd8ecb" class=""><mark class="highlight-red">Introduction</mark></h2><p id="bb754ebc-07d5-479d-a855-23c07d48b800" class="">CSS encompasses numerous advanced concepts that empower web developers to elevate their skills and craft highly refined and interactive web pages.</p><p id="4fbb7bb8-c49c-4cd6-bd1d-715b095131db" class=""><strong>Duration:</strong> 2 Hours</p><p id="9be6402c-c1cd-476f-bfad-fb9cb287489c" class=""><strong>Focus: </strong>Display, Position, Animations, and Media Queries</p><p id="ef8d5aee-1cb3-46bc-b492-58cdbb829829" class=""><strong>Pre-requisite: </strong>Basics of CSS and HTML </p><h2 id="fb994a1e-a738-4626-8551-a4cfae9e561f" class=""><mark class="highlight-red">Theme</mark></h2><p id="dd7de4ba-5485-424c-b447-c57a39be8db7" class="">In the ever-evolving digital landscape, user experience reigns supreme. Companies around the globe are constantly seeking ways to captivate their audience and provide seamless interactions on the web. </p><p id="072e7b35-3267-4594-be3c-04881e8cfc0a" class="">Among these forward-thinking organizations, Tesla, a leading innovator in the tech industry, has emerged as a shining example of how CSS display, position, animations, and responsiveness properties can be harnessed to create extraordinary web experiences.</p><p id="c385ff9a-409d-43a8-8e47-f1ceaa300013" class="">With a user base spanning millions, Tesla understands the importance of delivering visually stunning and intuitive interfaces. Through their skilled team of web developers and designers, they have mastered the art of leveraging CSS to push the boundaries of what&#x27;s possible in web design.</p><p id="465992fc-3f99-44b3-801f-8784ea8c28d5" class="">We will delve into the strategies employed by big giants, exploring how they utilize CSS display, position, animations, and responsiveness properties to enhance their web presence.</p><h2 id="ed299a76-6f88-4a6d-861b-014dfc65ba22" class=""><mark class="highlight-red">Primary Goals</mark></h2><ul id="96af860d-a6b9-4189-98ea-fe53da31a163" class="bulleted-list"><li style="list-style-type:disc">Learn how to control the flow and positioning of elements using the display property.</li></ul><ul id="5479021d-ce72-4b95-8489-6b5e06468474" class="bulleted-list"><li style="list-style-type:disc">Gain a solid understanding of CSS position values and how to precisely position elements on a web page using CSS positioning techniques.</li></ul><ul id="1ccd580b-c9da-4345-95b8-fd60216ba289" class="bulleted-list"><li style="list-style-type:disc">Learn how to bring web pages to life with CSS animations and transitions to create smooth effects.</li></ul><ul id="1f070c80-038d-4ada-9504-6c4090e4adaa" class="bulleted-list"><li style="list-style-type:disc">Enhance the user experience through fluid layouts, media queries, and mobile optimization.</li></ul><ul id="36cc353d-1080-4622-9cee-751f9e28ceb3" class="bulleted-list"><li style="list-style-type:disc">Able to apply your knowledge effectively during the project implementation steps.</li></ul><p id="50e8c02a-2aeb-4cfe-8c93-aa6a995ebf34" class="">
+</p><h1 id="032c95e1-f046-42dc-9aa5-4bf352e5e2d4" class=""><mark class="highlight-brown">Advanced CSS Techniques</mark></h1><h2 id="f493dd3d-1d79-4793-8b0b-d675380f529e" class=""><mark class="highlight-red">Display</mark></h2><p id="754c5707-cd33-4046-bd87-5df194bae0d7" class="">CSS Display is a property used to control the way an element is displayed on the page. It helps to define the type of box used for the element, and can also affect the element’s positioning and the way it interacts with other elements on the page. </p><p id="f29d998a-3214-47c5-8821-b45ed1cd6dca" class="">There are several different values that can be used for the display property, each of which will display the element differently. The most commonly used values are block, inline, inline-block, and none. In addition to these values, CSS Display also includes a few more advanced options. This includes flexbox, grid, table, and run-in.</p><p id="94cdebb2-be88-4583-a5f7-0595755238fd" class="">We will look into each of them in detail below.</p><ul id="598ceb15-39ed-4ce5-ad51-14164008d0df" class="block-color-default bulleted-list"><li style="list-style-type:disc"><strong>Inline display: </strong>Inline display in CSS is a type of display setting that defines the display of an element as an inline-level box. This means that the element is displayed on the same line as other elements that are also set to inline. <p id="5bf70c80-068c-465c-a13d-e2fb49c06cc0" class="">It does not take up its own line, and its margins and padding will not affect the positioning of surrounding elements. Inline elements will appear in the same line as text and other inline elements, and will not take up the full width of their parent element. Inline elements are commonly used for styling text, such as setting font styles or adding images.</p><ul id="ed397bb7-2f5c-42e4-b4f1-a51f377a8524" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="4f11f79b-b2bd-44f5-960f-7d29097080b8" class=""><strong>Code:</strong></p><pre id="b9335bcd-cc9e-4bca-89f7-84978d34e509" class="code"><code>div {
+  display: inline; 
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  border: 1px solid blue;  
+  background-color: aqua; 
+}</code></pre><p id="39268403-46b5-42b2-bbf8-fc82d96655c7" class=""><strong>Output:</strong></p><figure id="1c959309-cee7-4940-a5e5-1d034b5416e3" class="image"><img style="width:907px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled.png"/></a></figure></details></li></ul></li></ul><ul id="69c75861-7165-427c-bdba-1badb299cd45" class="block-color-default bulleted-list"><li style="list-style-type:disc"><strong>Inline-block display: </strong>Inline-block display is a way to display an element in HTML using CSS. By setting the display property of an element to inline-block, the element will be displayed inline (on the same line as other elements) but will still be considered a block element and therefore be able to accept width and height values. <ul id="aee0278d-945f-45e4-8ba2-48531f46c0ce" class="toggle"><li><<details close="">><summary><strong>Example</strong></summary><p id="6b2ba19f-b791-4462-8171-e7ce94b118a9" class=""><strong>Code:</strong></p><pre id="f2480ca0-9ed2-4ed6-b855-c6096072ddbb" class="code"><code>div {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: aqua; 
+}</code></pre><p id="aa8e55b1-1bd7-481e-a735-7814c3eac654" class=""><strong>Output:</strong></p><figure id="84d39f48-d146-427b-98d9-ff132968aa28" class="image"><img style="width:909px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%201.png"/></a></figure></details></li></ul></li></ul><ul id="7766dc8c-d8e7-454a-bcf8-ccb397aa9ec9" class="block-color-default bulleted-list"><li style="list-style-type:disc"><strong>Block display: </strong>Block display in CSS is used to define how an element is displayed on a page. It is a type of layout model in which elements are aligned and stacked on top of each other, as opposed to inline elements, which are positioned side-by-side.<p id="27964c69-0d5f-478c-a1ac-384f977ea622" class="">The width and height properties can be used to define the size of the element, and the margin, padding, and border properties can be used to define the spacing between elements.</p><ul id="a7f086a4-7dfc-46d3-a50b-4f3b95648ad6" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="0f053a87-f097-4873-a482-a25cd0e0efa2" class=""><strong>Code:</strong></p><pre id="37b339ad-9734-4630-864b-36ce06f394f4" class="code"><code>div {
+  display: block;
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: aqua; 
+}</code></pre><p id="a39476b6-8128-48d0-8c5b-90343a7a78fc" class=""><strong>Output:</strong></p><figure id="2c191e45-1784-4108-985d-262bf06458cb" class="image"><img style="width:909px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%202.png"/></a></figure></details></li></ul></li></ul><ul id="7af915e3-68e2-425c-a8b4-cc431d41059f" class="block-color-default bulleted-list"><li style="list-style-type:disc"><strong>Run-in display: </strong>A run-in display is a term used in CSS (Cascading Style Sheets) to describe how blocks of text and other elements are displayed. This form of display allows a text element to be &quot;run in&quot; or merged with the next text element, creating a more compact and visually pleasing layout. <p id="4cc43995-2fd8-460e-8b78-9e920dd7c981" class="">This can be beneficial when trying to create more efficient use of space on a web page. </p><ul id="40ec5f53-ccb1-43ab-abcf-bbaaf41cd812" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="ef555e0f-b47d-4364-bb13-8a67b0836e75" class="code"><code>div {  
+display: run-in;   
+}</code></pre><p id="6a99efdf-d126-4000-86bc-4bd53c1f93df" class=""><strong>Output:</strong></p><figure id="acb7b315-9879-491b-9712-12a807b16dc7" class="image"><img style="width:930px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%203.png"/></a></figure></details></li></ul></li></ul><ul id="8cadc50a-dd24-4899-aaa5-fceabeff4d03" class="block-color-default bulleted-list"><li style="list-style-type:disc"><strong>None display: </strong>CSS&#x27;s &quot;none&quot; display value is a powerful tool that can be used to completely remove an element from the page layout. When this value is applied to an element, it is no longer visible in the page or takes up any space. <p id="31903951-b0b1-4a19-893c-09380d610cd6" class="">This can be useful in a variety of situations, such as hiding elements from view temporarily, removing them from the page layout completely, or making them disappear when the user interacts with the page.</p><p id="0330e2f2-4f90-4d10-90a5-fccfe2433b2b" class="">The &quot;none&quot; display value can be applied to any HTML element, including divs, images, and form elements. To apply it to an element, simply add the &quot;display: none;&quot; declaration to the element&#x27;s CSS declaration block.</p><ul id="a501b681-0559-41a8-81c5-46bdfb312b78" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="eda46d2d-ca66-4529-9dad-1bc8c6eab573" class="code"><code>h1 {
+  display: none;
+}</code></pre><p id="152529d8-4362-4d10-9ab8-263eec3788e3" class=""><strong>Output:</strong></p><p id="2d989f99-57be-4a53-8eaa-56f9defc4920" class="">In this case, h1 is not displayed.</p></details></li></ul></li></ul><h2 id="2d209b26-d9dc-4253-8f23-841ed664b828" class=""><mark class="highlight-red">Flexbox</mark></h2><p id="e25ec239-a7de-479e-b718-bdc13079f4a3" class="">The Flexbox paradigm allows us to arrange the content of our website. Not only that, but it also assists us in developing the structure required for developing responsive websites for numerous devices.</p><p id="1d487707-cda6-45eb-9288-91d6af077beb" class="">Flexbox is a CSS  layout module designed to provide a flexible and efficient way to arrange and align elements within a container. It aims to solve common layout challenges, such as vertical centering, equal-height columns, and responsive design.</p><h3 id="33e1bbf9-f81b-42ac-981c-4874ba3c5409" class="">Flexbox Architecture</h3><p id="18abf095-389e-4d67-a8ce-c1468f664159" class="">At its core, Flexbox introduces a one-dimensional layout model, meaning it deals with either rows or columns. </p><p id="de789676-3c8a-4de9-84a5-a600e9838d0a" class="">By using Flexbox, you can easily distribute space and control the alignment of elements along the main axis (horizontal for rows and vertical for columns) and the cross axis (vertical for rows and horizontal for columns).</p><figure id="2f83f7d6-072e-4a17-8ad5-2e3ced152216" class="image"><img style="width:864px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%204.png"/></a></figure><p id="8dafe059-4e20-465f-aa2c-78c0c6505d08" class="">
+</p><p id="46f0ca3a-e152-4abd-80ed-c973011e42f9" class="">Flexbox introduces several properties that allow you to control the layout and behavior of Flex Containers and Flex Items.</p><p id="cc275083-28c6-48c4-a604-7f381d9e6481" class=""><strong>For Parent Element:</strong></p><ol type="1" id="c341472e-b599-4c22-aa9d-bc4ab34c990e" class="numbered-list" start="1"><li><code>display</code>: It specifies the display type of the element. Setting it to <code>flex</code> or <code>inline-flex</code> establishes a Flex Container.</li></ol><ol type="1" id="eee09bd3-2056-4756-91a5-55a33765e169" class="numbered-list" start="2"><li><code>flex-direction</code>: It defines the direction of the main axis and the order in which Flex Items are laid out. It’s values can be <code>row</code> (default), <code>row-reverse</code>, <code>column</code>, or <code>column-reverse</code>.<ul id="f86679eb-2eca-40ef-a012-ed8f7107dc3a" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="4405e8ba-5d82-4f8a-8e8a-1eb514d78d42" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;style&gt;
+        .box {
+            display: flex;
+            flex-direction: row-reverse;
+            border: 2px solid black;
+        }
+
+        .inside {
+            min-width: 50px;
+            min-height: 50px;
+            margin: 5px;
+            background-color: red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;box&quot;&gt;
+        &lt;div class=&quot;inside&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;3&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;4&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p id="10507593-2642-4bc8-9e9f-93d74eb1b3d6" class=""><strong>Output:</strong></p><figure id="6c316118-af4b-4e1b-99ae-ea09dbfb50c0" class="image"><img style="width:1920px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%205.png"/></a></figure></details></li></ul></li></ol><ol type="1" id="46afa99f-2f45-4e9e-af4e-27bad5862085" class="numbered-list" start="3"><li><code>flex-wrap</code>: It determines whether Flex Items should wrap onto multiple lines or remain on a single line. It’s values can be <code>nowrap</code> (default), <code>wrap</code>, or <code>wrap-reverse</code>.<ul id="3560354d-996c-45a5-b057-fa1b2e05db14" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="5ca56e95-b95b-4023-ac53-20b2d9cfa8ad" class=""><strong>Code:</strong></p><pre id="7713750a-ded9-41c6-882c-863f0abafb61" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;style&gt;
+        .box {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            border: 2px solid black;
+        }
+
+        .inside {
+            min-width: 200px;
+            min-height: 200px;
+            margin: 5px;
+            background-color: red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;box&quot;&gt;
+        &lt;div class=&quot;inside&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;3&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;4&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;5&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;6&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;7&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;8&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;9&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;10&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;11&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p id="f14b0555-8ce4-43b8-bd72-2f4d4afd9247" class=""><strong>Output:</strong></p><figure id="61f68007-74ef-4514-97c0-45ece71009b2" class="image"><img style="width:1920px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%206.png"/></a></figure></details></li></ul></li></ol><ol type="1" id="c84b7b08-6b20-4fad-821f-21d7e1fdc0e5" class="numbered-list" start="4"><li><code>justify-content</code>: It controls the alignment and distribution of Flex Items along the main axis. It offers options such as <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-between</code>, <code>space-around</code>, and <code>space-evenly</code>.<ul id="df2a07ad-bb4e-4352-af61-e0e92d7ab644" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="3dbc94a4-c29d-4c09-8ff9-995cf6323a30" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;style&gt;
+        .box {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            border: 2px solid black;
+        }
+
+        .inside {
+            min-width: 200px;
+            min-height: 200px;
+            margin: 5px;
+            background-color: red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;box&quot;&gt;
+        &lt;div class=&quot;inside&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;3&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;4&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p id="8731822b-7008-4328-80be-5001ade2e142" class="">Output:</p><figure id="b9e1f8ce-d087-442a-aab4-cbec347db4f7" class="image"><img style="width:1920px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%207.png"/></a></figure></details></li></ul></li></ol><ol type="1" id="8ebb5bfb-6428-4b98-bc8b-95ab830c933c" class="numbered-list" start="5"><li><code>align-items</code>: It specifies the alignment of Flex Items along the cross axis. It’s values can be <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code>.<ul id="80117d80-1865-4711-866a-e2a11c164757" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="dc3dea08-d654-4706-849f-32192dc3d12d" class=""><strong>Code:</strong></p><pre id="2da6a227-5985-45df-afa2-7079644c65e2" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;style&gt;
+        .box {
+            display: flex;
+            align-items: center;
+            border: 2px solid black;
+            height: 400px;
+        }
+
+        .inside {
+            min-width: 200px;
+            min-height: 200px;
+            margin: 5px;
+            background-color: red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;box&quot;&gt;
+        &lt;div class=&quot;inside&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;3&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;4&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p id="57d7eb12-575a-4236-a4f7-5f7c9ea450c8" class=""><strong>Output:</strong></p><figure id="53fb6922-2e6f-46f4-89c9-4e06f35bfd41" class="image"><img style="width:1917px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%208.png"/></a></figure><p id="0a1b77f3-d9f8-4488-ba21-e266247c75d0" class="">
+</p></details></li></ul></li></ol><ol type="1" id="1028f813-b44f-4616-b8d3-e8ff70783443" class="numbered-list" start="6"><li><code>align-content</code>: It defines the alignment and spacing of multiple lines of Flex Items along the cross axis when they wrap. It’s options include <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-between</code>, <code>space-around</code>, and <code>stretch</code>.</li></ol><p id="7f9dfd7f-8a55-47a0-9167-0f54d03438bb" class=""><strong>For Flex Items (Child Elements) Inside Flex Container</strong></p><ol type="1" id="8475c50a-2b1f-47c0-9d7e-656f554b73f4" class="numbered-list" start="1"><li><code>flex-grow</code>:It determines how much the Flex Item can grow relative to other items if there is extra space on the main axis. A value of 0 means it won&#x27;t grow, and a positive value indicates the proportion of available space it can take.<ul id="3a42511b-f566-4f1d-aaa4-5f9579b8a9f6" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="27be9e3d-a267-4830-b75e-4458aadb3407" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;style&gt;
+        .box {
+            display: flex;
+            align-items: center;
+            border: 2px solid black;
+            height: 400px;
+        }
+
+        .inside {
+            min-width: 200px;
+            min-height: 200px;
+            margin: 5px;
+            background-color: red;
+        }
+
+        #one {
+            flex-grow: 1;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;box&quot;&gt;
+        &lt;div class=&quot;inside&quot; id=&quot;one&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;3&lt;/div&gt;
+        &lt;div class=&quot;inside&quot;&gt;4&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p id="3100aca0-cec1-4c03-8379-ca2b3d71db35" class="">Output:</p><figure id="e01147cd-060b-4166-a59f-60b258296edd" class="image"><img style="width:1918px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%209.png"/></a></figure></details></li></ul></li></ol><ol type="1" id="1b169178-1c8e-464d-a89b-42711e23a4ac" class="numbered-list" start="2"><li><code>flex-shrink</code>: it defines how much the Flex Item can shrink relative to other items if there is insufficient space on the main axis.  A value of 0 means it won&#x27;t shrink, and a positive value indicates the proportion of space it can give up.</li></ol><ol type="1" id="55d1acf7-d02f-4341-97d9-1629cb70fe75" class="numbered-list" start="3"><li><code>flex-basis</code>: It sets the initial size of the Flex Item on the main axis before any remaining space is distributed. It can be a specific length value, <code>auto</code> (based on the item&#x27;s content size), or <code>0</code> (equivalent to <code>flex-basis: 0%</code>).</li></ol><ol type="1" id="e7bff174-7c63-4c3f-8a05-1b06a15e2fae" class="numbered-list" start="4"><li><code>flex</code>: It is a shorthand property combining <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code> in one declaration. The values are written in the following order: <code>flex-grow</code>, <code>flex-shrink</code>, <code>flex-basis</code>.</li></ol><ul id="31b4dd6a-ffc9-4bf0-af14-b82ac0a56309" class="toggle"><li><details close=""><summary><strong>Project Implementation Step 1</strong></summary><p id="63f4597e-91d5-47d5-a1dc-b234a614ac76" class="">In all the Project Implementation Steps in Advanced CSS, we will use the same HTML file as used in CSS Fundamentals.</p><pre id="18d19c53-2d6a-4b4f-a652-ead4171b1ce2" class="code"><code>* {
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, &quot;Times New Roman&quot;, serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+header {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 3px solid rgba(201, 195, 195, 0.778);
+}
+
+#head-title {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 100px;
+}
+
+#title-name {
+  color: rgb(245, 119, 47);
+  font-size: large;
+  font-weight: bold;
+}
+
+#logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 2px;
+}
+
+#login {
+  background-color: rgb(245, 119, 47);
+  color: white;
+  padding: 5px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+#nav-end {
+  margin-right: 30px;
+}
+
+.nav-elements {
+  margin: 2px 30px;
+  font-weight: bold;
+}
+
+main {
+  min-height: 100vh;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url(&quot;./assets/travel.jpg&quot;);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 40vh;
+}
+
+#location {
+  display: flex;
+  justify-content: center;
+}
+
+#location-select {
+  background-color: white;
+  margin: 5px;
+  padding: 5px;
+  width: 20rem;
+  box-shadow: 0px 0px 1px 1px rgb(189, 185, 185);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+}
+
+#location-select p {
+  font-size: medium;
+  font-weight: bold;
+  margin: 0.5rem 4px 1rem;
+}
+
+#depart,
+#arrive {
+  margin: 1rem, 0;
+  outline: none;
+  border: none;
+  font-size: medium;
+}
+
+.tag-line {
+  text-align: center;
+}
+
+#s-button {
+  padding: 8px 30px;
+  background-color: rgb(245, 119, 47);
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  border: none;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 20px 0px;
+}
+
+.i-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 10px;
+  box-shadow: 0px 0px 2px 2px rgb(189, 185, 185);
+  padding: 10px;
+  width: 200px;
+}
+
+.i-image {
+  width: 120px;
+  height: 120px;
+}
+.i-count {
+  margin: 0;
+}
+
+.card-collection {
+  display: flex;
+  justify-content: center;
+}
+
+#testimonials {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  background-color: rgb(246, 245, 245);
+  padding: 20px;
+}
+
+.t-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 1em gray;
+}
+
+.t-card h3,
+.t-card p,
+.t-card h4 {
+  margin: 3px;
+}
+
+#rating {
+  width: 35px;
+  background-color: rgb(5, 141, 5);
+  text-align: center;
+  color: white;
+  font-size: small;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(233, 225, 225, 0.977);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 3px;
+}</code></pre><p id="4bcecd3e-5719-4a77-9a14-b21243baf9a9" class=""><strong>Output:</strong></p><figure id="4fc74fa0-e81d-4753-aecd-315b08be515e" class="image"><img style="width:1688px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2010.png"/></a></figure></details></li></ul><h2 id="eb21b26b-a647-4cef-ba69-acd1ffb31edf" class=""><mark class="highlight-red">Position</mark></h2><p id="192612ea-99e0-44c6-9b45-ac9f51e39fa4" class="">CSS position is a property used to define how an element is positioned on a web page. It is used to control the flow of elements on a page, as well as to layer elements on top of one another. There are five possible values for the position: </p><ul id="2fdb80a8-7722-48b6-bca5-f3fc69818a79" class="block-color-default bulleted-list"><li style="list-style-type:disc"><strong>Static positioning: </strong>A static position in CSS is the default position for an element in a web page. This position is without any special positioning instructions, and the element will appear as it normally would in the document flow. <p id="735a504e-a493-4e66-ad39-1392e4895d7e" class="">The element will be positioned according to the normal flow of the document, which means that any elements preceding it in the HTML will appear above it, and any elements following it will appear below it. This is the simplest form of positioning and can be used for most web page elements.</p><ul id="3012e31d-685c-4234-855c-6107787dd3fd" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="42dc915f-b4ef-4261-8c4c-a10cfa0abcc2" class=""><strong>Code:</strong></p><pre id="0630ab0f-e570-4987-a990-6a9ce654ffde" class="code"><code>h1 {
+  position: static;
+  border: 3px solid aqua;
+}</code></pre><p id="ea78bf99-3b31-4eb8-8e89-4c44e5b7b02c" class=""><strong>Output:</strong></p><figure id="402470df-bb78-433e-9813-e5e5f03a5c01" class="image"><img style="width:933px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2011.png"/></a></figure></details></li></ul></li></ul><ul id="acb8652e-6198-4b24-a605-0cb49b85ae86" class="block-color-default bulleted-list"><li style="list-style-type:disc"><strong>Relative positioning: </strong>Relative positioning in CSS is a positioning technique that allows an element to be positioned relative to its current position within the HTML document. This is different from absolute positioning, which positions an element relative to its parent container or the entire page. <p id="554b6497-de6d-4934-b14e-4c08c26037d4" class="">It can be used to create overlapping elements, as well as to create a space between elements on the page.</p><p id="a9b9f3d5-d62d-49e1-a690-70b2b14ea053" class="">Relative positioning is achieved by using the position property and setting it to relative. The top, right, bottom, and left properties can then be used to position the element relative to its current position.</p><ul id="694e4660-be3f-4e0c-960d-6e97184a88ba" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="0943746e-1e2b-446e-b791-bba02e33ef3c" class="">Code:</p><pre id="4161152e-9971-453c-a0bc-628028c91edd" class="code"><code>h1 {
+  position: relative;
+  left: 40px;
+  border: 3px solid aqua;
+}</code></pre><p id="435134ea-0c8f-4f3c-a482-8feb14c64d66" class="">Output:</p><figure id="85bd1535-779f-4c69-a297-26f789d1f89e" class="image"><img style="width:933px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2012.png"/></a></figure></details></li></ul></li></ul><ul id="33fabf1f-b6e1-43ba-921d-01410be5c6a7" class="block-color-default bulleted-list"><li style="list-style-type:disc"><strong>Absolute positioning: </strong>Absolute positioning in CSS is a way to position elements on a page relative to the browser window or its parent container. It is achieved by using the position property and setting it to absolute. <p id="364e3633-1efd-4104-9fc8-4d574a5727f2" class="">When using absolute positioning, the element is taken out of the normal flow of the page and is positioned relative to its closest positioned ancestor (or the browser window if no ancestor is found).</p><p id="a3ed92f2-dc77-48e7-a15e-3d1af9a00cf9" class="">Absolute positioning is best used for elements that need to stay in a fixed location on the page, such as a navigation menu or a footer. It is also useful for elements that should not move when the page is resized, such as a logo.</p><ul id="2cade4a4-d28c-4ef4-98d6-95c2e3c658e4" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="e6c18ce3-dad9-482d-9c0d-16f80061ad42" class=""><strong>Code:</strong></p><pre id="70ee7c89-d352-413a-a4da-41a9dccd8b9b" class="code"><code>div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid aqua;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid aqua;
+}</code></pre><p id="33f25c10-aba6-4d34-ab48-a34c24d68047" class=""><strong>Output:</strong></p><figure id="d4a3a53c-f0f1-403d-a26e-eb42bbdd92c3" class="image"><img style="width:931px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2013.png"/></a></figure></details></li></ul></li></ul><ul id="725a6628-f0a3-4391-8755-894c2a68264c" class="block-color-default bulleted-list"><li style="list-style-type:disc"><strong>Fixed positioning: </strong>Fixed position in CSS is a positioning property that allows an element to remain in a fixed position on the page, even when the page is scrolled. It is used to keep an element in a fixed spot on the page, even when the page is scrolled. This is often used for navigation bars, so the user can easily navigate the page without having to scroll back up to the top.<p id="f3cc7c25-5641-4305-ad22-bd62fd8dc9d6" class="">It is also used for advertising, so the advertisement stays in the same spot even when the user scrolls down the page. Fixed positioning is set using the position property with the value of “fixed”. The top, right, bottom, and left properties are then used to determine the exact position of the element.</p><ul id="84204f73-6ab4-4aaf-a8c8-1fcda741ab0a" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="916308d6-476d-4973-97bc-1821844815d9" class="">Code:</p><pre id="7056ed7a-19a5-403e-88d9-f4f3fec13e82" class="code"><code>h1 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid aqua;
+}</code></pre><p id="922c0a26-c493-4cca-a0f9-2d96c47e56e8" class="">Output:</p><figure id="098ff5fc-bc40-4abb-8cdf-4b2604735e63" class="image"><img style="width:1008px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2014.png"/></a></figure></details></li></ul></li></ul><ul id="cdf98dfb-e088-409b-ae9e-a6d2949e842a" class="block-color-default bulleted-list"><li style="list-style-type:disc"><strong>Sticky positioning: </strong>Sticky positioning is a CSS property that allows elements to become &quot;sticky&quot; or &quot;fixed&quot; based on the user&#x27;s scroll position within a container. <p id="04564969-dbb7-4db7-8029-868ba1e65e17" class="">When an element is set to &quot;position: sticky,&quot; it remains in its normal position within the document flow until the user scrolls to a specific threshold, at which point it becomes fixed to a specified position.</p><p id="e1e26448-846a-4288-8157-23dd63dcf2ae" class="">The user must also specify at least one of <code>top</code>, <code>right</code>, <code>bottom</code> or <code>left</code> for sticky positioning to work.</p><ul id="3466d636-4f37-4834-819b-39cccbc83399" class="toggle"><li><details close=""><summary><strong>For Example</strong></summary><p id="93a91a36-35a8-4757-bd78-e4ec8736696f" class=""><strong>Code:</strong></p><pre id="562a9aa3-77cf-45bb-8c35-ff1378a3f176" class="code"><code>div.sticky {
+  position: sticky;
+  top: 0;
+
+  padding: 5px;
+  background-color: red;
+  border: 2px solid #4CAF50;
+  color: white;
+}</code></pre><p id="4a4f086c-9b24-4edb-a68e-13d772741d4b" class=""><strong>Output:</strong></p><figure id="573ea6dd-4b3a-4109-8a9a-8b4cd3ee88ba" class="image"><img style="width:928px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2015.png"/></a></figure></details></li></ul></li></ul><p id="d4e075ad-c6b2-4a24-a474-4ab0712a7563" class=""><strong>To Change the flow of an element using the position property, CSS provides four other different properties, which are:</strong></p><ul id="faaf9725-8520-465e-8da9-ef7e242ec38c" class="bulleted-list"><li style="list-style-type:disc"><strong>top:</strong> top property allows the user to specify the distance between the top edge of an element and the top edge of its containing element or the nearest positioned ancestor. </li></ul><ul id="613f71a9-1500-463b-ab6c-b629fd7dd6c3" class="bulleted-list"><li style="list-style-type:disc"><strong>bottom:</strong> Similar to top, the bottom property allows you to define the distance between the bottom edge of an element and the bottom edge of its containing element or the nearest positioned ancestor. .</li></ul><ul id="ced879bc-8ed0-412b-aca7-6d3600d74666" class="bulleted-list"><li style="list-style-type:disc"><strong>left:</strong> The left property determines the distance between the left edge of an element and the left edge of its containing element or the nearest positioned ancestor.</li></ul><ul id="3f45a872-a2a0-47e2-acd0-4b3fb2fea12f" class="bulleted-list"><li style="list-style-type:disc"><strong>right:</strong> In contrast to left, the right property specifies the distance between the right edge of an element and the right edge of its containing element or the nearest positioned ancestor.</li></ul><p id="197ac228-e0b6-4c4b-97d5-92358c7ab3ab" class="">
+</p><p id="c77d7a7a-0d06-4723-b8da-33432e1c60aa" class="">If the user doesn&#x27;t explicitly set values for top, bottom, left, or right, or if the element&#x27;s position property is not set to absolute, fixed, relative, or sticky, these properties are not active, and the element will follow the natural flow of the document.</p><ul id="b844745f-b0dc-4183-b74a-ba2922eb72ea" class="toggle"><li><details close=""><summary><strong>Project Implementation 2</strong></summary><p id="d48f210f-0a0b-4601-8031-71fb144903ad" class="">In this Step, We will make the navbar sticky so that it will stick on top when the User scrolls down.</p><pre id="044cbc25-f068-4325-981d-06cb1ba38293" class="code"><code>header {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 3px solid rgba(201, 195, 195, 0.778);
+  background-color: white;
+  position: sticky;
+  top: 0;
+	/*Making Navbar Stick to the top*/
+}</code></pre><p id="1ec58891-df83-4f1c-9b6c-fa3f620b9d48" class=""><strong>Output:</strong></p><figure id="bb8fa4fd-6e8f-429b-b0ac-6b039317a5ed" class="image"><img style="width:1907px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2016.png"/></a></figure></details></li></ul><h2 id="9a9b2cee-5390-41ae-914d-1fd1305783e9" class=""><mark class="highlight-red">Responsive Web Design</mark></h2><p id="54f69d95-bc9e-4a82-89a4-6fb279657b33" class="">The term responsive web design was coined by Ethan Marcotte. Responsive Web Design makes it easy to use fluid grids, flexible images, and media queries to incrementally improve his webpage for different viewing contexts, including: For example: desktop, smartphone, tablet, etc.</p><ul id="fa54a619-f6ec-46d8-ac64-7275f491ee56" class="bulleted-list"><li style="list-style-type:disc">Smartphone: 320px</li></ul><ul id="7731bd1d-da98-4a27-ac50-5d3d640ace8a" class="bulleted-list"><li style="list-style-type:disc">Tablet: 768px</li></ul><ul id="97f539f9-9d05-4186-8e39-25a68c56d38e" class="bulleted-list"><li style="list-style-type:disc">Netbook: 1024px</li></ul><ul id="778bba95-66e7-49d5-aca6-d161d4201baa" class="bulleted-list"><li style="list-style-type:disc">Desktop: 1600px</li></ul><p id="bf298220-9c87-4d06-af66-99da57a97f75" class="">Let&#x27;s look at a simple usage of media queries with an example.</p><p id="7da84095-3513-42c9-b883-3a4dbccb975c" class="">This example specifies that resizing the window below 500 pixels will change the background color.</p><ul id="9f60d2bf-75e7-4552-9f03-f37619c0fc7a" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="897139b7-8757-492b-8c7b-43ef6ab08f50" class=""><strong>Code:</strong></p><pre id="f334587a-87dd-4c8b-bf0e-eb210c3771d4" class="code"><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;  
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;/&gt;  
+&lt;style&gt;  
+body {  
+    background-color:yellow;  
+}  
+  
+@media only screen and (max-width: 500px) {  
+    body {  
+        background-color:green;  
+    }  
+}  
+&lt;/style&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+&lt;p&gt;If you resize the browser window and the width of this document is less than 500 pixels, the background-color is &quot;green&quot;, otherwise it is &quot;yellow&quot;&lt;/p&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre><p id="dd740ca8-45f5-4b6b-bb89-8e7489785cf8" class=""><strong>Output</strong></p><p id="2f069e04-e358-4af5-8f3b-09d2fbd0f1ee" class=""><strong>For Big Screen</strong></p><figure id="a2fa064f-3733-443c-890a-da64d720a8f9" class="image"><img style="width:624px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Responsive_Web_Design.png"/></a></figure><p id="9e2fc97f-40c8-4f1f-9fdd-118d9b49b726" class=""><strong>For Screen less than 500px</strong></p><figure id="ce503eee-2e14-41eb-b127-845ac1471429" class="image"><img style="width:432px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Responsive_Web_Design_2.png"/></a></figure></details></li></ul><h3 id="425a5092-2bd8-4606-8637-205663026c84" class="">Media Queries</h3><p id="30f6214e-f652-4290-9bd9-d03f60a6b80b" class="">CSS Media Query allows web developers to apply different styles and layout rules based on the characteristics of the device or browser displaying the web page. </p><p id="fef924d2-ee35-4717-a529-c64b9afb99b1" class="">By using media queries, you can create responsive web designs that adapt to different screen sizes and devices, providing an optimal viewing experience for users.</p><p id="77b3c7b5-1c6e-4397-a28d-9d309882e400" class="">The media type indicates the device&#x27;s category, such as &quot;screen&quot; for computer screens or &quot;print&quot; for printers. Specific requirements such as screen width, device orientation, resolution, and others are defined by the expressions.</p><p id="dce31c61-8c40-4716-bb32-a76e5e5957c4" class="">A media query consists of a media type that can contain one or more expressions that can be either true or false.</p><p id="3f911954-a14a-42b6-9fe4-a8c5eacfa427" class=""><strong>Media Query Syntax is:</strong></p><pre id="8c61c2d9-cc69-4fa7-9399-998a9625e386" class="code"><code>@media not | only mediatype and (expression) {
+    // Code content
+}</code></pre><p id="3fe3a04b-5772-4795-827e-46b77eb54740" class="">The result of the query is true if the specified media matches the type of device the document is displayed on. If the media query is true, then a style sheet is applied.</p><p id="24b8c156-cc87-406e-b01b-7bcc150488d0" class="">The media type indicates the device&#x27;s category, such as &quot;screen&quot; for computer screens or &quot;print&quot; for printers. Specific requirements such as screen width, device orientation, resolution, and others are defined by the expressions.</p><p id="5c8a5387-80d6-4dfe-8ce3-ca09278fb75b" class="">There are various media types for media queries, some of which include:</p><ul id="f3c2aa2c-52a4-45a7-8a6b-85c35107ac55" class="bulleted-list"><li style="list-style-type:disc"><strong>all</strong>: This media type applies to all types of devices.</li></ul><ul id="6f281b6e-0249-46a1-9822-f1fa2d849377" class="bulleted-list"><li style="list-style-type:disc"><strong>print</strong>: It specifically targets printers, allowing you to define styles for printing purposes.</li></ul><ul id="49919d10-4149-44ae-bcc2-3b49fc1bf089" class="bulleted-list"><li style="list-style-type:disc"><strong>screen</strong>: This type is used for computer screens, smartphones, tablets, and similar devices. It&#x27;s the most commonly used media type for creating responsive designs.</li></ul><ul id="83895321-2579-442e-92a3-74e997f0eb4b" class="bulleted-list"><li style="list-style-type:disc"><strong>speech</strong>: It is designed for screen readers that read the content aloud, allowing you to optimize the presentation for auditory output.</li></ul><p id="6fc75256-db44-4e8b-bc58-0ab9968c73d9" class="">
+</p><p id="31d996a8-9090-4bd0-83f2-3c204eeacc2e" class="">There are various Media functions that can be used for media queries, some of which include:</p><figure id="741a3fc9-9a00-4053-9e4f-ead6701268ff" class="image"><img style="width:624px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2017.png"/></a></figure><p id="d8206484-973c-4c3c-98ff-e184c20ebc51" class=""><strong>Here is an example of the media query:</strong></p><pre id="7c3c9ae3-b554-4f48-ac1e-b3e41b09f07e" class="code"><code>@media screen and (max-width: 768px) {
+  /* Styles applied when the screen width is 768 pixels or less */
+  body {
+    background-color: lightblue;
+  }
+}</code></pre><p id="22c50f52-42ac-4b74-b1e0-877de1da1023" class="">In this example, the media query targets screens (<code>@media screen</code>) and includes a condition that checks if the maximum width of the screen is 768 pixels or less (<code>and (max-width: 768px)</code>). If the condition is met, the styles within the media query will be applied, in this case, changing the background color of the <code>body</code> element to light blue.</p><ul id="f0f8e1da-368d-48b2-910c-9cfc4ffd405b" class="toggle"><li><details close=""><summary><strong>Project Implementation 3</strong></summary><p id="9ee52a09-b40d-461c-9b23-b820f7524523" class="">We will make our website responsive using media queries.</p><pre id="2ac9d673-3578-4f18-959c-d023c938f125" class="code"><code>@media screen and (max-width: 760px) {
+  header {
+    justify-content: space-around;
+  }
+  #head-title {
+    margin-left: 4px;
+  }
+  nav {
+    padding-left: 0px;
+    justify-content: flex-end;
+  }
+  #nav-end {
+    margin-right: 0px;
+  }
+  #location {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    justify-content: space-around;
+  }
+  #title-name {
+    font-size: medium;
+  }
+  #logo {
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-right: 1px;
+  }
+  #head-title {
+    margin-left: 4px;
+  }
+  nav {
+    padding-left: 0px;
+    justify-content: flex-end;
+  }
+  #nav-end {
+    margin-right: 0px;
+  }
+  .nav-elements {
+    margin: 2px 10px;
+  }
+  #main-content {
+    min-height: 35vh;
+  }
+  #location-select {
+    width: 15rem;
+    padding: 2px;
+    marging: 0px;
+  }
+  #hide-display {
+    display: none;
+  }
+  #main-content {
+    background-size: 600px 400px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .tag-line {
+    font-size: large;
+  }
+  .t-card {
+    margin: 10px 1px;
+    padding: 20px 10px;
+  }
+  .card-collection {
+    flex-direction: column;
+    align-items: center;
+  }
+  #testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icon {
+    width: 14px;
+    height: 14px;
+  }
+  .t-card {
+    width: 280px;
+  }
+}</code></pre><p id="79a6c073-a697-4030-a0d9-49503c87dc60" class=""><strong>Output:</strong></p><figure id="75d24447-6b13-418d-8ee4-efc3e2ec5853" class="image"><img style="width:449px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2018.png"/></a></figure></details></li></ul><h2 id="935ec313-c2f0-488a-b232-3ac24ff6dd6b" class=""><mark class="highlight-red">Transitions and Transforms</mark></h2><h3 id="17533854-51f0-4d06-a2c7-b4f179ca75e2" class="">Transitions</h3><p id="0691ccde-af3e-4f92-bb3b-43984269fe0e" class="">CSS transitions allow you to create smooth and gradual animations between different states or property values of an element.</p><p id="4a0999ca-6765-4083-a081-95af027ff1b2" class="">They provide a way to add motion and visual effects to your web page without the need for JavaScript or complex animations.</p><p id="f0cb274c-6c68-466d-aeeb-ddf94c4e8481" class="">With CSS transitions, you can specify which CSS properties should be animated, the duration of the animation, and the timing function that controls how the animation progresses over time. </p><p id="741f0457-c915-4bcf-836b-643cbb3143a5" class="">When the specified property values change, the transition smoothly interpolates between the initial and final values, creating a gradual transition effect.</p><p id="d65cf343-5540-4a20-99e2-8b4f16d30fbc" class="">CSS transitions offer several properties that control the animation:</p><ul id="3959df6a-0f48-4511-8aa9-42b45295d5b6" class="bulleted-list"><li style="list-style-type:disc"><code>transition-property</code>: This property allows you to specify which CSS properties should be animated during the transition change.<p id="759c9ca6-118e-437d-98a6-f98ed8f17b8c" class="">The syntax for transition property is:</p><pre id="e54a56a9-16a7-43de-a6b6-7aa220f4cf32" class="code"><code>transition-property:width;</code></pre><p id="bad74963-cd1b-4855-811a-f7f2211caf8d" class="">There are various values for transition-property which include:</p><ul id="a1f77131-670c-4691-a8c1-d27ba6b12ef4" class="bulleted-list"><li style="list-style-type:circle"><code>None</code> is used to indicate that no property should be chosen.</li></ul><ul id="f1ec7354-e035-42fb-9649-4f7c2e1f2278" class="bulleted-list"><li style="list-style-type:circle"><code>all</code> is used to define all the attributes to be selected; however, because not all properties are animate-able, only the animate-able properties will be changed.</li></ul><ul id="f927a25c-f019-491f-96a1-fb6f492ad51f" class="bulleted-list"><li style="list-style-type:circle">We can provide a single property or a list of properties separated by commas. property1, property2,..., and so forth.</li></ul></li></ul><ul id="4ebfe165-3657-4056-8adb-074700cc4861" class="bulleted-list"><li style="list-style-type:disc"><code>transition-duration</code>: This property lets you specify how long it will take to transition from one CSS property to the next.<p id="0a688230-434e-4122-a82a-0d32cf6f6dc1" class="">The syntax for transition duration is:</p><pre id="d92198b2-49cf-4f16-b709-6c497e05d255" class="code"><code>transition-duration:time;</code></pre><p id="dfff5c5a-d1ae-465e-9e9b-c2bf03624d1d" class="">Here time for transition will be told to the user.</p></li></ul><ul id="779cfa95-6c88-4a2c-90a0-f13fe3180877" class="bulleted-list"><li style="list-style-type:disc"><code>transition-timing-function</code>: This attribute allows you to control the rate and manner of change throughout the transition. For example, the transition should be quick at first and gradual in the conclusion.<p id="545fb820-f11d-4a90-8564-d18b3d8daa59" class="">The syntax for transition-timing-function is:</p><pre id="13d69eeb-1030-404a-a53d-6e663fab095e" class="code"><code>transition-timing-function: ease|ease-in|ease-out|ease-in-out|linear|
+step-start|step-end;</code></pre></li></ul><ul id="f7d942e3-4bfb-42e2-abbb-9f3e531c0299" class="bulleted-list"><li style="list-style-type:disc"><code>transition-delay</code> :This parameter allows you to specify the length of time you want to wait before the transition begins.<p id="e378d416-35f4-4c52-a123-97f15f90d4d4" class="">The syntax for transition-delay property is:</p><pre id="a46b708c-fa5f-4c2a-b171-661e4524590c" class="code"><code>transition-delay:2s;
+/*The time taken for start of the transition*/</code></pre></li></ul><p id="d19aabbf-ee50-4f75-884d-7fe0e1be1407" class=""><strong>Transition shorthand: </strong>According to the syntax below, you may merge all four transition properties stated above into a single shorthand property. This saves us from writing large codes and keeps things tidy. Take note of the property ordering; it is significant.</p><p id="60f3314e-4735-4db4-bac8-32e616d1fa3a" class="">The syntax for transition shorthand is:</p><pre id="a7028903-2474-4207-b94d-4aa2de0a5547" class="code"><code>transition: (property name) | (duration) | (timing function) | (delay);</code></pre><ul id="6502ffb1-b67a-44fb-8bc7-28901404de6b" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="5a06c6bd-f3fd-4bb1-b7b2-73c64a90d227" class=""><strong>Code:</strong></p><pre id="1bdff7a7-0b19-466c-bbbc-5f003c1c37d0" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;CSS Transition&lt;/title&gt;
+
+    &lt;style&gt;
+        h1 {
+            color: black;
+            text-align: center;
+        }
+
+        div.element {
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            margin: 0 auto;
+            background: yellow;
+            transition: all 2s ease;
+        }
+
+        div.element:hover {
+            height: 300px;
+            width: 300px;
+            background: #BBDEFB;
+        }
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Transitions&lt;/h1&gt;
+
+    &lt;div class=&quot;element&quot;&gt;
+    &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p id="57690d27-52df-4b32-a432-a60c8a52eac6" class=""><strong>Before Transition:</strong></p><figure id="3c7a96ee-2344-47cb-85b8-ab9f8f2ed239" class="image"><img style="width:384px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2019.png"/></a></figure><p id="735a10d9-4738-4b35-a934-fbe957860dbc" class=""><strong>After Transition:</strong></p><figure id="dec85e1d-d4a7-419f-8157-56aa0a70b893" class="image"><img style="width:432px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2020.png"/></a></figure></details></li></ul><h3 id="1c02c004-0ef0-443f-97c3-9fa72a7dc291" class="">Transforms</h3><p id="edf59cdb-d8ac-43dd-950c-c6fdccb19869" class="">CSS transform is a CSS property that allows you to apply various types of transformations to an element, such as rotating, scaling, skewing, and translating (moving) it in 2D or 3D space. </p><p id="d89f33e5-ce05-4cad-bb75-1ba1092f9690" class="">Transformations modify the appearance and position of an element without affecting the normal document flow or layout.</p><p id="da868f4f-5787-48b3-bb9d-69f1a9d23e27" class="">Below is a list of some basic 2D transformation methods.</p><ul id="163599e1-d818-43bb-8b00-6d490df3a089" class="bulleted-list"><li style="list-style-type:disc"><strong>translate(x,y):</strong> Used to translate the element along the x and y axes.</li></ul><ul id="7355e6bb-0e67-478c-a20a-1b04f1edec25" class="bulleted-list"><li style="list-style-type:disc"><strong>translateX(n): </strong>Used to translate the element along the X axis.</li></ul><ul id="4fffc917-20cc-48f5-9edc-83457f4b0c92" class="bulleted-list"><li style="list-style-type:disc"><strong>translateY(n):</strong> Used to translate the element along the Y axis.</li></ul><ul id="1b7678bf-2406-4305-82e6-7619bee8514b" class="bulleted-list"><li style="list-style-type:disc"><strong>Rotate(): </strong>Used to rotate an element based on an angle.</li></ul><ul id="67e2eac2-f8b8-43dd-b365-decb440e899a" class="bulleted-list"><li style="list-style-type:disc"><strong>scale(x,y):</strong> Used to change the width and height of an element.</li></ul><ul id="12155f55-c587-4338-839b-02177a33ad30" class="bulleted-list"><li style="list-style-type:disc"><strong>scaleX(n):</strong> used to change the width of the element.</li></ul><ul id="507e51a7-6a6b-41e5-80d9-d4b1b5aaf843" class="bulleted-list"><li style="list-style-type:disc"><strong>scaleY(n):</strong> used to change the height of the element.</li></ul><ul id="2aa13676-030c-4b81-bfd0-1f6f93ff369f" class="bulleted-list"><li style="list-style-type:disc"><strong>skewX():</strong> Specifies a skew transformation along the X axis.</li></ul><ul id="fdcf405c-921c-4907-961b-e7b411b84f8f" class="bulleted-list"><li style="list-style-type:disc"><strong>skewY():</strong> Specifies a skew transformation along the Y axis.</li></ul><ul id="bffbb419-a09f-4266-998d-f6746635bca4" class="bulleted-list"><li style="list-style-type:disc"><strong>matrix():</strong> Specifies a matrix transformation.</li></ul><p id="14edc6d3-d32f-4fcb-98e0-83dc1c9258f5" class="">We will explain some of them one by one:</p><ul id="9f4d7d9b-41b3-43b2-925e-5d3238a66e54" class="bulleted-list"><li style="list-style-type:disc"><strong>translate() method: </strong>The CSS translate() method is used to move an element from its current position according to specified parameters (X and Y axis).<p id="d067d181-186b-4c93-9361-69ad675183f6" class="">Let&#x27;s see an example of translating an element 50 pixels to the right and 100 pixels down from the current position.</p><ul id="03a1b663-851b-408b-b8f7-ea5458eee8a3" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="a4c7a016-b358-45db-a9be-7bc2e752d89f" class=""><strong>Code:</strong></p><pre id="5bf58346-527e-4b90-908b-94242f51f142" class="code"><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=windows-1252&quot;&gt;  
+&lt;style&gt;  
+div {  
+    width: 300px;  
+    height: 100px;  
+    background-color: lightgreen;  
+    border: 1px solid black;  
+    transform: translate(100px,80px);
+}  
+&lt;/style&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+&lt;div&gt;  
+This div element is translated 50 pixels right, and 100 pixels down from its current position by using translate () method.  
+&lt;/div&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre><p id="0a632b05-d74f-42a6-b673-a64fa451efbe" class=""><strong>Output:</strong></p><figure id="c365d413-6a46-4843-be3c-07ab233fab4a" class="image"><img style="width:727px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2021.png"/></a></figure></details></li></ul></li></ul><ul id="2b570a29-b15b-404c-b9e5-ba23a59a92b2" class="bulleted-list"><li style="list-style-type:disc"><strong>rotate() method: </strong>The CSS rotate() method is used to rotate an element clockwise or counterclockwise according to the specified angle.<p id="e308c6ae-9d54-4e32-9856-33fd8cf59711" class="">Let&#x27;s look at a rotating example around 300 elements.</p><ul id="a731b7cd-0b8c-4ed5-9df3-0d2ff88710c0" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="a04ddd51-1eb6-4e8e-9e8c-5a3bb770ea61" class=""><strong>Code:</strong></p><pre id="75c13bdc-d414-49b3-a130-34a932e44015" class="code"><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;  
+&lt;style&gt;  
+div {  
+    width: 300px;  
+    height: 100px;  
+    background-color: lightpink;  
+    border: 1px solid black;  
+}  
+div#myDiv {  
+    transform: rotate(30deg); 
+}  
+&lt;/style&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+&lt;div&gt;  
+This a normal div element.  
+&lt;/div&gt;  
+&lt;div id=&quot;myDiv&quot;&gt;  
+This is the 30 degree clockwise rotated div element by using rotate() method.    
+&lt;/div&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre><p id="59ce2c88-8261-4957-90e0-b597c77cad4e" class=""><strong>Output</strong></p><figure id="f8c57ff0-8258-45ab-8eaf-c4ca56ab276c" class="image"><img style="width:495px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2022.png"/></a></figure></details></li></ul></li></ul><ul id="1becf770-e590-406e-afd8-0809a00d62d9" class="bulleted-list"><li style="list-style-type:disc"><strong>scale() method: </strong>The CSS scale() method is used to increase or decrease the size of an element according to the given width and height.<p id="8d9cf6b2-0376-40d1-b8f7-e9f721c76f72" class="">Let&#x27;s take an example to increase the size of an element by increasing its width and height two times.</p><ul id="a7101f93-02f4-48a8-9147-3c69dbc28eb6" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="f3837d40-a632-4454-b14e-5a76dbacf9de" class="code"><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;  
+&lt;style&gt;  
+div {  
+    margin: 150px;  
+    width: 200px;  
+    height: 100px;  
+    background-color: lightpink;  
+    border: 1px solid black;  
+    border: 1px solid black;   
+    transform: scale(2.5,2); /* Standard syntax */  
+}  
+&lt;/style&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+&lt;div&gt;  
+This div element is scaled 2.5 times of its original width, and 2 times of its original height.  
+&lt;/div&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre><p id="d44cb9c1-5654-4af2-a31c-765c4046e304" class=""><strong>Output:</strong></p><figure id="c147ef3c-c3ae-4576-92aa-b7579d925cdb" class="image"><img style="width:864px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2023.png"/></a></figure></details></li></ul></li></ul><ul id="2a8791dd-5443-4326-b7b0-8d46fd90711f" class="bulleted-list"><li style="list-style-type:disc"><strong>skewX() method: </strong>The CSS skewX() method is used to skew an element along the X axis according to the specified angle. Let&#x27;s look at an example of distorting a 30 degree element along the X axis.<ul id="f3b7f872-f2d9-40e5-a4a9-d685d74b9967" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="da27bfce-5887-453f-98bd-4450dd796c46" class="code"><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;  
+&lt;style&gt;  
+div {  
+    width: 300px;  
+    height: 100px;  
+    background-color: lightpink;  
+    border: 1px solid black;  
+}  
+div#myDiv {  
+    transform: skewX(30deg); /* Standard syntax */  
+}  
+&lt;/style&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+&lt;div&gt;  
+This a normal div element.  
+&lt;/div&gt;  
+&lt;div id=&quot;myDiv&quot;&gt;  
+This div element is skewed 30 degrees along the X-axis.  
+&lt;/div&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre><p id="87658a9d-c660-4435-b571-262cfb4ad60d" class=""><strong>Output:</strong></p><figure id="185a344a-11b4-4b6b-a5f3-e0cf15fd4f73" class="image"><img style="width:624px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2024.png"/></a></figure></details></li></ul></li></ul><ul id="b4c97d95-b4f2-4480-9d44-f2efe6be3dbd" class="bulleted-list"><li style="list-style-type:disc"><strong>skewY() method: </strong>The CSS skewY() method is used to skew an element along the Y axis according to the specified angle. Let&#x27;s look at an example of distorting a 30 degree element along the Y axis.<ul id="8287f172-6685-4981-a8ec-35612aa50a04" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="cb20eb35-2b03-408b-8a95-89b0a9960bec" class=""><strong>Code:</strong></p><pre id="04d88a74-c2ad-40a9-b06a-6a7f716f54c4" class="code"><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;  
+&lt;style&gt;  
+div {  
+    width: 300px;  
+    height: 100px;  
+    background-color: lightpink;  
+    border: 1px solid black;  
+}  
+div#myDiv {   
+    transform: skewY(30deg); /* Standard syntax */  
+}  
+&lt;/style&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+&lt;div&gt;  
+This a normal div element.  
+&lt;/div&gt;  
+&lt;div id=&quot;myDiv&quot;&gt;  
+This div element is skewed 30 degrees along the Y-axis.  
+&lt;/div&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre><p id="afa78f91-a65d-4b38-a5d8-8909744a6a87" class=""><strong>Output:</strong></p><figure id="88905200-904e-4378-94ac-0f3ca80fbbc1" class="image"><img style="width:440px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2025.png"/></a></figure></details></li></ul></li></ul><ul id="3a28920a-099f-436d-8833-f86af8fcbed1" class="bulleted-list"><li style="list-style-type:disc"><strong>skew() method: </strong>The CSS skew() method is used to skew an element along the X and Y axes according to the specified angle.<p id="37cbf19c-8d2b-4fe2-b439-84098d0ebcdf" class="">Let&#x27;s tilt the element 30 degrees along the x-axis and 20 degrees along the y-axis.</p><ul id="afc10f45-d64b-409f-84b9-716cbdc95430" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="e41f5308-45f0-48eb-b753-73972e58c3db" class=""><strong>Code:</strong></p><pre id="e0ce2cc1-380c-449c-9866-0318ba632591" class="code"><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;  
+&lt;style&gt;  
+div {  
+    width: 300px;  
+    height: 100px;  
+    background-color: lightpink;  
+    border: 1px solid black;  
+}  
+div#myDiv {  
+    transform: skew(30deg,20deg); /* Standard syntax */  
+}  
+&lt;/style&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+&lt;div&gt;  
+This a normal div element.  
+&lt;/div&gt;  
+&lt;div id=&quot;myDiv&quot;&gt;  
+This div element is skewed 30 degrees along the X-axis, and 20 degrees along the Y-axis.  
+&lt;/div&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre><p id="b4471902-7a4c-451a-b6e5-8a6177d95dbd" class=""><strong>Output:</strong></p><figure id="91f92a00-32b8-4797-a4a2-ff11e9f89328" class="image"><img style="width:480px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2026.png"/></a></figure></details></li></ul></li></ul><h2 id="3514fe8f-f59a-4de8-9de9-cfe6fa4dde0f" class=""><mark class="highlight-red">Animations</mark></h2><p id="e124b565-d39a-4b35-8678-2f72b1a9c909" class="">CSS animations allow you to create more complex and dynamic motion effects on web pages. Animations consist of keyframes that define the intermediate states and property values that an element should have at different points during the animation.</p><p id="dd74f934-c7a2-44ae-b52b-594de7cde256" class="">Here are the properties commonly used to control CSS animations:</p><ol type="1" id="6b5e3c65-6c99-4fc8-8af0-8f5756819e17" class="numbered-list" start="1"><li><strong>animation-name</strong>: It specifies the name of the keyframe animation defined using <code>@keyframes</code>. This property is mandatory for animations.<pre id="af26e51d-664e-44d9-93ce-9ce8a8021bfd" class="code code-wrap"><code>animation-name: myAnimation;</code></pre></li></ol><ol type="1" id="8a9599f5-518b-45cd-a71e-eca564cf09d0" class="numbered-list" start="2"><li><strong>animation-duration</strong>:It sets the duration of the animation in seconds or milliseconds.<pre id="4b7e0f65-53c3-4020-a9a9-b4d806798040" class="code code-wrap"><code>animation-duration: 2s; /* 2 seconds */
+animation-duration: 500ms; /* 500 milliseconds */</code></pre></li></ol><ol type="1" id="45b0255d-1973-493a-b6b6-5f8bfe0122b7" class="numbered-list" start="3"><li><strong>animation-timing-function</strong>: It defines the acceleration and deceleration of the animation. It determines how the intermediate states are calculated over the duration. Common values include <code>ease</code> (default), <code>linear</code>, <code>ease-in</code>, <code>ease-out</code>, <code>ease-in-out</code>, and <code>cubic-bezier(n,n,n,n)</code>.<pre id="581257c1-8f3e-4536-862d-d035626ee60d" class="code code-wrap"><code>animation-timing-function: ease-in-out;</code></pre></li></ol><ol type="1" id="539f4a5a-0e50-4639-847c-f47ec43030e4" class="numbered-list" start="4"><li><strong>animation-delay</strong>: It specifies a delay before the animation starts. It can be set in seconds or milliseconds.<pre id="e5f4db9b-50cc-44de-8879-3482b9e6185e" class="code code-wrap"><code>animation-delay: 1s; /* 1 second */
+animation-delay: 250ms; /* 250 milliseconds */</code></pre></li></ol><ol type="1" id="31efc830-b00b-4881-a718-29871720a2b2" class="numbered-list" start="5"><li><strong>animation-iteration-count</strong>: It sets the number of times the animation should repeat. It can be a specific number or <code>infinite</code> to repeat indefinitely.<pre id="56814c23-af3e-478d-98f1-cfa4396a6c3d" class="code code-wrap"><code>animation-iteration-count: 3; /* Repeat 3 times */
+animation-iteration-count: infinite; /* Repeat indefinitely */</code></pre></li></ol><ol type="1" id="d3342f7f-8c29-40f5-a8ae-44d597eadb24" class="numbered-list" start="6"><li><strong>animation-direction</strong>:It determines whether the animation should play in a forward direction, in reverse, or alternate between forward and reverse on each iteration. Values include <code>normal</code> (default), <code>reverse</code>, <code>alternate</code>, and <code>alternate-reverse</code>.<pre id="0912043b-37cd-4009-8575-4007ecb51e68" class="code code-wrap"><code>animation-direction: reverse;</code></pre></li></ol><ol type="1" id="48ab2e31-939c-4413-a335-7deb41f3bc9a" class="numbered-list" start="7"><li><strong>animation-fill-mode</strong>: Specifies how the element should be styled before and after the animation. Values include <code>none</code> (default), <code>forwards</code>, <code>backwards</code>, and <code>both</code>.<pre id="c1978164-d9f0-4e05-b969-f5cf84443919" class="code code-wrap"><code>animation-fill-mode: forwards;</code></pre></li></ol><ol type="1" id="da97bf2b-d987-49ea-9d82-e2b1ef0168c1" class="numbered-list" start="8"><li><strong>animation-play-state</strong>: Controls whether the animation is running or paused. Values are <code>running</code> (default) and <code>paused</code>.<pre id="d7d36451-54f2-4301-94f7-69b41522308a" class="code code-wrap"><code>animation-play-state: paused;</code></pre></li></ol><ol type="1" id="1cf159dc-5d93-4edc-9c8a-26abc76687b3" class="numbered-list" start="9"><li><strong>animation</strong>: It is a shorthand property that combines multiple animation properties into a single declaration. <p id="8199e134-b2ce-4d82-9849-d1a84f2f25c9" class="">It allows you to specify the <code>animation-name</code>, <code>animation-duration</code>, <code>animation-timing-function</code>, <code>animation-delay</code>, <code>animation-iteration-count</code>, <code>animation-direction</code>, and <code>animation-fill-mode</code> in one line.</p><pre id="1755fa7d-46c2-42cd-ae6b-fd1f757e56a0" class="code code-wrap"><code>animation: myAnimation 2s ease-in-out 1s infinite alternate</code></pre></li></ol><h3 id="abbf05ed-7709-48f4-9460-c5cd8de6ea20" class="">Keyframes</h3><p id="2b1ecc5a-8c58-425c-b52d-6c34cc48ecd7" class="">Keyframes are used to define the intermediate states and property values of an animation. Keyframes allow you to specify how an element should appear at various points during an animation&#x27;s timeline. </p><p id="9f988744-a15c-4400-aa47-868813d40d9c" class="">Each keyframe represents a specific point in time, and you can define the CSS properties and their values that should be applied at that moment.</p><p id="d1fbb2df-b3e6-45c8-a039-1f1afc6317fe" class=""><strong>Example:</strong></p><pre id="c6224974-6269-4b89-9d05-c9e5a8f3f021" class="code"><code>@keyframes myAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+  }
+}</code></pre><p id="17e1b606-9543-4ebb-9483-132b4621a597" class="">In this example, <code>myAnimation</code> is the name given to the keyframe animation. It consists of three keyframes defined at 0%, 50%, and 100%. At the beginning (0%), the element has an opacity of 0. At 50%, the opacity is set to 0.5, and a scale transform is applied. Finally, at 100%, the opacity is set to 1.</p><ul id="204458b4-fc30-4c31-b50e-3b9538864e47" class="toggle"><li><details close=""><summary><strong>Example for Animation</strong></summary><p id="a91ed6a8-b276-4959-8b91-ad15da2bae40" class=""><strong>Code:</strong></p><pre id="29b2a5be-2d77-440c-ad60-909fe0d24303" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;style&gt;
+        @keyframes slide-in {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .box {
+            width: 200px;
+            margin: 0 auto;
+            height: 200px;
+            background-color: red;
+            animation-name: slide-in;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;box&quot;&gt;
+        This a normal div element.
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p id="f22fb882-66d6-46a5-a9b7-081625e10ba0" class="">This box will move left to right again and again</p></details></li></ul><p id="9fc9a173-5f1c-4dc2-8b0f-6bf35ce7100b" class="">
+</p><ul id="24bdc35c-2828-4235-a1ef-5600fa4b39ad" class="toggle"><li><details close=""><summary><strong>Project Implementation Step 4</strong></summary><p id="91c31d03-4d21-4c91-aea6-2bfef1ccf828" class="">We will style the search button in such a way that it will animate in different colors while hovering.</p><pre id="8d5af10c-7808-4444-9f9d-e03e86c21c67" class="code"><code>#s-button:hover {
+  background-image: linear-gradient(
+    to right,
+    #e7484f,
+    #e7484f 16.65%,
+    #f68b1d 16.65%,
+    #f68b1d 33.3%,
+    #fced00 33.3%,
+    #fced00 49.95%,
+    #009e4f 49.95%,
+    #009e4f 66.6%,
+    #00aac3 66.6%,
+    #00aac3 83.25%,
+    #732982 83.25%,
+    #732982 100%,
+    #e7484f 100%
+  );
+  animation: slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}</code></pre><p id="da9e55a4-f418-4448-a527-f694d38e9ae3" class=""><strong>Output:</strong></p><figure id="75e89cbd-c7cf-4768-8fc3-deccb486e51b" class="image"><img style="width:567px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2027.png"/></a></figure></details></li></ul><ul id="9518f412-ebb5-4a42-b6ac-fb3535ecd1fe" class="toggle"><li><details close=""><summary><strong>Project Implementation Step 5</strong></summary><p id="a1a77db3-7c82-41e8-ae03-4571be2b8dff" class="">This is the design of the contact us form in the HTML advance Lesson, Here we have aligned and styled the form. In this the style for header and footer is same as the home page.</p><p id="fd99817b-655a-4b7c-8ab7-252d2fc088cb" class=""><strong>HTML:</strong></p><pre id="08d608ec-7941-4810-bb91-c90a40c805f5" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Reserve&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;style2.css&quot;&gt; --&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;div id=&quot;head-title&quot;&gt;
+            &lt;img src=&quot;./assets/bus.png&quot; alt=&quot;bus&quot; id=&quot;logo&quot; /&gt;
+            &lt;div id=&quot;title-name&quot;&gt;RESERVE&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;nav&gt;
+            &lt;div id=&quot;hide-display&quot;&gt;
+                &lt;a href=&quot;&quot; target=&quot;_blank&quot; class=&quot;nav-elements&quot;&gt;Tickets&lt;/a&gt;
+                &lt;a href=&quot;&quot; target=&quot;_blank&quot; class=&quot;nav-elements&quot;&gt;Contact Us&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;nav-end&quot;&gt;
+                &lt;a href=&quot;&quot; id=&quot;login&quot;&gt;Login&lt;/a&gt;
+	                &lt;a href=&quot;&quot; class=&quot;nav-elements&quot;&gt;Register&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main id=&quot;contact-us&quot;&gt;
+        &lt;form action=&quot;#&quot; method=&quot;post&quot; id=&quot;contact-form&quot;&gt;
+            &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+            &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot; required /&gt;&lt;br /&gt;&lt;br /&gt;
+
+            &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+            &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required /&gt;&lt;br /&gt;&lt;br /&gt;
+
+            &lt;label for=&quot;mobile&quot;&gt;Mobile Number:&lt;/label&gt;
+            &lt;input type=&quot;tel&quot; id=&quot;mobile&quot; name=&quot;mobile&quot; required /&gt;&lt;br /&gt;&lt;br /&gt;
+
+            &lt;label&gt;Gender:&lt;/label&gt;
+            &lt;input type=&quot;radio&quot; id=&quot;male&quot; name=&quot;gender&quot; value=&quot;male&quot; required /&gt;
+            &lt;label for=&quot;male&quot;&gt;Male&lt;/label&gt;
+            &lt;input type=&quot;radio&quot; id=&quot;female&quot; name=&quot;gender&quot; value=&quot;female&quot; /&gt;
+            &lt;label for=&quot;female&quot;&gt;Female&lt;/label&gt;
+            &lt;input type=&quot;radio&quot; id=&quot;pnts&quot; name=&quot;gender&quot; value=&quot;pnts&quot; /&gt;
+            &lt;label for=&quot;pnts&quot;&gt;Prefer not to say&lt;/label&gt;
+            &lt;br /&gt;&lt;br /&gt;
+
+            &lt;label for=&quot;message&quot;&gt;Message:&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;
+            &lt;textarea id=&quot;message&quot; name=&quot;message&quot; rows=&quot;4&quot; cols=&quot;50&quot; required&gt;&lt;/textarea&gt;&lt;br /&gt;&lt;br /&gt;
+
+            &lt;label for=&quot;image&quot;&gt;Upload Image:&lt;/label&gt;
+            &lt;input type=&quot;file&quot; id=&quot;image&quot; name=&quot;image&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+
+            &lt;label for=&quot;newsletter&quot;&gt;Subscribe to Newsletter:&lt;/label&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;newsletter&quot; name=&quot;newsletter&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+
+            &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; id=&quot;button-submit&quot; /&gt;
+        &lt;/form&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2023 AlmaBetter. All rights reserved&lt;/p&gt;
+        &lt;div class=&quot;social-media&quot;&gt;
+            &lt;a href=&quot;https://www.facebook.com&quot;&gt;&lt;img src=&quot;./assets/facebook.png&quot; alt=&quot;Facebook&quot; class=&quot;social-icon&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;https://www.twitter.com&quot;&gt;&lt;img src=&quot;./assets/twitter.png&quot; alt=&quot;Twitter&quot; class=&quot;social-icon&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;https://www.instagram.com&quot;&gt;&lt;img src=&quot;./assets/instagram.png&quot; alt=&quot;Instagram&quot;
+                    class=&quot;social-icon&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p id="214a0c8b-974b-493d-b62e-77687dc9e458" class=""><strong>CSS:</strong></p><pre id="75695e8d-6771-4d05-a387-69d037348ca9" class="code"><code>#contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #79e0ee;
+}
+
+#contact-form {
+  max-height: 900px;
+  border: 2px solid #ffd0d0;
+  padding: 30px;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 700;
+  background-color: #ffd0d0;
+}
+
+#button-submit {
+  height: 30px;
+  width: 100px;
+  color: white;
+  background-color: rgb(80, 78, 78);
+  border: none;
+}
+
+#contact-form input {
+  padding: 2px;
+}</code></pre><p id="68e7bf77-ba5a-4c9b-97b8-da0478274815" class=""><strong>Output:</strong></p><figure id="842dfa3c-e429-45dc-80d8-da5af6721bc6" class="image"><img style="width:960px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2028.png"/></a></figure></details></li></ul><ul id="09e79233-1301-40e1-a1e3-e43b396d92eb" class="toggle"><li><details close=""><summary><strong>Project Implementation Step 6</strong></summary><p id="51b4ecf1-1c9a-4e17-889d-783c49c23b7d" class="">This is the design of the tables in the HTML advance Lesson, Here we have aligned and styled the tables. In this the style for header and footer is same as that of home page.</p><p id="8232509f-5e62-4549-914a-3c5213cd3dcf" class=""><strong>HTML:</strong></p><pre id="a2d8ba14-4bf4-4a68-96e5-c48a3ab1b2fe" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Reserve&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;style2.css&quot;&gt; --&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;div id=&quot;head-title&quot;&gt;
+            &lt;img src=&quot;./assets/bus.png&quot; alt=&quot;bus&quot; id=&quot;logo&quot; /&gt;
+            &lt;div id=&quot;title-name&quot;&gt;RESERVE&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;nav&gt;
+            &lt;div id=&quot;hide-display&quot;&gt;
+                &lt;a href=&quot;&quot; target=&quot;_blank&quot; class=&quot;nav-elements&quot;&gt;Tickets&lt;/a&gt;
+                &lt;a href=&quot;&quot; target=&quot;_blank&quot; class=&quot;nav-elements&quot;&gt;Contact Us&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;nav-end&quot;&gt;
+                &lt;a href=&quot;&quot; id=&quot;login&quot;&gt;Login&lt;/a&gt;
+                &lt;a href=&quot;&quot; class=&quot;nav-elements&quot;&gt;Register&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main id=&quot;table-layout&quot;&gt;
+        &lt;table id=&quot;table-style&quot;&gt;
+            &lt;caption&gt;Reserve Bus Schedule&lt;/caption&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Bus Details&lt;/th&gt;
+                    &lt;th colspan=&quot;4&quot;&gt;Trip Information&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope=&quot;col&quot;&gt;Bus Number&lt;/th&gt;
+                    &lt;th scope=&quot;col&quot;&gt;Origin&lt;/th&gt;
+                    &lt;th scope=&quot;col&quot;&gt;Destination&lt;/th&gt;
+                    &lt;th scope=&quot;col&quot;&gt;Departure Time&lt;/th&gt;
+                    &lt;th scope=&quot;col&quot;&gt;Duration&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;ASC712&lt;/td&gt;
+                    &lt;td&gt;New York City&lt;/td&gt;
+                    &lt;td&gt;Boston&lt;/td&gt;
+                    &lt;td&gt;09:00 AM&lt;/td&gt;
+                    &lt;td&gt;2 hours&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;XYZ789&lt;/td&gt;
+                    &lt;td&gt;San Francisco&lt;/td&gt;
+                    &lt;td&gt;Los Angeles&lt;/td&gt;
+                    &lt;td&gt;11:30 AM&lt;/td&gt;
+                    &lt;td&gt;3 hours&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;DEF456&lt;/td&gt;
+                    &lt;td&gt;Miami&lt;/td&gt;
+                    &lt;td&gt;Orlando&lt;/td&gt;
+                    &lt;td&gt;10:45 AM&lt;/td&gt;
+                    &lt;td&gt;4 hours&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;GHI789&lt;/td&gt;
+                    &lt;td&gt;Chicago&lt;/td&gt;
+                    &lt;td&gt;St. Louis&lt;/td&gt;
+                    &lt;td&gt;08:15 AM&lt;/td&gt;
+                    &lt;td&gt;5 hours&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;JKL012&lt;/td&gt;
+                    &lt;td&gt;Seattle&lt;/td&gt;
+                    &lt;td&gt;Portland&lt;/td&gt;
+                    &lt;td&gt;09:30 AM&lt;/td&gt;
+                    &lt;td&gt;3.5 hours&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;MNO345&lt;/td&gt;
+                    &lt;td&gt;Denver&lt;/td&gt;
+                    &lt;td&gt;Las Vegas&lt;/td&gt;
+                    &lt;td&gt;12:00 PM&lt;/td&gt;
+                    &lt;td&gt;6 hours&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;RVC109&lt;/td&gt;
+                    &lt;td&gt;Atlanta&lt;/td&gt;
+                    &lt;td&gt;Nashville&lt;/td&gt;
+                    &lt;td&gt;10:00 AM&lt;/td&gt;
+                    &lt;td&gt;4.5 hours&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;STU901&lt;/td&gt;
+                    &lt;td&gt;Houston&lt;/td&gt;
+                    &lt;td&gt;San Antonio&lt;/td&gt;
+                    &lt;td&gt;11:15 AM&lt;/td&gt;
+                    &lt;td&gt;2.5 hours&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2023 AlmaBetter. All rights reserved&lt;/p&gt;
+        &lt;div class=&quot;social-media&quot;&gt;
+            &lt;a href=&quot;https://www.facebook.com&quot;&gt;&lt;img src=&quot;./assets/facebook.png&quot; alt=&quot;Facebook&quot; class=&quot;social-icon&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;https://www.twitter.com&quot;&gt;&lt;img src=&quot;./assets/twitter.png&quot; alt=&quot;Twitter&quot; class=&quot;social-icon&quot;&gt;&lt;/a&gt;
+            &lt;a href=&quot;https://www.instagram.com&quot;&gt;&lt;img src=&quot;./assets/instagram.png&quot; alt=&quot;Instagram&quot;
+                    class=&quot;social-icon&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p id="f085f098-3f9e-4c13-9d15-596f607b6aae" class=""><strong>CSS:</strong></p><pre id="d6c4a588-199f-41eb-a866-578bb56454ad" class="code"><code>#table-layout {
+  padding: 50px 15px;
+}
+
+caption {
+  font-size: large;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+#table-style {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  min-height: 70vh;
+}
+
+#table-style td,
+#table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table-style tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table-style tr:hover {
+  background-color: #ddd;
+}
+
+#table-style th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04aa6d;
+  color: white;
+}</code></pre><p id="456bcde9-0878-4d30-8d3d-0f7ee0e8af5b" class=""><strong>Output:</strong></p><figure id="c74344bd-f2da-4bfe-a74b-0cd1753d55e6" class="image"><img style="width:1152px" src="Advanced%20CSS%20Techniques%20e3c9a67ae4994d849c38a659f905ada0/Untitled%2029.png"/></a></figure></details></li></ul><h1 id="eb4b91ad-9372-4998-93de-361b251a0030" class=""><mark class="highlight-brown">Summary</mark></h1><h2 id="7d78a5d9-9b04-4e11-aa4b-c95c4bd5955d" class=""><mark class="highlight-red">What did we learn?</mark></h2><ul id="a8f2a34f-d8f8-486a-8c8b-72691083d465" class="bulleted-list"><li style="list-style-type:disc">The CSS display property allows you to control the way elements are displayed on a webpage. It offers different values such as block, inline, inline-block, none, flexbox, grid, table, and run-in.</li></ul><ul id="fbd50730-7627-4835-a29c-358b20fbaac3" class="bulleted-list"><li style="list-style-type:disc">The CSS position property is used to control the positioning of elements on a web page. </li></ul><ul id="9f3d1a84-c2bc-48b1-b9c7-60a316960c49" class="bulleted-list"><li style="list-style-type:disc">The position property offers five values: static, relative, absolute, fixed, and sticky. Static is the default positioning, where elements flow naturally in the document.</li></ul><ul id="b7e36cbc-bcc7-4234-ac4d-f85544c7653e" class="bulleted-list"><li style="list-style-type:disc">Responsive web design utilizes fluid grids, flexible images, and media queries to create adaptive layouts for different devices and screen sizes. </li></ul><ul id="cad00af1-00db-45a6-aa70-4e999d707bdd" class="bulleted-list"><li style="list-style-type:disc">Media queries allow developers to apply specific styles and layout rules based on device characteristics, enabling optimal viewing experiences.</li></ul><ul id="b62f314e-463c-4fd7-b8f1-b51cefb97030" class="bulleted-list"><li style="list-style-type:disc">CSS transitions allow for smooth and gradual animations between different states or property values of an element, providing visual effects without the need for JavaScript or complex animations</li></ul><ul id="3cb3f00a-2a4d-4d18-858d-e862571b6fa2" class="bulleted-list"><li style="list-style-type:disc">CSS transform is a property that allows you to apply various transformations to an element, such as translation, rotation, scaling, and skewing.</li></ul><ul id="bf4ae2bd-6c5b-4fd2-96e5-968dec5df6df" class="bulleted-list"><li style="list-style-type:disc">CSS animations enable the creation of dynamic and interactive visual effects on web pages by defining keyframes and animating properties, enhancing the user experience and engagement.</li></ul><h2 id="d3bf32d3-403c-43e2-9584-1500b67d543e" class=""><mark class="highlight-red">Shortcomings and Challenges</mark></h2><ul id="98a96e01-01ee-4fbf-83e6-96eed8ba0968" class="bulleted-list"><li style="list-style-type:disc">Not all browsers support the latest CSS animation features, transitions, transforms, or positioning properties. This can result in inconsistent or broken animations across different browsers and versions.</li></ul><ul id="40ed0007-0076-47ba-8a12-31e2ca152975" class="bulleted-list"><li style="list-style-type:disc">Learning Curve: CSS animations and advanced transition techniques can have a steep learning curve, requiring a good understanding of keyframes, timing functions, and animation properties.</li></ul><ul id="751ead7d-0ceb-499c-b4b2-ab54e5dd433e" class="bulleted-list"><li style="list-style-type:disc">Lack of Fine-grained Control: CSS animations and transitions provide high-level control over the animation effects, but they may not offer fine-grained control over every aspect of the animation.</li></ul><ul id="560ffbeb-a7ad-4c4d-bb16-a3df4c8c8246" class="bulleted-list"><li style="list-style-type:disc">Limited Interactivity: CSS animations and transitions are primarily designed for visual effects and do not provide extensive interactivity. While they can respond to user interactions like hover or click events, they have limitations when it comes to complex interactive animations or dynamic user input.</li></ul><h2 id="b38f614b-f0c2-4f00-a98b-685f571141ee" class=""><mark class="highlight-red">Best Practices</mark></h2><ol type="1" id="0d49c96f-235e-4233-bec6-dcf6ff6ac88b" class="numbered-list" start="1"><li>To ensure better browser compatibility, use vendor prefixes (-webkit-, -moz-, -o-, -ms-) for CSS animation properties. Additionally, consider using polyfills or fallbacks for older browsers that do not support certain animation features.</li></ol><ol type="1" id="767dbbc1-0ef3-481c-ad28-c218fd92a0c9" class="numbered-list" start="2"><li>Use animations and transitions sparingly and purposefully to enhance the user experience and draw attention to important elements or interactions. Avoid excessive or distracting animations that can overwhelm or confuse users.</li></ol><ol type="1" id="164a55ff-9a9b-463b-8990-aaf0dc6071f2" class="numbered-list" start="3"><li>Test your animations across different browsers, devices, and screen sizes to ensure consistent behavior. Iterate and refine your animations based on user feedback and performance observations to optimize their effectiveness.</li></ol><ol type="1" id="499a2e6b-bf92-44df-bbe4-5490971f1d8e" class="numbered-list" start="4"><li>While CSS animations and transitions can achieve a lot, combining them with JavaScript can offer more control and interactivity. Consider using JavaScript libraries or frameworks like GSAP or Anime.js for advanced animation effects or complex interactive animations that go beyond CSS capabilities.</li></ol><h2 id="508906ec-8a39-4918-942b-80ee8c7caddb" class=""><mark class="highlight-red">Enhance your knowledge</mark></h2><ul id="06e72459-afd5-427d-93bc-30bc08d7a9ac" class="bulleted-list"><li style="list-style-type:disc"><strong>Advance Animations:</strong> <a href="https://www.smashingmagazine.com/2022/10/advanced-animations-css/">https://www.smashingmagazine.com/2022/10/advanced-animations-css/</a></li></ul><ul id="edceb5b8-4483-4bab-b385-fd46a89c82a7" class="bulleted-list"><li style="list-style-type:disc"><strong>Flexbox:</strong> <a href="https://www.freecodecamp.org/news/css-flexbox-tutorial-with-cheatsheet/">https://www.freecodecamp.org/news/css-flexbox-tutorial-with-cheatsheet/</a></li></ul><ul id="c48032a9-8fbf-4958-a48c-6b4730a59f21" class="bulleted-list"><li style="list-style-type:disc"><a href="https://dev.to/w3tsa/css-display-and-css-position-4ldi">https://dev.to/w3tsa/css-display-and-css-position-4ldi</a></li></ul><p id="d7398e07-73eb-46ef-9a19-c542b294eeab" class="">
+</p></div></article></body></html>
