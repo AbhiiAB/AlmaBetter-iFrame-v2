@@ -1,0 +1,815 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Bootstrap basics</title><link rel="stylesheet" href="../../../../../styles.css"></head><body><article id="d90acb37-5454-4096-8db8-7c3436b8e6bd" class="page sans"><header><h1 class="page-title">Bootstrap basics</h1><p class="page-description"></p></header><div class="page-body"><ul id="b31cfe38-7a59-43cb-b0c3-5054637643f5" class="toggle"><li><details close=""><summary><strong>Session Flow (5 minutes read)</strong></summary><ul id="f295a38d-7b84-44da-a1d1-6be3e5b1a3fc" class="bulleted-list"><li style="list-style-type:disc"><strong>Learning Objective (5 minutes read)</strong><ul id="c2584901-860c-429a-a382-670a0484ecc3" class="bulleted-list"><li style="list-style-type:circle">Introduction</li></ul><ul id="4f9c0dfe-bc57-47ba-bb93-87b3f509f843" class="bulleted-list"><li style="list-style-type:circle">Theme</li></ul><ul id="cd471fc9-2316-45b6-a6a6-99033aa20e78" class="bulleted-list"><li style="list-style-type:circle">Primary Goals</li></ul></li></ul><ul id="a75dafa3-6d09-4814-8439-275491035555" class="bulleted-list"><li style="list-style-type:disc"><strong>HTML Basics</strong> <strong>(120 minutes read)</strong><ul id="578b7ec6-5912-401c-8745-8d956ec2c177" class="bulleted-list"><li style="list-style-type:circle">Introduction to Bootstrap</li></ul><ul id="e66a601f-f655-41fa-a0db-c0d914014033" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 1</strong></li></ul><ul id="3c02005f-724a-4ac6-8329-3e49d6a2f1c2" class="bulleted-list"><li style="list-style-type:circle">Containers</li></ul><ul id="ffcc4701-49c1-4699-826e-eeec83cad713" class="bulleted-list"><li style="list-style-type:circle">Navigation</li></ul><ul id="df5736fe-66f5-49e2-ac7d-1e3b48ce0061" class="bulleted-list"><li style="list-style-type:circle">Buttons</li></ul><ul id="0915e928-256c-47a5-bd79-ec786424fd24" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 2</strong></li></ul><ul id="80c2f827-46ba-4cf4-ad00-f8cc2138e63f" class="bulleted-list"><li style="list-style-type:circle">Typography</li></ul><ul id="6ca0ba78-dc9c-4665-a699-2476d1bb948f" class="bulleted-list"><li style="list-style-type:circle">Colors</li></ul><ul id="a6bd94bd-50f9-4e8e-849d-ecc2f00c19ae" class="bulleted-list"><li style="list-style-type:circle">Margin and Padding</li></ul><ul id="aab2c492-e24f-4ddf-8027-432c474243ed" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 3</strong></li></ul><ul id="2eb2714c-2580-43dd-991d-d4dc17020294" class="bulleted-list"><li style="list-style-type:circle">Columns</li></ul><ul id="5e9de030-0e5d-4bff-93ae-5b11c9dadf01" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 4</strong></li></ul><ul id="6fc207a0-9068-47ea-8811-fde6f7774fa7" class="bulleted-list"><li style="list-style-type:circle">Flex Layout</li></ul><ul id="b8c8aca1-9390-40a9-bd45-d3ea64899be3" class="bulleted-list"><li style="list-style-type:circle">Utilities</li></ul><ul id="1e11d9c9-56b1-4815-a827-d5beee9cf04e" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 5</strong></li></ul></li></ul><ul id="02682be2-8a39-4b11-af65-22ab26a43448" class="bulleted-list"><li style="list-style-type:disc"><strong>Summary (10 minutes read)</strong><ul id="f14e035c-2702-4f17-b61b-3a1273c0e428" class="bulleted-list"><li style="list-style-type:circle">What did we learn?</li></ul><ul id="af464c7f-d8cb-4b88-8214-129e8d0fd989" class="bulleted-list"><li style="list-style-type:circle">Shortcomings &amp; Challenges</li></ul><ul id="5bc87f14-7dcc-4b8b-bb16-59bd97fad01e" class="bulleted-list"><li style="list-style-type:circle">Best Practices</li></ul><ul id="994b35b0-d1c6-4812-b82d-d1c5df2d8ff6" class="bulleted-list"><li style="list-style-type:circle">Enhance Your Knowledge</li></ul></li></ul></details></li></ul><h1 id="a4f1ac06-b67d-41fa-83cb-5b20785e2f53" class=""><mark class="highlight-brown">Learning Objective</mark></h1><h2 id="981ed790-f589-4d69-9060-efd9e585ef18" class=""><mark class="highlight-red">Introduction</mark></h2><p id="7c9043e8-68be-40f8-a83d-4485a10d0ae1" class="">Bootstrap is a powerful and versatile front-end framework that streamlines the process of building responsive websites. Its grid system, pre-styled components, cross-browser compatibility, and customization options make it an ideal choice for beginners and experienced developers.</p><p id="1b9381f1-2b62-4293-b8f0-642e6f3b231d" class=""><em><strong>Duration: </strong></em>2 Hours</p><p id="1585f50a-c6cf-4896-bac0-fc9fdd1793c9" class=""><em><strong>Focus: </strong></em>Bootstrap Containers, Navbar, button, typography, colors, margin &amp; padding flexbox</p><p id="71a70e8d-1e40-4997-b9fe-3ec24965e559" class=""><em><strong>Pre-requisite: </strong></em>Basics of HTML and CSS</p><h2 id="6239c167-5dcc-4039-81aa-c3465d842ea3" class=""><mark class="highlight-red">Theme</mark></h2><p id="a19a14e2-f995-4f7a-bc75-a3ec47dd9c47" class=""><strong>Tech Solutions Inc.</strong>, a fictional technology consulting company, maximizes its website&#x27;s potential with a range of Bootstrap features and components. They utilize <strong>Bootstrap Containers </strong>to establish a consistent and responsive layout, ensuring content is neatly organized across devices. The implementation of Bootstrap <strong>navbar</strong> enhances navigation by offering easy access to different sections. The integration of Bootstrap <strong>buttons</strong> enables smooth user interactions with various calls to action. <strong>Typography</strong> <strong>styles</strong> provided by Bootstrap help Tech Solutions Inc. maintain a visually appealing and readable content hierarchy. Adhering to a consistent <strong>color</strong> scheme through Bootstrap&#x27;s color classes allows for cohesive branding. The company employs Bootstrap&#x27;s margin and padding classes to achieve proper spacing and alignment between elements. Lastly, the <strong>Flexbox layout system</strong> provided by Bootstrap empowers Tech Solutions Inc. to create flexible and responsive designs, adapting seamlessly to different screen sizes and orientations.</p><p id="fa8bf63b-8c7f-416d-bb78-9f6a2a14ed28" class="">By utilizing these Bootstrap components and features, Tech Solutions Inc. enhances the visual appeal, responsiveness, and user-friendliness of its website, effectively showcasing its technology consulting services to businesses.</p><h2 id="9ab85499-ab67-43fc-a027-e1e4550d980a" class=""><mark class="highlight-red">Primary Goals</mark></h2><ul id="45a61f1a-991b-4654-9a26-71befe5db872" class="bulleted-list"><li style="list-style-type:disc">Understand the fundamental concepts and principles of Bootstrap.</li></ul><ul id="e48d578d-d404-4fcb-9870-ac4d5ab721b2" class="bulleted-list"><li style="list-style-type:disc">Learn how to create responsive layouts using Bootstrap Containers.</li></ul><ul id="5359dfe7-2c0f-477e-84ae-7379b8be73b5" class="bulleted-list"><li style="list-style-type:disc">Explore the various options and customization features of Bootstrap&#x27;s Navbar component.</li></ul><ul id="e1f32dd9-f7f9-4409-bcd4-4ffa6f3e2b7b" class="bulleted-list"><li style="list-style-type:disc">Master the usage of Bootstrap&#x27;s button styles and variations, typography and color classes.</li></ul><ul id="0cfd4e75-213a-4077-9545-54c563eaddaa" class="bulleted-list"><li style="list-style-type:disc">Learn how to effectively use margin and padding classes to control spacing in Bootstrap.</li></ul><ul id="49402677-f576-4c04-8d0f-40664a3428d5" class="bulleted-list"><li style="list-style-type:disc">Understand the basics of Flexbox and how it can be utilized in Bootstrap for flexible layouts.</li></ul><h1 id="66dd8e6c-c803-4783-a5f2-65ff06088767" class=""><mark class="highlight-brown">Bootstrap basics</mark></h1><h2 id="d243140b-3823-448b-899e-cb6bc3a7bdde" class=""><mark class="highlight-red">Introduction to Bootstrap</mark></h2><p id="c14ee19e-4592-4083-9093-27bbf0e5a819" class="">Bootstrap is a popular front-end framework that simplifies the process of building responsive and visually appealing websites. It was originally developed by Twitter, and it has since become one of the most widely used frameworks in web development.</p><figure id="ad54dab3-25b3-43f5-ab0b-20e2bbe94833" class="image"><img style="width:1008px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_7.55.02_PM.png"/></a></figure><p id="25d92fd8-c266-4e0f-a19f-c56de50c25d8" class="">Key Features of Bootstrap:</p><ul id="7c6051cf-4d08-4a84-bbdc-83eaedcaf18e" class="bulleted-list"><li style="list-style-type:disc"><strong>Responsive Grid System:</strong> One of the key features of Bootstrap is its responsive grid system. The grid system allows you to create a flexible and responsive layout for your website, ensuring that it looks great on different devices and screen sizes.</li></ul><ul id="76b5c9e4-cc40-4159-804f-7620327930e6" class="bulleted-list"><li style="list-style-type:disc"><strong>Pre-styled Components:</strong> Bootstrap provides a wide range of pre-styled components, such as buttons, forms, navigation bars, dropdowns, modals, and more. These components save you time and effort by giving you a solid foundation to build upon.</li></ul><ul id="1ac76aa2-432a-4a1c-a36b-2475ea53837f" class="bulleted-list"><li style="list-style-type:disc"><strong>Cross-browser Compatibility:</strong> Bootstrap is designed to work consistently across different browsers and platforms. It takes care of handling browser inconsistencies, allowing you to focus on building your website without worrying about compatibility issues.</li></ul><ul id="0d83e146-26b8-43e5-864e-9ffbd973fde2" class="bulleted-list"><li style="list-style-type:disc"><strong>Customization Options:</strong> Although Bootstrap comes with a default set of styles and components, it is highly customizable. You can easily customize the framework by modifying variables, overriding styles, and choosing which components to include in your project. This flexibility allows you to create unique and personalized designs.</li></ul><h3 id="9574c1e3-6d42-48fb-84b8-9600b4c53f74" class="">Getting Started with Bootstrap:</h3><p id="b65c1604-1a00-4918-98d6-0af3422fb475" class=""><strong>Step 1: Download or include Bootstrap files:</strong></p><ul id="46296495-0555-4a3f-a507-9ecdcd70c1bc" class="bulleted-list"><li style="list-style-type:disc">Visit the official Bootstrap website (<a href="https://getbootstrap.com">getbootstrap.com</a>) and download the Bootstrap package.</li></ul><ul id="9d921039-fe48-4b38-9c82-644bb4cc5855" class="bulleted-list"><li style="list-style-type:disc"><em>Alternatively</em>, you can use a Content Delivery Network (CDN) to include the Bootstrap files directly in your HTML document. This method is faster and doesn&#x27;t require downloading any files. You can find the necessary CDN links in the Bootstrap documentation.</li></ul><p id="621a5a2d-4be2-4471-8d52-e676e7581eb7" class=""><strong>Step 2: Set up your HTML file:</strong></p><ul id="fccccee5-0f9c-4d40-b874-3db06a7bebb4" class="bulleted-list"><li style="list-style-type:disc">Create a new HTML file or open an existing one in a code editor of your choice.</li></ul><ul id="9f44d19c-69fc-413a-aec4-aa831d6c8a44" class="bulleted-list"><li style="list-style-type:disc">Add the <code>&lt;!DOCTYPE html&gt;</code> declaration at the beginning of your HTML file to specify the document type.</li></ul><ul id="0303b155-3b2c-4b3b-8cd8-6eb4d2781adf" class="bulleted-list"><li style="list-style-type:disc">Inside the <code>&lt;head&gt;</code> section of your HTML file, include the Bootstrap CSS file by adding the following code:</li></ul><pre id="6ba81c92-8540-43e5-ba67-c40ff355cc3c" class="code code-wrap"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/bootstrap.css&quot;&gt;</code></pre><ul id="43fe2a09-6203-4bb5-af3d-65da73120b7d" class="bulleted-list"><li style="list-style-type:disc">If you are using a CDN, replace the <code>path/to/bootstrap.css</code> with the appropriate CDN link.</li></ul><p id="7412fcb1-f24f-4217-86be-37507160b8c8" class=""><strong>Step 3: Add the necessary HTML structure:</strong></p><ul id="f4dd7349-9cff-4e33-8e59-420ac469ee4a" class="bulleted-list"><li style="list-style-type:disc">Start building your HTML structure by adding the necessary elements, such as <code>&lt;div&gt;</code> containers, headings, navigation bars, forms, and so on.</li></ul><ul id="35c7c86e-00b1-497e-9d41-893b292b1e5d" class="bulleted-list"><li style="list-style-type:disc">Refer to the Bootstrap documentation and examples to understand how to structure your HTML to take advantage of Bootstrap&#x27;s grid system and components.</li></ul><p id="3b4339d9-1c93-4e4b-b006-21fe3cd2b921" class=""><strong>Step 4: Utilize Bootstrap classes:</strong></p><ul id="04343c29-56c1-4bc7-b2f9-4a1e75ecdc05" class="bulleted-list"><li style="list-style-type:disc">Bootstrap provides a set of CSS classes that you can add to your HTML elements to apply specific styles and functionality.</li></ul><ul id="358b4a4d-c1d1-4a48-93a7-3c06de92511d" class="bulleted-list"><li style="list-style-type:disc">For example, to create a responsive grid layout, use the <code>.container</code> class to wrap your content and use <code>.row</code> and <code>.col-*</code> classes to define the grid structure.</li></ul><ul id="da2280e5-4c5c-46df-9710-2ce6ba25a25e" class="bulleted-list"><li style="list-style-type:disc">Explore the various classes available for buttons, forms, typography, navigation, and other components, and apply them to your HTML elements as needed.</li></ul><p id="74f2206f-44b9-498a-bea7-41e6297457a6" class=""><strong>Step 5: Add JavaScript files (optional):</strong></p><ul id="2ff66c76-39eb-4970-ba9e-f646c18c0cb3" class="bulleted-list"><li style="list-style-type:disc">Bootstrap includes JavaScript components, such as modals, dropdowns, carousels, and tooltips.</li></ul><ul id="50c8474f-be8d-4faf-8949-bee5616ba36d" class="bulleted-list"><li style="list-style-type:disc">If you want to use these interactive components, you need to include the Bootstrap JavaScript files.</li></ul><ul id="66459c1a-2174-44e8-8336-0e86ef1db13f" class="bulleted-list"><li style="list-style-type:disc">Inside the <code>&lt;body&gt;</code> section of your HTML file, add the following code before the closing <code>&lt;/body&gt;</code> tag:</li></ul><pre id="cece7917-6e66-45f8-b2b5-2e45519d9860" class="code code-wrap"><code>&lt;script src=&quot;path/to/bootstrap.js&quot;&gt;&lt;/script&gt;</code></pre><ul id="4b716a30-89ee-48cd-8583-254f33161c3e" class="bulleted-list"><li style="list-style-type:disc">Again, if you are using a CDN, replace the <code>path/to/bootstrap.js</code> with the appropriate CDN link.</li></ul><p id="50405cf5-429b-46e0-9143-1861fa4782b0" class=""><strong>Step 6: Preview and test:</strong></p><ul id="d21047b0-f431-419d-8bab-3419c2503aa0" class="bulleted-list"><li style="list-style-type:disc">Save your HTML file and open it in a web browser to preview your Bootstrap-styled webpage.</li></ul><ul id="5a167c9d-7af1-4cbe-905a-492e63065c9e" class="bulleted-list"><li style="list-style-type:disc">Test your webpage on different devices and screen sizes to ensure it is responsive and displays correctly.</li></ul><p id="823dd365-4ca0-4526-acb1-a5653ee3243e" class="">
+</p><p id="de5a43f8-d933-459e-9ca5-8cdd0acedacd" class="">By following these steps, you will be able to incorporate Bootstrap into your HTML and CSS files and start building responsive and visually appealing websites using Bootstrap&#x27;s features and components.</p><ul id="529bd8b1-570b-4013-9f3e-e5e51ab81766" class="toggle"><li><details close=""><summary><strong>Practical Implementation Step 1:</strong></summary><p id="2a0c449f-980b-48ca-86c4-5d036632d92f" class="">Let&#x27;s conduct a test to ensure that the Bootstrap integration is functioning correctly and operating as expected.</p><pre id="c83271d1-1c70-4368-aeac-4ddac7a8026e" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Bootstrap Integration Test&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;h1 class=&quot;text-primary&quot;&gt;Welcome to Bootstrap Integration Test&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="eb0cb523-b799-45c7-8246-774e7c67d652" class=""><strong>Output</strong>: </p><figure id="b50f10c8-422a-4c32-bf79-2695e63f127f" class="image"><img style="width:576px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_5.20.05_PM.png"/></a></figure></details></li></ul><h2 id="5c6a3d27-d5bf-4122-aec4-eb0dff1b2c45" class=""><mark class="highlight-red">Containers</mark></h2><p id="ad6579bf-8a03-462c-8213-59369313da31" class="">In Bootstrap, containers are used to wrap and center the content within a webpage. They provide a consistent and responsive layout by setting maximum and minimum widths and adding padding to the content.</p><p id="28f13ddf-5fbf-49b6-8784-773674d4c53a" class="">Bootstrap provides two types of containers:</p><ul id="a32b0764-f039-4ea9-ad2e-03aeb9bf06c9" class="bulleted-list"><li style="list-style-type:disc"><strong>Fixed-Width Container:</strong> To create a fixed-width container, use the class <code>.container</code>. The container will have a responsive width that adjusts based on the screen size.<p id="8cd4663c-e8a6-4c47-9058-d95ee01d86e7" class=""><strong>Example</strong>:</p><pre id="07b63699-a80c-4922-b558-883e5260fd0c" class="code code-wrap"><code>&lt;div class=&quot;container&quot;&gt; &lt;!-- Content goes here --&gt; &lt;/div&gt;</code></pre></li></ul><ul id="13da6d30-c9a5-4eab-b025-797c94b07d68" class="bulleted-list"><li style="list-style-type:disc"><strong>Fluid Container:</strong> To create a full-width container that spans the entire width of the viewport, use the class <code>.container-fluid</code>. The container&#x27;s width will dynamically adjust to fit different screen sizes.<p id="1692a2cc-5e44-40fb-990f-632682f814c7" class="">Example:</p><pre id="9f3adf13-3411-4525-8db8-8a58172bc529" class="code code-wrap"><code>&lt;div class=&quot;container-fluid&quot;&gt; &lt;!-- Content goes here --&gt; &lt;/div&gt;</code></pre></li></ul><p id="1e410108-9168-44f9-915c-5c3bd376cf8e" class="">By default, containers in Bootstrap have a fixed maximum width and are horizontally centered on the page. They also provide padding to ensure proper spacing between the content and the edges of the container.</p><p id="b4d1bd83-f232-4e14-b417-3b3d769469e8" class="">Containers should be used as a parent element to wrap up the main content of your webpage. You can add additional rows and columns within the container to create a responsive grid layout using Bootstrap&#x27;s grid system.</p><p id="125575c0-b5f0-4af5-8b06-38b60a822b81" class="">It&#x27;s important to note that containers should be used at the top level of your HTML structure. Avoid nesting containers inside each other, which can lead to unintended layout issues.</p><p id="55820c9c-a6ed-4075-8b42-707ccde559fd" class="">By utilizing Bootstrap&#x27;s containers, you can create a consistent and responsive layout for your web pages that adapts well to different screen sizes and devices.</p><h2 id="9132873a-25a0-42da-8f15-755a288543ba" class=""><mark class="highlight-red">Navigation</mark></h2><p id="41ceda04-ed02-4194-b53b-a950c8e4c0e1" class="">Navigation refers to creating menus and navigation bars for websites or web applications. Bootstrap provides several classes and components that make it easy to create responsive and visually appealing navigation menus.</p><p id="f202097a-347c-4168-889b-c9720c6523ed" class="">Here are some key Bootstrap components and classes for navigation:</p><ul id="c1c61834-a99b-4632-9abf-ad45c2b05753" class="bulleted-list"><li style="list-style-type:disc"><strong>Navbar</strong>: The Navbar component is a responsive and customizable navigation bar. It provides various options for creating a navigation menu with branding, links, buttons, and dropdowns. The Navbar can be placed at the top of the page or within a container.<ul id="8bee49cc-90bb-4529-ba6d-836591d9ed21" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="8fa8a1ad-e6ae-4ba8-8c94-4cb319375d07" class="code"><code>&lt;nav class=&quot;navbar navbar-expand-lg navbar-light bg-light&quot;&gt;
+  &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Logo&lt;/a&gt;
+  &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarNav&quot; aria-controls=&quot;navbarNav&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+    &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNav&quot;&gt;
+    &lt;ul class=&quot;navbar-nav&quot;&gt;
+      &lt;li class=&quot;nav-item active&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;About&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Services&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Contact&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre><p id="1f5e9ddb-3604-4051-9a92-86158bf69df1" class=""><strong>Output</strong>:</p><figure id="2efec738-a7aa-4ccf-a6f9-f8a6342f8d2a" class="image"><img style="width:816px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_6.01.59_PM.png"/></a></figure></details></li></ul></li></ul><ul id="0972efca-79ed-464d-b8ff-0f6351135f30" class="bulleted-list"><li style="list-style-type:disc"><strong>Navs</strong>: The Navs component allows you to create tabbed navigation menus. You can create horizontal or vertical tabs, stacked or justified tabs, and include dropdown menus within tabs. Navs can be used for organizing content and switching between different sections of a website.<ul id="c5307330-8eac-41f2-afb9-7264344cd2c0" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="75969902-75b1-476c-8a03-c4525051af42" class="code"><code>&lt;ul class=&quot;nav nav-tabs&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Tab 1&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Tab 2&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Tab 3&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre><p id="958a452d-35f8-4b0d-b4e3-0a8e3394216c" class=""><strong>Output</strong>:</p><figure id="c87eab19-72e9-49c6-aa7c-a0807871d5f5" class="image"><img style="width:864px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_6.03.55_PM.png"/></a></figure></details></li></ul></li></ul><p id="1b7a30bd-45a6-44d6-944a-88940e7068d8" class="">These are some of the primary navigation-related components and classes in Bootstrap. By utilizing these components and applying the appropriate classes, you can create responsive and functional navigation menus for your website or web application. It&#x27;s recommended to refer to the Bootstrap documentation and examples for detailed usage instructions and customization options for each navigation component.</p><h2 id="cf68a250-1cb7-4213-a011-b4257a08a6f1" class=""><mark class="highlight-red">Buttons</mark></h2><p id="9c0f3267-57ab-4508-8187-c817275a0980" class="">Buttons are an essential component in Bootstrap that allows developers to create interactive and visually appealing elements for user interaction. Bootstrap provides a variety of button styles and options that can be easily implemented in your web projects.</p><p id="7e84c3ac-ec0b-46ca-8eaa-58cc3dab13f1" class="">Bootstrap buttons can be used as links (<code>&lt;a&gt;</code> tags) or as regular buttons (<code>&lt;button&gt;</code> or <code>&lt;input&gt;</code> elements). Here are some of the key classes and options for working with buttons in Bootstrap:</p><ul id="24f568d2-2af7-41c7-889b-9e45ecf343e3" class="bulleted-list"><li style="list-style-type:disc"><strong>Default Buttons: </strong>Bootstrap provides a default button style that you can use by adding the class <code>.btn</code> to an anchor tag (<code>&lt;a&gt;</code>) or button tag (<code>&lt;button&gt;</code> or <code>&lt;input type=&quot;button&quot;&gt;</code>).<ul id="682adc11-af72-4236-a1ad-e3f59cbc02ca" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="07f9fe18-139b-418f-9ac8-cc2bb554c47c" class="code"><code>&lt;button class=&quot;btn btn-primary&quot;&gt;Primary Button&lt;/button&gt;</code></pre><p id="1eab817e-aa69-42ba-8aaa-ee08a91f741a" class=""><strong>Output</strong>:</p><figure id="50473c86-feb2-4d05-8713-686d7647757d" class="image"><img style="width:192px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_6.07.02_PM.png"/></a></figure></details></li></ul></li></ul><ul id="1ae3e88c-8501-4e2f-bc0f-7bf68e51cba3" class="bulleted-list"><li style="list-style-type:disc"><strong>Button Colors:</strong> Bootstrap offers several contextual color classes to style buttons with different colors. Common color classes include <code>.btn-primary</code>, <code>.btn-secondary</code>, <code>.btn-success</code>, <code>.btn-info</code>, <code>.btn-warning</code>, <code>.btn-danger</code>, <code>.btn-light</code>, and <code>.btn-dark</code>.<ul id="f50b6276-8df6-4dcf-b72b-fed27c6fd6e0" class="toggle"><li><details close=""><summary><strong>Example</strong>: </summary><pre id="786d99a4-3792-4e18-bf53-3715d65aa245" class="code"><code>&lt;button class=&quot;btn btn-success&quot;&gt;Success Button&lt;/button&gt;</code></pre><p id="2a3f489d-1408-46c1-9fd7-480b63867450" class=""><strong>Output</strong>:</p><figure id="4cbc9e9b-df2c-4e8e-830b-c00a6f9b5f53" class="image"><img style="width:192px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_6.07.34_PM.png"/></a></figure></details></li></ul></li></ul><ul id="190ea28d-3acf-4f30-9151-e66b0304333a" class="bulleted-list"><li style="list-style-type:disc"><strong>Button Sizes:</strong> Bootstrap provides classes to adjust the size of buttons. You can use <code>.btn-sm</code> for small buttons, <code>.btn-lg</code> for large buttons, and <code>.btn-block</code> to create full-width buttons.<ul id="c92d810d-123a-48c2-9df9-d55d43bc035b" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="90429274-a094-48c7-aa63-80e99bc65830" class="code"><code>&lt;button class=&quot;btn btn-primary btn-lg&quot;&gt;Large Button&lt;/button&gt;</code></pre><p id="c8150fb5-6502-4b7e-b3c8-ad38343f1e2f" class=""><strong>Output</strong>:</p><figure id="5d3c83a6-bf71-4ddb-ba49-195e9a1f205a" class="image"><img style="width:192px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_6.08.25_PM.png"/></a></figure></details></li></ul></li></ul><ul id="3376932d-8533-4034-a713-9c9161584e72" class="bulleted-list"><li style="list-style-type:disc"><strong>Button Styles:</strong> Bootstrap offers additional button styles, such as outline buttons and button groups. Outline buttons can be created by adding the class <code>.btn-outline-*</code> to the button element. The asterisk (*) represents the desired color class. Button groups allow you to group related buttons together. Use the <code>.btn-group</code> class on a container element, and add the <code>.btn</code> class to each individual button.<ul id="7c8eba34-94ac-4cac-b82b-0ede751bbeb0" class="toggle"><li><details close=""><summary><strong>Examples</strong></summary><pre id="d7991057-138e-465a-b305-b6763b1a11f0" class="code"><code>&lt;button class=&quot;btn btn-outline-primary&quot;&gt;Outline Button&lt;/button&gt;
+&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Button group&quot;&gt; 
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Button 1&lt;/button&gt; 
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Button 2&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Button 3&lt;/button&gt; 
+&lt;/div&gt;</code></pre><p id="6adb8ca9-ebeb-48cd-9f24-7d1d919e0a1e" class=""><strong>Output</strong>:</p><figure id="54d80a69-6ee5-4937-8a16-e7d4b219292d" class="image"><img style="width:480px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_6.16.32_PM.png"/></a></figure></details></li></ul></li></ul><ul id="eae0cb26-6fb1-42b9-a2e0-82b4c45d8d10" class="bulleted-list"><li style="list-style-type:disc"><strong>Button States: </strong>Bootstrap provides classes to indicate different states of a button, such as active, disabled, and loading. Add the <code>.active</code> class to a button to highlight its active state. Add the <code>disabled</code> attribute to disable a button. For loading buttons, use the <code>.btn</code> class along with <code>.disabled</code> or <code>disabled</code> attribute, and include the class <code>.spinner-border</code> or <code>.spinner-grow</code> to display a loading spinner.<ul id="0f6c4b11-c66a-42b4-9368-8de55268a554" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="86714d7a-cc9c-4f8e-819b-9b8a10e4b2b0" class="code"><code>&lt;button class=&quot;btn btn-primary active&quot;&gt;Active Button&lt;/button&gt;</code></pre><p id="21091f69-2eb0-4c51-aeb1-103587c781f2" class=""><strong>Output</strong>:</p><figure id="4f4cdae6-2049-4d51-9683-aa0dc03e3643" class="image"><img style="width:192px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_6.17.16_PM.png"/></a></figure></details></li></ul></li></ul><p id="9c74d766-48a8-4f41-ae9a-a55b27bb72e3" class="">
+</p><p id="36eb3bf6-2f31-40ff-9275-ff1e984e9320" class="">You can further customize buttons by combining classes, adding icons, or incorporating additional Bootstrap features like tooltips and dropdowns. Refer to the official Bootstrap documentation for more details and examples of working with buttons in Bootstrap.</p><ul id="f573293d-02df-47de-b0d0-64479f8d845c" class="toggle"><li><details close=""><summary><strong>Practical Implementation Step 2:</strong></summary><p id="d596e33f-f88d-40b6-8db6-4673a2e75bb9" class="">Here, we&#x27;ll demonstrate the implementation of <strong>Bootstrap&#x27;s</strong> <strong>Navbar</strong>, <strong>buttons</strong>, and <strong>container</strong> class.</p><pre id="80eeba69-9f98-4c41-afdd-b1280323b13d" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Reserve Bootstrap&lt;/title&gt;
+    &lt;link
+      href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot;
+      rel=&quot;stylesheet&quot;
+      integrity=&quot;sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM&quot;
+      crossorigin=&quot;anonymous&quot;
+    /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;nav class=&quot;navbar&quot;&gt;
+        &lt;div class=&quot;container-fluid&quot;&gt;
+          &lt;div class=&quot;navbar-nav&quot;&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;./index.html&quot;&gt;
+              &lt;img src=&quot;../assets/bus.png&quot; alt=&quot;Bus&quot; height=&quot;50&quot; /&gt;
+              Reserve
+            &lt;/a&gt;
+            &lt;a class=&quot;nav-link disabled&quot;&gt;Tickets&lt;/a&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;./route.html&quot;&gt;Bus Routes&lt;/a&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;./contactus.html&quot;&gt;Contact Us&lt;/a&gt;
+          &lt;/div&gt;
+
+          &lt;div
+            class=&quot;navbar-nav &quot;
+          &gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-warning fw-bold&quot;&gt;Login&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn fw-bold&quot;&gt;Register&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="9098d53e-0aac-4bd8-a5a2-b1751c4e40cc" class=""><strong>Output</strong>: </p><figure id="4c8866b5-9391-456c-b112-6b51565c02d4" class="image"><img style="width:2872px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-04_at_7.59.09_PM.png"/></a></figure></details></li></ul><h2 id="ccab082a-3003-4467-a466-31461e533e5c" class=""><mark class="highlight-red">Typography</mark></h2><p id="ef18039b-03d4-4b09-b9fc-fe1bc794f831" class="">Typography refers to the styles and classes provided by the framework to handle text-related elements and create visually appealing typography on web pages. Bootstrap offers a range of typography-related features, including font styles, headings, paragraphs, and text alignment.</p><p id="e8a98dd1-cbe3-4d78-b69c-caf01af345ac" class="">Here are some key aspects of typography in Bootstrap:</p><ul id="64dfe012-b2db-483b-922c-663c8e63f592" class="bulleted-list"><li style="list-style-type:disc"><strong>Font Styles:</strong> Bootstrap includes a set of CSS classes that allow you to apply different font styles to your text. For example:<ul id="1fc56d31-ca84-4133-a7e8-5e35e090a870" class="bulleted-list"><li style="list-style-type:circle"><code>.lead</code> class: Increases the font size and adds extra line height to create prominently and emphasized text.</li></ul><ul id="0f5c98dc-a056-4365-bd87-c5165a9df9a3" class="bulleted-list"><li style="list-style-type:circle"><code>.text-muted</code> class: This applies a muted or subdued color to the text, often used for secondary or less important content.</li></ul><ul id="542bfdf4-c7d5-43a8-ba41-f8ae0eb22c27" class="bulleted-list"><li style="list-style-type:circle"><code>fw-{weight}</code><strong>:</strong> Bootstrap provides a set of utility classes to apply different font weights. These classes follow the format <code>fw-{weight}</code>, where <code>{weight}</code> can be one of the following values:<ul id="49b5ed41-0f21-4463-a44b-82dfaaacd52b" class="bulleted-list"><li style="list-style-type:square"><code>fw-light</code> for light font-weight</li></ul><ul id="9d3e5f0d-b71b-42f9-b8f7-50d048d0ac66" class="bulleted-list"><li style="list-style-type:square"><code>fw-normal</code> for normal font-weight (default)</li></ul><ul id="476c0c74-a6e5-4446-862f-65fdc4b22faa" class="bulleted-list"><li style="list-style-type:square"><code>fw-bold</code> for bold font-weight</li></ul><ul id="d377c632-bfd7-4f43-88d5-3fccee162b75" class="bulleted-list"><li style="list-style-type:square"><code>fw-bolder</code> for a bolder font-weight than the parent element</li></ul><ul id="8787e11c-4fbf-4b0d-a7f3-30f1bbcb4da3" class="bulleted-list"><li style="list-style-type:square"><code>fw-lighter</code> for a lighter font-weight than the parent element</li></ul></li></ul><ul id="b902747c-2721-4c8c-ac9f-efdeaf2b756c" class="bulleted-list"><li style="list-style-type:circle"><code>.text-primary</code>, <code>.text-success</code>, <code>.text-info</code>, etc.: Apply specific colors to the text for various contextual purposes.</li></ul><ul id="356e74e8-1974-4ed6-b7e9-b681ba1059ac" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="77be538c-0861-4880-a97f-90086d2f18d5" class="code"><code>&lt;p class=&quot;lead&quot;&gt;This is a prominent and emphasized text.&lt;/p&gt;
+&lt;p class=&quot;text-muted&quot;&gt;This text is in a muted or subdued color.&lt;/p&gt;
+&lt;p class=&quot;fw-bold&quot;&gt;This text is bold.&lt;/p&gt;
+&lt;p class=&quot;fw-light&quot;&gt;This text is light.&lt;/p&gt;
+&lt;p class=&quot;text-primary&quot;&gt;This text has a primary color.&lt;/p&gt;
+&lt;p class=&quot;text-success&quot;&gt;This text has a success color.&lt;/p&gt;</code></pre><p id="be5b992d-9199-47cb-8616-f62add593bb5" class=""><strong>Output</strong>:</p><figure id="9758d102-aea9-43b0-ad54-c1a17f08ae49" class="image"><img style="width:480px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-04_at_8.07.49_PM.png"/></a></figure><p id="ce1880d1-c542-4d95-9410-b85db77aeb9b" class="">
+</p></details></li></ul></li></ul><ul id="46fd3d22-f4d4-4767-8a53-44e98baf2c50" class="bulleted-list"><li style="list-style-type:disc"><strong>Headings: </strong>Bootstrap provides CSS classes for styling HTML headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) consistently. These classes include:<ul id="3496a2bb-b167-456f-801c-ba09b558a575" class="bulleted-list"><li style="list-style-type:circle"><code>.h1</code>, <code>.h2</code>, <code>.h3</code>, <code>.h4</code>, <code>.h5</code>, <code>.h6</code>: Applies predefined font sizes and styles to the respective heading levels.</li></ul><ul id="4d8fd001-dfe1-4c6b-b7ac-9bb590bb86f3" class="bulleted-list"><li style="list-style-type:circle"><code>.display-*</code>: Creates large display headings with different font sizes. The <code>*</code> represented a numeric value from <strong>1 to 4</strong>, where higher values result in larger headings.</li></ul><ul id="76e20487-df07-4600-b80f-77033ef06c04" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="bf910ddf-0884-425f-82bc-84de7f324627" class="code"><code>&lt;h1 class=&quot;h1&quot;&gt;Heading 1&lt;/h1&gt;
+&lt;h2 class=&quot;h2&quot;&gt;Heading 2&lt;/h2&gt;
+&lt;h1 class=&quot;display-1&quot;&gt;Display Heading 1&lt;/h1&gt;
+&lt;h2 class=&quot;display-2&quot;&gt;Display Heading 2&lt;/h2&gt;</code></pre><p id="732afb5d-6fe5-4706-b681-9de0ec98eb73" class=""><strong>Output</strong>:</p><figure id="360987fa-557a-48a7-9ef3-7fe045ec1138" class="image"><img style="width:480px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_5.58.51_PM.png"/></a></figure></details></li></ul></li></ul><ul id="0bc67d36-4aa4-4aeb-b9eb-4e9538801f28" class="bulleted-list"><li style="list-style-type:disc"><strong>Paragraphs:</strong> Bootstrap offers classes to style paragraphs (<code>&lt;p&gt;</code>) and other text blocks:<ul id="5666207c-7762-4f97-9fbd-4e5ee443e71d" class="bulleted-list"><li style="list-style-type:circle"><code>.lead</code> class: Applies larger font size and increased line height to create attention-grabbing paragraphs.</li></ul><ul id="79d5820d-1a6b-499d-a77a-e1ebc297fc72" class="bulleted-list"><li style="list-style-type:circle"><code>.text-justify</code> class: Justifies the text, spreading it evenly across the width of the container.</li></ul><ul id="20e5cb8a-d0d9-45bf-952b-45cd6ea96459" class="bulleted-list"><li style="list-style-type:circle"><code>.text-nowrap</code> class: Prevents text from wrapping onto a new line, useful for situations like navigation menus.</li></ul><ul id="8632a309-c23f-4601-ad42-4632ea5307c7" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="6a7cf76e-7d2f-451f-9d1a-797b2b50e072" class="code"><code>&lt;p class=&quot;lead&quot;&gt;This is a lead paragraph with larger font size.&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;This text is justified and evenly spread across the container.&lt;/p&gt;
+&lt;p class=&quot;text-nowrap&quot;&gt;This text will not wrap onto a new line.&lt;/p&gt;</code></pre><p id="6b85c4a0-dd70-4226-8a06-dac33f4efc8b" class=""><strong>Output</strong>:</p><figure id="ec3865fa-7374-4fb6-95fb-dc9a3651f982" class="image"><img style="width:624px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_5.59.46_PM.png"/></a></figure></details></li></ul></li></ul><ul id="a31cdaa1-a94c-44d1-956a-8921defd9b1b" class="bulleted-list"><li style="list-style-type:disc"><strong>Text Alignment:</strong> Bootstrap provides classes to align text within its parent container:<ul id="d8e7db19-3e93-4329-b40a-9e9e16f8f669" class="bulleted-list"><li style="list-style-type:circle"><code>.text-left</code>, <code>.text-center</code>, <code>.text-right</code>, <code>.text-justify</code>: Aligns the text to the left, center, or right or justifies it within the container.</li></ul><ul id="56ff779f-4f3f-4550-98e1-dfbf26c4b2b0" class="bulleted-list"><li style="list-style-type:circle"><code>.float-start</code>, <code>.float-end</code>, <code>.text-start</code>, <code>.text-end</code> Positions the text along with floating or alignment options, suitable for responsive layouts.</li></ul><ul id="17673cbc-32f1-44de-8871-0af625ade54e" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="b90c36ab-8782-4e54-8828-53cef67456bc" class="code"><code>&lt;div class=&quot;text-left&quot;&gt;This text is aligned to the left.&lt;/div&gt;
+&lt;div class=&quot;text-center&quot;&gt;This text is aligned in the center.&lt;/div&gt;
+&lt;div class=&quot;text-right&quot;&gt;This text is aligned to the right.&lt;/div&gt;
+&lt;div class=&quot;text-justify&quot;&gt;This text is justified.&lt;/div&gt;</code></pre><p id="a7d6ddd4-4a30-44e0-aeb8-83bb54510052" class=""><strong>Output</strong>:</p><figure id="0971f5a6-50be-4b15-8636-8b39b203187a" class="image"><img style="width:768px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_6.00.56_PM.png"/></a></figure></details></li></ul></li></ul><p id="a3f4fb4f-b77a-4580-b6a4-912ed97a360d" class="">These are just a few examples of typography-related features in Bootstrap. By leveraging these classes, you can easily apply consistent and visually appealing typography to your web pages, saving time and effort in custom styling. Refer to the Bootstrap documentation for more detailed information and additional typography classes available.</p><h2 id="ae4844e9-3c65-415b-99e5-facec5601d57" class=""><mark class="highlight-red">Colors</mark></h2><p id="4aae30f2-5704-4907-8ac1-2b233eaff3e6" class="">Bootstrap provides a set of predefined color classes that you can use to style elements on your web page. These classes are based on a color palette defined by Bootstrap. Here are some commonly used color classes in Bootstrap:</p><ul id="c9cc0c8b-965b-4633-85ba-eaef5361a22e" class="bulleted-list"><li style="list-style-type:disc"><strong>Text Colors:</strong><ul id="a76a59ce-e5b1-4529-9fc7-6af9e872b4e3" class="bulleted-list"><li style="list-style-type:circle"><code>text-primary</code>: Sets the text color to the primary color defined in the Bootstrap theme.</li></ul><ul id="cdc91015-1d1a-49bc-8f6c-7f72b32ed142" class="bulleted-list"><li style="list-style-type:circle"><code>text-secondary</code>: Sets the text color to the secondary color defined in the Bootstrap theme.</li></ul><ul id="b7357f94-39f1-44dc-8124-40dc61d80d91" class="bulleted-list"><li style="list-style-type:circle"><code>text-success</code>: Sets the text color to indicate success.</li></ul><ul id="ee20018f-0891-4c3f-989a-4575304556ea" class="bulleted-list"><li style="list-style-type:circle"><code>text-danger</code>: Sets the text color to indicate danger or error.</li></ul><ul id="3ef99b0e-2a5c-4bab-b40f-9e210ef8fb37" class="bulleted-list"><li style="list-style-type:circle"><code>text-warning</code>: Sets the text color to indicate a warning.</li></ul><ul id="11ea99b7-a7b2-4f34-989a-589e380f9e6f" class="bulleted-list"><li style="list-style-type:circle"><code>text-info</code>: Sets the text color to provide informational content.</li></ul><ul id="cd01e475-7150-4b94-b9d1-86439f580efc" class="bulleted-list"><li style="list-style-type:circle"><code>text-light</code>: Sets the text color to a light shade.</li></ul><ul id="e61eca96-ceca-4246-8e89-a928bae45179" class="bulleted-list"><li style="list-style-type:circle"><code>text-dark</code>: Sets the text color to a dark shade.</li></ul><ul id="803ef3b5-3aff-4004-a615-deb86ba576cc" class="bulleted-list"><li style="list-style-type:circle"><code>text-muted</code>: Sets the text color to a muted or subdued shade.</li></ul><ul id="27aa6ed4-cd9f-4043-8f01-958a3a2563ee" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="ff0867a8-b5ef-463b-b243-2f9a9a90ea15" class="code"><code>&lt;div class=&quot;container&quot;&gt;
+    &lt;h1 class=&quot;text-primary&quot;&gt;Primary Color Text&lt;/h1&gt;
+    &lt;h2 class=&quot;text-secondary&quot;&gt;Secondary Color Text&lt;/h2&gt;
+    &lt;p class=&quot;text-success&quot;&gt;Success Color Text&lt;/p&gt;
+    &lt;p class=&quot;text-danger&quot;&gt;Danger Color Text&lt;/p&gt;
+    &lt;p class=&quot;text-warning&quot;&gt;Warning Color Text&lt;/p&gt;
+    &lt;p class=&quot;text-info&quot;&gt;Info Color Text&lt;/p&gt;
+    &lt;p class=&quot;text-light bg-dark&quot;&gt;Light Color Text&lt;/p&gt;
+    &lt;p class=&quot;text-dark&quot;&gt;Dark Color Text&lt;/p&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Muted Color Text&lt;/p&gt;
+&lt;/div&gt;</code></pre><p id="b3f6d37f-95d8-4b01-a416-228542359613" class=""><strong>Output</strong>:</p><figure id="47024b69-a9a7-452b-8315-78b30a4dbc73" class="image"><img style="width:480px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_7.00.17_PM.png"/></a></figure></details></li></ul></li></ul><ul id="326aeaaf-7d2d-4a17-a798-bc5e7953efcf" class="bulleted-list"><li style="list-style-type:disc"><strong>Background Colors:</strong><ul id="dfe3a5bb-24dd-447a-a9fb-d977d55a0cf1" class="bulleted-list"><li style="list-style-type:circle"><code>bg-primary</code>: Sets the background color to the primary color defined in the Bootstrap theme.</li></ul><ul id="7ebcb56b-1ed8-4875-9476-93ad1816815b" class="bulleted-list"><li style="list-style-type:circle"><code>bg-secondary</code>: Sets the background color to the secondary color defined in the Bootstrap theme.</li></ul><ul id="5ca26b10-272e-406a-83cf-62f2b7b8e1c6" class="bulleted-list"><li style="list-style-type:circle"><code>bg-success</code>: Sets the background color to indicate success.</li></ul><ul id="573e02f9-9b39-45cd-8a5d-f11c3d9e51f3" class="bulleted-list"><li style="list-style-type:circle"><code>bg-danger</code>: Sets the background color to indicate danger or error.</li></ul><ul id="662c49b0-24b7-46f5-99a7-af43300d2a67" class="bulleted-list"><li style="list-style-type:circle"><code>bg-warning</code>: Sets the background color to indicate a warning.</li></ul><ul id="ce69ea60-495c-42e6-9fa5-3e87ac05511b" class="bulleted-list"><li style="list-style-type:circle"><code>bg-info</code>: Sets the background color to provide informational content.</li></ul><ul id="d8f8a84e-d6cc-490e-92a7-52bb713c2ecf" class="bulleted-list"><li style="list-style-type:circle"><code>bg-light</code>: Sets the background color to a light shade.</li></ul><ul id="c1ccd4a3-9f7d-4ae6-b47d-30bf459192a0" class="bulleted-list"><li style="list-style-type:circle"><code>bg-dark</code>: Sets the background color to a dark shade.</li></ul><ul id="823f881e-d50e-4d36-95fa-73b800420955" class="bulleted-list"><li style="list-style-type:circle"><code>bg-muted</code>: Sets the background color to a muted or subdued shade.</li></ul><ul id="1684f441-2c9a-4756-b3a6-575e7332d533" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="aa117b19-12e6-485a-a2b6-aac2884cd585" class="code"><code>&lt;div class=&quot;bg-primary text-white p-3&quot;&gt;
+  &lt;h1&gt;Welcome to my website&lt;/h1&gt;
+  &lt;p&gt;This is an example of using the bg-primary class to set the background color to the primary color defined in Bootstrap.&lt;/p&gt;
+&lt;/div&gt;</code></pre><p id="e3f3d4e9-789a-4fb4-a5e6-4817ed476097" class=""><strong>Output</strong>:</p><figure id="088a2971-9ced-4bbb-b230-8d36bb2d414d" class="image"><img style="width:624px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_7.03.26_PM.png"/></a></figure></details></li></ul></li></ul><h2 id="10750c58-dcdc-488c-b7e5-6e92deb5190f" class=""><mark class="highlight-red">Margin and Padding</mark></h2><p id="39c849f1-eb8f-424d-9cc5-2a13132f29bc" class="">In Bootstrap, the margin and padding classes are utility classes that allow you to add spacing around elements on your webpage. These classes provide a convenient way to adjust the spacing without writing custom CSS code.</p><p id="b3facd2e-d6c5-4e3b-8f3d-7eaac112951f" class="">In Bootstrap, the margin and padding classes provide flexibility in applying spacing to different sides of elements. The classes follow the format <code>property-{size}-{direction}</code> or <code>{property}x-{size}</code>/<code>{property}y-{size}</code> for horizontal and vertical property, respectively. Property can be anything among margin (<code>m</code> that set margin) and padding (<code>p</code> that set padding). Here is an explanation of the direction and sizes available for these classes :</p><ul id="418a2dae-9460-46a5-a72e-f86918c1d0ce" class="bulleted-list"><li style="list-style-type:disc"><strong>Direction:</strong><ul id="c55769ab-f36b-4a52-9558-37658ba2f7a9" class="bulleted-list"><li style="list-style-type:circle"><code><strong>t</strong></code> (top): Applies margin or padding to the top side of an element.</li></ul><ul id="6fd98db6-489a-4440-bd40-6de3b23b500b" class="bulleted-list"><li style="list-style-type:circle"><code><strong>b</strong></code> (bottom): Applies margin or padding to the bottom side of an element.</li></ul><ul id="02e0dfa2-9a60-4967-9e9f-a281e8f49b0e" class="bulleted-list"><li style="list-style-type:circle"><code><strong>s</strong></code> (start): Applies margin or padding to the left side in LTR (left-to-right) languages or right side in RTL (right-to-left) languages.</li></ul><ul id="4772f134-8d1d-44f0-87ad-2c920db4af7f" class="bulleted-list"><li style="list-style-type:circle"><code><strong>e</strong></code> (end): Applies margin or padding to the right side in LTR languages or left side in RTL languages.</li></ul><ul id="0ee73dc5-5d6f-4e78-9873-b3ccb004c0ab" class="bulleted-list"><li style="list-style-type:circle"><code><strong>x</strong></code> (horizontal): Applies margin or padding to both left and right sides of an element.</li></ul><ul id="dca92fea-9850-4230-96c3-0d68aa6a62d4" class="bulleted-list"><li style="list-style-type:circle"><code><strong>y</strong></code> (vertical): Applies margin or padding to both top and bottom sides of an element.</li></ul><ul id="0d7c5139-2ccc-4aeb-b8c7-b72b0825ffe9" class="bulleted-list"><li style="list-style-type:circle">Blank: Applies margin or padding to all four sides (top, bottom, left, and right) of an element.</li></ul><ul id="5e2e7383-8121-4900-89e4-5ffa0cdb2921" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="f986af3b-c4d9-41e5-b200-5d84158c0f90" class="code"><code>&lt;div class=&quot;m-3&quot;&gt;
+  &lt;p&gt;This is a div with margin applied to all sides.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mx-2&quot;&gt;
+  &lt;p&gt;This is a div with horizontal margin applied (left and right).&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;my-4&quot;&gt;
+  &lt;p&gt;This is a div with vertical margin applied (top and bottom).&lt;/p&gt;
+&lt;/div&gt;</code></pre><p id="3ab5a83a-d232-4005-901b-5a8dc504f84e" class=""><strong>Output</strong>:</p><figure id="bf9f5247-159d-4e29-baa9-bd42c374bd93" class="image"><img style="width:480px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_6.40.59_PM.png"/></a></figure></details></li></ul></li></ul><ul id="d03b6ba7-8ec0-480f-b210-cb05cabab700" class="bulleted-list"><li style="list-style-type:disc"><strong>Size:</strong><ul id="17347480-b390-46e0-a3a5-054bf1b8ce9f" class="bulleted-list"><li style="list-style-type:circle"><code><strong>0</strong></code>: Sets the margin or padding size to 0, effectively removing it.</li></ul><ul id="eb27c5d0-694f-405d-8723-01ba002261af" class="bulleted-list"><li style="list-style-type:circle"><code><strong>1</strong></code> (default): Sets the margin or padding size to 0.25 times the default spacing value ($spacer).</li></ul><ul id="9fb8e2ed-0285-4d99-a39c-dc300406bccd" class="bulleted-list"><li style="list-style-type:circle"><code><strong>2</strong></code> (default): Sets the margin or padding size to 0.5 times the default spacing value ($spacer).</li></ul><ul id="be74c41d-2510-4e36-8e2a-dab3c6b1f839" class="bulleted-list"><li style="list-style-type:circle"><code><strong>3</strong></code> (default): Sets the margin or padding size to the default spacing value ($spacer).</li></ul><ul id="5ab42d23-9e5a-4146-9c6d-947eb93017e8" class="bulleted-list"><li style="list-style-type:circle"><code><strong>4</strong></code> (default): Sets the margin or padding size to 1.5 times the default spacing value ($spacer).</li></ul><ul id="80a5fc0a-43fe-400c-aa9f-b42d3b6c1f9f" class="bulleted-list"><li style="list-style-type:circle"><code><strong>5</strong></code> (default): Sets the margin or padding size to 3 times the default spacing value ($spacer).</li></ul><ul id="c0b5aafa-3946-472f-9ad9-e3823f32be1e" class="bulleted-list"><li style="list-style-type:circle"><code><strong>auto</strong></code>: Sets the margin to &quot;auto,&quot; allowing the browser to automatically calculate and distribute the margin space.</li></ul><ul id="9ac3abf4-c832-42fa-9453-6de815589b3d" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="abef8889-f0b9-45df-bc9c-70e6571899d8" class="code"><code>&lt;div class=&quot;p-3&quot;&gt;
+  &lt;p class=&quot;px-2 py-3&quot;&gt;This paragraph has horizontal padding of 2 units and vertical padding of 3 units.&lt;/p&gt;
+  &lt;button class=&quot;btn btn-primary pt-4 pb-2 ps-4 pe-1&quot;&gt;Button&lt;/button&gt;
+&lt;/div&gt;</code></pre><p id="19d049ed-d886-4886-a8a7-076031fad33c" class=""><strong>Output</strong>:</p><figure id="db9abaeb-4571-4ba2-b734-b57e6e9c510b" class="image"><img style="width:576px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-05_at_6.40.50_PM.png"/></a></figure></details></li></ul></li></ul><p id="c0c0b78e-ba52-436f-b6d4-b5adecd74f53" class="">It&#x27;s important to note that the actual size of the margin or padding depends on the default spacing value defined in Bootstrap&#x27;s Sass map. By default, this map ranges from 0.25rem to 3rem.</p><p id="84cdd81c-fe26-4196-b8b0-80f41e9149e3" class="">By combining the appropriate side and size values, you can easily apply margin and padding to elements in different configurations, achieving the desired spacing and layout in your Bootstrap-based webpages.</p><ul id="3d80f916-7a8e-4c33-91c1-7f82e63855bb" class="toggle"><li><details close=""><summary><strong>Project Implementation Step 3:</strong></summary><p id="1b8c03a8-3fa3-4995-a71f-3410add50812" class="">In this code snippet, we have utilized <strong>Bootstrap</strong>&#x27;s features for managing <strong>margins</strong>, <strong>padding</strong>, <strong>colors</strong>, and <strong>typography</strong>.</p><pre id="fbc0f0f0-d2a0-4c0a-913e-18d9edc2d619" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Reserve Bootstrap&lt;/title&gt;
+    &lt;link
+      href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot;
+      rel=&quot;stylesheet&quot;
+      integrity=&quot;sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM&quot;
+      crossorigin=&quot;anonymous&quot;
+    /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;nav class=&quot;navbar bg-body-secondary&quot;&gt;
+        &lt;div class=&quot;container-fluid&quot;&gt;
+          &lt;div class=&quot;navbar-nav &quot;&gt;
+            &lt;a class=&quot;navbar-brand &quot; href=&quot;./index.html&quot;&gt;
+              &lt;img src=&quot;./assets/bus.png&quot; alt=&quot;Bus&quot; height=&quot;50&quot; /&gt;
+              Reserve
+            &lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2 disabled&quot;&gt;Tickets&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2&quot; href=&quot;./route.html&quot;&gt;Bus Routes&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2&quot; href=&quot;./contactus.html&quot;&gt;Contact Us&lt;/a&gt;
+          &lt;/div&gt;
+
+          &lt;div
+            class=&quot;navbar-nav &quot;
+          &gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-warning fw-bold&quot;&gt;Login&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn fw-bold&quot;&gt;Register&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+      &lt;section class=&quot;bg-info-subtle p-5&quot;&gt;
+        &lt;div
+          class=&quot;navbar-nav pt-5&quot;
+          style=&quot;padding-left: 25em; padding-right: 25em&quot;
+        &gt;
+          &lt;select class=&quot;form-select m-3&quot; aria-label=&quot;Default select example&quot;&gt;
+            &lt;option selected&gt;Select Boarding City&lt;/option&gt;
+            &lt;option value=&quot;Delhi&quot;&gt;Delhi&lt;/option&gt;
+            &lt;option value=&quot;Mumbai&quot;&gt;Mumbai&lt;/option&gt;
+            &lt;option value=&quot;Bengaluru&quot;&gt;Bengaluru&lt;/option&gt;
+            &lt;option value=&quot;Chennai&quot;&gt;Chennai&lt;/option&gt;
+          &lt;/select&gt;
+
+          &lt;select class=&quot;form-select m-3&quot; aria-label=&quot;Default select example&quot;&gt;
+            &lt;option selected&gt;Select Arrival City&lt;/option&gt;
+            &lt;option value=&quot;Delhi&quot;&gt;Delhi&lt;/option&gt;
+            &lt;option value=&quot;Mumbai&quot;&gt;Mumbai&lt;/option&gt;
+            &lt;option value=&quot;Bengaluru&quot;&gt;Bengaluru&lt;/option&gt;
+            &lt;option value=&quot;Chennai&quot;&gt;Chennai&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;p-5&quot;&gt;
+          &lt;button type=&quot;submit&quot; class=&quot;btn btn-outline-danger&quot;&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+      &lt;section class=&quot;bg-light p-5&quot;&gt;
+        &lt;h1 class=&quot;text-center&quot;&gt;Travel with world&#x27;s largest bus services&lt;/h1&gt;
+        &lt;div class=&quot;p-5 text-center&quot;&gt;
+          &lt;div class=&quot;bg-white&quot;&gt;
+            &lt;div class=&quot;-sm p-3&quot;&gt;
+              &lt;img
+                src=&quot;./assets/bus-vector.png&quot;
+                alt=&quot;Bus&quot;
+                width=&quot;128px&quot;
+                class=&quot;mb-2&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pt-4&quot;&gt;
+              &lt;h3&gt;2000+&lt;/h3&gt;
+              &lt;p&gt;Bus Collection&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;bg-white &quot;&gt;
+            &lt;div class=&quot;-sm p-3&quot;&gt;
+              &lt;img
+                src=&quot;./assets/family.png&quot;
+                alt=&quot;Family&quot;
+                width=&quot;128px&quot;
+                class=&quot;mb-2&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pt-4&quot;&gt;
+              &lt;h3&gt;2 Million+&lt;/h3&gt;
+              &lt;p&gt;Happy customers globally&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;bg-white &quot;&gt;
+            &lt;div class=&quot;-sm p-3&quot;&gt;
+              &lt;img
+                src=&quot;./assets/ticket.png&quot;
+                alt=&quot;Ticket&quot;
+                width=&quot;128px&quot;
+                class=&quot;mb-2&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pt-4&quot;&gt;
+              &lt;h3&gt;5000+&lt;/h3&gt;
+              &lt;p&gt;Tickets book everyday&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;bg-dark-subtle p-5&quot;&gt;
+        &lt;h1 class=&quot;text-center&quot;&gt;
+          Here&#x27;s what a few of our customers have to say
+        &lt;/h1&gt;
+        &lt;div class=&quot;p-5 text-center&quot;&gt;
+          &lt;div class=&quot;bg-white&quot;&gt;
+            &lt;div class=&quot;mt-2&quot;&gt;
+              &lt;div class=&quot;bg-warning p-3 fw-bold ms-2&quot;&gt;
+                VA
+              &lt;/div&gt;
+              &lt;div class=&quot;ps-2&quot;&gt;
+                &lt;div class=&quot;fw-bold&quot;&gt;Vatsal Agarwal&lt;/div&gt;
+                &lt;div&gt;Customer since 2020&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;pt-3 fw-bold text-danger&quot;&gt;★ 4.9&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;p-3 text-start&quot;&gt;
+              Amazing travel experience with reserve. Excellent staff
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;bg-white &quot;&gt;
+            &lt;div class=&quot;mt-2&quot;&gt;
+              &lt;div class=&quot;bg-warning p-3 fw-bold ms-2&quot;&gt;
+                RS
+              &lt;/div&gt;
+              &lt;div class=&quot;text-start ps-2&quot;&gt;
+                &lt;div class=&quot;fw-bold&quot;&gt;Rohan Sharma&lt;/div&gt;
+                &lt;div&gt;Customer since 2022&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;pt-3 fw-bold text-danger&quot;&gt;★ 4.3&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;p-3 text-start&quot;&gt;
+              Amazing service. Always a best time with reserve.
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;bg-white &quot;&gt;
+            &lt;div class=&quot;mt-2&quot;&gt;
+              &lt;div class=&quot;bg-warning p-3 fw-bold ms-2&quot;&gt;
+                VK
+              &lt;/div&gt;
+              &lt;div class=&quot;text-start ps-2&quot;&gt;
+                &lt;div class=&quot;fw-bold&quot;&gt;Virat Kohli&lt;/div&gt;
+                &lt;div&gt;Customer since 2019&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;pt-3 fw-bold text-danger&quot;&gt;★ 4.5&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;p-3 text-start&quot;&gt;
+              Bus was clean and the journey was smooth. Reached on time.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer
+      class=&quot;pt-3 bg-secondary &quot;
+    &gt;
+      &lt;p class=&quot;fw-bold ps-2&quot;&gt;© 2023 AlmaBetter. All rights reserved&lt;/p&gt;
+      &lt;div class=&quot;&quot;&gt;
+        &lt;p class=&quot;fw-bold&quot;&gt;Follow Us:&lt;/p&gt;
+        &lt;a href=&quot;https://www.facebook.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;./assets/facebook.png&quot; alt=&quot;Facebook&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.twitter.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;./assets/twitter.png&quot; alt=&quot;Twitter&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.instagram.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;./assets/instagram.png&quot; alt=&quot;Instagram&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script
+      src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;
+      integrity=&quot;sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz&quot;
+      crossorigin=&quot;anonymous&quot;
+    &gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p id="616f4c40-6c0c-42df-b9a5-f06aa386eb75" class=""><strong>Output</strong>:</p><figure id="ea65953a-eaaf-4d68-8d85-449103d576b8" class="image"><img style="width:864px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-04_at_8.24.01_PM.png"/></a></figure><figure id="f1356e37-fb46-4044-97d0-8721a83e544f" class="image"><img style="width:864px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-04_at_8.24.18_PM.png"/></a></figure></details></li></ul><h2 id="363ff35a-bd73-452f-a0af-a11d5c4da91e" class=""><mark class="highlight-red">Columns</mark></h2><p id="a0fcef3b-42ff-45c0-ba89-2363f22d46d0" class="">In Bootstrap, columns are a fundamental part of the grid system and allow you to create responsive layouts. Columns are used to divide the horizontal space within a row and organize content into a grid-based structure. Here&#x27;s an overview of how to use columns in Bootstrap:</p><ul id="b5c1fc07-14fc-4e07-a9d3-91c926293b6a" class="bulleted-list"><li style="list-style-type:disc"><strong>Container: </strong>Wrap your rows and columns in a container to provide a fixed-width layout. Use the class <code>.container</code> for a fixed-width container or <code>.container-fluid</code> for a full-width container. </li></ul><ul id="711cb0fe-cb31-4fed-8e58-2792a30c6062" class="bulleted-list"><li style="list-style-type:disc"><strong>Row: </strong>Inside the container, create a row using the class <code>.row</code>. Rows act as a horizontal grouping for columns and ensure proper alignment.</li></ul><ul id="aef97a7a-6f76-43b7-8ca4-47b4036e6759" class="bulleted-list"><li style="list-style-type:disc"><strong>Column Classes: </strong>Bootstrap provides a range of column classes that define the width and behavior of columns. The most commonly used classes are:<ul id="8d02c3e7-6a40-4191-bf34-c7e2ea98db52" class="bulleted-list"><li style="list-style-type:circle"><code>.col</code>: This class creates a column that automatically adjusts its width based on the available space. By default, it will occupy 100% of the row width on mobile devices and scale down on larger screens.</li></ul><ul id="2c97bb8b-51cb-42a0-a5bf-b301d9d7a27a" class="bulleted-list"><li style="list-style-type:circle"><code>.col-{breakpoint}-{columns}</code>: Use these classes to create columns of specific widths at different breakpoints. For example, <code>.col-sm-6</code> will create a column that occupies 50% of the row width on small screens and above.</li></ul><ul id="5bd4b359-e69d-40d4-a382-8e1de9ab54fc" class="bulleted-list"><li style="list-style-type:circle"><code>.col-{breakpoint}-auto</code>: Use this class to create a column that automatically adjusts its width based on the content. For example, <code>.col-lg-auto</code> will create a column that takes up only the necessary width on large screens.</li></ul><ul id="410e5ce6-3700-42ee-8098-e55f3cd9203f" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="9c0c40c0-2307-4e94-8c9c-d384d32931ef" class="">In this example, we have created a container with a row containing two columns. On small screens and above, each column will occupy 50% of the row width.</p><pre id="826049bb-f183-4891-8207-3ff67aec8841" class="code"><code>&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-6&quot;&gt;
+      Column 1
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-6&quot;&gt;
+      Column 2
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre><p id="5102069d-e846-4141-ad8e-0e086c46cfbf" class=""><strong>Output</strong>:</p><figure id="6c92a9fb-babf-4432-aaf0-ef842e0cc3e6" class="image"><img style="width:1152px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_7.17.07_PM.png"/></a></figure></details></li></ul></li></ul><ul id="a81f19f0-fda6-4846-82bf-30f7b05df1b5" class="bulleted-list"><li style="list-style-type:disc"><strong>Column Nesting: </strong>You can nest columns inside other columns to create more complex layouts. Simply add a new <code><strong>.row</strong></code> within an existing column and create new columns inside it.<ul id="c5d7ae6d-ddfb-42ad-a62e-e263e8fbd36c" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><p id="2c52a551-8180-4faf-93cb-0fd1a87e1eea" class="">In this example, the second column is divided into two nested columns, each occupying 50% of the parent column&#x27;s width.</p><pre id="8ac1e36a-e3ea-4d51-92da-7472f2690fcb" class="code"><code>&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-6&quot;&gt;
+      Column 1
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-6&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-6&quot;&gt;
+          Nested Column 1
+        &lt;/div&gt;
+        &lt;div class=&quot;col-6&quot;&gt;
+          Nested Column 2
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre><p id="3ac28a7e-bb42-4789-81e8-00f3087f6f0c" class=""><strong>Output</strong>:</p><figure id="13115b3e-1a5a-4951-a0a2-0f5e860207aa" class="image"><img style="width:1200px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_7.19.26_PM.png"/></a></figure></details></li></ul></li></ul><p id="27456ac6-d1c9-436d-bed9-7dcfc429d9d0" class="">Columns in Bootstrap provide a flexible way to create responsive layouts. By utilizing different column classes and nesting columns, you can achieve a variety of grid-based designs that adapt well to different screen sizes.</p><ul id="dce4e5e7-3286-4bb3-9d98-b3d13c0ca86e" class="toggle"><li><details close=""><summary><strong>Project Implementation Step 4:</strong></summary><p id="7571d7e0-822e-4144-a5c2-efce90e88713" class="">Here, we&#x27;ve utilized Bootstrap&#x27;s <strong>column</strong> system to incorporate columns into various components and sections of the Reserve App.</p><pre id="810a8067-9ad0-4935-a603-8638dfb2eeb5" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Reserve Bootstrap&lt;/title&gt;
+    &lt;link
+      href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot;
+      rel=&quot;stylesheet&quot;
+      integrity=&quot;sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM&quot;
+      crossorigin=&quot;anonymous&quot;
+    /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;nav class=&quot;navbar bg-body-secondary&quot;&gt;
+        &lt;div class=&quot;container-fluid&quot;&gt;
+          &lt;div class=&quot;navbar-nav d-flex flex-row align-items-center&quot;&gt;
+            &lt;a class=&quot;navbar-brand fs-4 fw-medium&quot; href=&quot;./index.html&quot;&gt;
+              &lt;img src=&quot;../assets/bus.png&quot; alt=&quot;Bus&quot; height=&quot;50&quot; /&gt;
+              Reserve
+            &lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2 disabled&quot;&gt;Tickets&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2&quot; href=&quot;./route.html&quot;&gt;Bus Routes&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2&quot; href=&quot;./contactus.html&quot;&gt;Contact Us&lt;/a&gt;
+          &lt;/div&gt;
+
+          &lt;div
+            class=&quot;navbar-nav d-flex flex-row justify-content-end align-items-center&quot;
+          &gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-warning fw-bold&quot;&gt;Login&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn fw-bold&quot;&gt;Register&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+      &lt;section class=&quot;bg-info-subtle p-5&quot;&gt;
+        &lt;div
+          class=&quot;navbar-nav d-flex justify-content-evenly flex-row align-items-center pt-5&quot;
+          style=&quot;padding-left: 25em; padding-right: 25em&quot;
+        &gt;
+          &lt;select class=&quot;form-select m-3&quot; aria-label=&quot;Default select example&quot;&gt;
+            &lt;option selected&gt;Select Boarding City&lt;/option&gt;
+            &lt;option value=&quot;Delhi&quot;&gt;Delhi&lt;/option&gt;
+            &lt;option value=&quot;Mumbai&quot;&gt;Mumbai&lt;/option&gt;
+            &lt;option value=&quot;Bengaluru&quot;&gt;Bengaluru&lt;/option&gt;
+            &lt;option value=&quot;Chennai&quot;&gt;Chennai&lt;/option&gt;
+          &lt;/select&gt;
+
+          &lt;select class=&quot;form-select m-3&quot; aria-label=&quot;Default select example&quot;&gt;
+            &lt;option selected&gt;Select Arrival City&lt;/option&gt;
+            &lt;option value=&quot;Delhi&quot;&gt;Delhi&lt;/option&gt;
+            &lt;option value=&quot;Mumbai&quot;&gt;Mumbai&lt;/option&gt;
+            &lt;option value=&quot;Bengaluru&quot;&gt;Bengaluru&lt;/option&gt;
+            &lt;option value=&quot;Chennai&quot;&gt;Chennai&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex justify-content-evenly flex-row p-5&quot;&gt;
+          &lt;button type=&quot;submit&quot; class=&quot;btn btn-outline-danger&quot;&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+      &lt;section class=&quot;bg-light p-5&quot;&gt;
+        &lt;h1 class=&quot;text-center&quot;&gt;Travel with world&#x27;s largest bus services&lt;/h1&gt;
+        &lt;div class=&quot;d-flex justify-content-evenly p-5 text-center&quot;&gt;
+          &lt;div class=&quot;bg-white rounded-2 col-2&quot;&gt;
+            &lt;div class=&quot;-sm p-3&quot;&gt;
+              &lt;img
+                src=&quot;../assets/bus-vector.png&quot;
+                alt=&quot;Bus&quot;
+                width=&quot;128px&quot;
+                class=&quot;mb-2&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pt-4&quot;&gt;
+              &lt;h3&gt;2000+&lt;/h3&gt;
+              &lt;p&gt;Bus Collection&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;bg-white rounded-2 col-3&quot;&gt;
+            &lt;div class=&quot;-sm p-3&quot;&gt;
+              &lt;img
+                src=&quot;../assets/family.png&quot;
+                alt=&quot;Family&quot;
+                width=&quot;128px&quot;
+                class=&quot;mb-2&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pt-4&quot;&gt;
+              &lt;h3&gt;2 Million+&lt;/h3&gt;
+              &lt;p&gt;Happy customers globally&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;bg-white rounded-2 col-2&quot;&gt;
+            &lt;div class=&quot;-sm p-3&quot;&gt;
+              &lt;img
+                src=&quot;../assets/ticket.png&quot;
+                alt=&quot;Ticket&quot;
+                width=&quot;128px&quot;
+                class=&quot;mb-2&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pt-4&quot;&gt;
+              &lt;h3&gt;5000+&lt;/h3&gt;
+              &lt;p&gt;Tickets book everyday&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;bg-dark-subtle p-5&quot;&gt;
+        &lt;h1 class=&quot;text-center&quot;&gt;
+          Here&#x27;s what a few of our customers have to say
+        &lt;/h1&gt;
+        &lt;div class=&quot;d-flex justify-content-evenly p-5 text-center&quot;&gt;
+          &lt;div class=&quot;bg-white rounded-2 col-3 d-flex flex-column&quot;&gt;
+            &lt;div class=&quot;d-flex flex-row justify-content-between mt-2&quot;&gt;
+              &lt;div class=&quot;col-2 bg-warning p-3 rounded-circle fw-bold ms-2&quot;&gt;
+                VA
+              &lt;/div&gt;
+              &lt;div class=&quot;col-6 d-flex flex-column text-start ps-2&quot;&gt;
+                &lt;div class=&quot;fw-bold&quot;&gt;Vatsal Agarwal&lt;/div&gt;
+                &lt;div&gt;Customer since 2020&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-3 pt-3 fw-bold text-danger&quot;&gt;★ 4.9&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;p-3 text-start&quot;&gt;
+              Amazing travel experience with reserve. Excellent staff
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;bg-white rounded-2 col-3 d-flex flex-column&quot;&gt;
+            &lt;div class=&quot;d-flex flex-row justify-content-between mt-2&quot;&gt;
+              &lt;div class=&quot;col-2 bg-warning p-3 rounded-circle fw-bold ms-2&quot;&gt;
+                RS
+              &lt;/div&gt;
+              &lt;div class=&quot;col-6 d-flex flex-column text-start ps-2&quot;&gt;
+                &lt;div class=&quot;fw-bold&quot;&gt;Rohan Sharma&lt;/div&gt;
+                &lt;div&gt;Customer since 2022&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-3 pt-3 fw-bold text-danger&quot;&gt;★ 4.3&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;p-3 text-start&quot;&gt;
+              Amazing service. Always a best time with reserve.
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;bg-white rounded-2 col-3 d-flex flex-column&quot;&gt;
+            &lt;div class=&quot;d-flex flex-row justify-content-between mt-2&quot;&gt;
+              &lt;div class=&quot;col-2 bg-warning p-3 rounded-circle fw-bold ms-2&quot;&gt;
+                VK
+              &lt;/div&gt;
+              &lt;div class=&quot;col-6 d-flex flex-column text-start ps-2&quot;&gt;
+                &lt;div class=&quot;fw-bold&quot;&gt;Virat Kohli&lt;/div&gt;
+                &lt;div&gt;Customer since 2019&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-3 pt-3 fw-bold text-danger&quot;&gt;★ 4.5&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;p-3 text-start&quot;&gt;
+              Bus was clean and the journey was smooth. Reached on time.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer
+      class=&quot;d-flex justify-content-between pt-3 bg-secondary align-content-between&quot;
+    &gt;
+      &lt;p class=&quot;fw-bold ps-2&quot;&gt;© 2023 AlmaBetter. All rights reserved&lt;/p&gt;
+      &lt;div class=&quot;d-flex&quot;&gt;
+        &lt;p class=&quot;fw-bold&quot;&gt;Follow Us:&lt;/p&gt;
+        &lt;a href=&quot;https://www.facebook.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/facebook.png&quot; alt=&quot;Facebook&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.twitter.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/twitter.png&quot; alt=&quot;Twitter&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.instagram.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/instagram.png&quot; alt=&quot;Instagram&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script
+      src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;
+      integrity=&quot;sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz&quot;
+      crossorigin=&quot;anonymous&quot;
+    &gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="638f2341-6f89-4624-9028-81adaa232444" class=""><strong>Output</strong>:</p><figure id="8a56981e-2eec-4a10-916f-0b11da3257cc" class="image"><img style="width:912px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-04_at_8.34.44_PM.png"/></a></figure><figure id="b2045f11-fea8-4d66-8fe4-8967df4462e1" class="image"><img style="width:912px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-04_at_8.34.54_PM.png"/></a></figure></details></li></ul><h2 id="0606e036-b40b-47ec-849e-07ff58303d25" class=""><mark class="highlight-red">Flex Layout</mark></h2><p id="ab7bca3e-fb17-4ea8-bbaa-12fa8ef729b9" class="">Bootstrap utilizes the power of CSS Flexbox to create flexible and responsive layouts. Flexbox is a CSS layout module that allows elements to be arranged within a container, providing flexible positioning and alignment capabilities. Bootstrap provides a set of utility classes that leverage Flexbox to assist in building responsive designs. Here are some key aspects of Flexbox in Bootstrap:</p><ul id="435bd997-cbb7-4596-8550-92edda050f53" class="bulleted-list"><li style="list-style-type:disc"><strong>Flex Container: </strong>To create a flex container, add the <code>.d-flex</code> class to a parent element. This class sets the display property to <code>flex</code> and establishes a flex context for its child elements.</li></ul><ul id="ba1e4d7c-d4fb-4600-a151-4d5a945b778b" class="bulleted-list"><li style="list-style-type:disc"><strong>Flex Direction: </strong>Bootstrap provides classes to control the direction of flex items within a flex container. Use the following classes to set the flex-direction:<ul id="3fa4c05a-c202-4c6c-8999-cadf914c506b" class="bulleted-list"><li style="list-style-type:circle"><code>.flex-row</code>: Displays flex items horizontally in a row (default).</li></ul><ul id="46c900bc-db50-4c00-b9d8-1e4afa7a81ae" class="bulleted-list"><li style="list-style-type:circle"><code>.flex-column</code>: Displays flex items vertically in a column.</li></ul><ul id="d1efb9ea-30fc-40ab-9f52-4834d8476035" class="bulleted-list"><li style="list-style-type:circle"><code>.flex-row-reverse</code>: Displays flex items horizontally in reverse order.</li></ul><ul id="3d160c74-fee5-47b8-bf13-f06333b11050" class="bulleted-list"><li style="list-style-type:circle"><code>.flex-column-reverse</code>: Displays flex items vertically in reverse order.</li></ul></li></ul><ul id="a967ff73-1ae0-42c1-bc15-8a07884448bd" class="bulleted-list"><li style="list-style-type:disc"><strong>Flex Alignment: </strong>Bootstrap offers utility classes to align flex items within a flex container:<ul id="6212c58a-004b-4beb-9eb8-ac90e59d680b" class="bulleted-list"><li style="list-style-type:circle"><code>.justify-content-{alignment}</code>: Aligns flex items horizontally. Replace <code>{alignment}</code> with one of the following values:<ul id="e3107a67-2ec7-406d-a9fe-9941d8181488" class="bulleted-list"><li style="list-style-type:square"><code>start</code>: Aligns items to the start of the container (left-aligned).</li></ul><ul id="72f374b5-26f8-4efc-b009-9aaf6af80e92" class="bulleted-list"><li style="list-style-type:square"><code>center</code>: Aligns items at the center of the container.</li></ul><ul id="fcb52686-ee56-43b7-aaa1-94b69e5d1288" class="bulleted-list"><li style="list-style-type:square"><code>end</code>: Aligns items to the end of the container (right-aligned).</li></ul><ul id="206ea9f0-d232-49c2-a9c8-c5f0d95fe9d5" class="bulleted-list"><li style="list-style-type:square"><code>between</code>: Distributes items evenly with space between them.</li></ul><ul id="466819d0-bd9f-4af0-a1eb-537ee1869ba7" class="bulleted-list"><li style="list-style-type:square"><code>around</code>: Distributes items evenly with space around them.</li></ul></li></ul><ul id="6b51df77-b44b-41bb-969b-d52da22ffada" class="bulleted-list"><li style="list-style-type:circle"><code>.align-items-{alignment}</code>: Aligns flex items vertically. Replace <code>{alignment}</code> with one of the following values:<ul id="a713f160-f94b-40f8-b30e-959f59bfabff" class="bulleted-list"><li style="list-style-type:square"><code>start</code>: Aligns items at the start of the container.</li></ul><ul id="c182a06a-af18-4e8f-a6b1-3e554d0254b4" class="bulleted-list"><li style="list-style-type:square"><code>center</code>: Aligns items at the center of the container.</li></ul><ul id="a3df63ee-f2a7-4eaf-949b-b1a37358be03" class="bulleted-list"><li style="list-style-type:square"><code>end</code>: Aligns items at the end of the container.</li></ul><ul id="7270b2ee-99d2-4b6d-9ce7-bd68ddbdb1f4" class="bulleted-list"><li style="list-style-type:square"><code>baseline</code>: Aligns items along their baselines.</li></ul><ul id="b573db80-4ce3-4e34-80a7-44b807d2576b" class="bulleted-list"><li style="list-style-type:square"><code>stretch</code>: Stretches items to fill the container vertically.</li></ul></li></ul></li></ul><ul id="8abe6e8a-b273-427c-b8d1-0b12e20c7fdd" class="bulleted-list"><li style="list-style-type:disc"><strong>Flex Wrapping:</strong>
+By default, flex items will wrap onto new lines when the container becomes narrower than the combined width of its flex items. You can control this wrapping behavior using the <code>.flex-wrap-{value}</code> class:<ul id="c81c09c6-c63b-4b1a-ba5b-b7de91926e65" class="bulleted-list"><li style="list-style-type:circle"><code>.flex-wrap</code>: Allows items to wrap onto new lines (default).</li></ul><ul id="3838b60b-9c71-4bb6-bfb9-822121d00d58" class="bulleted-list"><li style="list-style-type:circle"><code>.flex-nowrap</code>: Prevents items from wrapping.</li></ul><ul id="fc98e4ca-f4a1-4daa-a918-9d2be367989f" class="bulleted-list"><li style="list-style-type:circle"><code>.flex-wrap-reverse</code>: Wraps items onto new lines in reverse order.</li></ul></li></ul><p id="7246865b-2d2b-4bea-ad04-80cc56148d3c" class="">
+</p><p id="b36a4de5-85b3-4197-be75-22116f45030b" class="">Let&#x27;s create a 3x3 grid using the flex property in Bootstrap!</p><figure id="19e7434b-695e-4d7d-b0d3-47ddc3c66d4d" class="image"><img style="width:864px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-05_at_6.49.44_PM.png"/></a></figure><ul id="7e87fe93-bc9a-4c1e-bfad-bc3db44b8e36" class="toggle"><li><details close=""><summary><strong>Code</strong></summary><pre id="f93d1459-0acb-4b37-a79d-b3bfb035b6d7" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot;&gt;
+  &lt;title&gt;Flexbox in Bootstrap&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;d-flex flex-column&quot;&gt;
+    &lt;div class=&quot;d-flex flex-row&quot;&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-body d-flex flex-column justify-content-start align-items-start&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Top Left&lt;/h5&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some text goes here.&lt;/p&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some more text goes here.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-body d-flex flex-column justify-content-start align-items-center&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Center Top&lt;/h5&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some text goes here.&lt;/p&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some more text goes here.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-body d-flex flex-column justify-content-start align-items-end&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Top Right&lt;/h5&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some text goes here.&lt;/p&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some more text goes here.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;d-flex flex-row&quot;&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-body d-flex flex-column justify-content-center align-items-start&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Middle Left&lt;/h5&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some text goes here.&lt;/p&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some more text goes here.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-body d-flex flex-column justify-content-center align-items-center&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Center&lt;/h5&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some text goes here.&lt;/p&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some more text goes here.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-body d-flex flex-column justify-content-center align-items-end&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Middle Right&lt;/h5&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some text goes here.&lt;/p&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some more text goes here.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;d-flex flex-row&quot;&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-body d-flex flex-column justify-content-end align-items-start&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Bottom Left&lt;/h5&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some text goes here.&lt;/p&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some more text goes here.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-body d-flex flex-column justify-content-end align-items-center&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Center Bottom&lt;/h5&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some text goes here.&lt;/p&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some more text goes here.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-body d-flex flex-column justify-content-end align-items-end&quot;&gt;
+          &lt;h5 class=&quot;card-title&quot;&gt;Bottom Right&lt;/h5&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some text goes here.&lt;/p&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Some more text goes here.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></details></li></ul><h2 id="4d0ee378-55a4-44a2-994a-bec87ecf51b8" class=""><mark class="highlight-red">Utilities</mark></h2><p id="6b2164f7-bf03-4006-ab6b-477a3ed3fcf4" class="">In Bootstrap, utility classes are a set of predefined classes that you can apply directly to HTML elements to add various styling and functionality quickly. These utility classes are designed to handle common tasks like spacing, alignment, visibility, and grid layout. Here&#x27;s an overview of some commonly used utility classes in Bootstrap:</p><ul id="836311ad-755e-4657-a237-26902e99fd31" class="bulleted-list"><li style="list-style-type:disc"><strong>Alignment Utilities: </strong>Bootstrap includes classes for aligning elements:<ul id="5e5d556f-ef45-4d03-9b6d-38218fee68cf" class="bulleted-list"><li style="list-style-type:circle"><code>.text-{alignment}</code>: Sets the text alignment to <code>left</code>, <code>center</code>, <code>right</code>, or <code>justify</code>.</li></ul><ul id="bcefe998-aeb0-4e6a-b79d-e6da0df71618" class="bulleted-list"><li style="list-style-type:circle"><code>.align-{alignment}</code>: Aligns elements vertically within a container. Replace <code>{alignment}</code> with <code>top</code>, <code>middle</code>, <code>bottom</code>, <code>baseline</code>, or <code>stretch</code>.</li></ul><ul id="90a4ec0b-965e-40ff-a8eb-263d7ba7dcbe" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="214e12f1-8324-4385-804e-99f05fe6a80b" class="code"><code>&lt;div class=&quot;text-center&quot;&gt;Centered text&lt;/div&gt;
+&lt;div class=&quot;align-items-center d-flex&quot; style=&quot;height: 200px; border: 1px solid #ccc;&quot;&gt;
+  &lt;div class=&quot;align-self-start&quot;&gt;Top-aligned item&lt;/div&gt;
+  &lt;div class=&quot;align-self-center&quot;&gt;Middle-aligned item&lt;/div&gt;
+  &lt;div class=&quot;align-self-end&quot;&gt;Bottom-aligned item&lt;/div&gt;
+&lt;/div&gt;</code></pre><p id="a41cc19d-31c3-4892-b93f-9ae148187b48" class=""><strong>Output</strong>:</p><figure id="b75a5e28-2036-43a5-8422-3f760c42ae57" class="image"><img style="width:2854px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_7.45.48_PM.png"/></a></figure></details></li></ul></li></ul><ul id="fbe3a9dc-7e2b-4a84-977e-1e31bde53fb1" class="bulleted-list"><li style="list-style-type:disc"><strong>Visibility Utilities: </strong>Bootstrap provides classes to control the visibility of elements:<ul id="0427cf74-857f-41d0-ab69-5d905fab7986" class="bulleted-list"><li style="list-style-type:circle"><code>.visible-{breakpoint}</code>: Makes an element visible at a specific breakpoint (<code>xs</code>, <code>sm</code>, <code>md</code>, <code>lg</code>, or <code>xl</code>).</li></ul><ul id="d0be709e-ee9e-425c-bf39-8809f6d6ecf6" class="bulleted-list"><li style="list-style-type:circle"><code>.invisible</code>: Makes an element invisible but still takes up space.</li></ul><ul id="7ccc478d-e3f9-4295-b48a-b094e9c0b95d" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="6abdb27f-12df-4618-8362-d2204aec73d8" class="code"><code>&lt;div class=&quot;visible-md&quot;&gt;Visible on medium screens&lt;/div&gt;
+&lt;div class=&quot;invisible&quot;&gt;Invisible element&lt;/div&gt;</code></pre><p id="1856c34f-15e8-46c3-8a0d-0587b080da57" class=""><strong>Output</strong>:</p><figure id="a453645b-909a-4e00-b35b-ccf4a781da6c" class="image"><img style="width:2848px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_7.50.17_PM.png"/></a></figure></details></li></ul></li></ul><ul id="59f59ddd-3188-4b8c-ae08-8edf124bc78b" class="bulleted-list"><li style="list-style-type:disc"><strong>Gap Utilities: </strong>Bootstrap 5 introduced gap utilities for managing spacing between grid columns or flex items:<ul id="26e8dafd-1817-49b3-8096-501b23cf0d3e" class="bulleted-list"><li style="list-style-type:circle"><code>.gap-{size}</code>: Sets the gap between columns or flex items. Replace <code>{size}</code> with <code>0</code> to <code>5</code> (representing a scale of spacing).</li></ul><ul id="ca2ad847-8bfd-4d61-a719-7259f89b137b" class="toggle"><li><details close=""><summary><strong>Example</strong></summary><pre id="bdf6e50f-7718-472d-9936-ab788f8f75ea" class="code"><code>&lt;div class=&quot;row gap-3&quot;&gt;
+  &lt;div class=&quot;col&quot;&gt;Column 1&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;Column 2&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;Column 3&lt;/div&gt;
+&lt;/div&gt;</code></pre><p id="d84efb17-f545-4cb8-8898-04803334e09a" class=""><strong>Output</strong>:</p><figure id="48d71aa3-cb1d-40d5-b872-b555fa23b1e9" class="image"><img style="width:2878px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-03_at_7.51.29_PM.png"/></a></figure></details></li></ul><p id="4b4722cb-5537-4e1a-bb09-a9477e7cd1a3" class="">
+</p></li></ul><ul id="da3d4f1e-7dbe-4afb-8ac7-1c1641c909ff" class="toggle"><li><details close=""><summary><strong>Project Implementation Step 5:</strong></summary><p id="eb838671-9360-48ad-9f84-74c35e1bee6d" class="">Here, we have utilized <strong>Flexbox</strong> and other <strong>Bootstrap</strong> <strong>utilities</strong>, as discussed earlier, to structure different sections of the Reserve App, such as the <strong>Navbar</strong>, <strong>Main section</strong>, <strong>Testimonials</strong>, and <strong>Footer</strong>.</p><pre id="a24342bd-2c15-4158-969f-a2c1f8b21657" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Reserve Bootstrap&lt;/title&gt;
+    &lt;link
+      href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot;
+      rel=&quot;stylesheet&quot;
+      integrity=&quot;sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM&quot;
+      crossorigin=&quot;anonymous&quot;
+    /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;nav class=&quot;navbar bg-body-secondary&quot;&gt;
+        &lt;div class=&quot;container-fluid&quot;&gt;
+          &lt;div class=&quot;navbar-nav d-flex flex-row align-items-center&quot;&gt;
+            &lt;a class=&quot;navbar-brand fs-4 fw-medium&quot; href=&quot;./index.html&quot;&gt;
+              &lt;img src=&quot;../assets/bus.png&quot; alt=&quot;Bus&quot; height=&quot;50&quot; /&gt;
+              Reserve
+            &lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2 disabled&quot;&gt;Tickets&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2&quot; href=&quot;./route.html&quot;&gt;Bus Routes&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2&quot; href=&quot;./contactus.html&quot;&gt;Contact Us&lt;/a&gt;
+          &lt;/div&gt;
+
+          &lt;div
+            class=&quot;navbar-nav d-flex flex-row justify-content-end align-items-center&quot;
+          &gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-warning fw-bold&quot;&gt;Login&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn fw-bold&quot;&gt;Register&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+      &lt;section class=&quot;bg-info-subtle p-5&quot;&gt;
+        &lt;div
+          class=&quot;navbar-nav d-flex justify-content-evenly flex-row align-items-center pt-5&quot;
+          style=&quot;padding-left: 25em; padding-right: 25em&quot;
+        &gt;
+          &lt;select class=&quot;form-select m-3&quot; aria-label=&quot;Default select example&quot;&gt;
+            &lt;option selected&gt;Select Boarding City&lt;/option&gt;
+            &lt;option value=&quot;Delhi&quot;&gt;Delhi&lt;/option&gt;
+            &lt;option value=&quot;Mumbai&quot;&gt;Mumbai&lt;/option&gt;
+            &lt;option value=&quot;Bengaluru&quot;&gt;Bengaluru&lt;/option&gt;
+            &lt;option value=&quot;Chennai&quot;&gt;Chennai&lt;/option&gt;
+          &lt;/select&gt;
+
+          &lt;select class=&quot;form-select m-3&quot; aria-label=&quot;Default select example&quot;&gt;
+            &lt;option selected&gt;Select Arrival City&lt;/option&gt;
+            &lt;option value=&quot;Delhi&quot;&gt;Delhi&lt;/option&gt;
+            &lt;option value=&quot;Mumbai&quot;&gt;Mumbai&lt;/option&gt;
+            &lt;option value=&quot;Bengaluru&quot;&gt;Bengaluru&lt;/option&gt;
+            &lt;option value=&quot;Chennai&quot;&gt;Chennai&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex justify-content-evenly flex-row p-5&quot;&gt;
+          &lt;button type=&quot;submit&quot; class=&quot;btn btn-outline-danger&quot;&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+      &lt;section class=&quot;bg-light p-5&quot;&gt;
+        &lt;h1 class=&quot;text-center&quot;&gt;Travel with world&#x27;s largest bus services&lt;/h1&gt;
+        &lt;div class=&quot;d-flex justify-content-evenly p-5 text-center&quot;&gt;
+          &lt;div class=&quot;bg-white col-2&quot;&gt;
+            &lt;div class=&quot;-sm p-3&quot;&gt;
+              &lt;img
+                src=&quot;../assets/bus-vector.png&quot;
+                alt=&quot;Bus&quot;
+                width=&quot;128px&quot;
+                class=&quot;mb-2&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pt-4&quot;&gt;
+              &lt;h3&gt;2000+&lt;/h3&gt;
+              &lt;p&gt;Bus Collection&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;bg-white col-3&quot;&gt;
+            &lt;div class=&quot;-sm p-3&quot;&gt;
+              &lt;img
+                src=&quot;../assets/family.png&quot;
+                alt=&quot;Family&quot;
+                width=&quot;128px&quot;
+                class=&quot;mb-2&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pt-4&quot;&gt;
+              &lt;h3&gt;2 Million+&lt;/h3&gt;
+              &lt;p&gt;Happy customers globally&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;bg-white col-2&quot;&gt;
+            &lt;div class=&quot;-sm p-3&quot;&gt;
+              &lt;img
+                src=&quot;../assets/ticket.png&quot;
+                alt=&quot;Ticket&quot;
+                width=&quot;128px&quot;
+                class=&quot;mb-2&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pt-4&quot;&gt;
+              &lt;h3&gt;5000+&lt;/h3&gt;
+              &lt;p&gt;Tickets book everyday&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;bg-dark-subtle p-5&quot;&gt;
+        &lt;h1 class=&quot;text-center&quot;&gt;
+          Here&#x27;s what a few of our customers have to say
+        &lt;/h1&gt;
+        &lt;div class=&quot;d-flex justify-content-evenly p-5 text-center&quot;&gt;
+          &lt;div class=&quot;bg-white col-3 d-flex flex-column&quot;&gt;
+            &lt;div class=&quot;d-flex flex-row justify-content-between mt-2&quot;&gt;
+              &lt;div class=&quot;col-2 bg-warning p-3 fw-bold ms-2&quot;&gt;
+                VA
+              &lt;/div&gt;
+              &lt;div class=&quot;col-6 d-flex flex-column text-start ps-2&quot;&gt;
+                &lt;div class=&quot;fw-bold&quot;&gt;Vatsal Agarwal&lt;/div&gt;
+                &lt;div&gt;Customer since 2020&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-3 pt-3 fw-bold text-danger&quot;&gt;★ 4.9&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;p-3 text-start&quot;&gt;
+              Amazing travel experience with reserve. Excellent staff
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;bg-white col-3 d-flex flex-column&quot;&gt;
+            &lt;div class=&quot;d-flex flex-row justify-content-between mt-2&quot;&gt;
+              &lt;div class=&quot;col-2 bg-warning p-3 fw-bold ms-2&quot;&gt;
+                RS
+              &lt;/div&gt;
+              &lt;div class=&quot;col-6 d-flex flex-column text-start ps-2&quot;&gt;
+                &lt;div class=&quot;fw-bold&quot;&gt;Rohan Sharma&lt;/div&gt;
+                &lt;div&gt;Customer since 2022&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-3 pt-3 fw-bold text-danger&quot;&gt;★ 4.3&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;p-3 text-start&quot;&gt;
+              Amazing service. Always a best time with reserve.
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;bg-white col-3 d-flex flex-column&quot;&gt;
+            &lt;div class=&quot;d-flex flex-row justify-content-between mt-2&quot;&gt;
+              &lt;div class=&quot;col-2 bg-warning p-3 fw-bold ms-2&quot;&gt;
+                VK
+              &lt;/div&gt;
+              &lt;div class=&quot;col-6 d-flex flex-column text-start ps-2&quot;&gt;
+                &lt;div class=&quot;fw-bold&quot;&gt;Virat Kohli&lt;/div&gt;
+                &lt;div&gt;Customer since 2019&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-3 pt-3 fw-bold text-danger&quot;&gt;★ 4.5&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;p-3 text-start&quot;&gt;
+              Bus was clean and the journey was smooth. Reached on time.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer
+      class=&quot;d-flex justify-content-between pt-3 bg-secondary align-content-between&quot;
+    &gt;
+      &lt;p class=&quot;fw-bold ps-2&quot;&gt;© 2023 AlmaBetter. All rights reserved&lt;/p&gt;
+      &lt;div class=&quot;d-flex&quot;&gt;
+        &lt;p class=&quot;fw-bold&quot;&gt;Follow Us:&lt;/p&gt;
+        &lt;a href=&quot;https://www.facebook.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/facebook.png&quot; alt=&quot;Facebook&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.twitter.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/twitter.png&quot; alt=&quot;Twitter&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.instagram.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/instagram.png&quot; alt=&quot;Instagram&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="a5309c7c-56b0-4b55-b192-c357937d2860" class=""><strong>Output</strong>:</p><figure id="eafe5202-9d3f-4be2-82ba-3dac7bcf6d7e" class="image"><img style="width:2880px" src="Bootstrap%20basics%20d90acb37545440968db87c3436b8e6bd/Screenshot_2023-07-04_at_8.38.48_PM.png"/></a></figure></details></li></ul><p id="b9eea7f7-456e-4f23-a649-b35f22d44cc8" class="">
+</p><h1 id="27cac466-0049-4c4e-9ac9-77eaf4db9f33" class=""><mark class="highlight-brown">Summary</mark></h1><h2 id="8635b6fc-f110-46d3-be10-e1544cb13557" class=""><mark class="highlight-red">What did we learn?</mark></h2><ul id="ca3ed20c-63e7-408a-b5f8-9d64312c1497" class="bulleted-list"><li style="list-style-type:disc">Bootstrap is a widely used front-end framework for building responsive websites.</li></ul><ul id="9e368b48-4566-4631-a5f3-b70c6b78357a" class="bulleted-list"><li style="list-style-type:disc">Key features of Bootstrap include a responsive grid system, pre-styled components, cross-browser compatibility, and customization options.</li></ul><ul id="8b7dd39b-d89d-426a-a073-65b6073661da" class="bulleted-list"><li style="list-style-type:disc">To get started with Bootstrap, you can either download the Bootstrap package or include it via a CDN. Set up your HTML file by including the Bootstrap CSS file and adding the necessary HTML structure.</li></ul><ul id="838adfd5-d4c6-4d66-acb7-0885930d2d30" class="bulleted-list"><li style="list-style-type:disc">Bootstrap containers are used to wrap and center content within a webpage. There are fixed-width containers (<code>.container</code>) and fluid containers (<code>.container-fluid</code>). </li></ul><ul id="ee64b6f0-c678-4164-97cc-6680314221c6" class="bulleted-list"><li style="list-style-type:disc">Bootstrap offers components like <code>Navbar</code> and <code>Navs</code>. The Navbar component allows for the creation of responsive and customizable navigation bars, while the Navs component enables the creation of tabbed navigation menus.</li></ul><ul id="10179aac-f0a9-4898-b240-0905791873c1" class="bulleted-list"><li style="list-style-type:disc">Bootstrap provides a wide range of button styles and options to create default buttons, apply different colors to buttons, adjust button sizes, and utilize additional button styles such as outline buttons and button groups.</li></ul><ul id="aeea2c50-dda4-4a30-8404-ac462de2a024" class="bulleted-list"><li style="list-style-type:disc">Typography in Bootstrap involves applying different font styles and handling headings, paragraphs, and text alignment.</li></ul><ul id="bb8b773f-2cb7-4ddd-83d2-dd9650ccf8cc" class="bulleted-list"><li style="list-style-type:disc">Bootstrap provides predefined color classes for text and background colors. The content lists commonly used color classes such as <code>text-primary</code>, <code>bg-success</code>, and <code>bg-muted.</code></li></ul><ul id="d52f94eb-de7b-4488-a04d-cad224c5bd2c" class="bulleted-list"><li style="list-style-type:disc">Margin classes (<code>m-</code>, <code>mx-</code>, <code>my-</code>, <code>mt-</code>, <code>mb-</code>, <code>ml-</code>, <code>mr-</code>) add margin to elements, while padding classes (<code>p-</code>, <code>px-</code>, <code>py-</code>, <code>pt-</code>, <code>pb-</code>, <code>pl-</code>, <code>pr-</code>) add padding.</li></ul><ul id="dd55d379-69d5-4e07-93df-76da0e68c71f" class="bulleted-list"><li style="list-style-type:disc">The container class (<code>container</code> or <code>container-fluid</code>) wraps rows and columns. Rows (<code>row</code> class) act as horizontal containers for columns. Column classes (<code>col</code>, <code>col-{breakpoint}-{columns}</code>, <code>col-{breakpoint}-auto</code>) define the width and behavior of columns.</li></ul><ul id="22061e2a-5a30-40c9-91ad-8c703249ef73" class="bulleted-list"><li style="list-style-type:disc">Bootstrap utilizes CSS Flexbox to create flexible and responsive layouts. To create a flex container, use the <code>d-flex</code> class. Flex direction, alignment, and wrapping behavior can be modified with various Bootstrap classes.</li></ul><h2 id="9b9d43a6-253c-45d1-a746-da83b7fc0923" class=""><mark class="highlight-red">Shortcomings &amp; Challenges</mark></h2><ul id="90d01775-111e-4213-86c8-8e4a79799580" class="bulleted-list"><li style="list-style-type:disc">Bootstrap has a learning curve, especially for beginners who are new to front-end development or unfamiliar with CSS frameworks.</li></ul><ul id="bfe5ca2b-83cb-4ec7-b660-abb675792d49" class="bulleted-list"><li style="list-style-type:disc">While Bootstrap offers customization options, there may be cases where you need highly specific or unique designs that are not easily achievable using the provided classes and components. </li></ul><ul id="6fec2f72-18d7-4e61-8f93-d590eca58ca3" class="bulleted-list"><li style="list-style-type:disc">Some of Bootstrap&#x27;s components and functionalities rely on JavaScript. If you&#x27;re aiming for a lightweight or JavaScript-free website, this dependency may be a drawback.</li></ul><ul id="d405b06a-54b8-4df6-8efb-004e94a21e38" class="bulleted-list"><li style="list-style-type:disc">While Bootstrap aims for cross-browser compatibility, there can still be differences in rendering and behavior across various browsers and versions.</li></ul><h2 id="e457be7e-eb5b-47c8-b1c3-d160722c949e" class=""><mark class="highlight-red">Best Practices</mark></h2><ul id="1f94dbf8-707f-4cc9-9802-4c6e439b8dda" class="bulleted-list"><li style="list-style-type:disc">Assess your project requirements and customize Bootstrap accordingly. Include only the necessary components, styles, and functionalities to avoid unnecessary overhead.</li></ul><ul id="5b0f2aac-15e2-4b04-952a-cfc18385dd34" class="bulleted-list"><li style="list-style-type:disc">Keep up with Bootstrap updates and new releases to take advantage of bug fixes, performance improvements, and new features. Regularly check the Bootstrap documentation and community resources for updates and best practices.</li></ul><ul id="2aeb7203-652a-4925-81e4-23d36ae99eef" class="bulleted-list"><li style="list-style-type:disc">Bootstrap provides a solid foundation, but you may need to write custom CSS to fine-tune the design and achieve a unique look. Utilize custom CSS to override Bootstrap styles or add additional styling as per your project&#x27;s requirements.</li></ul><ul id="4ee71051-8da1-4d70-b74a-63742d360c10" class="bulleted-list"><li style="list-style-type:disc">Leverage Bootstrap&#x27;s responsive grid system and components to create a mobile-friendly and responsive layout. Test your website on different screen sizes and devices to ensure optimal responsiveness.</li></ul><ul id="0c338079-1203-4010-b812-250ba053d24b" class="bulleted-list"><li style="list-style-type:disc">Use semantic HTML elements appropriately to enhance accessibility and SEO. Avoid relying solely on Bootstrap classes for structural and semantic purposes.</li></ul><h2 id="4ff39619-830f-466b-bc91-1cd3599e00eb" class=""><mark class="highlight-red">Enhance your knowledge</mark></h2><ul id="9e8f7178-d412-492f-9d6d-8b0fec1a6b21" class="bulleted-list"><li style="list-style-type:disc"><a href="https://medium.com/codingthesmartway-com-blog/introduction-to-bootstrap-4-flex-layout-flexbox-for-bootstrap-f85405ce5ebf">https://medium.com/codingthesmartway-com-blog/introduction-to-bootstrap-4-flex-layout-flexbox-for-bootstrap-f85405ce5ebf</a></li></ul><ul id="871b1b3a-eae0-4fb9-978b-0e98181a4dcc" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.sitepoint.com/bootstrap-grid-mastering-flexbox/">https://www.sitepoint.com/bootstrap-grid-mastering-flexbox/</a></li></ul><p id="e8853a2f-e379-4d60-a0d0-27b3861c5333" class="">
+</p></div></article></body></html>
