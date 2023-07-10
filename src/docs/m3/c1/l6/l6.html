@@ -1,0 +1,1121 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Bootstrap Advanced</title><link rel="stylesheet" href="../../../../../styles.css"></head><body><article id="03894a7d-c173-49d2-b913-46631b2e7c73" class="page sans"><header><h1 class="page-title">Bootstrap Advanced</h1><p class="page-description"></p></header><div class="page-body"><ul id="6eae0c77-5a0d-4f4c-a0f9-763d9fe3d1e7" class="toggle"><li><details close =""><summary><strong>Session Flow (5 minutes read)</strong></summary><ul id="d80a45fd-ea78-459b-9b14-8d304b9d1e4a" class="bulleted-list"><li style="list-style-type:disc"><strong>Learning Objective (5 minutes read)</strong><ul id="f15277b4-9dd1-446e-9797-488bac89260a" class="bulleted-list"><li style="list-style-type:circle">Introduction</li></ul><ul id="87da6728-c750-4e2f-b377-f59844929758" class="bulleted-list"><li style="list-style-type:circle">Theme</li></ul><ul id="710e0f08-2125-4c44-adf7-67ead41c205f" class="bulleted-list"><li style="list-style-type:circle">Primary Goals</li></ul></li></ul><ul id="fada24a1-a3c7-41c4-8e6b-9b773cefab38" class="bulleted-list"><li style="list-style-type:disc"><strong>Bootstrap Advanced</strong> <strong>(120 minutes read)</strong><ul id="2f72a69a-048e-4a66-8f96-aa68036423de" class="bulleted-list"><li style="list-style-type:circle">Forms</li></ul><ul id="678d2809-5ca8-4fbd-960a-19966d35a7c9" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 1</strong></li></ul><ul id="74b7dea8-b254-4bd3-bf5c-d5169d9f2ad9" class="bulleted-list"><li style="list-style-type:circle">Tables</li></ul><ul id="4b267ed0-3e42-41f5-85fa-d3471aab2d76" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 2</strong></li></ul><ul id="3aa1048b-0ce3-4254-b604-bbc4d2019149" class="bulleted-list"><li style="list-style-type:circle">Border</li></ul><ul id="090358a7-37e5-46cf-9078-a51d0d2cf1ee" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 3</strong></li></ul><ul id="521d0913-292d-4b06-aa88-4cf713ce9fb2" class="bulleted-list"><li style="list-style-type:circle">Shadow</li></ul><ul id="ad1fae78-941d-428a-ab7e-c3b6fe596760" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 4</strong></li></ul><ul id="0e073c5c-c511-4bd5-b1f6-023669ef58a5" class="bulleted-list"><li style="list-style-type:circle">Responsive Design with Bootstrap</li></ul><ul id="9b4eec22-4bcd-48ca-92ca-b94031c70d0b" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 5</strong></li></ul><ul id="408ea1b7-8a9f-4cbe-8799-4a64c17da006" class="bulleted-list"><li style="list-style-type:circle">Accordion</li></ul><ul id="ddfffc85-8949-489f-9d7d-f85d31c06219" class="bulleted-list"><li style="list-style-type:circle"><strong>Project Implementation Step 6</strong></li></ul></li></ul><ul id="044e3287-d12c-4d32-b111-e62f9fd39318" class="bulleted-list"><li style="list-style-type:disc"><strong>Summary (10 minutes read)</strong><ul id="72f76ee2-ece3-4632-b4bd-470089a666cc" class="bulleted-list"><li style="list-style-type:circle">What did we learn?</li></ul><ul id="6944fab7-1975-46c9-aec4-2ef0c8df9604" class="bulleted-list"><li style="list-style-type:circle">Shortcomings &amp; Challenges</li></ul><ul id="f8585730-7fa2-4b00-bb70-250ead53147f" class="bulleted-list"><li style="list-style-type:circle">Best Practices</li></ul><ul id="7b0a4008-2334-4b70-bf43-b1d93fdb3a91" class="bulleted-list"><li style="list-style-type:circle">Enhance Your Knowledge</li></ul></li></ul></details></li></ul><h1 id="3e95420b-8d3d-4548-9fcf-0bfc4a7eea1b" class=""><mark class="highlight-brown">Learning Objective</mark></h1><h2 id="3045299c-3f8b-4a94-85c4-a2f6be80df16" class=""><mark class="highlight-red">Introduction</mark></h2><p id="c2cbb15a-f61f-4ae3-8770-7bc7e2df5c18" class=""><strong>Advanced Bootstrap</strong> expands on the foundation of the core framework and offers advanced features and customization options, empowering developers to create highly sophisticated and visually appealing websites.</p><p id="bfb1818c-4c29-4d5e-8385-5568c99a320e" class=""><strong>Duration: </strong>2 Hours</p><p id="d8f0277e-51ba-4591-b441-6eb803c26ef3" class=""><strong>Focus: </strong>Bootstrap<strong> </strong>Forms, tables, shadow, responsiveness, border, and accordion</p><p id="b4c013d1-1b04-4d2f-8eae-7e7b533e19da" class=""><strong>Pre-requisite: </strong>Bootstrap Basics</p><h2 id="1455600c-088f-460d-a14f-3f88acce6d74" class=""><mark class="highlight-red">Theme</mark></h2><p id="7da6900f-9c83-4f8e-b7c8-7e97ab5f81c7" class=""><strong>Coursera</strong> incorporates Bootstrap&#x27;s <strong>form components</strong> for user-friendly registration and login forms, styled using form classes. <strong>Tables</strong> on the course catalog pages display course details with responsive functionality. Bootstrap&#x27;s <strong>shadow</strong> utility classes enhance the interface by adding visual depth to cards, menus, and modals. The website&#x27;s layout seamlessly adapts to different devices using Bootstrap&#x27;s <strong>responsive grid system</strong>. Border utility classes emphasize and separate elements like buttons and cards. Coursera uses Bootstrap&#x27;s <strong>accordion</strong> component to present collapsible content, aiding easy navigation through course syllabus pages.</p><p id="471a1d82-9619-4d5f-86a6-3db8ef4a9db4" class="">By leveraging these Bootstrap concepts, Coursera enhances the user experience on its website, creating an intuitive and visually appealing platform for online learning.</p><h2 id="5f4b00f4-98e7-4710-b0a2-2630154afedd" class=""><mark class="highlight-red">Primary Goals</mark></h2><ul id="573394ea-b319-4303-9daf-9b3ede164a15" class="bulleted-list"><li style="list-style-type:disc">Learn how to create and style different types of form inputs &amp; collapsible content sections using accordion.</li></ul><ul id="619d5dfd-f7e8-412e-b575-ee1bcc96dba8" class="bulleted-list"><li style="list-style-type:disc">Learn table styling options, including striped rows, hover effects, and bordered tables.</li></ul><ul id="d43054c4-0caf-427f-839a-01a68a2d916b" class="bulleted-list"><li style="list-style-type:disc">Understand the different types of shadows available and how they can be customized using Bootstrap&#x27;s built-in classes.</li></ul><ul id="2af36f51-f812-4206-848e-547641e73c18" class="bulleted-list"><li style="list-style-type:disc">Learn how to create responsive layouts using Bootstrap&#x27;s grid system and breakpoints.</li></ul><ul id="a09f8d8c-cc16-4161-b9a1-ff93250371f0" class="bulleted-list"><li style="list-style-type:disc">Explore different border styles, sizes, and colors available in Bootstrap.</li></ul><p id="2bfdac38-71f8-4779-a200-31860c3e8014" class="">
+</p><h1 id="5b11e5d0-d679-409c-b587-05b6da5c9f38" class=""><mark class="highlight-brown">Bootstrap Advanced</mark></h1><h2 id="43c1ec24-c545-4aec-8be3-a3f37d55a0d0" class=""><mark class="highlight-red">Forms</mark></h2><p id="3a421203-2971-41c0-9fab-521c5a44e916" class="">In Bootstrap, forms are an essential component that allows users to input and submit data. Bootstrap provides a set of CSS classes and JavaScript functionality to style and enhance form elements. Here are some key concepts and classes related to forms in Bootstrap:</p><ol type="1" id="e4f2d437-ea5b-4934-a224-eee66779269f" class="numbered-list" start="1"><li><strong>Form Structure:</strong> A basic form structure in Bootstrap consists of a <code>&lt;form&gt;</code> element, which acts as a container for all the form fields. You can place form fields such as inputs, checkboxes, radio buttons, and buttons inside this container.</li></ol><ol type="1" id="9fe9bd80-9b84-40d5-9ed4-1afcd37bcd17" class="numbered-list" start="2"><li><strong>Form Classes:</strong> Bootstrap provides various classes to style and customize form elements. Some commonly used classes include:<ul id="caa2679c-96d9-40f9-a357-9d173f81be1b" class="bulleted-list"><li style="list-style-type:disc"><code>.form-control</code>: This class is applied to form fields like <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> to style them as block-level elements with consistent width and appearance.</li></ul><ul id="b8cb0ba3-f023-488c-a206-88150a66819b" class="bulleted-list"><li style="list-style-type:disc"><code>.form-label</code>: This class is used for styling labels associated with form fields.</li></ul><ul id="69523158-5444-436a-b309-d17db5f99bbf" class="bulleted-list"><li style="list-style-type:disc"><code>.form-check</code>: This class is applied to checkboxes and radio buttons to style them.</li></ul><ul id="6e652193-3eb8-485d-a795-5c429586616c" class="bulleted-list"><li style="list-style-type:disc"><code>.form-check-label</code>: This class is used for styling labels associated with checkboxes and radio buttons.</li></ul><ul id="e08525fd-1bd8-4797-8374-2d9e282d0253" class="bulleted-list"><li style="list-style-type:disc"><code>.form-group</code>: This class is used to group related form elements together, providing spacing and visual consistency.</li></ul><ul id="ff7de843-81d4-4fdc-b055-b66338401d88" class="bulleted-list"><li style="list-style-type:disc"><code>.form-text</code>: This class is used to add additional explanatory text or help text to form fields.</li></ul></li></ol><ol type="1" id="f2d1695f-2108-48e8-a830-edbbbbe2005d" class="numbered-list" start="3"><li><strong>Input Types: </strong>Bootstrap supports various HTML input types like text, email, password, number, date, etc. You can add these input types to <code>&lt;input&gt;</code> elements to leverage browser-native validation and behavior.</li></ol><ol type="1" id="3c6f4bb4-a17b-45df-b098-d3af73f06674" class="numbered-list" start="4"><li><strong>Grid System:</strong> Bootstrap&#x27;s grid system can be used to create responsive form layouts. You can use classes like <code>.row</code> and <code>.col-*</code> to organize form elements in a grid-like structure, allowing for different column sizes on different screen sizes.</li></ol><ol type="1" id="ff1fda78-3740-4f9b-ab1d-a4ee1634a1af" class="numbered-list" start="5"><li><strong>Validation:</strong> Bootstrap provides built-in form validation styles and classes to highlight invalid form fields and display error messages. You can apply the <code>.was-validated</code> class to the <code>&lt;form&gt;</code> element to enable the validation styles.</li></ol><ol type="1" id="756eb051-d6f5-4004-99d1-947f5211f947" class="numbered-list" start="6"><li><strong>Form Sizing:</strong> Bootstrap allows you to adjust the size of form elements using classes like <code>.form-control-sm</code> for smaller inputs and <code>.form-control-lg</code> for larger inputs.</li></ol><ol type="1" id="58159732-0bc7-493b-ab4f-9ff66a95c85f" class="numbered-list" start="7"><li><strong>Form Layouts:</strong> Bootstrap offers layout options for forms, such as horizontal forms and inline forms. Horizontal forms align labels and form controls in a row, while inline forms place labels and controls side by side on a single line.</li></ol><p id="9f0f7444-c393-47c2-a190-1de4838fc8ff" class=""><strong>Example:</strong></p><pre id="5db0e1ac-89d1-4e67-a1a3-4a19f3cf2055" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Bootstrap Form Example&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;h2&gt;Form in Bootstrap&lt;/h2&gt;
+    &lt;form class=&quot;needs-validation&quot; novalidate&gt;
+      &lt;div class=&quot;mb-3&quot;&gt;
+        &lt;label for=&quot;name&quot; class=&quot;form-label&quot;&gt;Name&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;name&quot; placeholder=&quot;Enter your name&quot; required&gt;
+        &lt;div class=&quot;invalid-feedback&quot;&gt;
+          Please enter your name.
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;mb-3&quot;&gt;
+        &lt;label for=&quot;email&quot; class=&quot;form-label&quot;&gt;Email&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Enter your email&quot; required&gt;
+        &lt;div class=&quot;invalid-feedback&quot;&gt;
+          Please enter a valid email address.
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;mb-3&quot;&gt;
+        &lt;label for=&quot;message&quot; class=&quot;form-label&quot;&gt;Message&lt;/label&gt;
+        &lt;textarea class=&quot;form-control&quot; id=&quot;message&quot; rows=&quot;3&quot; placeholder=&quot;Enter your message&quot; required&gt;&lt;/textarea&gt;
+        &lt;div class=&quot;invalid-feedback&quot;&gt;
+          Please enter a message.
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;mb-3&quot;&gt;
+        &lt;div class=&quot;form-check&quot;&gt;
+          &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;checkbox&quot; required&gt;
+          &lt;label class=&quot;form-check-label&quot; for=&quot;checkbox&quot;&gt;
+            I agree to the terms and conditions
+          &lt;/label&gt;
+          &lt;div class=&quot;invalid-feedback&quot;&gt;
+            You must agree to the terms and conditions.
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="5ced9c4e-870f-4cdf-9cb0-5a4f7f3929a1" class=""><strong>Output:</strong></p><figure id="cbcc7c49-15f6-4de4-8356-37a4899f7918" class="image"><img style="width:1008px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-06_at_1.29.01_PM.png"/></a></figure><ul id="564cf785-f6d7-4091-ad33-7f75fc3a1bcd" class="toggle"><li><details close =""><summary><strong>Practical Implementation Step 1:</strong></summary><pre id="a4a0605f-041b-4450-8469-99912cce0c92" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Reserve Bootstrap&lt;/title&gt;
+    &lt;link
+      href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot;
+      rel=&quot;stylesheet&quot;
+      integrity=&quot;sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM&quot;
+      crossorigin=&quot;anonymous&quot;
+    /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;nav class=&quot;navbar bg-body-secondary shadow&quot;&gt;
+        &lt;div class=&quot;container-fluid&quot;&gt;
+          &lt;div class=&quot;navbar-nav d-flex flex-row align-items-center&quot;&gt;
+            &lt;a class=&quot;navbar-brand fs-4 fw-medium&quot; href=&quot;./index.html&quot;&gt;
+              &lt;img src=&quot;../assets/bus.png&quot; alt=&quot;Bus&quot; height=&quot;50&quot; /&gt;
+              Reserve
+            &lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2 disabled&quot;&gt;Tickets&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2&quot; href=&quot;./route.html&quot;&gt;Bus Routes&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2 active&quot; href=&quot;./contactus.html&quot;
+              &gt;Contact Us&lt;/a
+            &gt;
+          &lt;/div&gt;
+
+          &lt;div
+            class=&quot;navbar-nav d-flex flex-row justify-content-end align-items-center&quot;
+          &gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-warning fw-bold&quot;&gt;Login&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn fw-bold&quot;&gt;Register&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main class=&quot;p-5&quot;&gt;
+      &lt;h1 class=&quot;text-center text-warning pb-5&quot;&gt;Contact Us&lt;/h1&gt;
+      &lt;form&gt;
+        &lt;div class=&quot;form-group py-1&quot;&gt;
+          &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+          &lt;input
+            type=&quot;text&quot;
+            class=&quot;form-control&quot;
+            id=&quot;name&quot;
+            name=&quot;name&quot;
+            required
+          /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group py-1&quot;&gt;
+          &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+          &lt;input
+            type=&quot;email&quot;
+            class=&quot;form-control&quot;
+            id=&quot;email&quot;
+            name=&quot;email&quot;
+            required
+          /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group py-1&quot;&gt;
+          &lt;label for=&quot;mobile&quot;&gt;Mobile Number:&lt;/label&gt;
+          &lt;input
+            type=&quot;tel&quot;
+            class=&quot;form-control&quot;
+            id=&quot;mobile&quot;
+            name=&quot;mobile&quot;
+            pattern=&quot;[0-9]{10}&quot;
+            required
+          /&gt;
+          &lt;small class=&quot;form-text text-muted&quot;
+            &gt;Please enter a 10-digit mobile number.&lt;/small
+          &gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group py-1&quot;&gt;
+          &lt;label&gt;Gender:&lt;/label&gt;
+          &lt;div class=&quot;form-check form-check-inline&quot;&gt;
+            &lt;input
+              type=&quot;radio&quot;
+              class=&quot;form-check-input&quot;
+              id=&quot;genderMale&quot;
+              name=&quot;gender&quot;
+              value=&quot;male&quot;
+              required
+            /&gt;
+            &lt;label class=&quot;form-check-label&quot; for=&quot;genderMale&quot;&gt;Male&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;form-check form-check-inline&quot;&gt;
+            &lt;input
+              type=&quot;radio&quot;
+              class=&quot;form-check-input&quot;
+              id=&quot;genderFemale&quot;
+              name=&quot;gender&quot;
+              value=&quot;female&quot;
+              required
+            /&gt;
+            &lt;label class=&quot;form-check-label&quot; for=&quot;genderFemale&quot;&gt;Female&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;form-check form-check-inline&quot;&gt;
+            &lt;input
+              type=&quot;radio&quot;
+              class=&quot;form-check-input&quot;
+              id=&quot;nts&quot;
+              name=&quot;gender&quot;
+              value=&quot;nts&quot;
+              required
+            /&gt;
+            &lt;label class=&quot;form-check-label&quot; for=&quot;nts&quot;&gt;Prefer not to say&lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group py-1&quot;&gt;
+          &lt;label for=&quot;message&quot;&gt;Message:&lt;/label&gt;
+          &lt;textarea
+            class=&quot;form-control&quot;
+            id=&quot;message&quot;
+            name=&quot;message&quot;
+            rows=&quot;3&quot;
+          &gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group py-1&quot;&gt;
+          &lt;label for=&quot;image&quot;&gt;Upload Image:&lt;/label&gt;
+          &lt;input
+            type=&quot;file&quot;
+            class=&quot;form-control-file&quot;
+            id=&quot;image&quot;
+            name=&quot;image&quot;
+          /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-check py-1&quot;&gt;
+          &lt;input
+            type=&quot;checkbox&quot;
+            class=&quot;form-check-input&quot;
+            id=&quot;newsletter&quot;
+            name=&quot;newsletter&quot;
+          /&gt;
+          &lt;label class=&quot;form-check-label&quot; for=&quot;newsletter&quot;
+            &gt;Subscribe to Newsletter&lt;/label
+          &gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex justify-content-center my-3&quot;&gt;
+          &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary col-12&quot;&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/main&gt;
+
+    &lt;footer
+      class=&quot;d-flex justify-content-between pt-3 bg-secondary align-content-between&quot;
+    &gt;
+      &lt;p class=&quot;fw-bold ps-2&quot;&gt;© 2023 AlmaBetter. All rights reserved&lt;/p&gt;
+      &lt;div class=&quot;d-flex&quot;&gt;
+        &lt;p class=&quot;fw-bold&quot;&gt;Follow Us:&lt;/p&gt;
+        &lt;a href=&quot;https://www.facebook.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/facebook.png&quot; alt=&quot;Facebook&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.twitter.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/twitter.png&quot; alt=&quot;Twitter&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.instagram.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/instagram.png&quot; alt=&quot;Instagram&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script
+      src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;
+      integrity=&quot;sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz&quot;
+      crossorigin=&quot;anonymous&quot;
+    &gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="7b69d002-f62e-4005-96cf-5ca512797241" class=""><strong>Output:</strong></p><figure id="5320675f-2ea9-4759-9538-45dff021afd8" class="image"><img style="width:768px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-06_at_4.24.40_PM.png"/></a></figure></details></li></ul><h2 id="fe7f8b9d-7ff3-4eff-9dd0-5c5081c160ef" class=""><mark class="highlight-red">Tables</mark></h2><p id="5c6fdc1d-1ba3-4ba3-a347-535a8736bce2" class="">Bootstrap provides a set of classes and styles for creating responsive and visually appealing tables. </p><ol type="1" id="29b3444e-2299-4b59-9d64-3edff402d720" class="numbered-list" start="1"><li><strong>Basic Table Structure:</strong> A basic table structure in Bootstrap consists of the <code>&lt;table&gt;</code> element, which contains one or more <code>&lt;tr&gt;</code> (table row) elements. Inside each row, you can include table data cells <code>&lt;td&gt;</code> or table header cells <code>&lt;th&gt;</code>. Table header cells are typically used to define column headers.</li></ol><ol type="1" id="4a7f1068-63e7-4306-a7c4-da490813ede1" class="numbered-list" start="2"><li><strong>Table Classes:</strong> Bootstrap offers various classes to style and enhance tables. Some commonly used classes include:<ul id="6bd4b140-cd60-4f4a-b6f6-f4a732b49ff3" class="bulleted-list"><li style="list-style-type:disc"><code>.table</code>: This class is applied to the <code>&lt;table&gt;</code> element to make it a Bootstrap table. It adds basic styling and formatting.</li></ul><ul id="9aa59f01-e83a-4159-9a80-70f68c562b9d" class="bulleted-list"><li style="list-style-type:disc"><code>.table-striped</code>: This class adds zebra-striping to the table rows, alternating the background color of each row for improved readability.</li></ul><ul id="0fd9cf91-d498-44aa-ae74-2cbd85b61743" class="bulleted-list"><li style="list-style-type:disc"><code>.table-bordered</code>: This class adds borders to all the cells and the table itself.</li></ul><ul id="39115f0e-5241-4e32-b0ac-09722e69480e" class="bulleted-list"><li style="list-style-type:disc"><code>.table-hover</code>: This class adds a hover effect to table rows, highlighting the row under the mouse pointer.</li></ul><ul id="c4a2887c-8ea1-43cd-80a4-ab16c23fb962" class="bulleted-list"><li style="list-style-type:disc"><code>.table-responsive</code>: This class makes the table horizontally scrollable on small screens to prevent overflow.</li></ul><ul id="baae30ec-f5fe-45f9-8f77-2fa97309feed" class="bulleted-list"><li style="list-style-type:disc"><code>.table-group-divider</code>: Add a thicker border, darker between table groups - &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt;.</li></ul><ul id="10f885b3-051d-4518-90c6-6317f01e3fd2" class="bulleted-list"><li style="list-style-type:disc"><code>.table-light</code><strong>: </strong>Used to apply a light background color to a table.<p id="479083a0-c511-4df5-91a3-19b7e811ae48" class=""><strong>Example:</strong></p><pre id="66233d2a-5cc3-454a-81c9-28ebc2a5e2da" class="code"><code>&lt;table class=&quot;table table-striped table-bordered table-hover&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;ID&lt;/th&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;John Doe&lt;/td&gt;
+          &lt;td&gt;john@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;Jane Smith&lt;/td&gt;
+          &lt;td&gt;jane@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;Mike Johnson&lt;/td&gt;
+          &lt;td&gt;mike@example.com&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+ &lt;/table&gt;</code></pre><p id="a0cdc9a2-0401-4443-a8dd-3366a9bad63b" class=""><strong>Output:</strong></p><figure id="7d59cf6a-5b9c-4ac1-8a33-7d288f554fbb" class="image"><img style="width:1704px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-06_at_2.38.23_PM.png"/></a></figure></li></ul></li></ol><ol type="1" id="7aa14322-eba6-4784-a697-de288258c133" class="numbered-list" start="3"><li><strong>Table Sizing:</strong> Bootstrap provides classes to control the size of tables. You can use <code>.table-sm</code> for a smaller table or <code>.table-lg</code> for a larger table.<p id="a5938e46-7597-4517-ad24-3d9cbd98dd0e" class=""><strong>Example:</strong></p><pre id="f315808e-53d8-4228-9883-cbfd6c338908" class="code"><code>&lt;!-- For a smaller table --&gt;
+&lt;table class=&quot;table table-striped table-sm&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;ID&lt;/th&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Email&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;John Doe&lt;/td&gt;
+      &lt;td&gt;john@example.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Jane Smith&lt;/td&gt;
+      &lt;td&gt;jane@example.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Mike Johnson&lt;/td&gt;
+      &lt;td&gt;mike@example.com&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;!-- For a larger table --&gt;
+&lt;table class=&quot;table table-striped table-lg&quot;&gt;
+   &lt;!-- Table content goes here --&gt;
+&lt;/table&gt;</code></pre><p id="908955f2-0229-4184-b750-2ed1ed2ee785" class=""><strong>Output:</strong></p><figure id="29b03022-736e-41ff-b05f-63a391b844d2" class="image"><img style="width:1454px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-06_at_2.44.27_PM.png"/></a></figure></li></ol><ol type="1" id="72aafc77-7e9b-4740-92f5-567114bd97ed" class="numbered-list" start="4"><li><strong>Contextual Classes:</strong> Bootstrap offers contextual classes to add color-coded backgrounds to table rows or cells, indicating different states or categories. Some commonly used classes include <code>.table-primary</code>, <code>.table-success</code>, <code>.table-danger</code>, etc.</li></ol><ul id="e2ee2bf3-5a33-4917-8a83-e0156bd412c4" class="toggle"><li><details close =""><summary><strong>Practical Implementation Step 2:</strong></summary><p id="00dae2bc-cee9-4d4f-8d24-0dd0dfb8f363" class="">Here, we&#x27;ve applied the <strong>table</strong> class of Bootstrap to the Reserve Bus Schedule Table.</p><pre id="273a8434-aa04-4ec3-928e-d9fde73076dc" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Reserve Bootstrap&lt;/title&gt;
+    &lt;link
+      href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot;
+      rel=&quot;stylesheet&quot;
+      integrity=&quot;sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM&quot;
+      crossorigin=&quot;anonymous&quot;
+    /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;nav class=&quot;navbar bg-body-secondary shadow&quot;&gt;
+        &lt;div class=&quot;container-fluid&quot;&gt;
+          &lt;div class=&quot;navbar-nav d-flex flex-row align-items-center&quot;&gt;
+            &lt;a class=&quot;navbar-brand fs-4 fw-medium&quot; href=&quot;./index.html&quot;&gt;
+              &lt;img src=&quot;../assets/bus.png&quot; alt=&quot;Bus&quot; height=&quot;50&quot; /&gt;
+              Reserve
+            &lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2 disabled&quot;&gt;Tickets&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2 active&quot; href=&quot;./route.html&quot;&gt;Bus Routes&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2&quot; href=&quot;./contactus.html&quot;&gt;Contact Us&lt;/a&gt;
+          &lt;/div&gt;
+
+          &lt;div
+            class=&quot;navbar-nav d-flex flex-row justify-content-end align-items-center&quot;
+          &gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-warning fw-bold&quot;&gt;Login&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn fw-bold&quot;&gt;Register&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main class=&quot;py-5 col-6 offset-md-3 justify-content-center&quot;&gt;
+      &lt;h1 class=&quot;text-center text-danger pb-5&quot;&gt;Bus Routes&lt;/h1&gt;
+      &lt;table class=&quot;table table-hover&quot;&gt;
+        &lt;thead class=&quot;table-light&quot;&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;First Bus&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Last Bus&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Route&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody class=&quot;table-group-divider&quot;&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+            &lt;td&gt;7:00 AM&lt;/td&gt;
+            &lt;td&gt;10:00 PM&lt;/td&gt;
+            &lt;td&gt;Mumbai - Chennai&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+            &lt;td&gt;9:30 AM&lt;/td&gt;
+            &lt;td&gt;12:30 PM&lt;/td&gt;
+            &lt;td&gt;Mumbai - Delhi&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+            &lt;td&gt;11:15 AM&lt;/td&gt;
+            &lt;td&gt;11:45 PM&lt;/td&gt;
+            &lt;td&gt;Mumbai - Bangalore&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;4&lt;/th&gt;
+            &lt;td&gt;2:45 PM&lt;/td&gt;
+            &lt;td&gt;4:30 PM&lt;/td&gt;
+            &lt;td&gt;Chennai - Delhi&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;5&lt;/th&gt;
+            &lt;td&gt;5:30 PM&lt;/td&gt;
+            &lt;td&gt;7:00 PM&lt;/td&gt;
+            &lt;td&gt;Chennai - Bangalore&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;6&lt;/th&gt;
+            &lt;td&gt;8:00 PM&lt;/td&gt;
+            &lt;td&gt;11:00 PM&lt;/td&gt;
+            &lt;td&gt;Delhi - Bangalore&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;7&lt;/th&gt;
+            &lt;td&gt;9:45 PM&lt;/td&gt;
+            &lt;td&gt;12:30 AM&lt;/td&gt;
+            &lt;td&gt;Delhi - Mumbai&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;8&lt;/th&gt;
+            &lt;td&gt;10:30 PM&lt;/td&gt;
+            &lt;td&gt;1:00 AM&lt;/td&gt;
+            &lt;td&gt;Bangalore - Mumbai&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;9&lt;/th&gt;
+            &lt;td&gt;6:30 AM&lt;/td&gt;
+            &lt;td&gt;8:30 PM&lt;/td&gt;
+            &lt;td&gt;Chennai - Delhi&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/main&gt;
+
+    &lt;footer
+      class=&quot;d-flex justify-content-between pt-3 bg-secondary align-content-between&quot;
+    &gt;
+      &lt;p class=&quot;fw-bold ps-2&quot;&gt;© 2023 AlmaBetter. All rights reserved&lt;/p&gt;
+      &lt;div class=&quot;d-flex&quot;&gt;
+        &lt;p class=&quot;fw-bold&quot;&gt;Follow Us:&lt;/p&gt;
+        &lt;a href=&quot;https://www.facebook.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/facebook.png&quot; alt=&quot;Facebook&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.twitter.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/twitter.png&quot; alt=&quot;Twitter&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.instagram.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/instagram.png&quot; alt=&quot;Instagram&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script
+      src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;
+      integrity=&quot;sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz&quot;
+      crossorigin=&quot;anonymous&quot;
+    &gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="f16980ae-c733-4a5a-a0cf-ac0843d7a197" class=""><strong>Output:</strong></p><figure id="f5c7648c-d603-452a-9f1b-0493f6a34833" class="image"><img style="width:1782px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-06_at_2.46.03_PM.png"/></a></figure></details></li></ul><h2 id="6b1f7152-fa41-40ec-8679-c7c53939c489" class=""><mark class="highlight-red">Border</mark></h2><p id="612cfc5f-47f9-478f-bebc-13f4f33da72b" class="">In Bootstrap, you can apply borders to various elements, including tables, divs, buttons, and more, using the available border classes. Here are some commonly used border classes in Bootstrap:</p><ol type="1" id="ed57cfe1-65a7-446a-b429-f86cbd6a2cea" class="numbered-list" start="1"><li><strong><code>.border</code></strong><strong>:</strong> This class can be added to any element to apply a generic border with the default border color.</li></ol><ol type="1" id="ca00baad-d2a2-4972-9ac9-e28d5a2932e6" class="numbered-list" start="2"><li><strong>Border Colors: </strong>Bootstrap provides contextual border color classes that you can use to apply different border colors. These classes are named based on Bootstrap&#x27;s contextual color system, such as <code>.border-primary</code>, <code>.border-secondary</code>, <code>.border-success</code>, <code>.border-danger</code>, <code>.border-warning</code>, <code>.border-info</code>, <code>.border-light</code>, and <code>.border-dark</code>.<p id="3e89e526-ddd9-4be7-8320-7433ceea5dc5" class=""><strong>Example:</strong></p><pre id="c7a4ecf1-0886-46af-81aa-7ac1601e9e6e" class="code"><code>&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;h2&gt;Bootstrap Border Color&lt;/h2&gt;
+    &lt;div class=&quot;border border-primary p-3 mb-3&quot;&gt;Primary Border Color&lt;/div&gt;
+    &lt;div class=&quot;border border-success p-3 mb-3&quot;&gt;Success Border Color&lt;/div&gt;
+    &lt;div class=&quot;border border-danger p-3 mb-3&quot;&gt;Danger Border Color&lt;/div&gt;
+    &lt;div class=&quot;border border-info p-3 mb-3&quot;&gt;Info Border Color&lt;/div&gt;
+    &lt;div class=&quot;border border-dark p-3 mb-3&quot;&gt;Dark Border Color&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;</code></pre><p id="823bb720-1329-414a-b722-28f9dc5ba050" class=""><strong>Output:</strong></p><figure id="a35d7c66-f145-4f10-8065-797895a8d249" class="image"><img style="width:1544px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-06_at_3.07.14_PM.png"/></a></figure><p id="67465909-f2ab-42a7-9840-acc471f2e5b5" class="">
+</p></li></ol><ol type="1" id="3b637747-c298-498d-bb1e-b9e0e564c8e6" class="numbered-list" start="3"><li><strong>Border Styles:</strong> Bootstrap offers border-style classes that allow you to change the appearance of the border. You can use classes like <code>.border-0</code> to remove the border, <code>.border-solid</code> for a solid line border.<p id="657ad61c-883b-4fa1-a7ef-16ba372aa70a" class="">Here are the available <code>border-{size}</code> classes in Bootstrap:</p><ul id="f1fa1ce4-fd78-4c64-a3d4-ec67903ae58e" class="bulleted-list"><li style="list-style-type:disc"><code>border-0</code>: Removes the border from the element.</li></ul><ul id="4cb43f85-51b7-4d79-97df-65492b5c362a" class="bulleted-list"><li style="list-style-type:disc"><code>border-1</code>: Adds a 1-pixel border to the element.</li></ul><ul id="d4a2f211-707f-4f58-b218-c5673215de7e" class="bulleted-list"><li style="list-style-type:disc"><code>border-2</code>: Adds a 2-pixel border to the element.</li></ul><ul id="6a1b7285-7237-4acc-9837-fcd214628770" class="bulleted-list"><li style="list-style-type:disc"><code>border-3</code>: Adds a 3-pixel border to the element.</li></ul><ul id="8562ea5c-2089-482d-ae7d-7e004a9e985b" class="bulleted-list"><li style="list-style-type:disc"><code>border-4</code>: Adds a 4-pixel border to the element.</li></ul><ul id="39bf5ccc-f75d-433c-81ab-071c6b89aaf6" class="bulleted-list"><li style="list-style-type:disc"><code>border-5</code>: Adds a 5-pixel border to the element.</li></ul><p id="bd1ef83e-c88a-48eb-8ce1-032c22f39dc3" class=""><strong>Example</strong></p><pre id="edfe0a3c-7759-4d8f-84ee-4bcf07e01333" class="code"><code>&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;h2&gt;Bootstrap Border Styles&lt;/h2&gt;
+    &lt;div class=&quot;border border-0 p-3 mb-3&quot;&gt;No Border&lt;/div&gt;
+    &lt;div class=&quot;border border-2 p-3 mb-3&quot;&gt;This element has a 2-pixel border.&lt;/div&gt;
+    &lt;div class=&quot;border border-4 p-3 mb-3&quot;&gt;This element has a 4-pixel border.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;</code></pre><p id="73fe44f8-ae51-4d24-89fc-059f7ab7a463" class=""><strong>Output:</strong></p><figure id="45ad870d-cf90-4371-b880-f629412e174a" class="image"><img style="width:1008px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Untitled.png"/></a></figure></li></ol><ol type="1" id="becc318b-3f70-4170-bbc9-64e451cdcd3e" class="numbered-list" start="4"><li><strong>Border Radius:</strong> Bootstrap also provides classes to add border-radius to elements. You can use classes like <code>.rounded</code> to add a small border radius, <code>.rounded-circle</code> for a circular shape, or <code>.rounded-pill</code> for a pill-shaped element.<p id="cadc221f-eede-45b5-a733-768348d48593" class=""><strong>Example</strong></p><pre id="a1b15f16-0a21-4601-93e3-c1ff4327b3e4" class="code"><code>&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;h2&gt;Bootstrap Border Radius&lt;/h2&gt;
+    &lt;div class=&quot;border rounded p-3 mb-3&quot;&gt;Rounded Border&lt;/div&gt;
+    &lt;div class=&quot;border rounded-circle p-3 mb-3&quot;&gt;Circular Border&lt;/div&gt;
+    &lt;div class=&quot;border rounded-pill p-3 mb-3&quot;&gt;Pill-shaped Border&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;</code></pre><p id="e8cbada8-a24b-47f5-8b1b-c6dbb851bd6a" class=""><strong>Output:</strong></p><figure id="4312df61-c97a-4b3d-affb-dadef3de4ff1" class="image"><img style="width:1490px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-06_at_3.08.58_PM.png"/></a></figure></li></ol><ul id="7eebaddf-b5ac-4211-ba87-5b6e7a30676f" class="toggle"><li><details close =""><summary><strong>Practical Implementation Step 3:</strong></summary><p id="b299565e-e20d-47ae-a363-34ae41482c29" class="">We&#x27;ve implemented a <strong>Border</strong> class to the Reserve Bus Schedule Table.</p><pre id="f096a702-ce1b-4b71-b0a6-139b304a5e79" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Reserve Bootstrap&lt;/title&gt;
+    &lt;link
+      href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot;
+      rel=&quot;stylesheet&quot;
+      integrity=&quot;sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM&quot;
+      crossorigin=&quot;anonymous&quot;
+    /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;nav class=&quot;navbar bg-body-secondary shadow&quot;&gt;
+        &lt;div class=&quot;container-fluid&quot;&gt;
+          &lt;div class=&quot;navbar-nav d-flex flex-row align-items-center&quot;&gt;
+            &lt;a class=&quot;navbar-brand fs-4 fw-medium&quot; href=&quot;./index.html&quot;&gt;
+              &lt;img src=&quot;../assets/bus.png&quot; alt=&quot;Bus&quot; height=&quot;50&quot; /&gt;
+              Reserve
+            &lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2 disabled&quot;&gt;Tickets&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2 active&quot; href=&quot;./route.html&quot;&gt;Bus Routes&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2&quot; href=&quot;./contactus.html&quot;&gt;Contact Us&lt;/a&gt;
+          &lt;/div&gt;
+
+          &lt;div
+            class=&quot;navbar-nav d-flex flex-row justify-content-end align-items-center&quot;
+          &gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-warning fw-bold&quot;&gt;Login&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn fw-bold&quot;&gt;Register&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main class=&quot;py-5 col-6 offset-md-3 justify-content-center&quot;&gt;
+      &lt;h1 class=&quot;text-center text-danger pb-5&quot;&gt;Bus Routes&lt;/h1&gt;
+      &lt;table class=&quot;table table-hover border border-2&quot;&gt;
+        &lt;thead class=&quot;table-light&quot;&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;First Bus&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Last Bus&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Route&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody class=&quot;table-group-divider&quot;&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+            &lt;td&gt;7:00 AM&lt;/td&gt;
+            &lt;td&gt;10:00 PM&lt;/td&gt;
+            &lt;td&gt;Mumbai - Chennai&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+            &lt;td&gt;9:30 AM&lt;/td&gt;
+            &lt;td&gt;12:30 PM&lt;/td&gt;
+            &lt;td&gt;Mumbai - Delhi&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+            &lt;td&gt;11:15 AM&lt;/td&gt;
+            &lt;td&gt;11:45 PM&lt;/td&gt;
+            &lt;td&gt;Mumbai - Bangalore&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;4&lt;/th&gt;
+            &lt;td&gt;2:45 PM&lt;/td&gt;
+            &lt;td&gt;4:30 PM&lt;/td&gt;
+            &lt;td&gt;Chennai - Delhi&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;5&lt;/th&gt;
+            &lt;td&gt;5:30 PM&lt;/td&gt;
+            &lt;td&gt;7:00 PM&lt;/td&gt;
+            &lt;td&gt;Chennai - Bangalore&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;6&lt;/th&gt;
+            &lt;td&gt;8:00 PM&lt;/td&gt;
+            &lt;td&gt;11:00 PM&lt;/td&gt;
+            &lt;td&gt;Delhi - Bangalore&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;7&lt;/th&gt;
+            &lt;td&gt;9:45 PM&lt;/td&gt;
+            &lt;td&gt;12:30 AM&lt;/td&gt;
+            &lt;td&gt;Delhi - Mumbai&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;8&lt;/th&gt;
+            &lt;td&gt;10:30 PM&lt;/td&gt;
+            &lt;td&gt;1:00 AM&lt;/td&gt;
+            &lt;td&gt;Bangalore - Mumbai&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;9&lt;/th&gt;
+            &lt;td&gt;6:30 AM&lt;/td&gt;
+            &lt;td&gt;8:30 PM&lt;/td&gt;
+            &lt;td&gt;Chennai - Delhi&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/main&gt;
+
+    &lt;footer
+      class=&quot;d-flex justify-content-between pt-3 bg-secondary align-content-between&quot;
+    &gt;
+      &lt;p class=&quot;fw-bold ps-2&quot;&gt;© 2023 AlmaBetter. All rights reserved&lt;/p&gt;
+      &lt;div class=&quot;d-flex&quot;&gt;
+        &lt;p class=&quot;fw-bold&quot;&gt;Follow Us:&lt;/p&gt;
+        &lt;a href=&quot;https://www.facebook.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/facebook.png&quot; alt=&quot;Facebook&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.twitter.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/twitter.png&quot; alt=&quot;Twitter&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.instagram.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/instagram.png&quot; alt=&quot;Instagram&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script
+      src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;
+      integrity=&quot;sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz&quot;
+      crossorigin=&quot;anonymous&quot;
+    &gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="b0e5e7ad-8f04-429c-9ee0-82cf7c569f20" class=""><strong>Output:</strong></p><figure id="d788f494-353e-4560-af94-0c5421cf310a" class="image"><img style="width:1790px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-06_at_2.25.14_PM.png"/></a></figure></details></li></ul><h2 id="271f9aa3-da29-4fa5-9f44-a77e3b60c256" class=""><mark class="highlight-red">Shadow</mark></h2><p id="d2c0eefe-13d0-43ed-8d22-4af11376def3" class="">To add a shadow to an element in Bootstrap, you can use the built-in utility class called <code>shadow</code>. The <code>shadow</code> class can be added to any HTML element to give it a shadow effect. </p><p id="c6320b10-8d26-4656-a4bd-54f4c43b5d06" class=""><strong>Example:</strong><div class="indented"><pre id="9f216f44-53f5-434d-8ba6-f025965c4efd" class="code"><code>&lt;div class=&quot;shadow&quot;&gt;This element has a shadow.&lt;/div&gt;</code></pre><p id="965e55cc-efb7-4c65-aa15-e43f8812fffe" class=""><strong>Output:</strong></p><figure id="5d482479-5686-467a-a435-5d98b948f425" class="image"><img style="width:384px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-06_at_3.26.27_PM.png"/></a></figure></div></p><p id="b2ec4ca9-5970-49a8-879b-50d982ad0b83" class="">By default, the <code>shadow</code> class applies a subtle shadow effect to the element. If you want a more pronounced or specific shadow style, Bootstrap also provides additional shadow classes:</p><ul id="54415b2f-df36-4aeb-a651-78f622d58c8e" class="bulleted-list"><li style="list-style-type:disc"><code>shadow-sm</code>: Applies a smaller, subtler shadow.</li></ul><ul id="078a122c-f463-4855-bab8-887967620d90" class="bulleted-list"><li style="list-style-type:disc"><code>shadow-lg</code>: Applies a larger, more pronounced shadow.</li></ul><ul id="99c5d0f2-91d1-4860-a261-562f4d8a6397" class="bulleted-list"><li style="list-style-type:disc"><code>shadow-none</code>: Removes the shadow effect.</li></ul><p id="b6caae4b-d10c-4dde-8af3-b7c56c8a038e" class=""><strong>Example:</strong><div class="indented"><pre id="e2d92013-6195-4a4e-8fd9-c03651698ba9" class="code"><code>&lt;div class=&quot;shadow-lg&quot;&gt;This element has a large shadow.&lt;/div&gt;iv&gt;</code></pre><p id="f729f0e3-06c3-4699-af0f-41f25d546f4f" class=""><strong>Output</strong>:</p><figure id="cb94ed9f-2a11-4fd2-bea5-70c4ab7c1ad5" class="image"><img style="width:384px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-06_at_3.27.17_PM.png"/></a></figure></div></p><ul id="5209c6cd-32a0-423a-b0da-01e0987ffa31" class="toggle"><li><details close =""><summary><strong>Practical Implementation Step 4:</strong></summary><p id="959a34e0-af40-43d6-ab19-675a6ed45ea9" class="">Here, we&#x27;ll implement the <strong>shadow </strong>class of Bootstrap to the Main page of the Reserve App.</p><pre id="15c4f7da-ea92-4e5d-a814-18acc9e144b5" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Reserve Bootstrap&lt;/title&gt;
+    &lt;link
+      href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot;
+      rel=&quot;stylesheet&quot;
+      integrity=&quot;sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM&quot;
+      crossorigin=&quot;anonymous&quot;
+    /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;nav class=&quot;navbar bg-body-secondary shadow&quot;&gt;
+        &lt;div class=&quot;container-fluid&quot;&gt;
+          &lt;div class=&quot;navbar-nav d-flex flex-row align-items-center&quot;&gt;
+            &lt;a class=&quot;navbar-brand fs-4 fw-medium&quot; href=&quot;./index.html&quot;&gt;
+              &lt;img src=&quot;../assets/bus.png&quot; alt=&quot;Bus&quot; height=&quot;50&quot; /&gt;
+              Reserve
+            &lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2 disabled&quot;&gt;Tickets&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2&quot; href=&quot;./route.html&quot;&gt;Bus Routes&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2&quot; href=&quot;./contactus.html&quot;&gt;Contact Us&lt;/a&gt;
+          &lt;/div&gt;
+
+          &lt;div
+            class=&quot;navbar-nav d-flex flex-row justify-content-end align-items-center&quot;
+          &gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-warning fw-bold&quot;&gt;Login&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn fw-bold&quot;&gt;Register&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+      &lt;section class=&quot;bg-info-subtle p-5&quot;&gt;
+        &lt;div
+          class=&quot;navbar-nav d-flex justify-content-evenly flex-row align-items-center pt-5&quot;
+          style=&quot;padding-left: 25em; padding-right: 25em&quot;
+        &gt;
+          &lt;select class=&quot;form-select m-3&quot; aria-label=&quot;Default select example&quot;&gt;
+            &lt;option selected&gt;Select Boarding City&lt;/option&gt;
+            &lt;option value=&quot;Delhi&quot;&gt;Delhi&lt;/option&gt;
+            &lt;option value=&quot;Mumbai&quot;&gt;Mumbai&lt;/option&gt;
+            &lt;option value=&quot;Bengaluru&quot;&gt;Bengaluru&lt;/option&gt;
+            &lt;option value=&quot;Chennai&quot;&gt;Chennai&lt;/option&gt;
+          &lt;/select&gt;
+
+          &lt;select class=&quot;form-select m-3&quot; aria-label=&quot;Default select example&quot;&gt;
+            &lt;option selected&gt;Select Arrival City&lt;/option&gt;
+            &lt;option value=&quot;Delhi&quot;&gt;Delhi&lt;/option&gt;
+            &lt;option value=&quot;Mumbai&quot;&gt;Mumbai&lt;/option&gt;
+            &lt;option value=&quot;Bengaluru&quot;&gt;Bengaluru&lt;/option&gt;
+            &lt;option value=&quot;Chennai&quot;&gt;Chennai&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex justify-content-evenly flex-row p-5&quot;&gt;
+          &lt;button type=&quot;submit&quot; class=&quot;btn btn-outline-danger&quot;&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+      &lt;section class=&quot;bg-light p-5&quot;&gt;
+        &lt;h1 class=&quot;text-center&quot;&gt;Travel with world&#x27;s largest bus services&lt;/h1&gt;
+        &lt;div class=&quot;d-flex justify-content-evenly p-5 text-center&quot;&gt;
+          &lt;div class=&quot;bg-white shadow rounded-2 col-2&quot;&gt;
+            &lt;div class=&quot;shadow-sm p-3&quot;&gt;
+              &lt;img
+                src=&quot;../assets/bus-vector.png&quot;
+                alt=&quot;Bus&quot;
+                width=&quot;128px&quot;
+                class=&quot;mb-2&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pt-4&quot;&gt;
+              &lt;h3&gt;2000+&lt;/h3&gt;
+              &lt;p&gt;Bus Collection&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;bg-white shadow rounded-2 col-3&quot;&gt;
+            &lt;div class=&quot;shadow-sm p-3&quot;&gt;
+              &lt;img
+                src=&quot;../assets/family.png&quot;
+                alt=&quot;Family&quot;
+                width=&quot;128px&quot;
+                class=&quot;mb-2&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pt-4&quot;&gt;
+              &lt;h3&gt;2 Million+&lt;/h3&gt;
+              &lt;p&gt;Happy customers globally&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;bg-white shadow rounded-2 col-2&quot;&gt;
+            &lt;div class=&quot;shadow-sm p-3&quot;&gt;
+              &lt;img
+                src=&quot;../assets/ticket.png&quot;
+                alt=&quot;Ticket&quot;
+                width=&quot;128px&quot;
+                class=&quot;mb-2&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pt-4&quot;&gt;
+              &lt;h3&gt;5000+&lt;/h3&gt;
+              &lt;p&gt;Tickets book everyday&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;bg-dark-subtle p-5&quot;&gt;
+        &lt;h1 class=&quot;text-center&quot;&gt;
+          Here&#x27;s what a few of our customers have to say
+        &lt;/h1&gt;
+        &lt;div class=&quot;d-flex justify-content-evenly p-5 text-center&quot;&gt;
+          &lt;div class=&quot;bg-white shadow rounded-2 col-3 d-flex flex-column&quot;&gt;
+            &lt;div class=&quot;d-flex flex-row justify-content-between mt-2&quot;&gt;
+              &lt;div class=&quot;col-2 bg-warning p-3 rounded-circle fw-bold ms-2&quot;&gt;
+                VA
+              &lt;/div&gt;
+              &lt;div class=&quot;col-6 d-flex flex-column text-start ps-2&quot;&gt;
+                &lt;div class=&quot;fw-bold&quot;&gt;Vatsal Agarwal&lt;/div&gt;
+                &lt;div&gt;Customer since 2020&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-3 pt-3 fw-bold text-danger&quot;&gt;★ 4.9&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;p-3 text-start&quot;&gt;
+              Amazing travel experience with reserve. Excellent staff
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;bg-white shadow rounded-2 col-3 d-flex flex-column&quot;&gt;
+            &lt;div class=&quot;d-flex flex-row justify-content-between mt-2&quot;&gt;
+              &lt;div class=&quot;col-2 bg-warning p-3 rounded-circle fw-bold ms-2&quot;&gt;
+                RS
+              &lt;/div&gt;
+              &lt;div class=&quot;col-6 d-flex flex-column text-start ps-2&quot;&gt;
+                &lt;div class=&quot;fw-bold&quot;&gt;Rohan Sharma&lt;/div&gt;
+                &lt;div&gt;Customer since 2022&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-3 pt-3 fw-bold text-danger&quot;&gt;★ 4.3&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;p-3 text-start&quot;&gt;
+              Amazing service. Always a best time with reserve.
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;bg-white shadow rounded-2 col-3 d-flex flex-column&quot;&gt;
+            &lt;div class=&quot;d-flex flex-row justify-content-between mt-2&quot;&gt;
+              &lt;div class=&quot;col-2 bg-warning p-3 rounded-circle fw-bold ms-2&quot;&gt;
+                VK
+              &lt;/div&gt;
+              &lt;div class=&quot;col-6 d-flex flex-column text-start ps-2&quot;&gt;
+                &lt;div class=&quot;fw-bold&quot;&gt;Virat Kohli&lt;/div&gt;
+                &lt;div&gt;Customer since 2019&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-3 pt-3 fw-bold text-danger&quot;&gt;★ 4.5&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;p-3 text-start&quot;&gt;
+              Bus was clean and the journey was smooth. Reached on time.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer
+      class=&quot;d-flex justify-content-between pt-3 bg-secondary align-content-between&quot;
+    &gt;
+      &lt;p class=&quot;fw-bold ps-2&quot;&gt;© 2023 AlmaBetter. All rights reserved&lt;/p&gt;
+      &lt;div class=&quot;d-flex&quot;&gt;
+        &lt;p class=&quot;fw-bold&quot;&gt;Follow Us:&lt;/p&gt;
+        &lt;a href=&quot;https://www.facebook.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/facebook.png&quot; alt=&quot;Facebook&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.twitter.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/twitter.png&quot; alt=&quot;Twitter&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.instagram.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/instagram.png&quot; alt=&quot;Instagram&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script
+      src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;
+      integrity=&quot;sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz&quot;
+      crossorigin=&quot;anonymous&quot;
+    &gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="7297ed55-123c-4759-a2ad-f5405f6c9aaa" class=""><strong>Output:</strong></p><figure id="868ec7a8-c64d-439f-8057-e01872617fcd" class="image"><img style="width:2420px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-06_at_3.13.45_PM.png"/></a></figure></details></li></ul><h2 id="5b67bed8-b8e4-47de-9ca4-a6de7d93dbf4" class=""><mark class="highlight-red">Responsive Design with Bootstrap</mark></h2><p id="cc84d18d-d393-4fc3-bd03-e26c07b57022" class="">Bootstrap follows a mobile-first approach, which means that the default styles and grid system are designed for mobile devices. It provides a responsive grid system that allows you to create a layout that adapts to different screen sizes.</p><ol type="1" id="58ac1525-4077-45ff-be96-60962c303e04" class="numbered-list" start="1"><li><strong>Responsive Grid System:</strong> Bootstrap&#x27;s grid system is based on a 12-column layout, divided into rows and columns. You can use predefined classes like <code>col-sm</code>, <code>col-md</code>, <code>col-lg</code>, and <code>col-xl</code> to specify how columns should behave on different screen sizes. This allows you to create responsive layouts by adjusting the column widths based on the screen size. The <code>col-*</code> classes are used to define the width of an element, while the <code>offset-*</code> classes determine the amount of space before an element.<p id="38ce0164-7609-4d01-87bd-5824a8b853f9" class="">Here&#x27;s how <code>col-*</code> and <code>offset-*</code> classes work in Bootstrap:</p><ul id="9fecd71d-73e8-48f1-bd63-e0fca3e6f7d6" class="bulleted-list"><li style="list-style-type:disc"><strong><code>col-*</code></strong><strong> Classes:</strong><ul id="34731cf6-0d8e-4b53-a2af-4e2c351ef97c" class="bulleted-list"><li style="list-style-type:circle">The <code>col-*</code> classes specify the number of columns an element should occupy. The asterisk <code>*</code> in the class represents the number of columns.<p id="cf88fcad-b319-4421-b4d2-c41a057be19b" class="">For example, <code>col-6</code> would make an element span 6 columns, taking up half of the available width in the container. Similarly, <code>col-4</code> would occupy one-third of the width (4 out of 12 columns), and <code>col-12</code> would make the element take up the entire width.</p></li></ul><ul id="7fea10a5-0da3-45cc-89f6-3062ef3e96c0" class="bulleted-list"><li style="list-style-type:circle">You can use these classes in combination to create more complex layouts. For instance, you could have two elements side by side using <code>col-6</code> for each, or three elements with <code>col-4</code> for each, and so on.</li></ul></li></ul><ul id="868947ed-92eb-4f02-a5df-da08b64d05a8" class="bulleted-list"><li style="list-style-type:disc"><strong><code>offset-*</code></strong><strong> Classes:</strong><ul id="89f0d5f2-f879-45da-afd9-42dfa406d766" class="bulleted-list"><li style="list-style-type:circle">The <code>offset-*</code> classes create empty space (offset) before an element. They determine the number of columns the element should be pushed to the right.<p id="cc5358bc-37d5-44ba-a30b-ed572eaeeada" class="">For example, <code>offset-2</code> would add 2 columns worth of empty space before an element, pushing it to the right.</p></li></ul><ul id="feff56f6-8297-4ce0-81a4-cac3f4d74210" class="bulleted-list"><li style="list-style-type:circle">Like <code>col-*</code> classes, you can use <code>offset-*</code> classes in combination to achieve more complex layouts. For example, you could use <code>offset-2</code> and <code>col-8</code> together to create a layout where an element is centered with 2 columns of empty space on each side.</li></ul></li></ul></li></ol><ol type="1" id="f8db041d-ee05-43c8-b92f-5aae2942a15e" class="numbered-list" start="2"><li><strong>Responsive Utilities:</strong> Bootstrap provides a variety of utility classes that help in creating responsive designs. These classes include <code>d-none</code> and <code>d-{sm/md/lg/xl}-none</code> for hiding elements on specific screen sizes, <code>d-{sm/md/lg/xl}-block</code> for displaying elements on specific screen sizes, and <code>text-{sm/md/lg/xl}-center</code> for aligning text horizontally.</li></ol><ol type="1" id="709c5840-e8db-451f-aff0-d772fcb2b254" class="numbered-list" start="3"><li><strong>Responsive Navigation:</strong> Bootstrap offers a responsive navigation component called the Navbar. The Navbar automatically collapses into a mobile-friendly menu when viewed on smaller screens. You can customize the appearance and behavior of the Navbar using various classes and options provided by Bootstrap.</li></ol><ol type="1" id="d804892a-89d6-4c70-bd4e-2881536955d3" class="numbered-list" start="4"><li><strong>Responsive Images:</strong> Bootstrap provides classes like <code>img-fluid</code> to create responsive images. The <code>img-fluid</code> class ensures that the image scales properly based on the container size, preventing it from overflowing or becoming too small.</li></ol><ol type="1" id="5d0e9de8-32b4-4626-838f-889d33b8adc0" class="numbered-list" start="5"><li><strong>Responsive Typography: </strong>Bootstrap includes typography classes that automatically adjust the font size and line height based on the screen size. Classes like <code>text-{sm/md/lg/xl}-*</code> can be used to control the typography at different breakpoints.</li></ol><ol type="1" id="e586eb63-7b18-49a4-94e6-58c8c7543c32" class="numbered-list" start="6"><li><strong>Media Queries:</strong> Bootstrap utilizes CSS media queries behind the scenes to handle responsiveness. These media queries target specific screen sizes and apply different styles accordingly. You can also customize these media queries or create your own to achieve more specific responsive behavior.</li></ol><ul id="bcc995d6-ba1b-445c-bd54-bd41df25b62a" class="toggle"><li><details close =""><summary><strong>Practical Implementation Step 5:</strong></summary><p id="1cd7e333-fb3c-450a-9398-f77b091a5c9a" class="">The provided code snippet demonstrates the implementation of responsiveness on the <strong>form</strong> element.</p><pre id="79157825-c7b3-4a46-8972-e38cfa1f28dd" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Reserve Bootstrap&lt;/title&gt;
+    &lt;link
+      href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot;
+      rel=&quot;stylesheet&quot;
+      integrity=&quot;sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM&quot;
+      crossorigin=&quot;anonymous&quot;
+    /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;nav class=&quot;navbar bg-body-secondary shadow&quot;&gt;
+        &lt;div class=&quot;container-fluid&quot;&gt;
+          &lt;div class=&quot;navbar-nav d-flex flex-row align-items-center&quot;&gt;
+            &lt;a class=&quot;navbar-brand fs-4 fw-medium&quot; href=&quot;./index.html&quot;&gt;
+              &lt;img src=&quot;../assets/bus.png&quot; alt=&quot;Bus&quot; height=&quot;50&quot; /&gt;
+              Reserve
+            &lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2 disabled&quot;&gt;Tickets&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2&quot; href=&quot;./route.html&quot;&gt;Bus Routes&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2 active&quot; href=&quot;./contactus.html&quot;
+              &gt;Contact Us&lt;/a
+            &gt;
+          &lt;/div&gt;
+
+          &lt;div
+            class=&quot;navbar-nav d-flex flex-row justify-content-end align-items-center&quot;
+          &gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-warning fw-bold&quot;&gt;Login&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn fw-bold&quot;&gt;Register&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main class=&quot;p-5&quot;&gt;
+      &lt;h1 class=&quot;text-center text-warning pb-5&quot;&gt;Contact Us&lt;/h1&gt;
+      
+	&lt;!--     Here&#x27;s the form element where responsiveness has been applied.     --&gt;	
+			&lt;form class=&quot;col-xxl-4 offset-xxl-4 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-8 offset-md-2&quot;&gt;
+        &lt;div class=&quot;form-group py-1&quot;&gt;
+          &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+          &lt;input
+            type=&quot;text&quot;
+            class=&quot;form-control&quot;
+            id=&quot;name&quot;
+            name=&quot;name&quot;
+            required
+          /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group py-1&quot;&gt;
+          &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+          &lt;input
+            type=&quot;email&quot;
+            class=&quot;form-control&quot;
+            id=&quot;email&quot;
+            name=&quot;email&quot;
+            required
+          /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group py-1&quot;&gt;
+          &lt;label for=&quot;mobile&quot;&gt;Mobile Number:&lt;/label&gt;
+          &lt;input
+            type=&quot;tel&quot;
+            class=&quot;form-control&quot;
+            id=&quot;mobile&quot;
+            name=&quot;mobile&quot;
+            pattern=&quot;[0-9]{10}&quot;
+            required
+          /&gt;
+          &lt;small class=&quot;form-text text-muted&quot;
+            &gt;Please enter a 10-digit mobile number.&lt;/small
+          &gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group py-1&quot;&gt;
+          &lt;label&gt;Gender:&lt;/label&gt;
+          &lt;div class=&quot;form-check form-check-inline&quot;&gt;
+            &lt;input
+              type=&quot;radio&quot;
+              class=&quot;form-check-input&quot;
+              id=&quot;genderMale&quot;
+              name=&quot;gender&quot;
+              value=&quot;male&quot;
+              required
+            /&gt;
+            &lt;label class=&quot;form-check-label&quot; for=&quot;genderMale&quot;&gt;Male&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;form-check form-check-inline&quot;&gt;
+            &lt;input
+              type=&quot;radio&quot;
+              class=&quot;form-check-input&quot;
+              id=&quot;genderFemale&quot;
+              name=&quot;gender&quot;
+              value=&quot;female&quot;
+              required
+            /&gt;
+            &lt;label class=&quot;form-check-label&quot; for=&quot;genderFemale&quot;&gt;Female&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;form-check form-check-inline&quot;&gt;
+            &lt;input
+              type=&quot;radio&quot;
+              class=&quot;form-check-input&quot;
+              id=&quot;nts&quot;
+              name=&quot;gender&quot;
+              value=&quot;nts&quot;
+              required
+            /&gt;
+            &lt;label class=&quot;form-check-label&quot; for=&quot;nts&quot;&gt;Prefer not to say&lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group py-1&quot;&gt;
+          &lt;label for=&quot;message&quot;&gt;Message:&lt;/label&gt;
+          &lt;textarea
+            class=&quot;form-control&quot;
+            id=&quot;message&quot;
+            name=&quot;message&quot;
+            rows=&quot;3&quot;
+          &gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group py-1&quot;&gt;
+          &lt;label for=&quot;image&quot;&gt;Upload Image:&lt;/label&gt;
+          &lt;input
+            type=&quot;file&quot;
+            class=&quot;form-control-file&quot;
+            id=&quot;image&quot;
+            name=&quot;image&quot;
+          /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-check py-1&quot;&gt;
+          &lt;input
+            type=&quot;checkbox&quot;
+            class=&quot;form-check-input&quot;
+            id=&quot;newsletter&quot;
+            name=&quot;newsletter&quot;
+          /&gt;
+          &lt;label class=&quot;form-check-label&quot; for=&quot;newsletter&quot;
+            &gt;Subscribe to Newsletter&lt;/label
+          &gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex justify-content-center my-3&quot;&gt;
+          &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary col-12&quot;&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/main&gt;
+
+    &lt;footer
+      class=&quot;d-flex justify-content-between pt-3 bg-secondary align-content-between&quot;
+    &gt;
+      &lt;p class=&quot;fw-bold ps-2&quot;&gt;© 2023 AlmaBetter. All rights reserved&lt;/p&gt;
+      &lt;div class=&quot;d-flex&quot;&gt;
+        &lt;p class=&quot;fw-bold&quot;&gt;Follow Us:&lt;/p&gt;
+        &lt;a href=&quot;https://www.facebook.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/facebook.png&quot; alt=&quot;Facebook&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.twitter.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/twitter.png&quot; alt=&quot;Twitter&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.instagram.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/instagram.png&quot; alt=&quot;Instagram&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script
+      src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;
+      integrity=&quot;sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz&quot;
+      crossorigin=&quot;anonymous&quot;
+    &gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="b848a57c-63df-4606-a63f-e8af5731927c" class=""><strong>Explanation</strong>: </p><ul id="28eb45b4-125a-4017-935f-f9a67d1efbbc" class="bulleted-list"><li style="list-style-type:disc"><code>col-xxl-4</code>: This class specifies that the form should occupy 4 columns on extra-extra-large (xxl) screens. The xxl breakpoint is typically used for very large screens, such as desktops with high resolutions.</li></ul><ul id="94835554-cea4-411e-854a-6ebd9030c0e3" class="bulleted-list"><li style="list-style-type:disc"><code>offset-xxl-4</code>: The <code>offset-xxl-4</code> class adds a margin to the left of the form, pushing it 4 columns to the right. This creates empty space before the form.</li></ul><ul id="7885da25-1038-447d-a06b-a11aa0528596" class="bulleted-list"><li style="list-style-type:disc"><code>col-xl-6</code>: This class indicates that the form should span 6 columns on extra-large (xl) screens. The xl breakpoint is often used for large desktop screens.</li></ul><ul id="c7b5b18f-3863-4ddf-aec1-62beae342fe9" class="bulleted-list"><li style="list-style-type:disc"><code>offset-xl-3</code>: Similar to the previous offset class, <code>offset-xl-3</code> adds a margin to the left of the form, pushing it 3 columns to the right on extra-large screens.</li></ul><ul id="c9089c0c-5882-4a00-b5b1-0bfdc77903a6" class="bulleted-list"><li style="list-style-type:disc"><code>col-lg-8</code>: This class specifies that the form should occupy 8 columns on large (lg) screens. The lg breakpoint is typically used for medium-sized desktop screens.</li></ul><ul id="fae70e04-1c11-4674-9e04-3afb07f6ced2" class="bulleted-list"><li style="list-style-type:disc"><code>offset-lg-2</code>: Once again, <code>offset-lg-2</code> adds a margin to the left, pushing the form 2 columns to the right on large screens.</li></ul><ul id="9fee87cb-b8f5-4517-9f5d-90c562d350b7" class="bulleted-list"><li style="list-style-type:disc"><code>col-md-8</code>: This class indicates that the form should span 8 columns on medium (md) screens. The md breakpoint is often used for tablets or smaller desktop screens.</li></ul><ul id="ea06715e-e81f-4de8-955e-c0dbe30ec324" class="bulleted-list"><li style="list-style-type:disc"><code>offset-md-2</code>: The <code>offset-md-2</code> class adds a margin to the left, pushing the form 2 columns to the right on medium screens.</li></ul><div id="a4a8918b-bb1b-4e41-bd9d-530b38a7ac30" class="column-list"><div id="0e5a4574-4381-44bf-be85-a87bd7b92400" style="width:70.83333333333333%" class="column"><figure id="abb254be-2836-4c50-8312-92cdd451d8b8" class="image"><img style="width:824px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-10_at_12.45.23_PM.png"/></a><figcaption>                    Mobile - 375px</figcaption></figure></div><div id="9ad9fce7-3de4-4234-bff7-aa93c30bc329" style="width:108.33333333333334%" class="column"><figure id="e156acd9-0547-4e57-9625-78f400d17aff" class="image"><img style="width:1612px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-10_at_12.45.36_PM.png"/></a><figcaption>                                       Tablet - 768px</figcaption></figure><p id="4bd20e24-9dbf-4f8d-9875-28b8b47a52cf" class="">
+</p></div><div id="6b946111-5681-4446-a9a6-b91644ab182d" style="width:91.66666666666669%" class="column"><figure id="629e5a47-1f53-4925-85cd-87c14968bcb4" class="image"><img style="width:2116px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-10_at_12.45.55_PM.png"/></a><figcaption>                                      Laptop - 1024px</figcaption></figure><p id="a59dcdb2-0a4c-4e9a-8098-b3e5b6814e0b" class="">
+</p></div></div></details></li></ul><h2 id="cd7f1c14-b6a6-47bc-99e5-d42d1289db3c" class=""><mark class="highlight-red">Accordion</mark></h2><p id="74a66187-bf80-4dd4-b791-34f8c3b8b6ae" class="">An accordion is a component that allows you to create collapsible and expandable content sections. It is commonly used to organize and present information in a compact and interactive manner. The Bootstrap accordion is based on the use of the <code>collapse</code> and <code>card</code> components.</p><p id="b1f4cc7b-f70c-44b3-9c37-b30e5289bde1" class="">To create an accordion in Bootstrap, you typically need to follow these steps:</p><ol type="1" id="12b998ca-55a8-4416-83df-397ceeeeb99b" class="numbered-list" start="1"><li><strong>Structure your HTML:</strong><ul id="3f5b0739-1de9-4b96-b27d-1b2d41f297da" class="bulleted-list"><li style="list-style-type:disc">Wrap the accordion inside a container element, such as a <code>&lt;div&gt;</code>.</li></ul><ul id="fdf69de1-8570-4ae8-a8df-6dd7e2741f8c" class="bulleted-list"><li style="list-style-type:disc">Create a series of collapsible content sections using the <code>&lt;div&gt;</code> element and give each section a unique ID.</li></ul></li></ol><ol type="1" id="0c483d52-723b-4b3d-81c1-b9369e80b1f3" class="numbered-list" start="2"><li><strong>Apply the Bootstrap classes:</strong><ul id="290bab23-3654-45ba-96a6-fbb08f67de1b" class="bulleted-list"><li style="list-style-type:disc">Add the <code>accordion</code> class to the container element.</li></ul><ul id="129b1c8f-bfc8-47a3-8b73-a6f90e59799f" class="bulleted-list"><li style="list-style-type:disc">For each content section, create a <code>&lt;div&gt;</code> with the <code>card</code> class.</li></ul><ul id="b99dd14c-1ec0-41d6-af8b-af1c0bdf7647" class="bulleted-list"><li style="list-style-type:disc">Inside each <code>card</code>, include a <code>card-header</code> and a <code>card-body</code> element.</li></ul></li></ol><ol type="1" id="7aed8c49-fc04-4f17-bc58-9c2d2d1c3e76" class="numbered-list" start="3"><li><strong>Add the necessary attributes and data-* attributes:</strong><ul id="1c6a6382-a6d2-4cfa-bb11-10c65b2bcb39" class="bulleted-list"><li style="list-style-type:disc">Assign the <code>id</code> attribute to each <code>card</code> element with a unique ID.</li></ul><ul id="c370a214-f0cc-483b-9df3-f1221762ce95" class="bulleted-list"><li style="list-style-type:disc">Add the <code>data-bs-toggle=&quot;collapse&quot;</code> attribute to the <code>card-header</code> element.</li></ul><ul id="0b4a982a-9bad-4905-b9c4-53cc56dd224e" class="bulleted-list"><li style="list-style-type:disc">Set the <code>href</code> attribute of the <code>card-header</code> to the ID of the corresponding <code>card-body</code> element.</li></ul><ul id="09fa6ee6-fd70-4ee3-ab13-1d8827fb6e65" class="bulleted-list"><li style="list-style-type:disc">Include the <code>data-bs-parent=&quot;#accordionId&quot;</code> attribute on the container element, where <code>accordionId</code> is the ID of the container.</li></ul></li></ol><p id="23e64f57-8eef-469a-ab2f-b9a167d106c3" class=""><strong>Example:</strong></p><pre id="4f868089-0bad-48f6-828d-c4043b336a93" class="code"><code>&lt;div class=&quot;accordion&quot; id=&quot;accordionExample&quot;&gt;
+  &lt;div class=&quot;accordion-item&quot;&gt;
+    &lt;h2 class=&quot;accordion-header&quot;&gt;
+      &lt;button class=&quot;accordion-button&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#collapseOne&quot; aria-expanded=&quot;true&quot; aria-controls=&quot;collapseOne&quot;&gt;
+        Accordion Item #1
+      &lt;/button&gt;
+    &lt;/h2&gt;
+    &lt;div id=&quot;collapseOne&quot; class=&quot;accordion-collapse collapse show&quot; data-bs-parent=&quot;#accordionExample&quot;&gt;
+      &lt;div class=&quot;accordion-body&quot;&gt;
+        &lt;strong&gt;This is the first item&#x27;s accordion body.&lt;/strong&gt; It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#x27;s also worth noting that just about any HTML can go within the &lt;code&gt;.accordion-body&lt;/code&gt;, though the transition does limit overflow.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;accordion-item&quot;&gt;
+    &lt;h2 class=&quot;accordion-header&quot;&gt;
+      &lt;button class=&quot;accordion-button collapsed&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#collapseTwo&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseTwo&quot;&gt;
+        Accordion Item #2
+      &lt;/button&gt;
+    &lt;/h2&gt;
+    &lt;div id=&quot;collapseTwo&quot; class=&quot;accordion-collapse collapse&quot; data-bs-parent=&quot;#accordionExample&quot;&gt;
+      &lt;div class=&quot;accordion-body&quot;&gt;
+        &lt;strong&gt;This is the second item&#x27;s accordion body.&lt;/strong&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#x27;s also worth noting that just about any HTML can go within the &lt;code&gt;.accordion-body&lt;/code&gt;, though the transition does limit overflow.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;accordion-item&quot;&gt;
+    &lt;h2 class=&quot;accordion-header&quot;&gt;
+      &lt;button class=&quot;accordion-button collapsed&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#collapseThree&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseThree&quot;&gt;
+        Accordion Item #3
+      &lt;/button&gt;
+    &lt;/h2&gt;
+    &lt;div id=&quot;collapseThree&quot; class=&quot;accordion-collapse collapse&quot; data-bs-parent=&quot;#accordionExample&quot;&gt;
+      &lt;div class=&quot;accordion-body&quot;&gt;
+        &lt;strong&gt;This is the third item&#x27;s accordion body.&lt;/strong&gt; It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It&#x27;s also worth noting that just about any HTML can go within the &lt;code&gt;.accordion-body&lt;/code&gt;, though the transition does limit overflow.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre><p id="40462247-88ec-4f19-8c4a-48c6a5002d96" class=""><strong>Output:</strong></p><figure id="d8136b83-9280-4f25-9a51-4e96e68e413d" class="image" style="text-align:center"><img style="width:624px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-06_at_9.32.11_PM.png"/></a></figure><ul id="838931cd-1413-4740-959d-3ac4bc123b80" class="toggle"><li><details close =""><summary><strong>Practical Implementation Step 6:</strong></summary><p id="77bd4c91-eb97-46dd-b620-49c2b24e2c2a" class="">Here, we&#x27;ll implement the <strong>Accordion</strong> to the <strong>FAQ</strong> section of the Contact Us page of the Reserve App.</p><pre id="366d1e0a-09ff-42de-b324-6a171648c7ba" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Reserve Bootstrap&lt;/title&gt;
+    &lt;link
+      href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot;
+      rel=&quot;stylesheet&quot;
+      integrity=&quot;sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM&quot;
+      crossorigin=&quot;anonymous&quot;
+    /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;nav class=&quot;navbar bg-body-secondary shadow&quot;&gt;
+        &lt;div class=&quot;container-fluid&quot;&gt;
+          &lt;div class=&quot;navbar-nav d-flex flex-row align-items-center&quot;&gt;
+            &lt;a class=&quot;navbar-brand fs-4 fw-medium&quot; href=&quot;./index.html&quot;&gt;
+              &lt;img src=&quot;../assets/bus.png&quot; alt=&quot;Bus&quot; height=&quot;50&quot; /&gt;
+              Reserve
+            &lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2 disabled&quot;&gt;Tickets&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2&quot; href=&quot;./route.html&quot;&gt;Bus Routes&lt;/a&gt;
+            &lt;a class=&quot;nav-link p-2 active&quot; href=&quot;./contactus.html&quot;
+              &gt;Contact Us&lt;/a
+            &gt;
+          &lt;/div&gt;
+
+          &lt;div
+            class=&quot;navbar-nav d-flex flex-row justify-content-end align-items-center&quot;
+          &gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-warning fw-bold&quot;&gt;Login&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn fw-bold&quot;&gt;Register&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main class=&quot;p-5&quot;&gt;
+      &lt;h1 class=&quot;text-center text-warning pb-5&quot;&gt;Contact Us&lt;/h1&gt;
+      &lt;form
+        class=&quot;col-xxl-4 offset-xxl-4 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-8 offset-md-2&quot;
+      &gt;
+        &lt;!-- Form elements goes here. --&gt;
+      &lt;/form&gt;
+
+				&lt;!-- Accordion Implementation --&gt;
+
+      &lt;h1 class=&quot;text-center text-secondary pt-5&quot;&gt;FAQs&lt;/h1&gt;
+      &lt;div
+        class=&quot;accordion col-xxl-6 offset-xxl-3 col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 col-md-10 offset-md-1&quot;
+        id=&quot;accordionExample&quot;
+      &gt;
+        &lt;div class=&quot;accordion-item&quot;&gt;
+          &lt;h2 class=&quot;accordion-header&quot;&gt;
+            &lt;button
+              class=&quot;accordion-button&quot;
+              type=&quot;button&quot;
+              data-bs-toggle=&quot;collapse&quot;
+              data-bs-target=&quot;#collapseOne&quot;
+              aria-expanded=&quot;true&quot;
+              aria-controls=&quot;collapseOne&quot;
+            &gt;
+              What payment methods are accepted for bus ticket bookings?
+            &lt;/button&gt;
+          &lt;/h2&gt;
+          &lt;div
+            id=&quot;collapseOne&quot;
+            class=&quot;accordion-collapse collapse show&quot;
+            data-bs-parent=&quot;#accordionExample&quot;
+          &gt;
+            &lt;div class=&quot;accordion-body&quot;&gt;
+              We accept various payment methods including credit cards, debit
+              cards, net banking, and digital wallets. You can choose the
+              payment option that is most convenient for you during the booking
+              process.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;accordion-item&quot;&gt;
+          &lt;h2 class=&quot;accordion-header&quot;&gt;
+            &lt;button
+              class=&quot;accordion-button collapsed&quot;
+              type=&quot;button&quot;
+              data-bs-toggle=&quot;collapse&quot;
+              data-bs-target=&quot;#collapseTwo&quot;
+              aria-expanded=&quot;false&quot;
+              aria-controls=&quot;collapseTwo&quot;
+            &gt;
+              Can I choose my seat on the bus?
+            &lt;/button&gt;
+          &lt;/h2&gt;
+          &lt;div
+            id=&quot;collapseTwo&quot;
+            class=&quot;accordion-collapse collapse&quot;
+            data-bs-parent=&quot;#accordionExample&quot;
+          &gt;
+            &lt;div class=&quot;accordion-body&quot;&gt;
+              Yes, you can select your preferred seat during the booking
+              process. Our website provides a seat selection feature that allows
+              you to view the available seats and choose the one that suits your
+              preference.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;accordion-item&quot;&gt;
+          &lt;h2 class=&quot;accordion-header&quot;&gt;
+            &lt;button
+              class=&quot;accordion-button collapsed&quot;
+              type=&quot;button&quot;
+              data-bs-toggle=&quot;collapse&quot;
+              data-bs-target=&quot;#collapseThree&quot;
+              aria-expanded=&quot;false&quot;
+              aria-controls=&quot;collapseThree&quot;
+            &gt;
+              What if I need to cancel my bus ticket?
+            &lt;/button&gt;
+          &lt;/h2&gt;
+          &lt;div
+            id=&quot;collapseThree&quot;
+            class=&quot;accordion-collapse collapse&quot;
+            data-bs-parent=&quot;#accordionExample&quot;
+          &gt;
+            &lt;div class=&quot;accordion-body&quot;&gt;
+              If you need to cancel your bus ticket, you can do so through our
+              website. Please refer to our cancellation policy for information
+              on applicable charges and refund eligibility. It&#x27;s recommended to
+              cancel your ticket as early as possible to avoid any cancellation
+              fees.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;footer
+      class=&quot;d-flex justify-content-between pt-3 bg-secondary align-content-between&quot;
+    &gt;
+      &lt;p class=&quot;fw-bold ps-2&quot;&gt;© 2023 AlmaBetter. All rights reserved&lt;/p&gt;
+      &lt;div class=&quot;d-flex&quot;&gt;
+        &lt;p class=&quot;fw-bold&quot;&gt;Follow Us:&lt;/p&gt;
+        &lt;a href=&quot;https://www.facebook.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/facebook.png&quot; alt=&quot;Facebook&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.twitter.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/twitter.png&quot; alt=&quot;Twitter&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+        &lt;a href=&quot;https://www.instagram.com&quot; class=&quot;px-2&quot;&gt;
+          &lt;img src=&quot;../assets/instagram.png&quot; alt=&quot;Instagram&quot; width=&quot;24px&quot;
+        /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script
+      src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;
+      integrity=&quot;sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz&quot;
+      crossorigin=&quot;anonymous&quot;
+    &gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="ecc2f172-4bf0-4e48-b159-d0d2a18ff1d9" class=""><strong>Output:</strong></p><figure id="7c9d8719-fb25-453e-b371-65f5176042ed" class="image"><img style="width:2488px" src="Bootstrap%20Advanced%2003894a7dc17349d2b91346631b2e7c73/Screenshot_2023-07-10_at_12.33.10_PM.png"/></a></figure></details></li></ul><p id="7ea60f6b-2fc9-4ad1-b0c2-3f336bed98c8" class="">
+</p><h1 id="278f382a-1a2a-4aed-a459-df496235d9e9" class=""><mark class="highlight-brown">Summary</mark></h1><h2 id="c50ffc56-0ad1-413e-8586-013d7a41afb6" class=""><mark class="highlight-red">What did we learn?</mark></h2><ul id="80aab251-a090-4b16-b5d4-5c03dee530f9" class="bulleted-list"><li style="list-style-type:disc">Bootstrap forms provide essential components for user data input and submission, including styling options like <code>.form-control</code> for inputs, <code>.form-label</code> for labels, <code>.form-check</code> for checkboxes and radio buttons, and <code>.form-group</code> for grouping elements.</li></ul><ul id="354b4eb5-0f81-4006-9b7f-63ab32161001" class="bulleted-list"><li style="list-style-type:disc">It offers flexibility in form sizing with classes like <code>.form-control-sm</code> for smaller inputs and <code>.form-control-lg</code> for larger inputs.</li></ul><ul id="00ad9b8d-d256-485a-b2f2-f05f10224a24" class="bulleted-list"><li style="list-style-type:disc">Bootstrap offers a variety of classes, such as <code>.table</code>, <code>.table-striped</code>, <code>.table-bordered</code>, and <code>.table-hover</code> to enhance the table&#x27;s visual presentation.</li></ul><ul id="07773813-2c82-4562-940f-17c099b320d0" class="bulleted-list"><li style="list-style-type:disc">Bootstrap provides contextual border color classes, such as <code>.border-primary</code>, <code>.border-secondary</code>, one can choose from different border styles like solid and dashed. </li></ul><ul id="213a80bb-ad95-4d62-9e5b-1450d8fc7629" class="bulleted-list"><li style="list-style-type:disc">It offers border size classes (<code>border-1</code>, <code>border-2</code>, etc.) to specify the width of the border applied to elements.</li></ul><ul id="ce9f57a9-86fb-48a3-9d48-358125978183" class="bulleted-list"><li style="list-style-type:disc">Adding shadows to elements in Bootstrap is simple by using the <code>shadow</code> class, which applies a subtle shadow effect by default.</li></ul><ul id="8308edd6-1412-43be-9795-90eb4935f32a" class="bulleted-list"><li style="list-style-type:disc">Bootstrap&#x27;s responsive grid system allows you to create layouts that adapt to different screen sizes using classes like <code>col-sm</code>, <code>col-md</code>, <code>col-lg</code>, and <code>col-xl</code>.</li></ul><ul id="e6f9678b-5a59-4a4f-9a9e-da98aca0d75f" class="bulleted-list"><li style="list-style-type:disc">Responsive utility classes such as <code>d-none</code>, <code>d-{sm/md/lg/xl}-none</code>, <code>d-{sm/md/lg/xl}-block</code>, and <code>text-{sm/md/lg/xl}-center</code> help in creating responsive designs.</li></ul><ul id="ef71a398-d0de-4db9-a1bf-cdaaaf9bf115" class="bulleted-list"><li style="list-style-type:disc">Bootstrap&#x27;s accordion component allows you to create collapsible and expandable content sections. Apply Bootstrap classes like <code>accordion</code>, <code>card</code>, <code>card-header</code>, and <code>card-body</code> to the respective elements.</li></ul><h2 id="8a7d477a-6650-418f-9cb5-f44d54d62a9d" class=""><mark class="highlight-red">Best Practices</mark></h2><ul id="45427fda-6a2f-4af6-aac7-846291cc990c" class="bulleted-list"><li style="list-style-type:disc">Test and tweak the responsiveness of your layouts to ensure optimal user experience on various devices.</li></ul><ul id="24ff9b5a-86c4-49b7-930b-f0a2600b9c6b" class="bulleted-list"><li style="list-style-type:disc">Use Bootstrap&#x27;s components as a foundation but strive to inject your own design elements and styles to differentiate your project. </li></ul><ul id="38b7c2fe-aa46-4e64-b70b-2893294a29ae" class="bulleted-list"><li style="list-style-type:disc">Focus on user experience by ensuring forms are intuitive and easy to fill, tables are readable and interactive, shadows add depth without overwhelming the design, and the accordion is well-organized and collapsible.</li></ul><ul id="999d5dde-70ae-4d4c-8cc7-0b0010184c4d" class="bulleted-list"><li style="list-style-type:disc">Only include the necessary plugins and consider using minified versions of CSS and JavaScript files to reduce file sizes and improve loading times.</li></ul><h2 id="787bc518-8f59-4501-9aa3-f1681f9d1018" class=""><mark class="highlight-red">Shortcomings &amp; Challenges</mark></h2><ul id="86f75d13-73c9-46d7-b752-1111dcded483" class="bulleted-list"><li style="list-style-type:disc">Customization beyond Bootstrap&#x27;s options can be challenging, requiring additional CSS or style overrides.</li></ul><ul id="b064d14a-d2bc-465a-af0f-3f110d649830" class="bulleted-list"><li style="list-style-type:disc">Bootstrap&#x27;s predefined breakpoints may limit precise control over specific screen sizes or custom breakpoints.</li></ul><ul id="243883c1-06d4-4505-9671-5ae353ce01e7" class="bulleted-list"><li style="list-style-type:disc">Overusing Bootstrap&#x27;s components and default styles can lead to a generic appearance and a lack of a unique visual identity.</li></ul><h2 id="366aee52-06f4-41fc-a23a-818f10e276ee" class=""><mark class="highlight-red">Enhance your knowledge</mark></h2><ul id="b4251e13-ed0c-4348-b6fd-a17d41b94571" class="bulleted-list"><li style="list-style-type:disc"><a href="https://getbootstrap.com/docs/5.3/components/toasts/">https://getbootstrap.com/docs/5.3/components/toasts/</a></li></ul><ul id="54799be5-0820-45c9-bb47-0d2ae717abdb" class="bulleted-list"><li style="list-style-type:disc"><a href="https://getbootstrap.com/docs/5.3/components/popovers/">https://getbootstrap.com/docs/5.3/components/popovers/</a></li></ul><p id="81867f38-fa5b-4b8f-919e-cde8bf81f143" class="">
+</p></div></article></body></html>
